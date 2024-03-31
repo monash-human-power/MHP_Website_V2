@@ -1,8 +1,8 @@
-# Project Title
+# MHP Website V2
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 
-*Nice descrition of what this project actually does*
+*A refurbishment of the original mhp website*
 
 ## Getting Started
 
