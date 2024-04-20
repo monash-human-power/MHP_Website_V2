@@ -1,0 +1,13 @@
+language: node_js
+ node_js:
+ - 18
+ cache:
+ directories:
+  - $HOME/.cache/yarn
+  - node_modules
+  - .next/cache
+
+ script: 
+ - npm run lint
+ - npm test
+ - npm run build
