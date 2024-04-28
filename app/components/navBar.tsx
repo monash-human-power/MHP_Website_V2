@@ -1,30 +1,32 @@
 "use client";
 import Link from "next/link";
+import NavItem from "./NavItem";
+import MenuNavBarItem from "./MenuNavItem";
 import { useState } from "react";
 
-interface NavItem {
+interface NavItems {
   name: string;
   href: string;
-}
-interface TeamItems {
-  name: string;
-  href: string;
+  srcString: string;
 }
 
-const navigation: NavItem[] = [
-  { name: "Home", href: "" },
-  { name: "Bikes", href: "#" },
-  { name: "Competitions", href: "#" },
-  { name: "Teams", href: "#" },
-  { name: "Blog", href: "#" },
-  { name: "Join", href: "#" },
-  { name: "Contact Us", href: "#" },
+const mobileNavigation: NavItems[] = [
+  { name: "Home", href: "/", srcString: "" },
+  { name: "Bikes", href: "#", srcString: "" },
+  { name: "Competitions", href: "#", srcString: "" },
+  { name: "Teams", href: "#", srcString: "" },
+  { name: "Blog", href: "#", srcString: "" },
+  { name: "Join", href: "#", srcString: "" },
+  { name: "Contact Us", href: "#", srcString: "" },
 ];
 
-const teamNavigation: TeamItems[] = [
-  { name: "subteam 1", href: "" },
-  { name: "subteam 2", href: "" },
-  { name: "subteam 3", href: "" },
+const desktopNavigation: NavItems[] = [
+  { name: "Bikes", href: "/bikes", srcString: "" },
+  { name: "Competitions", href: "/competitions", srcString: "" },
+  { name: "Teams", href: "/teams", srcString: "" },
+  { name: "Home", href: "/", srcString: "/image.png" },
+  { name: "Blog", href: "/blog", srcString: "" },
+  { name: "Join", href: "/join", srcString: "" },
 ];
 
 const Navbar = () => {
@@ -83,39 +85,23 @@ const Navbar = () => {
       {/* Wide Screen Navbar */}
       <div className="hidden md:block font-Aldrich">
         <div className="flex justify-between items-center h-full w-full">
+          {desktopNavigation.map((item, index) =>
+            item.name !== "Teams" ? (
+              <NavItem
+                key={index}
+                text={item.name}
+                hrefString={item.href}
+                srcString={item.srcString}
+              />
+            ) : (
+              <MenuNavBarItem key={index} />
+            )
+          )}
           <div className="px-10 py-2">
             <Link href={"/bikes"}>
-              <span className="font-Aldrich">Bikes</span>
-            </Link>
-          </div>
-          <div className="px-10 py-2">
-            <Link href={"/bikes"}>
-              <span className="text-Aldrich">Competitions</span>
-            </Link>
-          </div>
-          <div className="px-10 py-2">
-            <Link href={"/bikes"}>
-              <span className="text-Aldrich">Team</span>
-            </Link>
-          </div>
-          <div className="px-10 py-2">
-            <Link href={"/"}>
-              <img src="/image.png" width={100} height={75}></img>
-            </Link>
-          </div>
-          <div className="px-10 py-2">
-            <Link href={"/bikes"}>
-              <span className="text-Aldrich">Blog</span>
-            </Link>
-          </div>
-          <div className="px-10 py-2">
-            <Link href={"/bikes"}>
-              <span className="text-Aldrich">Join</span>
-            </Link>
-          </div>
-          <div className="rounded-md px-10 py-2 border border-white hover:bg-greenbutton hover:text-black hover:animate-pulse">
-            <Link href={"/bikes"}>
-              <button className="">Contact Us</button>
+              <button className=" px-5 py-2 rounded-md border-2 border-white hover:bg-greenbutton hover:text-black hover:border-black">
+                Contact Us
+              </button>
             </Link>
           </div>
         </div>
@@ -123,7 +109,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div className={`md:hidden ${menuOpen ? "block" : "hidden"}`}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 ">
-          {navigation.map((item, index) => (
+          {mobileNavigation.map((item, index) => (
             <a
               key={index}
               href={item.href}
