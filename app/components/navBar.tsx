@@ -37,9 +37,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed w-full bg-black text-white font-Aldrich text-xl">
+    <nav className="fixed w-full bg-black text-white font-Aldrich xl:text-xl lg:text-l">
       {/* Mobile Navbar */}
-      <div className="block md:hidden flex justify-between items-center">
+      <div className="block lg:hidden flex justify-between items-center">
         {/* Image */}
         <div className="flex-1/4"></div>
         <div className=" justify-center items-center">
@@ -83,7 +83,7 @@ const Navbar = () => {
         </button>
       </div>
       {/* Wide Screen Navbar */}
-      <div className="hidden md:block font-Aldrich">
+      <div className="hidden lg:block font-Aldrich">
         <div className="flex justify-between items-center h-full w-full">
           {desktopNavigation.map((item, index) =>
             item.name !== "Teams" ? (
@@ -107,7 +107,7 @@ const Navbar = () => {
         </div>
       </div>
       {/* Mobile Menu */}
-      <div className={`md:hidden ${menuOpen ? "block" : "hidden"}`}>
+      <div className={`lg:hidden ${menuOpen ? "block" : "hidden"}`}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 ">
           {mobileNavigation.map((item, index) => (
             <a
