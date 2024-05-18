@@ -1,5 +1,6 @@
 "use client";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 import Link from "next/link";
 
 interface navItemProps {
@@ -14,7 +15,7 @@ function NavItem({ text, hrefString, srcString }: navItemProps) {
     <div className="transition ease-in-out hover:-translate-y-1 px-10 py-2">
       <Link href={hrefString}>
         {srcString !== "" ? (
-          <img src={srcString} width={100} height={75}></img>
+          <Image src={srcString} alt="Logo" width={100} height={10} />
         ) : (
           <span
             className={

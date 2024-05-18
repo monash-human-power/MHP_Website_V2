@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import NavItem from "./NavItem";
 import MenuNavBarItem from "./MenuNavItem";
 import MobileNavItem from "./MobileNavItem";
@@ -86,7 +87,7 @@ const Navbar = () => {
         {/* Image */}
         <div className="flex-1/4"></div>
         <div className="justify-center items-center">
-          <img src="/mobile_image.png" alt="Logo" width={75} height={50} />
+          <Image src="/mobile_image.png" alt="Logo" width={100} height={50} />
         </div>
         {/* Menu button */}
         <button
