@@ -198,9 +198,12 @@ const Navbar = () => {
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <Link
             href=""
-            className={`text-center hover:bg-gray-700  block px-3 py-2 rounded-md text-sm font-medium`}
+            className={`text-left  hover:bg-gray-700  block px-3 py-2 rounded-md text-sm font-medium`}
           >
-            <button className="text-sm" onClick={() => setTeamMenu(!teamMenu)}>
+            <button
+              className="text-sm rounded-md  bg-greenbutton text-zinc-700 border-black  px-3 py-2"
+              onClick={() => setTeamMenu(!teamMenu)}
+            >
               {"< Back"}
             </button>
           </Link>
@@ -221,9 +224,12 @@ const Navbar = () => {
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <Link
             href=""
-            className={`text-center hover:bg-gray-700  block px-3 py-2 rounded-md text-sm font-medium`}
+            className={`text-left hover:bg-gray-700  block px-3 py-2 rounded-md text-sm font-medium`}
           >
-            <button className="text-sm" onClick={() => setCompMenu(!compMenu)}>
+            <button
+              className="text-sm rounded-md  bg-greenbutton text-zinc-700 border-black  px-3 py-2"
+              onClick={() => setCompMenu(!compMenu)}
+            >
               {"< Back"}
             </button>
           </Link>
