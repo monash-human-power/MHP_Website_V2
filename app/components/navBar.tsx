@@ -176,7 +176,7 @@ const Navbar = () => {
                 className="text-center hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium"
               >
                 <button onClick={() => handleItemClick(item)}>
-                  {item.name}
+                  {item.name + " >"}
                 </button>
               </Link>
             ) : (
