@@ -2,25 +2,53 @@
 import Link from "next/link";
 import NavItem from "./NavItem";
 import MenuNavBarItem from "./MenuNavItem";
+import MobileNavItem from "./MobileNavItem";
 import { useState } from "react";
 
-interface NavItems {
+interface NavItemsProps {
   name: string;
   href: string;
   srcString: string;
 }
+interface MobileNavItemsProps {
+  name: string;
+  href: string;
+}
 
-const mobileNavigation: NavItems[] = [
-  { name: "Home", href: "/", srcString: "" },
-  { name: "Bikes", href: "#", srcString: "" },
-  { name: "Competitions", href: "#", srcString: "" },
-  { name: "Teams", href: "#", srcString: "" },
-  { name: "Blog", href: "#", srcString: "" },
-  { name: "Join", href: "#", srcString: "" },
-  { name: "Contact Us", href: "#", srcString: "" },
+const teamItems = {
+  title: "Teams",
+  items: [
+    { name: "Management", href: "/" },
+    { name: "Aerodynamic", href: "/" },
+    { name: "Chassis & Drivetrain", href: "/" },
+    { name: "Electrical", href: "/" },
+    { name: "Materials", href: "/" },
+    { name: "Rider Development", href: "/" },
+    { name: "Operations", href: "/" },
+    { name: "Riders", href: "/" },
+    { name: "Auxiliary", href: "/" },
+  ],
+};
+
+const competitionItems = {
+  title: "Competitions",
+  items: [
+    { name: "World Human Powered Speed Challenge", href: "/" },
+    { name: "OzHPV Speed Trials", href: "/" },
+  ],
+};
+
+const mobileNavigation: MobileNavItemsProps[] = [
+  { name: "Home", href: "/" },
+  { name: "Bikes", href: "/bikes" },
+  { name: "Competitions", href: "/" },
+  { name: "Teams", href: "/" },
+  { name: "Blog", href: "/blog" },
+  { name: "Join", href: "/join" },
+  { name: "Contact Us", href: "/contactUs" },
 ];
 
-const desktopNavigation: NavItems[] = [
+const desktopNavigation: NavItemsProps[] = [
   { name: "Bikes", href: "/bikes", srcString: "" },
   { name: "Competitions", href: "/competitions", srcString: "" },
   { name: "Teams", href: "/teams", srcString: "" },
@@ -30,10 +58,25 @@ const desktopNavigation: NavItems[] = [
 ];
 
 const Navbar = () => {
+  const [teamMenu, setTeamMenu] = useState(false);
+  const [compMenu, setCompMenu] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleOpen = () => {
     setMenuOpen(!menuOpen);
+    if (teamMenu == true) {
+      setTeamMenu(!teamMenu);
+    } else if (compMenu == true) {
+      setCompMenu(!compMenu);
+    }
+  };
+
+  const handleItemClick = (item: MobileNavItemsProps) => {
+    if (item.name === "Teams") {
+      setTeamMenu(true);
+    } else if (item.name === "Competitions") {
+      setCompMenu(true);
+    }
   };
 
   return (
@@ -42,7 +85,7 @@ const Navbar = () => {
       <div className="block lg:hidden flex justify-between items-center">
         {/* Image */}
         <div className="flex-1/4"></div>
-        <div className=" justify-center items-center">
+        <div className="justify-center items-center">
           <img src="/mobile_image.png" alt="Logo" width={75} height={50} />
         </div>
         {/* Menu button */}
@@ -86,7 +129,7 @@ const Navbar = () => {
       <div className="hidden lg:block font-Aldrich">
         <div className="flex justify-between items-center h-full w-full">
           {desktopNavigation.map((item, index) =>
-            item.name !== "Teams" ? (
+            item.name !== "Teams" && item.name !== "Competitions" ? (
               <NavItem
                 key={index}
                 text={item.name}
@@ -94,12 +137,24 @@ const Navbar = () => {
                 srcString={item.srcString}
               />
             ) : (
-              <MenuNavBarItem key={index} />
+              <MenuNavBarItem
+                key={index}
+                title={
+                  item.name === "Teams"
+                    ? teamItems.title
+                    : competitionItems.title
+                }
+                items={
+                  item.name === "Teams"
+                    ? teamItems.items
+                    : competitionItems.items
+                }
+              />
             )
           )}
           <div className="px-10 py-2">
-            <Link href={"/bikes"}>
-              <button className=" px-5 py-2 rounded-md border-2 border-white hover:bg-greenbutton hover:text-black hover:border-black">
+            <Link href={"/contactUs"}>
+              <button className="px-5 py-2 rounded-md border-2 border-white hover:bg-greenbutton hover:text-black hover:border-black">
                 Contact Us
               </button>
             </Link>
@@ -107,16 +162,72 @@ const Navbar = () => {
         </div>
       </div>
       {/* Mobile Menu */}
-      <div className={`lg:hidden ${menuOpen ? "block" : "hidden"}`}>
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 ">
-          {mobileNavigation.map((item, index) => (
-            <a
+      <div
+        className={`lg:hidden ${
+          menuOpen && !teamMenu && !compMenu ? "block" : "hidden"
+        }`}
+      >
+        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          {mobileNavigation.map((item, index) =>
+            item.name === "Competitions" || item.name === "Teams" ? (
+              <Link
+                key={index}
+                href=""
+                className="text-center hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+              >
+                <button onClick={() => handleItemClick(item)}>
+                  {item.name}
+                </button>
+              </Link>
+            ) : (
+              <MobileNavItem
+                key={index}
+                name={item.name}
+                hrefString={item.href}
+              />
+            )
+          )}
+        </div>
+      </div>
+      <div
+        className={`lg:hidden ${
+          menuOpen && teamMenu && !compMenu ? "block" : "hidden"
+        }`}
+      >
+        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <Link
+            href=""
+            className={`text-center hover:bg-gray-700  block px-3 py-2 rounded-md text-base font-medium`}
+          >
+            <button onClick={() => setTeamMenu(!teamMenu)}>{"< Back"}</button>
+          </Link>
+          {teamItems.items.map((item, index) => (
+            <MobileNavItem
               key={index}
-              href={item.href}
-              className="  text-center hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium"
-            >
-              {item.name}
-            </a>
+              name={item.name}
+              hrefString={item.href}
+            />
+          ))}
+        </div>
+      </div>
+      <div
+        className={`lg:hidden ${
+          menuOpen && !teamMenu && compMenu ? "block" : "hidden"
+        }`}
+      >
+        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <Link
+            href=""
+            className={`text-center hover:bg-gray-700  block px-3 py-2 rounded-md text-base font-medium`}
+          >
+            <button onClick={() => setCompMenu(!compMenu)}>{"< Back"}</button>
+          </Link>
+          {competitionItems.items.map((item, index) => (
+            <MobileNavItem
+              key={index}
+              name={item.name}
+              hrefString={item.href}
+            />
           ))}
         </div>
       </div>
