@@ -173,7 +173,7 @@ const Navbar = () => {
               <Link
                 key={index}
                 href=""
-                className="text-center hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium"
+                className="text-center hover:bg-gray-700 block px-3 py-2 rounded-md text-sm font-medium"
               >
                 <button onClick={() => handleItemClick(item)}>
                   {item.name + " >"}
@@ -197,9 +197,11 @@ const Navbar = () => {
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <Link
             href=""
-            className={`text-center hover:bg-gray-700  block px-3 py-2 rounded-md text-base font-medium`}
+            className={`text-center hover:bg-gray-700  block px-3 py-2 rounded-md text-sm font-medium`}
           >
-            <button onClick={() => setTeamMenu(!teamMenu)}>{"< Back"}</button>
+            <button className="text-sm" onClick={() => setTeamMenu(!teamMenu)}>
+              {"< Back"}
+            </button>
           </Link>
           {teamItems.items.map((item, index) => (
             <MobileNavItem
@@ -218,9 +220,11 @@ const Navbar = () => {
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <Link
             href=""
-            className={`text-center hover:bg-gray-700  block px-3 py-2 rounded-md text-base font-medium`}
+            className={`text-center hover:bg-gray-700  block px-3 py-2 rounded-md text-sm font-medium`}
           >
-            <button onClick={() => setCompMenu(!compMenu)}>{"< Back"}</button>
+            <button className="text-sm" onClick={() => setCompMenu(!compMenu)}>
+              {"< Back"}
+            </button>
           </Link>
           {competitionItems.items.map((item, index) => (
             <MobileNavItem
