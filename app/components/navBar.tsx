@@ -37,7 +37,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed w-full bg-black text-white font-Aldrich text-xl">
+    <nav className="sticky w-full bg-black text-white font-Aldrich text-xl">
       {/* Mobile Navbar */}
       <div className="block md:hidden flex justify-between items-center">
         {/* Image */}
