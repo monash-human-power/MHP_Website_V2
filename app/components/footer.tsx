@@ -38,13 +38,13 @@ const Footer = () => {
                     <div className="flex flex-col justify-center items-center">
                         <p className="text-xl mb-2">Subscribe To Us</p>
                         <p className="text-sm mb-2 text-center">
-                            Keep up to date with MHP and updates related news with our newsletter.
+                            Keep up to date with MHP and other related news with our newsletter.
                         </p>
                         <button className="px-5 py-2 rounded-md border-2 border-white hover:bg-greenbutton hover:text-black hover:border-black">
                             Subscribe
                         </button>
                     </div>
-                    {/* Quick Links */}
+                    {/* Quick links */}
                     <div>
                         <div className="flex flex-wrap justify-center items-center">
                             <p className="text-xl mb-2">Quick Links</p>
