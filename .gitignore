@@ -138,6 +138,7 @@ typings/
 # nuxt.js build output
 .nuxt
 
+# react / gatsby 
 
 # vuepress build output
 .vuepress/dist
