@@ -19,8 +19,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className + " bg-white"}>
         <Navbar />
-        <div className="flex">
-          <main className="flex-grow">{children}</main>
+        <div className="flex relative">
+          <main className="flex-grow ">{children}</main>
         </div>
       </body>
     </html>
