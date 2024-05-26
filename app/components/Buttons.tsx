@@ -2,18 +2,22 @@ import Link from "next/link";
 import React from "react";
 
 interface buttonProps {
-    text: string;
-    hrefString: string;
-  }
+  theme: "light" | "dark";
+  text: string;
+  hrefString: string;
+}
 
-function Button({text, hrefString = ''} : buttonProps) {
-    return (
-        <Link href = {hrefString}>
-            <button className="px-5 py-2 rounded-md border-2 border-white hover:bg-greenbutton hover:text-black hover:border-black">
-                {text}
-            </button>
-        </Link>
-    );
-  }
+function Button({ theme, text, hrefString = "" }: buttonProps) {
+  const colourWay = {
+    light: "px-5 py-2 rounded-lg border-2 bg-purple text-white ",
+    dark: "px-5 py-2 rounded-lg border-2 bg-greenbutton text-black",
+  };
 
-  export default Button;
+  return (
+    <Link href={hrefString}>
+      <button className={colourWay[theme]}>{text}</button>
+    </Link>
+  );
+}
+
+export default Button;
