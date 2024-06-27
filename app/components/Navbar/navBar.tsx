@@ -81,7 +81,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed w-full bg-black text-white font-Aldrich xl:text-xl lg:text-l">
+    <nav className="relative w-full bg-black text-white font-Aldrich xl:text-xl lg:text-l z-1">
       {/* Mobile Navbar */}
       <div className="block lg:hidden flex justify-between items-center">
         {/* Image */}
