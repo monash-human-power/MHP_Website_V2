@@ -6,8 +6,8 @@ interface PageSectionProps {
 }
 
 const sectionThemes = {
-  light: "position-absolute bg-white text-black p-12 w-full z-0",
-  dark: "position-absolute bg-black text-white p-12 w-full z-0",
+  light: "position-absolute bg-white text-black p-12 w-full z-0 ",
+  dark: "position-absolute bg-black text-white p-12 w-full z-0 ",
 };
 
 // Page section component are essentaily just a container class used to enforce colour themes
