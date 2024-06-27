@@ -1,5 +1,6 @@
 import PageSection from "./components/PageSection";
 import Image from "next/image";
+import Navbar from "./components/Navbar/navBar";
 
 export default function Page() {
   return (
@@ -10,11 +11,10 @@ export default function Page() {
             <h1>MONASH HUMAN POWER</h1>
           </div>
         </div>
-
         <div className="grid grid-cols-2 gap-4">
           <div>
             {/* Todo: make image largern */}
-            <Image src="/v3.png" width={1000} height={200} />
+            <Image src="/v3.png" width={1000} height={200} alt="" />
           </div>
           <div className="text-right">
             {" "}
