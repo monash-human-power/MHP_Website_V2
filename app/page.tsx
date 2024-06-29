@@ -1,6 +1,9 @@
 import PageSection from "./components/PageSection";
 import Image from "next/image";
 import Navbar from "./components/Navbar/navBar";
+import ImageCarousel from "./components/ImageCarousel";
+
+const images = ["/battle_mountain_group.jpg", "/trike_race.jpg", "/o_week_group.jpg", "/mhp_group.jpg"];
 
 export default function Page() {
   return (
@@ -32,6 +35,7 @@ export default function Page() {
           </div>
         </div>
       </PageSection>
+      <ImageCarousel images={images}></ImageCarousel>
 
       <PageSection colourWay="light">
         <h2 className="font-Aldrich underline  decoration-purple decoration-4">
