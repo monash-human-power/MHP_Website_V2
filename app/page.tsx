@@ -1,6 +1,6 @@
 import PageSection from "./components/PageSection";
 import Image from "next/image";
-import Navbar from "./components/Navbar/navBar";
+import Button from "./components/Buttons";
 
 export default function Page() {
   return (
@@ -28,7 +28,7 @@ export default function Page() {
             manufacturing, and racing fully-faired human-powered vehicles (HPVs)
             to push the limits of human speed.`}
             </p>
-            <p>fake button</p>
+            <Button hrefString="/" text="Learn More" theme="dark" />
           </div>
         </div>
       </PageSection>

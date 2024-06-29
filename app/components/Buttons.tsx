@@ -9,8 +9,8 @@ interface buttonProps {
 
 function Button({ theme, text, hrefString = "" }: buttonProps) {
   const colourWay = {
-    light: "px-5 py-2 rounded-lg border-2 bg-purple text-white ",
-    dark: "px-5 py-2 rounded-lg border-2 bg-greenbutton text-black",
+    light: "px-5 py-2 rounded-full border-2 bg-purple text-white ",
+    dark: "px-5 py-2 rounded-full border-2 bg-greenbutton text-black",
   };
 
   return (
