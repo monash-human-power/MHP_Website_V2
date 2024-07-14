@@ -51,8 +51,8 @@ export default function Page() {
           programs.
         </p>
       </PageSection>
-      <PageSection colourWay="dark">
-        <h2>Our Story</h2>
+      <PageSection colourWay="light">
+        <h2 className="font-Aldrich underline  decoration-purple decoration-4">Our Story</h2>
         <p>
           We are a student-led engineering team based at Monash University in
           Melbourne, Australia. Since 2015 we have been designing,
