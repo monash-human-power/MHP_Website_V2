@@ -38,6 +38,10 @@ module.exports = {
         "6xl": "4rem", // 6X large
         "7xl": "5rem", // 7X large
       },
+      width: {
+        '100': '25rem',
+        '120': '33rem'
+      }
     },
   },
   plugins: [],
