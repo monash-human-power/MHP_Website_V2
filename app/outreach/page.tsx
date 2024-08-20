@@ -25,30 +25,74 @@ export default function Outreach() {
             </div>
             <br></br>
             <div className="flex flex-row justify-center items-center">
-                <Button hrefString="/" text="Learn More" theme="dark"/>
-            </div>
-            <br></br>
-            <div className="relative w-full h-100 overflow-hidden">
-                <Image src="/outreach_1.jpg" width={1000} height={200} alt="Epsom Primary School" layout="responsive"/>
+                <Button
+                    hrefString="/"
+                    text="Learn More"
+                    theme="dark"
+                />
             </div>
         </PageSection>
 
-
+        <div className="max-h-80 items-center overflow-hidden">
+            <Image
+                src="/outreach_1.jpg"
+                width="800"
+                height="300"
+                objectFit="cover"
+                alt="Epsom Primary School"
+                layout="responsive"
+                className="top-1/2 transform -translate-y-1/4"
+            />
+        </div>
 
         <PageSection colourWay="light">
+            <div>
+                <h2 className="font-Sensation underline  decoration-purple decoration-4">
+                    OUR PROGRAM
+                </h2>
+            </div>
+            <p>
+                Based on the Victorian Curriculum's Cross-curriculum Priority: Learning about Sustainability, 
+                these hands-on STEM lessons guide secondary students through a systems engineering approach 
+                that takes into account the aerodynamic and eco-friendly aspects of their HPV.
+            </p>
+            <br></br>
+            <div className="flex flex-row justify-center items-center">
+                <Button
+                    hrefString="/"
+                    text="See Options"
+                    theme="light"
+                />
+            </div>
+            <br></br>
+        </PageSection>
+
+        <div className="max-h-80 items-center overflow-hidden">
+            <Image
+                src="/outreach_2.jpg"
+                width="800"
+                height="300"
+                objectFit="cover"
+                alt="Robogals Engage Engineer"
+                layout="responsive"
+                className="transform -translate-y-1/4"
+            />
+        </div>
+
+        <PageSection colourWay="dark">
         <div>
-            <h2 className="font-Sensation underline  decoration-purple decoration-4">
-                OUR PROGRAM
+            <h2 className="text-center font-Sensation underline  decoration-green decoration-4">
+                CHOOSE
             </h2>
         </div>
-        <p>
-            Based on the Victorian Curriculum's Cross-curriculum Priority: Learning about Sustainability, 
-            these hands-on STEM lessons guide secondary students through a systems engineering approach 
-            that takes into account the aerodynamic and eco-friendly aspects of their HPV.
-        </p>
+        <br></br>
         <br></br>
         <div className="flex flex-row justify-center items-center">
-            <Button hrefString="/" text="See Options" theme="light"/>
+                <Button
+                    hrefString="/"
+                    text="Contact Us"
+                    theme="dark"
+                />
         </div>
         <br></br>
         </PageSection>
