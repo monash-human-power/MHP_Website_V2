@@ -12,7 +12,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-green font-Aldrich py-3">
+    <footer className="bg-black text-white font-Aldrich py-3">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center">
           <div>
@@ -83,7 +83,7 @@ const Footer = () => {
               Keep up to date with MHP and other related news with our
               newsletter.
             </p>
-            <button className="px-5 py-2 bg-white text-black rounded-md border-2 border-black hover:bg-green hover:text-black hover:border-black">
+            <button className="px-5 py-2 bg-white text-black rounded-md border-2 border-black hover:bg-greenbutton hover:text-black hover:border-black">
               Subscribe
             </button>
           </div>
