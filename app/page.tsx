@@ -3,6 +3,7 @@ import Image from "next/image";
 import Navbar from "./components/Navbar/navBar";
 import ImageCarousel from "./components/ImageCarousel";
 
+
 const images = [
   "/battle_mountain_group.jpg",
   "/trike_race.jpg",
