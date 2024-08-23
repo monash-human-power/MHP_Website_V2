@@ -71,5 +71,23 @@ export default function Page() {
         </p>
       </PageSection>
     </>
+    
+    // <>
+    //   <PageSection colourWay="dark">
+    //     <div >
+    //         <Image src="/bikes/t1-rectangle.jpg" width={1920} height={891} alt="" />
+    //     </div>
+    //   </PageSection>
+
+    //   <PageSection colourWay="light">
+    //     <h2 className="font-Aldrich underline  decoration-purple decoration-4">
+          
+    //     </h2>
+    //   </PageSection>
+    //   <PageSection colourWay="dark">
+    //     <h2>Our Story</h2>
+    //   </PageSection>
+    // </>
+
   );
 }
