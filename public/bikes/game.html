@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Game</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        canvas {
+            display: block;
+            background-color: #4CD038; /* Green grass background */
+        }
+    </style>
+</head>
+<body>
+<canvas id="gameCanvas"></canvas>
+
+<script>
+const canvas = document.getElementById('gameCanvas');
+const ctx = canvas.getContext('2d');
+canvas.width = 500;
+canvas.height = 500;
+
+// Colors
+const gray = '#646464';
+const green = '#4CD038';
+const red = '#C80000';
+const white = '#FFFFFF';
+const yellow = '#FFE800';
+const black = '#000000';
+
+// Road and marker sizes
+const roadWidth = 300;
+const markerWidth = 10;
+const markerHeight = 50;
+
+// Lane coordinates
+const leftLane = 150;
+const centerLane = 250;
+const rightLane = 350;
+const lanes = [leftLane, centerLane, rightLane];
+
+// Road and edge markers
+const road = {x: 100, y: 0, width: roadWidth, height: canvas.height};
+const leftEdgeMarker = {x: 95, y: 0, width: markerWidth, height: canvas.height};
+const rightEdgeMarker = {x: 395, y: 0, width: markerWidth, height: canvas.height};
+
+// Player's starting coordinates
+let playerX = centerLane;
+let playerY = 400;
+
+// Game settings
+let gameover = false;
+let speed = 2;
+let score = 0;
+let paused = false;
+let playerMode = 1;
+let playerGroup = [];
+let vehicleGroup = [];
+let laneMarkerMoveY = 0;
+
+// Vehicle images
+const vehicleImages = ['/bikes/images/car.png', '/bikes/images/car2.png', '/bikes/images/car3.png', '/bikes/images/car4.png'];
+const otherVehicleImages = ['/bikes/images/otherCar.png', '/bikes/images/truck.png', '/bikes/images/taxi.png', '/bikes/images/pickup_truck.png', '/bikes/images/van.png'];
+let selectedVehicleIndex = 0;
+
+// Preload vehicle images
+const loadedVehicleImages = vehicleImages.map(src => {
+    const img = new Image();
+    img.src = src;
+    img.onload = () => console.log(`${src} loaded successfully`);
+    img.onerror = () => console.error(`Failed to load ${src}`);
+    return img;
+});
+const loadedOtherVehicleImages = otherVehicleImages.map(src => {
+    const img = new Image();
+    img.src = src;
+    img.onload = () => console.log(`${src} loaded successfully`);
+    img.onerror = () => console.error(`Failed to load ${src}`);
+    return img;
+});
+
+// Helper function to draw text
+function drawText(text, x, y, color = white, fontSize = 24) {
+    ctx.fillStyle = color;
+    ctx.font = `${fontSize}px Arial`;
+    ctx.textAlign = 'center';
+    ctx.fillText(text, x, y);
+}
+
+// Function to choose player mode
+function choosePlayerMode() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawText('Choose player mode:', canvas.width / 2, canvas.height / 2 - 50);
+    drawText('1: Single Player', canvas.width / 2, canvas.height / 2);
+    drawText('2: Two Players', canvas.width / 2, canvas.height / 2 + 50);
+    
+    document.addEventListener('keydown', function selectPlayerMode(event) {
+        if (event.key === '1') {
+            playerMode = 1;
+            document.removeEventListener('keydown', selectPlayerMode);
+            chooseVehicle(1);
+        } else if (event.key === '2') {
+            playerMode = 2;
+            document.removeEventListener('keydown', selectPlayerMode);
+            chooseVehicle(1);
+        }
+    });
+}
+
+// Function to choose vehicle
+function chooseVehicle(playerNum) {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawText(`P${playerNum}'s Vehicle`, canvas.width / 2, 50);
+    drawVehicle(loadedVehicleImages[selectedVehicleIndex], canvas.width / 2 - 50, canvas.height / 2 - 50, 100, 200);
+    
+    document.addEventListener('keydown', function selectVehicle(event) {
+        if (event.key === 'ArrowLeft') {
+            selectedVehicleIndex = (selectedVehicleIndex - 1 + vehicleImages.length) % vehicleImages.length;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            drawText(`P${playerNum}'s Vehicle`, canvas.width / 2, 50);
+            drawVehicle(loadedVehicleImages[selectedVehicleIndex], canvas.width / 2 - 50, canvas.height / 2 - 50, 100, 200);
+        } else if (event.key === 'ArrowRight') {
+            selectedVehicleIndex = (selectedVehicleIndex + 1) % vehicleImages.length;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            drawText(`P${playerNum}'s Vehicle`, canvas.width / 2, 50);
+            drawVehicle(loadedVehicleImages[selectedVehicleIndex], canvas.width / 2 - 50, canvas.height / 2 - 50, 100, 200);
+        } else if (event.key === 'Enter') {
+            if (playerNum === 1) {
+                playerGroup.push({x: playerX, y: playerY, img: loadedVehicleImages[selectedVehicleIndex]});
+                if (playerMode === 2) {
+                    selectedVehicleIndex = 0; // Reset for player 2
+                    chooseVehicle(2);
+                } else {
+                    startGame();
+                }
+            } else if (playerNum === 2) {
+                playerGroup.push({x: rightLane, y: playerY, img: loadedVehicleImages[selectedVehicleIndex]});
+                startGame();
+            }
+            document.removeEventListener('keydown', selectVehicle);
+        }
+    });
+}
+
+// Function to start the game
+function startGame() {
+    document.addEventListener('keydown', handlePlayerInput);
+    requestAnimationFrame(updateGame);
+}
+
+// Function to handle player input for lane changes
+function handlePlayerInput(event) {
+    const moveAmount = 100; // Distance to move between lanes
+
+    // Two Player Mode
+    if (playerMode === 2) {
+        const player1 = playerGroup[0]; // First player
+        const player2 = playerGroup[1]; // Second player
+
+        if (event.key === 'ArrowLeft') {
+            const currentIndex = lanes.indexOf(player1.x);
+            if (currentIndex > 0) {
+                player1.x = lanes[currentIndex - 1];
+            }
+        } else if (event.key === 'ArrowRight') {
+            const currentIndex = lanes.indexOf(player1.x);
+            if (currentIndex < lanes.length - 1) { 
+                player1.x = lanes[currentIndex + 1];
+            }
+        } else if (event.key === 'a') {
+            const currentIndex = lanes.indexOf(player2.x);
+            if (currentIndex > 0) {
+                player2.x = lanes[currentIndex - 1];
+            }
+        } else if (event.key === 'd') {
+            const currentIndex = lanes.indexOf(player2.x);
+            if (currentIndex < lanes.length - 1) {
+                player2.x = lanes[currentIndex + 1];
+            }
+        }
+    } else if (playerMode === 1) {
+        // Single Player Mode
+        const player = playerGroup[0];
+        if (event.key === 'ArrowLeft') {
+            const currentIndex = lanes.indexOf(player.x);
+            if (currentIndex > 0) {
+                player.x = lanes[currentIndex - 1];
+            }
+        } else if (event.key === 'ArrowRight') {
+            const currentIndex = lanes.indexOf(player.x);
+            if (currentIndex < lanes.length - 1) {
+                player.x = lanes[currentIndex + 1];
+            }
+        }
+    }
+}
+
+// Function to update the game
+function updateGame() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+    // Draw the road
+    ctx.fillStyle = gray;
+    ctx.fillRect(road.x, road.y, road.width, road.height);
+    
+    // Draw the edge markers
+    ctx.fillStyle = yellow;
+    ctx.fillRect(leftEdgeMarker.x, leftEdgeMarker.y, leftEdgeMarker.width, leftEdgeMarker.height);
+    ctx.fillRect(rightEdgeMarker.x, rightEdgeMarker.y, rightEdgeMarker.width, rightEdgeMarker.height);
+    
+    // Draw the lane markers
+    laneMarkerMoveY += speed * 2;
+    if (laneMarkerMoveY >= markerHeight * 2) {
+        laneMarkerMoveY = 0;
+    }
+    for (let y = markerHeight * -2; y < canvas.height; y += markerHeight * 2) {
+        ctx.fillStyle = white;
+        ctx.fillRect(leftLane + 45, y + laneMarkerMoveY, markerWidth, markerHeight);
+        ctx.fillRect(centerLane + 45, y + laneMarkerMoveY, markerWidth, markerHeight);
+    }
+    
+    // Draw the player's vehicle(s)
+    for (let player of playerGroup) {
+        drawVehicle(player.img, player.x - 22, player.y - 40, 45, 80);
+    }
+
+    // Update vehicles and handle collisions
+    updateVehicles();
+
+    // Draw the vehicles
+    for (let vehicle of vehicleGroup) {
+        drawVehicle(loadedOtherVehicleImages[vehicle.index], vehicle.x - 22, vehicle.y - 40, 45, 80);
+    }
+
+    // Display the score
+    drawText(`Score: ${score}`, 50, 30, white, 20);
+
+    if (!gameover) {
+        requestAnimationFrame(updateGame);
+    } else {
+        drawText('Game Over', canvas.width / 2, 100, red, 32);
+        drawText('Play again? Press Y or N', canvas.width / 2, 150, white, 24);
+
+        document.addEventListener('keydown', function restartGame(event) {
+            if (event.key === 'y') {
+                resetGame();
+                document.removeEventListener('keydown', restartGame);
+            } else if (event.key === 'n') {
+                document.removeEventListener('keydown', restartGame);
+            }
+        });
+    }
+}
+
+// Function to draw a vehicle
+function drawVehicle(image, x, y, width, height) {
+    ctx.drawImage(image, x, y, width, height);
+}
+
+// Function to update vehicle positions and handle collisions
+function updateVehicles() {
+    for (let i = 0; i < vehicleGroup.length; i++) {
+        let vehicle = vehicleGroup[i];
+        vehicle.y += speed;
+        if (vehicle.y > canvas.height) {
+            vehicleGroup.splice(i, 1);
+            score += 1;
+            speed += 0.05;
+            i--;
+        }
+        
+        // Check for collision with players
+        for (let player of playerGroup) {
+            if (checkCollision(player, vehicle)) {
+                gameover = true;
+                return;
+            }
+        }
+    }
+    
+    // Add new vehicles
+    if (vehicleGroup.length < 2) {
+        if (vehicleGroup.every(v => v.y > v.height * 1.5)) {
+            const lane = lanes[Math.floor(Math.random() * lanes.length)];
+            const imgIndex = Math.floor(Math.random() * otherVehicleImages.length);
+            vehicleGroup.push({x: lane, y: -50, img: loadedOtherVehicleImages[imgIndex], index: imgIndex});
+        }
+    }
+}
+
+// Function to check for collision
+function checkCollision(rect1, rect2) {
+    return !(rect2.x > rect1.x + 45 ||
+             rect2.x + 45 < rect1.x ||
+             rect2.y > rect1.y + 80 ||
+             rect2.y + 80 < rect1.y);
+}
+
+// Function to reset the game
+function resetGame() {
+    score = 0;
+    speed = 2;
+    gameover = false;
+    playerGroup = [];
+    vehicleGroup = [];
+    playerX = centerLane;
+    playerY = 400;
+    choosePlayerMode();
+}
+
+// Start by choosing the player mode
+choosePlayerMode();
+
+</script>
+</body>
+</html>

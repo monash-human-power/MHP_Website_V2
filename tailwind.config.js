@@ -19,6 +19,7 @@ module.exports = {
         lightgray: "#EFEFEF",
         gray: "#C0BFBD",
         greenbutton: "#ACF601",
+        darkgreenbutton: "#0B8F00",
       },
       fontFamily: {
         //sans: ["Arial", "Helvetica", "sans-serif"],
