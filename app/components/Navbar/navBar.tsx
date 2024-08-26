@@ -42,8 +42,8 @@ const competitionItems = {
 const mobileNavigation: MobileNavItemsProps[] = [
   { name: "Home", href: "/" },
   { name: "Bikes", href: "/bikes" },
-  { name: "Competitions", href: "/" },
-  { name: "Teams", href: "/" },
+  { name: "Competitions", href: "/competitions" },
+  { name: "Teams", href: "/teams" },
   { name: "Blog", href: "/blog" },
   { name: "Join", href: "/join" },
   { name: "Contact Us", href: "/contactUs" },
@@ -130,7 +130,15 @@ const Navbar = () => {
         {/* Wide Screen Navbar */}
         <div className="hidden lg:block font-Aldrich">
           <div className="flex justify-between items-center h-full w-full">
-            {desktopNavigation.map((item, index) =>
+            {desktopNavigation.map((item, index) => (
+              <NavItem
+                key={index}
+                text={item.name}
+                hrefString={item.href}
+                srcString={item.srcString}
+              />
+            ))}
+            {/* {desktopNavigation.map((item, index) =>
               item.name !== "Teams" && item.name !== "Competitions" ? (
                 <NavItem
                   key={index}
@@ -153,7 +161,7 @@ const Navbar = () => {
                   }
                 />
               )
-            )}
+            )} */}
             <div className="px-10 py-2">
               <Link href={"/contactUs"}>
                 <button className="px-5 py-2 rounded-md border-2 border-white hover:bg-greenbutton hover:text-black hover:border-black">
@@ -170,25 +178,24 @@ const Navbar = () => {
           }`}
         >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {mobileNavigation.map((item, index) =>
-              item.name === "Competitions" || item.name === "Teams" ? (
-                <Link
-                  key={index}
-                  href=""
-                  className="text-center hover:bg-gray-700 block px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  <button onClick={() => handleItemClick(item)}>
-                    {item.name + " >"}
-                  </button>
-                </Link>
-              ) : (
-                <MobileNavItem
-                  key={index}
-                  name={item.name}
-                  hrefString={item.href}
-                />
-              )
-            )}
+            {mobileNavigation.map((item, index) => (
+              // item.name === "Competitions" || item.name === "Teams" ? (
+              //   <Link
+              //     key={index}
+              //     href=""
+              //     className="text-center hover:bg-gray-700 block px-3 py-2 rounded-md text-sm font-medium"
+              //   >
+              //     <button onClick={() => handleItemClick(item)}>
+              //       {item.name + " >"}
+              //     </button>
+              //   </Link>
+              // ) : (
+              <MobileNavItem
+                key={index}
+                name={item.name}
+                hrefString={item.href}
+              />
+            ))}
           </div>
         </div>
         <div
