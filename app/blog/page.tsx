@@ -65,7 +65,7 @@ export default function Blog() {
               />
               <div className="p-6">
                 <h2 className="text-3xl font-semibold text-purple-700 underline decoration-purple-400 decoration-4 mb-4 drop-shadow-md">
-                  Competing at Battle Mountain!
+                  Competing Mount Battle!
                 </h2>
                 <p className="text-gray-700 mb-4">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
