@@ -84,15 +84,25 @@ export default function Outreach() {
             <h2 className="text-center font-Sensation underline  decoration-green decoration-4">
                 CHOOSE
             </h2>
+            <div className="p-3">
+            <Image
+                src="/outreach_3.png"
+                width="300"
+                height="200"
+                alt="Outreach Form"
+                layout="responsive"
+            />
+        </div>
+
         </div>
         <br></br>
         <br></br>
         <div className="flex flex-row justify-center items-center">
-                <Button
-                    hrefString="/"
-                    text="Contact Us"
-                    theme="dark"
-                />
+            <Button
+                hrefString="/"
+                text="Contact Us"
+                theme="dark"
+            />
         </div>
         <br></br>
         </PageSection>
