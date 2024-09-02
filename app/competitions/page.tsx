@@ -8,7 +8,7 @@ export default function Competitions() {
       <PageSection colourWay="dark">
         <div className="font-Aldrich bg-black text-white min-h-screen">
           {/* Header */}
-          <div className="text-center">
+          <div className="text-center mb-10">
             <h1 className="text-4xl text-[#acf601]">Competitions</h1>
           </div>
 
@@ -16,10 +16,10 @@ export default function Competitions() {
           <div className="flex flex-wrap justify-center items-center mb-10 px-5">
             <div className="w-full lg:w-1/2 p-5">
               <Image
-                src="/competitionImage1.png"
-                layout="responsive"
-                height={50}
-                width={100}
+                src="/competitionImage1.jpg"
+                layout="intrinsic"
+                height={400}
+                width={800}
                 objectFit="cover"
                 alt="World Human Powered Speed Challenge"
               />
@@ -61,14 +61,10 @@ export default function Competitions() {
                 Ford Proving Grounds in You Yangs, Victoria. The current
                 Australian record for this competition is 96.68 km/h.
               </p>
-              <a
-                href="https://www.ozhpv.org.au/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button className="mt-5 px-5 py-2 rounded-md bg-greenbutton text-black hover:bg-green-700">
-                  Read More
-                </button>
+              <a href="https://www.ozhpv.org.au/" target="_blank" rel="noopener noreferrer">
+              <button className="mt-5 px-5 py-2 rounded-md bg-greenbutton text-black hover:bg-green-700">
+                Read More
+              </button>
               </a>
             </div>
             <div className="w-full lg:w-1/2 p-5">
