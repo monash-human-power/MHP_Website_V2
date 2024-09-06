@@ -11,17 +11,24 @@ export default function Outreach() {
                 <h1 className="text-center">
                     OUTREACH
                 </h1>
-                <br></br>
-                <h2 className="text-center">
-                    Our Vision
-                </h2>
-                <br></br>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
-                    esse cillum dolore eu fugiat nulla pariatur.
-                </p>
+                <div style={{
+                    padding: '30px'
+                }}>
+                    <h2 className="text-center">
+                        Our Vision
+                    </h2>
+                </div>
+
+                <div style={{
+                    padding: '20px'
+                }}>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+                        esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </div>  
             </div>
             <br></br>
             <div className="flex flex-row justify-center items-center">
@@ -45,9 +52,9 @@ export default function Outreach() {
             />
         </div>
 
-        <PageSection colourWay="light">
+        <PageSection colourWay="dark">
             <div>
-                <h2 className="font-Sensation underline  decoration-purple decoration-4">
+                <h2 className="font-Sensation underline  decoration-green decoration-4">
                     OUR PROGRAM
                 </h2>
             </div>
@@ -61,7 +68,7 @@ export default function Outreach() {
                 <Button
                     hrefString="/"
                     text="See Options"
-                    theme="light"
+                    theme="dark"
                 />
             </div>
             <br></br>
@@ -80,26 +87,49 @@ export default function Outreach() {
         </div>
 
         <PageSection colourWay="dark">
-        <div>
+        <div 
+            style={{
+            paddingTop: '20px',
+            paddingBottom: '50px',
+            margin: '0 auto',
+            textAlign: 'center'
+            }}>
             <h2 className="text-center font-Sensation underline  decoration-green decoration-4">
-                CHOOSE
+                TESTIMONIALS
             </h2>
-            <div className="p-3">
-            <Image
-                src="/outreach_3.png"
-                width="300"
-                height="200"
-                alt="Outreach Form"
-                layout="responsive"
-            />
+            <br></br>
+            <div className="grid grid-cols-2 gap-20">
+                <div className="text-left">
+                    <p>
+                        "The kids loved it and the others that missed out were super jealous!"
+                        <br></br>
+                        - STEM Teacher at Westall Secondary College
+                    </p>
+                </div>
+                <div className="text-left">
+                    <p>
+                        "It was really fun! Had a blast being creative while teaching important STEM skills."
+                        <br></br>
+                        - Blake Haydon (MHP member)
+                    </p>
+                </div>
+                
+            </div>
         </div>
+        <br></br>
+        <br></br>
 
-        </div>
-        <br></br>
-        <br></br>
-        <div className="flex flex-row justify-center items-center">
+        <div style={{
+            borderTop: '2px solid #B3B3B3',  // Top border
+            borderBottom: '2px solid #B3B3B3', // Bottom border
+            padding: '70px',
+            width: '90%',
+            margin: '0 auto',
+            textAlign: 'center'
+            }}>
+
             <Button
-                hrefString="/"
+                hrefString="/contact"
                 text="Contact Us"
                 theme="dark"
             />
