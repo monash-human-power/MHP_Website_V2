@@ -47,7 +47,7 @@ export default function Outreach() {
         </div>
       </PageSection>
 
-      <div className="max-h-80 items-center overflow-hidden">
+      <div className="items-center overflow-hidden mx-auto">
         <Image
           src="/outreach_1.jpg"
           width="800"
@@ -55,7 +55,7 @@ export default function Outreach() {
           objectFit="cover"
           alt="Epsom Primary School"
           layout="responsive"
-          className="top-1/2 transform -translate-y-1/4"
+          // className="top-1/2 transform -translate-y-1/4"
         />
       </div>
 
@@ -91,11 +91,11 @@ export default function Outreach() {
             paddingBottom: "20px",
           }}
         >
-          <Button hrefString="/" text="See Options" theme="dark" />
+          <Button hrefString="/programs" text="See Options" theme="dark" />
         </div>
       </PageSection>
 
-      <div className="max-h-80 items-center overflow-hidden">
+      <div className="items-center overflow-hidden">
         <Image
           src="/outreach_2.jpg"
           width="800"
@@ -103,7 +103,7 @@ export default function Outreach() {
           objectFit="cover"
           alt="Robogals Engage Engineer"
           layout="responsive"
-          className="transform -translate-y-1/4"
+          // className="transform -translate-y-1/4"
         />
       </div>
 
