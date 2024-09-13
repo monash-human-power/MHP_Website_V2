@@ -84,6 +84,8 @@ export default function TeamPage() {
           </div>
         </section>
       </PageSection>
+
+      <ArrowDown color="black" />
       {/* Sub-teams navigation */}
       <PageSection colourWay="light">
         <section className="flex justify-center items-center bg-gray-900">

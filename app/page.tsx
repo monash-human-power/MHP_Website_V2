@@ -69,7 +69,6 @@ export default function Page() {
         </p>
         <Button hrefString="/bikes" text="Learn More" theme="light" />
       </PageSection>
-      <ArrowDown color="white" />
 
       <PageSection colourWay="dark">
         <h2 className="text-center font-Aldrich underline decoration-greenbutton decoration-4">
