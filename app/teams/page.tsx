@@ -87,14 +87,20 @@ export default function TeamPage() {
       {/* Sub-teams navigation */}
       <PageSection colourWay="light">
         <section className="flex justify-center items-center bg-gray-900">
-          <button className="p-4 text-2xl" onClick={prevTeam}>
-            {"<"}
+          <button
+            onClick={prevTeam}
+            className="z-10 p-4 bg-gray-300 rounded-full hover:bg-gray-400 text-4xl w-16 h-16 flex items-center justify-center"
+          >
+            &larr;
           </button>
           <h2 className="text-3xl font-bold mx-8 underline decoration-blue-500">
             {currentTeam.name}
           </h2>
-          <button className="p-4 text-2xl" onClick={nextTeam}>
-            {">"}
+          <button
+            onClick={nextTeam}
+            className="z-10 p-4 bg-gray-300 rounded-full hover:bg-gray-400 text-4xl w-16 h-16 flex items-center justify-center"
+          >
+            &rarr;
           </button>
         </section>
 
