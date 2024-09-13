@@ -46,19 +46,19 @@ export default function Outreach() {
           <Button hrefString="/" text="Learn More" theme="dark" />
         </div>
       </PageSection>
-
-      <div className="items-center overflow-hidden mx-auto">
-        <Image
-          src="/outreach_1.jpg"
-          width="800"
-          height="300"
-          objectFit="cover"
-          alt="Epsom Primary School"
-          layout="responsive"
-          // className="top-1/2 transform -translate-y-1/4"
-        />
-      </div>
-
+      <PageSection colourWay="dark">
+        <div className="items-center overflow-hidden mx-auto">
+          <Image
+            src="/outreach_1.jpg"
+            width="800"
+            height="300"
+            objectFit="cover"
+            alt="Epsom Primary School"
+            layout="responsive"
+            // className="top-1/2 transform -translate-y-1/4"
+          />
+        </div>
+      </PageSection>
       <PageSection colourWay="dark">
         <div
           style={{
@@ -94,19 +94,19 @@ export default function Outreach() {
           <Button hrefString="/programs" text="See Options" theme="dark" />
         </div>
       </PageSection>
-
-      <div className="items-center overflow-hidden">
-        <Image
-          src="/outreach_2.jpg"
-          width="800"
-          height="300"
-          objectFit="cover"
-          alt="Robogals Engage Engineer"
-          layout="responsive"
-          // className="transform -translate-y-1/4"
-        />
-      </div>
-
+      <PageSection colourWay="dark">
+        <div className="items-center overflow-hidden">
+          <Image
+            src="/outreach_2.jpg"
+            width="800"
+            height="300"
+            objectFit="cover"
+            alt="Robogals Engage Engineer"
+            layout="responsive"
+            // className="transform -translate-y-1/4"
+          />
+        </div>
+      </PageSection>
       <PageSection colourWay="dark">
         <div>
           <h2 className="text-center font-Sensation underline  decoration-green decoration-4">
