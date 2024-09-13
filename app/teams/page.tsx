@@ -49,11 +49,13 @@ export default function TeamPage() {
             </div>
 
             <h2 className="mt-4 mx-20">
-              We at Monash Human Power are a diverse team of Monash University
+              We, at Monash Human Power are a diverse team of Monash University
               students, bringing together expertise from various engineering
               disciplines to design cutting-edge human-powered vehicles.
             </h2>
-            <h3 className="mt-2">Learn more about our sub-teams below!</h3>
+            <h3 className="mt-2 text-greenbutton">
+              Learn more about our sub-teams below!
+            </h3>
           </div>
         </section>
       </PageSection>
