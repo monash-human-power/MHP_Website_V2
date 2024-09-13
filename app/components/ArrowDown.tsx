@@ -7,8 +7,7 @@ function ArrowDown(props: { color: string }) {
       viewBox="0 0 100 100"
       preserveAspectRatio="none"
     >
-      <div className="text-black">YOUR MOM</div>
-      <polygon fill={props.color} stroke="#ACF601" points="0,0 50,100 100,0" />
+      <polygon fill={props.color} points="0,0 50,100 100,0" />
     </svg>
   );
 }

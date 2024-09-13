@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/navBar";
 import ImageCarousel from "./components/ImageCarousel";
 import SponsorshipCarousel from "./components/SponsorCarousel";
 import sponsorData from "../public/JSONs/sponsors.json";
+import ArrowDown from "./components/ArrowDown";
 
 const images = [
   "/battle_mountain_group.jpg",
@@ -68,6 +69,8 @@ export default function Page() {
         </p>
         <Button hrefString="/bikes" text="Learn More" theme="light" />
       </PageSection>
+      <ArrowDown color="white" />
+
       <PageSection colourWay="dark">
         <h2 className="text-center font-Aldrich underline decoration-greenbutton decoration-4">
           Our Values
