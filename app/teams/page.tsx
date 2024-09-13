@@ -85,7 +85,7 @@ export default function TeamPage() {
       </PageSection>
 
       {/* Sub-teams navigation */}
-      <PageSection colourWay="light">
+      <PageSection colourWay="dark">
         <section className="flex justify-center items-center bg-gray-900">
           <button
             onClick={prevTeam}
@@ -93,7 +93,7 @@ export default function TeamPage() {
           >
             &larr;
           </button>
-          <h2 className="text-3xl font-bold mx-8 underline decoration-blue-500">
+          <h2 className="text-3xl font-bold mx-8 underline decoration-greenbutton">
             {currentTeam.name}
           </h2>
           <button
