@@ -1,7 +1,6 @@
 import Button from "../components/Buttons";
 import PageSection from "../components/PageSection";
 import Image from "next/image";
-import Page from "../page";
 
 export default function Outreach() {
   return (
@@ -43,7 +42,7 @@ export default function Outreach() {
             paddingBottom: "20px",
           }}
         >
-          <Button hrefString="/" text="Learn More" theme="dark" />
+          <Button hrefString="#ourProgram" text="Learn More" theme="dark" />
         </div>
       </PageSection>
       <PageSection colourWay="dark">
@@ -58,6 +57,7 @@ export default function Outreach() {
             // className="top-1/2 transform -translate-y-1/4"
           />
         </div>
+        <section id="ourProgram"></section>
       </PageSection>
       <PageSection colourWay="dark">
         <div
