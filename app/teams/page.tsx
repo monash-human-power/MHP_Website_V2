@@ -32,6 +32,30 @@ export default function TeamPage() {
   // Get the current team data
   const currentTeam = teamData.sub_teams[currentTeamIndex];
 
+  // Helper function to determine the layout for the last row
+  const getLastRowClasses = (members, index) => {
+    const membersPerRow = 3;
+    const totalMembers = members.length;
+    const isLastRow =
+      index >= totalMembers - (totalMembers % membersPerRow || membersPerRow);
+
+    if (!isLastRow) return "";
+
+    const membersInLastRow = totalMembers % membersPerRow;
+
+    if (membersInLastRow === 1 && index === totalMembers - 1) {
+      return "lg:col-start-2 lg:col-end-3"; // Center the single member
+    } else if (
+      membersInLastRow === 2 &&
+      (index === totalMembers - 2 || index === totalMembers - 1)
+    ) {
+      return index === totalMembers - 2
+        ? "lg:col-start-1 lg:col-end-2"
+        : "lg:col-start-3 lg:col-end-4"; // First and third column
+    }
+    return ""; // For rows with 3 members, default layout applies
+  };
+
   return (
     <>
       <PageSection colourWay="dark">
@@ -102,7 +126,9 @@ export default function TeamPage() {
 
       {/* Team Leads and Members Section */}
       <PageSection colourWay="dark">
-        <section className={`bg-gray-800 ${fadeClass}`}>
+        <section
+          className={`bg-gray-800 ${fadeClass} bg-[url('/teams_background.png')]  bg-top bg-no-repeat`}
+        >
           <h2 className="text-center text-4xl font-bold mb-2">Team Members</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 px-8 mb-12">
             {currentTeam.Team_Leads?.map((lead, index) => (
@@ -117,7 +143,9 @@ export default function TeamPage() {
                   height={200}
                   className="mx-auto"
                 />
-                <h4 className="text-xl font-bold mt-4">{lead.name}</h4>
+                <h4 className="text-xl font-bold mt-4 text-greenbutton">
+                  {lead.name}
+                </h4>
                 <p>{lead.role}</p>
                 <p>{lead.department}</p>
               </div>
@@ -129,7 +157,10 @@ export default function TeamPage() {
             {currentTeam.members?.map((member, index) => (
               <div
                 key={index}
-                className="bg-gray-900 p-4 rounded-lg text-center"
+                className={`bg-gray-900 p-4 rounded-lg text-center ${getLastRowClasses(
+                  currentTeam.members,
+                  index
+                )}`}
               >
                 <Image
                   src={member.image} // Load team member's image
@@ -138,7 +169,9 @@ export default function TeamPage() {
                   height={150}
                   className="rounded-full mx-auto"
                 />
-                <h4 className="text-xl font-bold mt-4">{member.name}</h4>
+                <h4 className="text-l font-bold mt-4 text-greenbutton">
+                  {member.name}
+                </h4>
                 <p>{member.role}</p>
                 <p>{member.department}</p>
               </div>
