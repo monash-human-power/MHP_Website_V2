@@ -30,3 +30,30 @@
     @apply font-Sansation;
   }
 }
+
+
+@layer components {
+    .line-container::before,
+    .line-container::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 50%;
+      background-color: #ACF601;
+    }
+  
+    .line-container::before {
+      left: 0;
+      top: 0;
+      transform: rotate(5deg); /* Adjust angle */
+      transform-origin: left;
+    }
+  
+    .line-container::after {
+      right: 0;
+      top: 0;
+      transform: rotate(-5deg); /* Adjust angle */
+      transform-origin: right;
+    }
+  }
+  

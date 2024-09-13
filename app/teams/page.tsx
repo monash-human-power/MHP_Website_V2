@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import PageSection from "../components/PageSection";
 import teamData from "../../public/JSONs/teams.json"; // Importing the JSON file
+import ArrowDown from "../components/ArrowDown";
 
 export default function TeamPage() {
   const [currentTeamIndex, setCurrentTeamIndex] = useState(0);
@@ -83,9 +84,8 @@ export default function TeamPage() {
           </div>
         </section>
       </PageSection>
-
       {/* Sub-teams navigation */}
-      <PageSection colourWay="dark">
+      <PageSection colourWay="light">
         <section className="flex justify-center items-center bg-gray-900">
           <button
             onClick={prevTeam}
@@ -129,6 +129,8 @@ export default function TeamPage() {
           </div>
         </section>
       </PageSection>
+
+      <ArrowDown color="white" />
 
       {/* Team Leads and Members Section */}
       <PageSection colourWay="dark">
