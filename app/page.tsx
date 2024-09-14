@@ -69,7 +69,7 @@ export default function Page() {
         <Button hrefString="/bikes" text="Learn More" theme="light" />
       </PageSection>
       <PageSection colourWay="dark">
-        <h2 className="text-center font-Aldrich underline decoration-greenbutton decoration-4">
+        <h2 className="text-center font-Aldrich underline decoration-green decoration-4">
           Our Values
         </h2>
 
