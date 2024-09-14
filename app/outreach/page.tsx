@@ -5,33 +5,35 @@ import Image from "next/image";
 export default function Outreach() {
   return (
     <>
+      {/* Our Vision Section */}
       <PageSection colourWay="dark">
         <div>
-          <h1 className="text-center">OUTREACH</h1>
+          <h1 className="text-center text-5xl font-bold">OUTREACH</h1>
           <div
             style={{
               padding: "30px",
             }}
           >
-            <h2 className="text-center">Our Vision</h2>
+            <h2 className="text-center text-3xl font-Sensation underline decoration-green decoration-4">
+              Our Vision
+            </h2>
           </div>
-
           <div
-            className="text-center"
             style={{
               paddingTop: "20px",
-              paddingLeft: "40px",
-              paddingRight: "40px",
               paddingBottom: "20px",
+              width: "90%",
+              margin: "0 auto",
+              textAlign: "center",
             }}
           >
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
+            <p className="text-xl">
+              Monash Human Power (MHP) is committed to sharing their passion for
+              engineering and innovation through an enriching school outreach
+              program. Tailored for students of various age groups, these
+              workshops offer hands-on learning experiences that bring STEM
+              (Science, Technology, Engineering, and Mathematics) to life in
+              exciting and practical ways.
             </p>
           </div>
         </div>
@@ -42,10 +44,13 @@ export default function Outreach() {
             paddingBottom: "20px",
           }}
         >
-          <Button hrefString="#ourProgram" text="Learn More" theme="dark" />
+          {/* Learn More button links to Our Programs section */}
+          <Button hrefString="#ourPrograms" text="Learn More" theme="dark" />
         </div>
+
+        {/* Epsom Primary School */}
       </PageSection>
-      <PageSection colourWay="dark">
+      <section className="relative text-center py-5 animate-fadeIn">
         <div className="items-center overflow-hidden mx-auto">
           <Image
             src="/outreach_1.jpg"
@@ -57,31 +62,66 @@ export default function Outreach() {
             // className="top-1/2 transform -translate-y-1/4"
           />
         </div>
-        <section id="ourProgram"></section>
-      </PageSection>
+        <section id="ourPrograms"></section>
+      </section>
+
+      {/* Our Programs section */}
       <PageSection colourWay="dark">
         <div
           style={{
-            padding: "30px",
+            paddingTop: "20px",
+            paddingBottom: "20px",
+            width: "90%",
+            margin: "0 auto",
           }}
         >
-          <h2 className="font-Sensation underline  decoration-green decoration-4">
-            Our Program
+          <h2 className="text-3xl font-Sensation underline decoration-green decoration-4">
+            Our Programs
           </h2>
         </div>
         <div
+          className="text-xl"
           style={{
             paddingTop: "20px",
-            paddingLeft: "40px",
-            paddingRight: "40px",
-            paddingBottom: "40px",
+            paddingBottom: "20px",
+            width: "90%",
+            margin: "0 auto",
           }}
         >
           <p>
-            Based on the Victorian Curriculum's Cross-curriculum Priority:
-            Learning about Sustainability, these hands-on STEM lessons guide
-            secondary students through a systems engineering approach that takes
-            into account the aerodynamic and eco-friendly aspects of their HPV.
+            Our programs cover core concepts in areas like aerodynamics,
+            mechanical design, and rider development—each offering a unique
+            glimpse into the real-world applications of STEM.
+          </p>
+          <br></br>
+          <p>
+            For example, in the Aerodynamics Workshop, students learn how
+            airflow impacts speed and efficiency by designing and testing their
+            own aerodynamic models in a mini wind tunnel. They experiment with
+            different shapes, gaining insights into how engineers use
+            aerodynamics to create faster, more efficient vehicles.
+          </p>
+          <br></br>
+          <p>
+            The Rider Development Workshop introduces students to the science
+            behind human-powered racing, teaching them how to maximise energy
+            output and optimise race strategies through gear changes and racing
+            line techniques.
+          </p>
+          <br></br>
+          <p>
+            Through these workshops, MHP makes STEM approachable and engaging
+            for younger students, showing them how mathematics, physics, and
+            engineering can solve real-world challenges. By offering interactive
+            design sessions and testing phases, MHP gives students the chance to
+            apply their creativity, learn problem-solving skills, and experience
+            the thrill of innovation firsthand. These outreach efforts not only
+            spark curiosity but also help build a pipeline of future engineers,
+            scientists, and innovators.
+          </p>
+          <br></br>
+          <p>
+            You can enquire here to organise a workshop with your own school.
           </p>
         </div>
         <div
@@ -91,41 +131,48 @@ export default function Outreach() {
             paddingBottom: "20px",
           }}
         >
+          {/* See Options button links to separate Programs page */}
           <Button hrefString="/programs" text="See Options" theme="dark" />
         </div>
       </PageSection>
-      <PageSection colourWay="dark">
+
+      {/* Wind Tunnel Model Image */}
+      <section className="relative text-center py-5 animate-fadeIn">
         <div className="items-center overflow-hidden">
           <Image
             src="/outreach_2.jpg"
             width="800"
             height="300"
             objectFit="cover"
-            alt="Robogals Engage Engineer"
+            alt="Wind Tunnel Model Image"
             layout="responsive"
             // className="transform -translate-y-1/4"
           />
         </div>
-      </PageSection>
+      </section>
+
+      {/* Testimonials Section */}
       <PageSection colourWay="dark">
         <div>
-          <h2 className="text-center font-Sensation underline  decoration-green decoration-4">
+          <h2 className="text-center text-3xl font-Sensation underline decoration-green decoration-4">
             Testimonials
           </h2>
           <div
-            className="grid grid-cols-2 gap-20"
+            className="text-center text-xl grid grid-cols-2 gap-20"
             style={{
-              paddingTop: "50px",
+              paddingTop: "40px",
+              paddingLeft: "10%",
+              paddingRight: "10%",
             }}
           >
-            <div className="text-center">
+            <div>
               <p>
                 "The kids loved it and the others that missed out were super
                 jealous!"
                 <br></br>- STEM Teacher at Westall Secondary College
               </p>
             </div>
-            <div className="text-center">
+            <div>
               <p>
                 "It was really fun! Had a blast being creative while teaching
                 important STEM skills."
@@ -135,6 +182,8 @@ export default function Outreach() {
           </div>
         </div>
       </PageSection>
+
+      {/* Find Out More Section */}
       <PageSection colourWay="dark">
         <div
           style={{
@@ -147,15 +196,15 @@ export default function Outreach() {
         >
           <div
             style={{
-              padding: "30px",
+              padding: "40px",
             }}
           >
-            <h2 className="text-center font-Sensation underline  decoration-green decoration-4">
-              Find out more
+            <h2 className="text-center text-3xl font-Sensation underline decoration-green decoration-4">
+              Find out more!
             </h2>
           </div>
           <div
-            className="text-center"
+            className="text-center text-xl"
             style={{
               padding: "20px",
             }}
