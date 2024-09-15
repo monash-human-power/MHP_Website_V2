@@ -6,15 +6,16 @@ export default function Outreach() {
   return (
     <>
       {/* Battle Mountain Group Image */}
-      <section className="relative text-center py-5 animate-fadeIn">
-        <div className="items-center overflow-hidden mx-auto">
+      <section className="animate-fadeIn">
+        <div className="w-dvh h-96 items-center overflow-hidden mx-auto">
           <Image
             src="/battle_mountain_group.jpg"
             width="800"
             height="300"
             objectFit="cover"
-            alt="Epsom Primary School"
+            alt="Battle Mountain Group"
             layout="responsive"
+            className="top-1/2  transform -translate-y-1/3"
           />
         </div>
       </section>
@@ -73,7 +74,6 @@ export default function Outreach() {
             style={{
               paddingTop: "40px",
               paddingLeft: "10%",
-              paddingRight: "10%",
             }}
           >
             <h2 className="text-left text-3xl font-Sensation underline decoration-green decoration-4">
@@ -107,11 +107,11 @@ export default function Outreach() {
               }}
             >
               <Image
-                src="/outreach_1.jpg"
-                width="800"
-                height="300"
+                src="/join_rider_dev.jpg"
+                width="200"
+                height="100"
                 objectFit="cover"
-                alt="Epsom Primary School"
+                alt="Join Rider Development"
                 layout="responsive"
                 style={{
                   borderRadius: 30,
@@ -131,29 +131,17 @@ export default function Outreach() {
               <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
                 Responsible For
               </h2>
-              <li>
-                abc
-              </li>
-              <li>
-                abc
-              </li>
-              <li>
-                abc
-              </li>
+              <li>abc</li>
+              <li>abc</li>
+              <li>abc</li>
             </div>
             <div>
               <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
                 Key Skills
               </h2>
-              <li>
-                abc
-              </li>
-              <li>
-                abc
-              </li>
-              <li>
-                abc
-              </li>
+              <li>abc</li>
+              <li>abc</li>
+              <li>abc</li>
             </div>
           </div>
         </div>
@@ -172,16 +160,15 @@ export default function Outreach() {
           <div
             style={{
               paddingTop: "40px",
-              paddingLeft: "10%",
               paddingRight: "10%",
             }}
           >
-            <h2 className="text-left text-3xl font-Sensation underline decoration-green decoration-4">
-              Rider Development
+            <h2 className="text-right text-3xl font-Sensation underline decoration-green decoration-4">
+              Aerodynamics
             </h2>
           </div>
           <div
-            className="text-left text-xl grid grid-cols-2 gap-10"
+            className="text-right text-xl grid grid-cols-2 gap-10"
             style={{
               paddingTop: "40px",
               paddingBottom: "60px",
@@ -189,16 +176,6 @@ export default function Outreach() {
               paddingRight: "5%",
             }}
           >
-            <div>
-              <p>
-                The Rider Development subteam focuses on maximising rider
-                performance. Comprised of riders and technical members, they
-                arrange cycling and strength training, develop personal power
-                plans, and organise competency training for recumbent bikes.
-                They also coordinate testing days at the Holden and Ford Proving
-                Grounds.
-              </p>
-            </div>
             <div
               style={{
                 justifyContent: "center",
@@ -207,53 +184,50 @@ export default function Outreach() {
               }}
             >
               <Image
-                src="/outreach_1.jpg"
+                src="/join_aerodynamics.jpg"
                 width="800"
                 height="300"
                 objectFit="cover"
-                alt="Epsom Primary School"
+                alt="Join Aerodynamics"
                 layout="responsive"
                 style={{
                   borderRadius: 30,
                 }}
               />
             </div>
+            <div>
+              <p>
+                The Aerodynamics subteam at MHP designs and tests aerodynamic
+                components like the external shell and wheel covers to reduce
+                drag and increase bike speed. They use computational fluid
+                dynamics (CFD) and experimental testing in the Monash Wind
+                Tunnel to make design choices that enhance bike performance.
+              </p>
+            </div>
           </div>
 
           <div
-            className="text-left text-xl grid grid-cols-2 gap-10"
+            className="text-right text-xl grid grid-cols-2 gap-10"
             style={{
               paddingLeft: "10%",
               paddingRight: "5%",
             }}
           >
             <div>
-              <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
+              <h2 className="text-right text-2xl font-Sensation underline decoration-green decoration-4">
                 Responsible For
               </h2>
-              <li>
-                abc
-              </li>
-              <li>
-                abc
-              </li>
-              <li>
-                abc
-              </li>
+              <li>abc</li>
+              <li>abc</li>
+              <li>abc</li>
             </div>
             <div>
-              <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
+              <h2 className="text-right text-2xl font-Sensation underline decoration-green decoration-4">
                 Key Skills
               </h2>
-              <li>
-                abc
-              </li>
-              <li>
-                abc
-              </li>
-              <li>
-                abc
-              </li>
+              <li>abc</li>
+              <li>abc</li>
+              <li>abc</li>
             </div>
           </div>
         </div>
@@ -273,11 +247,10 @@ export default function Outreach() {
             style={{
               paddingTop: "40px",
               paddingLeft: "10%",
-              paddingRight: "10%",
             }}
           >
             <h2 className="text-left text-3xl font-Sensation underline decoration-green decoration-4">
-              Rider Development
+              Chassis and Drivetrain
             </h2>
           </div>
           <div
@@ -291,12 +264,12 @@ export default function Outreach() {
           >
             <div>
               <p>
-                The Rider Development subteam focuses on maximising rider
-                performance. Comprised of riders and technical members, they
-                arrange cycling and strength training, develop personal power
-                plans, and organise competency training for recumbent bikes.
-                They also coordinate testing days at the Holden and Ford Proving
-                Grounds.
+                The Chassis & Drivetrain subteam designs and manufactures all
+                mechanical components, including the chassis and moving parts.
+                They model components using CAD software and verify their
+                strength through FEA testing or hand calculations. The team uses
+                Monash University resources for manufacturing, employing
+                techniques like welding, grinding, drilling, and turning.
               </p>
             </div>
             <div
@@ -307,11 +280,11 @@ export default function Outreach() {
               }}
             >
               <Image
-                src="/outreach_1.jpg"
+                src="/join_chassis_drivetrain.jpg"
                 width="800"
                 height="300"
                 objectFit="cover"
-                alt="Epsom Primary School"
+                alt="Join Chassis and Drivetrain"
                 layout="responsive"
                 style={{
                   borderRadius: 30,
@@ -331,29 +304,17 @@ export default function Outreach() {
               <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
                 Responsible For
               </h2>
-              <li>
-                abc
-              </li>
-              <li>
-                abc
-              </li>
-              <li>
-                abc
-              </li>
+              <li>abc</li>
+              <li>abc</li>
+              <li>abc</li>
             </div>
             <div>
               <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
                 Key Skills
               </h2>
-              <li>
-                abc
-              </li>
-              <li>
-                abc
-              </li>
-              <li>
-                abc
-              </li>
+              <li>abc</li>
+              <li>abc</li>
+              <li>abc</li>
             </div>
           </div>
         </div>
@@ -372,16 +333,15 @@ export default function Outreach() {
           <div
             style={{
               paddingTop: "40px",
-              paddingLeft: "10%",
               paddingRight: "10%",
             }}
           >
-            <h2 className="text-left text-3xl font-Sensation underline decoration-green decoration-4">
-              Rider Development
+            <h2 className="text-right text-3xl font-Sensation underline decoration-green decoration-4">
+              Operations
             </h2>
           </div>
           <div
-            className="text-left text-xl grid grid-cols-2 gap-10"
+            className="text-right text-xl grid grid-cols-2 gap-10"
             style={{
               paddingTop: "40px",
               paddingBottom: "60px",
@@ -389,16 +349,6 @@ export default function Outreach() {
               paddingRight: "5%",
             }}
           >
-            <div>
-              <p>
-                The Rider Development subteam focuses on maximising rider
-                performance. Comprised of riders and technical members, they
-                arrange cycling and strength training, develop personal power
-                plans, and organise competency training for recumbent bikes.
-                They also coordinate testing days at the Holden and Ford Proving
-                Grounds.
-              </p>
-            </div>
             <div
               style={{
                 justifyContent: "center",
@@ -407,53 +357,51 @@ export default function Outreach() {
               }}
             >
               <Image
-                src="/outreach_1.jpg"
+                src="/join_operations.jpg"
                 width="800"
                 height="300"
                 objectFit="cover"
-                alt="Epsom Primary School"
+                alt="Join Operations"
                 layout="responsive"
                 style={{
                   borderRadius: 30,
                 }}
               />
             </div>
+            <div>
+              <p>
+                The Operations subteam engages external stakeholders,
+                coordinates with sponsors, and markets MHP activities. They
+                organise events like the "Build a HPV" school outreach program,
+                promote STEM pathways, and support the technical team's bike
+                manufacturing. They are also involved in graphic design and
+                branding for MHP.
+              </p>
+            </div>
           </div>
 
           <div
-            className="text-left text-xl grid grid-cols-2 gap-10"
+            className="text-right text-xl grid grid-cols-2 gap-10"
             style={{
               paddingLeft: "10%",
               paddingRight: "5%",
             }}
           >
             <div>
-              <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
+              <h2 className="text-right text-2xl font-Sensation underline decoration-green decoration-4">
                 Responsible For
               </h2>
-              <li>
-                abc
-              </li>
-              <li>
-                abc
-              </li>
-              <li>
-                abc
-              </li>
+              <li>abc</li>
+              <li>abc</li>
+              <li>abc</li>
             </div>
             <div>
-              <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
+              <h2 className="text-right text-2xl font-Sensation underline decoration-green decoration-4">
                 Key Skills
               </h2>
-              <li>
-                abc
-              </li>
-              <li>
-                abc
-              </li>
-              <li>
-                abc
-              </li>
+              <li>abc</li>
+              <li>abc</li>
+              <li>abc</li>
             </div>
           </div>
         </div>
@@ -473,11 +421,10 @@ export default function Outreach() {
             style={{
               paddingTop: "40px",
               paddingLeft: "10%",
-              paddingRight: "10%",
             }}
           >
             <h2 className="text-left text-3xl font-Sensation underline decoration-green decoration-4">
-              Rider Development
+              Electrical
             </h2>
           </div>
           <div
@@ -491,12 +438,13 @@ export default function Outreach() {
           >
             <div>
               <p>
-                The Rider Development subteam focuses on maximising rider
-                performance. Comprised of riders and technical members, they
-                arrange cycling and strength training, develop personal power
-                plans, and organise competency training for recumbent bikes.
-                They also coordinate testing days at the Holden and Ford Proving
-                Grounds.
+                The Electrical subteam manages the bike's electrical and
+                software systems, including the camera and data acquisition
+                systems that enhance rider safety and performance. With no
+                windows on the fairing, the rider relies on these systems to
+                monitor surroundings. The setup includes Raspberry Pis,
+                microcontrollers, and sensors, along with custom software for
+                recording and analysing performance data from field tests.
               </p>
             </div>
             <div
@@ -507,11 +455,11 @@ export default function Outreach() {
               }}
             >
               <Image
-                src="/outreach_1.jpg"
+                src="/join_electrical.jpg"
                 width="800"
                 height="300"
                 objectFit="cover"
-                alt="Epsom Primary School"
+                alt="Join Electrical"
                 layout="responsive"
                 style={{
                   borderRadius: 30,
@@ -531,29 +479,17 @@ export default function Outreach() {
               <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
                 Responsible For
               </h2>
-              <li>
-                abc
-              </li>
-              <li>
-                abc
-              </li>
-              <li>
-                abc
-              </li>
+              <li>abc</li>
+              <li>abc</li>
+              <li>abc</li>
             </div>
             <div>
               <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
                 Key Skills
               </h2>
-              <li>
-                abc
-              </li>
-              <li>
-                abc
-              </li>
-              <li>
-                abc
-              </li>
+              <li>abc</li>
+              <li>abc</li>
+              <li>abc</li>
             </div>
           </div>
         </div>
@@ -574,16 +510,15 @@ export default function Outreach() {
           <div
             style={{
               paddingTop: "40px",
-              paddingLeft: "10%",
               paddingRight: "10%",
             }}
           >
-            <h2 className="text-left text-3xl font-Sensation underline decoration-green decoration-4">
-              Rider Development
+            <h2 className="text-right text-3xl font-Sensation underline decoration-green decoration-4">
+              Materials
             </h2>
           </div>
           <div
-            className="text-left text-xl grid grid-cols-2 gap-10"
+            className="text-right text-xl grid grid-cols-2 gap-10"
             style={{
               paddingTop: "40px",
               paddingBottom: "60px",
@@ -591,16 +526,6 @@ export default function Outreach() {
               paddingRight: "5%",
             }}
           >
-            <div>
-              <p>
-                The Rider Development subteam focuses on maximising rider
-                performance. Comprised of riders and technical members, they
-                arrange cycling and strength training, develop personal power
-                plans, and organise competency training for recumbent bikes.
-                They also coordinate testing days at the Holden and Ford Proving
-                Grounds.
-              </p>
-            </div>
             <div
               style={{
                 justifyContent: "center",
@@ -609,53 +534,51 @@ export default function Outreach() {
               }}
             >
               <Image
-                src="/outreach_1.jpg"
+                src="/join_materials.jpg"
                 width="800"
                 height="300"
                 objectFit="cover"
-                alt="Epsom Primary School"
+                alt="Join Materials"
                 layout="responsive"
                 style={{
                   borderRadius: 30,
                 }}
               />
             </div>
+            <div>
+              <p>
+                The Materials subteam prototypes and manufactures the fairing,
+                focusing on optimizing its design for aerodynamics and rider
+                safety. They research methods and materials, currently using a
+                resin infusion technique with epoxy resin and carbon fiber. They
+                also use power tools, surface finishing, and composite creation
+                to produce the fairing.
+              </p>
+            </div>
           </div>
 
           <div
-            className="text-left text-xl grid grid-cols-2 gap-10"
+            className="text-right text-xl grid grid-cols-2 gap-10"
             style={{
               paddingLeft: "10%",
               paddingRight: "5%",
             }}
           >
             <div>
-              <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
+              <h2 className="text-right text-2xl font-Sensation underline decoration-green decoration-4">
                 Responsible For
               </h2>
-              <li>
-                abc
-              </li>
-              <li>
-                abc
-              </li>
-              <li>
-                abc
-              </li>
+              <li>abc</li>
+              <li>abc</li>
+              <li>abc</li>
             </div>
             <div>
-              <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
+              <h2 className="text-right text-2xl font-Sensation underline decoration-green decoration-4">
                 Key Skills
               </h2>
-              <li>
-                abc
-              </li>
-              <li>
-                abc
-              </li>
-              <li>
-                abc
-              </li>
+              <li>abc</li>
+              <li>abc</li>
+              <li>abc</li>
             </div>
           </div>
         </div>
