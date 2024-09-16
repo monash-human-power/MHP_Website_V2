@@ -85,9 +85,8 @@ export default function TeamPage() {
         </section>
       </PageSection>
 
-      <ArrowDown color="black" />
       {/* Sub-teams navigation */}
-      <PageSection colourWay="light">
+      <PageSection colourWay="dark">
         <section className="flex justify-center items-center bg-gray-900">
           <button
             onClick={prevTeam}
@@ -132,7 +131,7 @@ export default function TeamPage() {
         </section>
       </PageSection>
 
-      <ArrowDown color="white" />
+      <ArrowDown color="black" />
 
       {/* Team Leads and Members Section */}
       <PageSection colourWay="dark">

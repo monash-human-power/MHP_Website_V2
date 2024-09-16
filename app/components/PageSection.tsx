@@ -26,7 +26,7 @@ export default function PageSection({ colourWay, children }: PageSectionProps) {
           }
         });
       },
-      { threshold: 0.1 } // Trigger when 10% of the section is visible
+      { threshold: 0.05 }
     );
 
     if (sectionRef.current) {
@@ -45,7 +45,7 @@ export default function PageSection({ colourWay, children }: PageSectionProps) {
       ref={sectionRef}
       className={`${sectionThemes[colourWay]} ${
         isVisible ? "animate-fadeIn" : "opacity-0"
-      }`} // Apply fade-in animation when visible
+      }`}
     >
       {children}
     </div>
