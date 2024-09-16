@@ -7,8 +7,8 @@ interface PageSectionProps {
 }
 
 const sectionThemes = {
-  light: "position-relative bg-white text-black p-12 w-full z-0",
-  dark: "position-relative bg-black text-white p-12 w-full z-0",
+  light: "position-relative bg-white text-black p-6 w-full z-0",
+  dark: "position-relative bg-black text-white p-6 w-full z-0",
 };
 
 export default function PageSection({ colourWay, children }: PageSectionProps) {

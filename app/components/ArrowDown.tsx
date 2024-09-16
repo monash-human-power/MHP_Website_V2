@@ -4,7 +4,7 @@ function ArrowDown(props: { color: string }) {
   return (
     <div className={props.color === "white" ? "bg-black" : "bg-greenbutton"}>
       <svg
-        className="w-full h-12 mt-[-1px] z-0"
+        className="flex w-full h-12 mt-[-1px] z-0"
         viewBox="0 0 100 100"
         preserveAspectRatio="none"
       >

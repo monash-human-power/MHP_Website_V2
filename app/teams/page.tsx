@@ -60,10 +60,10 @@ export default function TeamPage() {
   return (
     <>
       <PageSection colourWay="dark">
-        <section className="relative text-center py-5 animate-fadeIn">
+        <section className="relative text-center">
           <div className="relative z-10">
             <h1 className="text-5xl font-bold">Meet our team</h1>
-            <div className="flex justify-center items-center mt-6">
+            <div className="flex justify-center items-center mt-2">
               <Image
                 src="/teams_image_1.png"
                 alt="Team photo"
@@ -73,7 +73,7 @@ export default function TeamPage() {
               />
             </div>
 
-            <h2 className="mt-4 mx-20">
+            <h2 className="mt-2 mx-20">
               We, at Monash Human Power are a diverse team of Monash University
               students, bringing together expertise from various engineering
               disciplines to design cutting-edge human-powered vehicles.
@@ -84,6 +84,7 @@ export default function TeamPage() {
           </div>
         </section>
       </PageSection>
+      <ArrowDown color="black" />
 
       {/* Sub-teams navigation */}
       <PageSection colourWay="dark">
@@ -130,8 +131,6 @@ export default function TeamPage() {
           </div>
         </section>
       </PageSection>
-
-      <ArrowDown color="black" />
 
       {/* Team Leads and Members Section */}
       <PageSection colourWay="dark">
