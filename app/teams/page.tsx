@@ -131,6 +131,7 @@ export default function TeamPage() {
           </div>
         </section>
       </PageSection>
+      <ArrowDown color="black" />
 
       {/* Team Leads and Members Section */}
       <PageSection colourWay="dark">
