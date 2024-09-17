@@ -104,6 +104,9 @@ export default function Outreach() {
                 justifyContent: "center",
                 alignItems: "center",
                 display: "flex",
+                margin: "0 auto",
+                maxWidth: "40%",
+                objectFit: "contain",
               }}
             >
               <Image
@@ -208,6 +211,9 @@ export default function Outreach() {
                 justifyContent: "center",
                 alignItems: "center",
                 display: "flex",
+                margin: "0 auto",
+                maxWidth: "70%",
+                objectFit: "contain",
               }}
             >
               <Image
@@ -328,6 +334,9 @@ export default function Outreach() {
                 justifyContent: "center",
                 alignItems: "center",
                 display: "flex",
+                margin: "0 auto",
+                maxWidth: "70%",
+                objectFit: "contain",
               }}
             >
               <Image
@@ -429,6 +438,9 @@ export default function Outreach() {
                 justifyContent: "center",
                 alignItems: "center",
                 display: "flex",
+                margin: "0 auto",
+                maxWidth: "70%",
+                objectFit: "contain",
               }}
             >
               <Image
@@ -554,6 +566,9 @@ export default function Outreach() {
                 justifyContent: "center",
                 alignItems: "center",
                 display: "flex",
+                margin: "0 auto",
+                maxWidth: "70%",
+                objectFit: "contain",
               }}
             >
               <Image
@@ -659,6 +674,9 @@ export default function Outreach() {
                 justifyContent: "center",
                 alignItems: "center",
                 display: "flex",
+                margin: "0 auto",
+                maxWidth: "70%",
+                objectFit: "contain",
               }}
             >
               <Image
