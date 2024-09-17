@@ -32,29 +32,6 @@ export default function TeamPage() {
   // Get the current team data
   const currentTeam = teamData.sub_teams[currentTeamIndex];
 
-  // Helper function to determine the layout for the last row
-  const getLastRowClasses = (members, index) => {
-    const membersPerRow = 3;
-    const totalMembers = members.length;
-    const isLastRow =
-      index >= totalMembers - (totalMembers % membersPerRow || membersPerRow);
-
-    if (!isLastRow) return "";
-
-    const membersInLastRow = totalMembers % membersPerRow;
-
-    if (membersInLastRow === 1 && index === totalMembers - 1) {
-      return "lg:col-start-2 lg:col-end-3"; // Center the single member
-    } else if (
-      membersInLastRow === 2 &&
-      (index === totalMembers - 2 || index === totalMembers - 1)
-    ) {
-      return index === totalMembers - 2
-        ? "lg:col-start-1 lg:col-end-2"
-        : "lg:col-start-3 lg:col-end-4"; // First and third column
-    }
-    return ""; // For rows with 3 members, default layout applies
-  };
 
   return (
     <>
@@ -163,10 +140,7 @@ export default function TeamPage() {
             {currentTeam.members?.map((member, index) => (
               <div
                 key={index}
-                className={`bg-gray-900 p-4 rounded-lg text-center ${getLastRowClasses(
-                  currentTeam.members,
-                  index
-                )}`}
+                className={`bg-gray-900 p-4 rounded-lg text-center`}
               >
                 <Image
                   src={member.image} // Load team member's image

@@ -1,0 +1,19 @@
+{
+  "programs": [
+    {
+      "name": "Aerodynamics Workshop",
+      "description": "In the Aerodynamics Workshop, students learn how airflow impacts speed and efficiency by designing and testing their own aerodynamic models in a mini wind tunnel. They experiment with different shapes, gaining insights into how engineers use aerodynamics to create faster, more efficient vehicles.",
+      "image": "/JSONS/programsImages/aerodynamicsProgram.jpg"
+    },
+    {
+      "name": "Drivetrain Workshop",
+      "description": "abc",
+      "image": "/JSONS/programsImages/drivetrainProgram.jpg"
+    },
+    {
+      "name": "Electrical Workshop",
+      "description": "abc",
+      "image": "/JSONS/programsImages/electricalProgram.jpg"
+    }
+  ]
+}

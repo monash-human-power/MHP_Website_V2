@@ -1,8 +1,38 @@
+"use client";
+import { useState } from "react";
 import Button from "../components/Buttons";
 import PageSection from "../components/PageSection";
 import Image from "next/image";
+import programData from "../../public/JSONs/programs.json"; // Importing the JSON file
 
 export default function Outreach() {
+  const [currentProgramIndex, setCurrentProgramIndex] = useState(0);
+  const [fadeClass, setFadeClass] = useState("animate-fadeIn");
+
+  // Functions to handle next/prev program navigation
+  const nextProgram = () => {
+    setFadeClass("animate-fadeOut");
+    setTimeout(() => {
+      setCurrentProgramIndex(
+        (prevIndex) => (prevIndex + 1) % programData.programs.length
+      );
+      setFadeClass("animate-fadeIn");
+    }, 300); // Match the duration with the animation
+  };
+
+  const prevProgram = () => {
+    setFadeClass("animate-fadeOut");
+    setTimeout(() => {
+      setCurrentProgramIndex((prevIndex) =>
+        prevIndex === 0 ? programData.programs.length - 1 : prevIndex - 1
+      );
+      setFadeClass("animate-fadeIn");
+    }, 300); // Match the duration with the animation
+  };
+  
+  const currentProgram = programData.programs[currentProgramIndex];
+
+
   return (
     <>
       {/* Our Vision Section */}
@@ -65,6 +95,53 @@ export default function Outreach() {
         <section id="ourPrograms"></section>
       </section>
 
+      {/* Sub-Programs navigation */}
+      <PageSection colourWay="dark">
+        <section className="flex justify-center items-center bg-gray-900">
+          <button
+            onClick={prevProgram}
+            className="z-10 p-4 bg-gray-300 rounded-full hover:bg-gray-400 text-4xl w-16 h-16 flex items-center justify-center"
+          >
+            &larr;
+          </button>
+          <h2 className="text-3xl font-bold mx-8 underline decoration-greenbutton">
+            {currentProgram.name}
+          </h2>
+          <button
+            onClick={nextProgram}
+            className="z-10 p-4 bg-gray-300 rounded-full hover:bg-gray-400 text-4xl w-16 h-16 flex items-center justify-center"
+          >
+            &rarr;
+          </button>
+        </section>
+
+        {/* Dynamic Program Section */}
+        <section className="">
+          <div className="flex flex-col lg:flex-row justify-center items-center lg:space-x-8 px-8">
+            {/* Image */}
+            <div className="w-full lg:w-1/2">
+              <div className={`transition-opacity duration-300 ${fadeClass}`}>
+                <Image
+                  src={currentProgram.image} // Dynamically load the image from JSON
+                  alt={currentProgram.name}
+                  width={500}
+                  height={500}
+                  className="rounded-lg"
+                />
+              </div>
+            </div>
+
+            {/* Description */}
+            <div className="mt-2 lg:mt-0 lg:w-1/2">
+              <div className={`transition-opacity duration-300 ${fadeClass}`}>
+                <h2>{currentProgram.description}</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+      </PageSection>
+
+      
       {/* Our Programs section */}
       <PageSection colourWay="dark">
         <div
