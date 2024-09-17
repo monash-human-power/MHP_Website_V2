@@ -73,7 +73,7 @@ export default function Outreach() {
           <div
             style={{
               paddingTop: "40px",
-              paddingLeft: "10%",
+              paddingLeft: "5%",
             }}
           >
             <h2 className="text-left text-3xl font-Sensation underline decoration-green decoration-4">
@@ -123,7 +123,7 @@ export default function Outreach() {
           <div
             className="text-left text-xl grid grid-cols-2 gap-10"
             style={{
-              paddingLeft: "10%",
+              paddingLeft: "5%",
               paddingRight: "5%",
             }}
           >
@@ -131,17 +131,44 @@ export default function Outreach() {
               <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
                 Responsible For
               </h2>
-              <li>abc</li>
-              <li>abc</li>
-              <li>abc</li>
+              <br></br>
+              <li>
+                Collaborate with riders to enhance performance through movement
+                analysis, customized training, and technique optimization.
+              </li>
+              <br></br>
+              <li>
+                Plan and execute high-speed events and velodrome sessions,
+                including researching new event opportunities and managing
+                engagement.
+              </li>
+              <br></br>
+              <li>
+                Develop and implement racing strategies by analyzing data, track
+                conditions, and conducting post-race evaluations for continuous
+                improvement.
+              </li>
             </div>
             <div>
               <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
                 Key Skills
               </h2>
-              <li>abc</li>
-              <li>abc</li>
-              <li>abc</li>
+              <br></br>
+              <li>
+                Strong physical and mental fitness, with a background or keen
+                interest in cycling, biomechanics, and training theory.
+              </li>
+              <br></br>
+              <li>
+                Proven experience in event organization, problem-solving, and
+                adaptability during events, with excellent communication and
+                interpersonal skills.
+              </li>
+              <br></br>
+              <li>
+                Passion for competitive high-speed racing, with strong
+                analytical, problem-solving, and teamwork abilities.
+              </li>
             </div>
           </div>
         </div>
@@ -160,7 +187,7 @@ export default function Outreach() {
           <div
             style={{
               paddingTop: "40px",
-              paddingRight: "10%",
+              paddingRight: "5%",
             }}
           >
             <h2 className="text-right text-3xl font-Sensation underline decoration-green decoration-4">
@@ -207,27 +234,51 @@ export default function Outreach() {
           </div>
 
           <div
-            className="text-right text-xl grid grid-cols-2 gap-10"
+            className="text-left text-xl grid grid-cols-2 gap-10"
             style={{
-              paddingLeft: "10%",
+              paddingLeft: "5%",
               paddingRight: "5%",
             }}
           >
             <div>
-              <h2 className="text-right text-2xl font-Sensation underline decoration-green decoration-4">
+              <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
                 Responsible For
               </h2>
-              <li>abc</li>
-              <li>abc</li>
-              <li>abc</li>
+              <br></br>
+              <li>
+                Work with aerodynamics principles to enhance bike performance
+                through testing, design, and manufacturing.
+              </li>
+              <br></br>
+              <li>
+                Gain hands-on experience using the Monash Wind Tunnel, CFD, and
+                aerodynamic component testing.
+              </li>
+              <br></br>
+              <li>
+                Create, test, and troubleshoot CAD models in NX and ANSYS
+                Fluent, while upskilling other team members.
+              </li>
             </div>
             <div>
-              <h2 className="text-right text-2xl font-Sensation underline decoration-green decoration-4">
+              <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
                 Key Skills
               </h2>
-              <li>abc</li>
-              <li>abc</li>
-              <li>abc</li>
+              <br></br>
+              <li>
+                Strong understanding of aerodynamics, CFD simulations, and
+                experience with ANSYS Fluent, Spaceclaim, or DesignModeler.
+              </li>
+              <br></br>
+              <li>
+                Proficiency in CAD software, especially NX and SolidWorks, with
+                an interest in 3D printing for prototyping.
+              </li>
+              <br></br>
+              <li>
+                Ability to self-assess CFD results and refine models for
+                accurate simulations.
+              </li>
             </div>
           </div>
         </div>
@@ -246,7 +297,7 @@ export default function Outreach() {
           <div
             style={{
               paddingTop: "40px",
-              paddingLeft: "10%",
+              paddingLeft: "5%",
             }}
           >
             <h2 className="text-left text-3xl font-Sensation underline decoration-green decoration-4">
@@ -296,7 +347,7 @@ export default function Outreach() {
           <div
             className="text-left text-xl grid grid-cols-2 gap-10"
             style={{
-              paddingLeft: "10%",
+              paddingLeft: "5%",
               paddingRight: "5%",
             }}
           >
@@ -304,17 +355,41 @@ export default function Outreach() {
               <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
                 Responsible For
               </h2>
-              <li>abc</li>
-              <li>abc</li>
-              <li>abc</li>
+              <br></br>
+              <li>
+                Design and test the vehicle chassis, focusing on space-frame
+                structures with potential future use of composite materials.
+              </li>
+              <br></br>
+              <li>
+                Develop strong CAD skills and deep understanding of chassis
+                engineering principles.
+              </li>
+              <br></br>
+              <li>
+                Optimize and integrate drivetrain components, leveraging cycling
+                knowledge and collaborating with component engineers.
+              </li>
             </div>
             <div>
               <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
                 Key Skills
               </h2>
-              <li>abc</li>
-              <li>abc</li>
-              <li>abc</li>
+              <br></br>
+              <li>
+                Strong CAD and FEA skills, with an interest in vehicular frame
+                design and prototyping to test solutions.
+              </li>
+              <br></br>
+              <li>
+                Solid understanding of materials mechanics and structural
+                mechanics.
+              </li>
+              <br></br>
+              <li>
+                Comprehensive knowledge of bicycle drivetrains, with experience
+                in working with and maintaining them.
+              </li>
             </div>
           </div>
         </div>
@@ -333,7 +408,7 @@ export default function Outreach() {
           <div
             style={{
               paddingTop: "40px",
-              paddingRight: "10%",
+              paddingRight: "5%",
             }}
           >
             <h2 className="text-right text-3xl font-Sensation underline decoration-green decoration-4">
@@ -381,27 +456,54 @@ export default function Outreach() {
           </div>
 
           <div
-            className="text-right text-xl grid grid-cols-2 gap-10"
+            className="text-left text-xl grid grid-cols-2 gap-10"
             style={{
-              paddingLeft: "10%",
+              paddingLeft: "5%",
               paddingRight: "5%",
             }}
           >
             <div>
-              <h2 className="text-right text-2xl font-Sensation underline decoration-green decoration-4">
+              <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
                 Responsible For
               </h2>
-              <li>abc</li>
-              <li>abc</li>
-              <li>abc</li>
+              <br></br>
+              <li>
+                Identify and manage sponsorships by researching potential
+                sponsors, maintaining relationships, and negotiating agreements.
+              </li>
+              <br></br>
+              <li>
+                Produce and plan media content, including photoshoots and
+                videos, to effectively communicate the brand message and align
+                with company values.
+              </li>
+              <br></br>
+              <li>
+                Create, manage, and optimize engaging content across platforms
+                and social media, including editing footage and developing
+                design concepts to enhance brand presence.
+              </li>
             </div>
             <div>
-              <h2 className="text-right text-2xl font-Sensation underline decoration-green decoration-4">
+              <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
                 Key Skills
               </h2>
-              <li>abc</li>
-              <li>abc</li>
-              <li>abc</li>
+              <br></br>
+              <li>
+                Experience in sponsorship management is a plus, though not
+                necessary.
+              </li>
+              <br></br>
+              <li>
+                Proficiency in multimedia software (Adobe Creative Suite,
+                CapCut) and social media posting, with past experience in
+                photography/videography.
+              </li>
+              <br></br>
+              <li>
+                Strong communication skills, ability to work collaboratively
+                with marketing teams, and a proactive, eager-to-learn attitude.
+              </li>
             </div>
           </div>
         </div>
@@ -420,7 +522,7 @@ export default function Outreach() {
           <div
             style={{
               paddingTop: "40px",
-              paddingLeft: "10%",
+              paddingLeft: "5%",
             }}
           >
             <h2 className="text-left text-3xl font-Sensation underline decoration-green decoration-4">
@@ -471,7 +573,7 @@ export default function Outreach() {
           <div
             className="text-left text-xl grid grid-cols-2 gap-10"
             style={{
-              paddingLeft: "10%",
+              paddingLeft: "5%",
               paddingRight: "5%",
             }}
           >
@@ -479,17 +581,43 @@ export default function Outreach() {
               <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
                 Responsible For
               </h2>
-              <li>abc</li>
-              <li>abc</li>
-              <li>abc</li>
+              <br></br>
+              <li>
+                Design, simulate, and document circuitry, including PCB
+                manufacturing and programming microcontrollers like Raspberry Pi
+                for sensor control.
+              </li>
+              <br></br>
+              <li>
+                Develop and maintain a React-powered web app and various Python
+                projects, including physical modeling and data processing.
+              </li>
+              <br></br>
+              <li>
+                Troubleshoot systems during testing and ensure thorough
+                documentation of code, APIs, and pull requests.
+              </li>
             </div>
             <div>
               <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
                 Key Skills
               </h2>
-              <li>abc</li>
-              <li>abc</li>
-              <li>abc</li>
+              <br></br>
+              <li>
+                Experience with microcontrollers (Arduino, Raspberry Pi) and
+                programming in C or Python, with an interest in circuit/PCB
+                design and 3D printing.
+              </li>
+              <br></br>
+              <li>
+                Proficiency in JavaScript, Python, Git, and familiarity with
+                TypeScript React.
+              </li>
+              <br></br>
+              <li>
+                Strong communication skills, eagerness to learn, and industry or
+                project experience outside of the curriculum.
+              </li>
             </div>
           </div>
         </div>
@@ -510,7 +638,7 @@ export default function Outreach() {
           <div
             style={{
               paddingTop: "40px",
-              paddingRight: "10%",
+              paddingRight: "5%",
             }}
           >
             <h2 className="text-right text-3xl font-Sensation underline decoration-green decoration-4">
@@ -558,27 +686,49 @@ export default function Outreach() {
           </div>
 
           <div
-            className="text-right text-xl grid grid-cols-2 gap-10"
+            className="text-left text-xl grid grid-cols-2 gap-10"
             style={{
-              paddingLeft: "10%",
+              paddingLeft: "5%",
               paddingRight: "5%",
             }}
           >
             <div>
-              <h2 className="text-right text-2xl font-Sensation underline decoration-green decoration-4">
+              <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
                 Responsible For
               </h2>
-              <li>abc</li>
-              <li>abc</li>
-              <li>abc</li>
+              <br></br>
+              <li>
+                Use finite element analysis (FEA) software to design and
+                optimize composite components.
+              </li>
+              <br></br>
+              <li>
+                abManufacture the fairing and supplementary composite
+                components, primarily working with carbon fiber.c
+              </li>
+              <br></br>
+              <li>
+                Spend time in the workshop creating and testing various
+                composite parts.
+              </li>
             </div>
             <div>
-              <h2 className="text-right text-2xl font-Sensation underline decoration-green decoration-4">
+              <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
                 Key Skills
               </h2>
-              <li>abc</li>
-              <li>abc</li>
-              <li>abc</li>
+              <br></br>
+              <li>
+                Experience with ANSYS Mechanical, ACP, and a solid understanding
+                of CAD and FEA is preferred.
+              </li>
+              <br></br>
+              <li>
+                Strong knowledge of dynamics principles and attention to detail.
+              </li>
+              <br></br>
+              <li>
+                Willingness to learn and interest in developing hands-on skills.
+              </li>
             </div>
           </div>
         </div>
