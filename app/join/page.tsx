@@ -721,7 +721,7 @@ export default function Outreach() {
               </li>
               <br></br>
               <li>
-                abManufacture the fairing and supplementary composite
+                Manufacture the fairing and supplementary composite
                 components, primarily working with carbon fiber.c
               </li>
               <br></br>
