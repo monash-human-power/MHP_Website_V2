@@ -25,7 +25,7 @@ export default function Blog() {
 
   const filteredArticles = articles.filter((article) =>
     article.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    article.tags.some((tag) => tag.toLowerCase().includes(searchQuery.toLowerCase()))
+    article.tags.some((tag) => tag.name.toLowerCase().includes(searchQuery.toLowerCase()))
   );
 
   // Conditionally display filtered articles only after search is triggered, otherwise display all articles
@@ -68,15 +68,15 @@ export default function Blog() {
                   <h2 className="text-3xl font-semibold text-purple-700 decoration-purple-400 decoration-4 mb-4 drop-shadow-md">
                     {article.title}
                   </h2>
-                  {/* Tags */}
                   <div className="mb-4">
                     {article.tags.map((tag, idx) => (
-                      <span
+                      <a
                         key={idx}
+                        href={tag.url}
                         className="inline-block bg-[#ACF601] text-black text-xs font-medium rounded-full px-3 py-1 mr-2 mb-2"
                       >
-                        {tag}
-                      </span>
+                        {tag.name}
+                      </a>
                     ))}
                   </div>
                   {/* Show full text or truncated version */}
