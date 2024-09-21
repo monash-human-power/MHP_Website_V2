@@ -99,7 +99,7 @@ export default function Outreach() {
       <PageSection colourWay="dark">
         <div
           style={{
-            paddingTop: "20px",
+            paddingTop: "40px",
             paddingBottom: "20px",
             width: "90%",
             margin: "0 auto",
@@ -135,7 +135,7 @@ export default function Outreach() {
 
         {/* Dynamic Program Section */}
         <div
-          className="flex justify-center items-center"
+          className="items-center"
           style={{
             paddingTop: "40px",
             paddingBottom: "20px",
@@ -145,7 +145,7 @@ export default function Outreach() {
         >
           <div className="flex flex-col lg:flex-row lg:space-x-8 px-8">
             {/* Image */}
-            <div className="w-full lg:w-1/2">
+            <div className="mx-auto lg:w-1/2">
               <div className={`transition-opacity duration-300 ${fadeClass}`}>
                 <Image
                   src={currentProgram.image} // Dynamically load the image from JSON
@@ -158,9 +158,9 @@ export default function Outreach() {
             </div>
 
             {/* Description */}
-            <div className="mt-2 lg:mt-0 lg:w-1/2">
+            <div className="mt-2 lg:mt-0 lg:w-1/2  py-10 lg:py-0">
               <div className={`transition-opacity duration-300 ${fadeClass}`}>
-                <p className="text-xl">{currentProgram.description}</p>
+                <p className="text-xl sm:text-justify">{currentProgram.description}</p>
               </div>
             </div>
           </div>
@@ -189,17 +189,17 @@ export default function Outreach() {
             Testimonials
           </h2>
           <div
-            className="text-center text-xl grid grid-cols-2 grid-rows-2 gap-x-20"
+            className="text-center text-xl grid grid-cols-1 grid-rows-2 gap-y-10 lg:grid-cols-2 lg:grid-rows-2 lg:gap-x-20"
             style={{
               paddingTop: "40px",
               paddingLeft: "10%",
               paddingRight: "10%",
             }}
           >
-            <div className="max-w-screen-xl mx-auto text-center grid col-start-1 col-start-1 row-start-1 col-span-1">
+            <div className="max-w-screen-xl mx-auto text-center grid lg:col-start-1 lg:row-start-1 lg:col-span-1">
               <figure className="max-w-screen-md mx-auto">
                 <svg
-                  className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
+                  className="h-12 mx-auto mb-3"
                   viewBox="0 0 24 27"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -216,11 +216,11 @@ export default function Outreach() {
                   </p>
                 </blockquote>
                 <figcaption className="flex items-center justify-center mt-6 space-x-3">
-                  <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                    <div className="pr-3 font-medium text-gray-900 dark:text-white">
+                  <div className="flex items-center divide-x-2">
+                    <div className="pr-3 font-medium">
                       STEM Teacher
                     </div>
-                    <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">
+                    <div className="pl-3 text-sm font-light">
                       Westall Secondary College
                     </div>
                   </div>
@@ -228,10 +228,10 @@ export default function Outreach() {
               </figure>
             </div>
 
-            <div className="max-w-screen-xl mx-auto text-center grid grid-cols-1 col-start-2 row-start-2 col-span-1">
+            <div className="max-w-screen-xl mx-auto text-center grid lg:col-start-2 lg:row-start-2 lg:col-span-1">
               <figure className="max-w-screen-md mx-auto">
                 <svg
-                  className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
+                  className="h-12 mx-auto mb-3"
                   viewBox="0 0 24 27"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -248,11 +248,11 @@ export default function Outreach() {
                   </p>
                 </blockquote>
                 <figcaption className="flex items-center justify-center mt-6 space-x-3">
-                  <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                    <div className="pr-3 font-medium text-gray-900 dark:text-white">
+                  <div className="flex items-center divide-x-2">
+                    <div className="pr-3 font-medium">
                       Blake Haydon
                     </div>
-                    <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">
+                    <div className="pl-3 text-sm font-light">
                       MHP member
                     </div>
                   </div>
