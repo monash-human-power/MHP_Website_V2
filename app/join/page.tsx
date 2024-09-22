@@ -47,14 +47,14 @@ export default function Outreach() {
           </div>
         </div>
         <div
-          className="text-center text-3xl"
+          className="text-center text-xl lg:text-3xl"
           style={{
             paddingTop: "40px",
             paddingBottom: "20px",
           }}
         >
           {/* Expression of Interest button links to Google Form */}
-          <button className="px-16 py-4 rounded-full border-2 bg-green text-black border-black hover:bg-black hover:text-white hover:border-white">
+          <button className="px-4 py-2 lg:px-16 lg:py-2 rounded-full border-2 bg-green text-black border-black hover:bg-black hover:text-white hover:border-white">
             Expression of Interest
           </button>
         </div>
@@ -81,7 +81,7 @@ export default function Outreach() {
             </h2>
           </div>
           <div
-            className="text-left text-xl grid grid-cols-2 gap-10"
+            className="text-left text-xl grid lg:grid-cols-2 gap-20"
             style={{
               paddingTop: "40px",
               paddingBottom: "60px",
@@ -124,7 +124,7 @@ export default function Outreach() {
           </div>
 
           <div
-            className="text-left text-xl grid grid-cols-2 gap-10"
+            className="text-left text-xl grid lg:grid-cols-2 gap-20"
             style={{
               paddingLeft: "5%",
               paddingRight: "5%",
@@ -137,7 +137,7 @@ export default function Outreach() {
               <br></br>
               <li>
                 Collaborate with riders to enhance performance through movement
-                analysis, customized training, and technique optimization.
+                analysis, customised training, and technique optimisation.
               </li>
               <br></br>
               <li>
@@ -147,7 +147,7 @@ export default function Outreach() {
               </li>
               <br></br>
               <li>
-                Develop and implement racing strategies by analyzing data, track
+                Develop and implement racing strategies by analysing data, track
                 conditions, and conducting post-race evaluations for continuous
                 improvement.
               </li>
@@ -163,7 +163,7 @@ export default function Outreach() {
               </li>
               <br></br>
               <li>
-                Proven experience in event organization, problem-solving, and
+                Proven experience in event organisation, problem-solving, and
                 adaptability during events, with excellent communication and
                 interpersonal skills.
               </li>
@@ -193,12 +193,12 @@ export default function Outreach() {
               paddingRight: "5%",
             }}
           >
-            <h2 className="text-right text-3xl font-Sensation underline decoration-green decoration-4">
+            <h2 className="text-left lg:text-right text-3xl font-Sensation underline decoration-green decoration-4">
               Aerodynamics
             </h2>
           </div>
           <div
-            className="text-right text-xl grid grid-cols-2 gap-10"
+            className="text-left lg:text-right text-xl grid lg:grid-cols-2 gap-20"
             style={{
               paddingTop: "40px",
               paddingBottom: "60px",
@@ -240,7 +240,7 @@ export default function Outreach() {
           </div>
 
           <div
-            className="text-left text-xl grid grid-cols-2 gap-10"
+            className="text-left text-xl grid lg:grid-cols-2 gap-20"
             style={{
               paddingLeft: "5%",
               paddingRight: "5%",
@@ -311,7 +311,7 @@ export default function Outreach() {
             </h2>
           </div>
           <div
-            className="text-left text-xl grid grid-cols-2 gap-10"
+            className="text-left text-xl grid lg:grid-cols-2 gap-20"
             style={{
               paddingTop: "40px",
               paddingBottom: "60px",
@@ -354,7 +354,7 @@ export default function Outreach() {
           </div>
 
           <div
-            className="text-left text-xl grid grid-cols-2 gap-10"
+            className="text-left text-xl grid lg:grid-cols-2 gap-20"
             style={{
               paddingLeft: "5%",
               paddingRight: "5%",
@@ -376,7 +376,7 @@ export default function Outreach() {
               </li>
               <br></br>
               <li>
-                Optimize and integrate drivetrain components, leveraging cycling
+                Optimise and integrate drivetrain components, leveraging cycling
                 knowledge and collaborating with component engineers.
               </li>
             </div>
@@ -420,12 +420,12 @@ export default function Outreach() {
               paddingRight: "5%",
             }}
           >
-            <h2 className="text-right text-3xl font-Sensation underline decoration-green decoration-4">
+            <h2 className="text-left lg:text-right text-3xl font-Sensation underline decoration-green decoration-4">
               Operations
             </h2>
           </div>
           <div
-            className="text-right text-xl grid grid-cols-2 gap-10"
+            className="text-left lg:text-right text-xl grid lg:grid-cols-2 gap-20"
             style={{
               paddingTop: "40px",
               paddingBottom: "60px",
@@ -468,7 +468,7 @@ export default function Outreach() {
           </div>
 
           <div
-            className="text-left text-xl grid grid-cols-2 gap-10"
+            className="text-left text-xl grid lg:grid-cols-2 gap-20"
             style={{
               paddingLeft: "5%",
               paddingRight: "5%",
@@ -491,7 +491,7 @@ export default function Outreach() {
               </li>
               <br></br>
               <li>
-                Create, manage, and optimize engaging content across platforms
+                Create, manage, and optimise engaging content across platforms
                 and social media, including editing footage and developing
                 design concepts to enhance brand presence.
               </li>
@@ -542,7 +542,7 @@ export default function Outreach() {
             </h2>
           </div>
           <div
-            className="text-left text-xl grid grid-cols-2 gap-10"
+            className="text-left text-xl grid lg:grid-cols-2 gap-20"
             style={{
               paddingTop: "40px",
               paddingBottom: "60px",
@@ -586,7 +586,7 @@ export default function Outreach() {
           </div>
 
           <div
-            className="text-left text-xl grid grid-cols-2 gap-10"
+            className="text-left text-xl grid lg:grid-cols-2 gap-20"
             style={{
               paddingLeft: "5%",
               paddingRight: "5%",
@@ -656,12 +656,12 @@ export default function Outreach() {
               paddingRight: "5%",
             }}
           >
-            <h2 className="text-right text-3xl font-Sensation underline decoration-green decoration-4">
+            <h2 className="text-left lg:text-right text-3xl font-Sensation underline decoration-green decoration-4">
               Materials
             </h2>
           </div>
           <div
-            className="text-right text-xl grid grid-cols-2 gap-10"
+            className="text-left lg:text-right text-xl grid lg:grid-cols-2 gap-20"
             style={{
               paddingTop: "40px",
               paddingBottom: "60px",
@@ -694,7 +694,7 @@ export default function Outreach() {
             <div>
               <p>
                 The Materials subteam prototypes and manufactures the fairing,
-                focusing on optimizing its design for aerodynamics and rider
+                focusing on optimising its design for aerodynamics and rider
                 safety. They research methods and materials, currently using a
                 resin infusion technique with epoxy resin and carbon fiber. They
                 also use power tools, surface finishing, and composite creation
@@ -704,7 +704,7 @@ export default function Outreach() {
           </div>
 
           <div
-            className="text-left text-xl grid grid-cols-2 gap-10"
+            className="text-left text-xl grid lg:grid-cols-2 gap-20"
             style={{
               paddingLeft: "5%",
               paddingRight: "5%",
@@ -717,12 +717,12 @@ export default function Outreach() {
               <br></br>
               <li>
                 Use finite element analysis (FEA) software to design and
-                optimize composite components.
+                optimise composite components.
               </li>
               <br></br>
               <li>
-                Manufacture the fairing and supplementary composite
-                components, primarily working with carbon fiber.c
+                Manufacture the fairing and supplementary composite components,
+                primarily working with carbon fiber.c
               </li>
               <br></br>
               <li>
