@@ -4,9 +4,6 @@ import PageSection from "../components/PageSection";
 import Image from "next/image";
 
 export default function Outreach() {
-  // function handleClick() {
-  //   window.open("https://docs.google.com/forms/d/e/1FAIpQLSd90KiSB3jNv8FTWfwkkAzr27klQ0GO_W7llYthUCPRbxSmgQ/viewform", "_blank")
-  // }
 
   return (
     <>
