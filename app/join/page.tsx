@@ -112,7 +112,7 @@ export default function Outreach() {
               }}
             >
               <Image
-                src="/join_rider_dev.jpg"
+                src="/join/join_rider_dev.jpg"
                 width="200"
                 height="100"
                 objectFit="cover"
@@ -219,7 +219,7 @@ export default function Outreach() {
               }}
             >
               <Image
-                src="/join_aerodynamics.jpg"
+                src="/join/join_aerodynamics.jpg"
                 width="800"
                 height="300"
                 objectFit="cover"
@@ -342,7 +342,7 @@ export default function Outreach() {
               }}
             >
               <Image
-                src="/join_chassis_drivetrain.jpg"
+                src="/join/join_chassis_drivetrain.jpg"
                 width="800"
                 height="300"
                 objectFit="cover"
@@ -446,7 +446,7 @@ export default function Outreach() {
               }}
             >
               <Image
-                src="/join_operations.jpg"
+                src="/join/join_operations.jpg"
                 width="800"
                 height="300"
                 objectFit="cover"
@@ -574,7 +574,7 @@ export default function Outreach() {
               }}
             >
               <Image
-                src="/join_electrical.jpg"
+                src="/join/join_electrical.jpg"
                 width="800"
                 height="300"
                 objectFit="cover"
@@ -682,7 +682,7 @@ export default function Outreach() {
               }}
             >
               <Image
-                src="/join_materials.jpg"
+                src="/join/join_materials.jpg"
                 width="800"
                 height="300"
                 objectFit="cover"
