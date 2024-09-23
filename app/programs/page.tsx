@@ -33,19 +33,12 @@ export default function Programs() {
             <p>
               Based on the Victorian Curriculum's Cross-curriculum Priority:
               Learning about Sustainability, these hands-on STEM lessons guide
-              secondary students through a systems engineering approach that
-              takes into account the aerodynamic and eco-friendly aspects of
-              their HPV.
+              secondary students through a systems engineering approach that takes
+              into account the aerodynamic and eco-friendly aspects of their HPV.
             </p>
           </div>
 
-          <div
-            style={{
-              justifyContent: "center",
-              alignItems: "center",
-              display: "flex",
-            }}
-          >
+          <div className="items-center overflow-hidden mx-auto">
             <Image
               src="/outreach_1.jpg"
               width="800"
@@ -58,6 +51,7 @@ export default function Programs() {
               }}
             />
           </div>
+          
         </div>
       </PageSection>
 

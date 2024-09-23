@@ -1,8 +1,38 @@
+"use client";
+import { useState } from "react";
 import Button from "../components/Buttons";
 import PageSection from "../components/PageSection";
 import Image from "next/image";
+import programData from "../../public/JSONs/programs.json"; // Importing the JSON file
+import Page from "../page";
 
 export default function Outreach() {
+  const [currentProgramIndex, setCurrentProgramIndex] = useState(0);
+  const [fadeClass, setFadeClass] = useState("animate-fadeIn");
+
+  // Functions to handle next/prev program navigation
+  const nextProgram = () => {
+    setFadeClass("animate-fadeOut");
+    setTimeout(() => {
+      setCurrentProgramIndex(
+        (prevIndex) => (prevIndex + 1) % programData.programs.length
+      );
+      setFadeClass("animate-fadeIn");
+    }, 300); // Match the duration with the animation
+  };
+
+  const prevProgram = () => {
+    setFadeClass("animate-fadeOut");
+    setTimeout(() => {
+      setCurrentProgramIndex((prevIndex) =>
+        prevIndex === 0 ? programData.programs.length - 1 : prevIndex - 1
+      );
+      setFadeClass("animate-fadeIn");
+    }, 300); // Match the duration with the animation
+  };
+
+  const currentProgram = programData.programs[currentProgramIndex];
+
   return (
     <>
       {/* Our Vision Section */}
@@ -47,9 +77,9 @@ export default function Outreach() {
           {/* Learn More button links to Our Programs section */}
           <Button hrefString="#ourPrograms" text="Learn More" theme="dark" />
         </div>
-
-        {/* Epsom Primary School */}
       </PageSection>
+
+      {/* Epsom Primary School */}
       <section className="relative text-center py-5 animate-fadeIn">
         <div className="items-center overflow-hidden mx-auto">
           <Image
@@ -69,7 +99,7 @@ export default function Outreach() {
       <PageSection colourWay="dark">
         <div
           style={{
-            paddingTop: "20px",
+            paddingTop: "40px",
             paddingBottom: "20px",
             width: "90%",
             margin: "0 auto",
@@ -80,7 +110,7 @@ export default function Outreach() {
           </h2>
         </div>
         <div
-          className="text-xl"
+          className="flex justify-center items-center"
           style={{
             paddingTop: "20px",
             paddingBottom: "20px",
@@ -88,51 +118,52 @@ export default function Outreach() {
             margin: "0 auto",
           }}
         >
-          <p>
-            Our programs cover core concepts in areas like aerodynamics,
-            mechanical design, and rider development—each offering a unique
-            glimpse into the real-world applications of STEM.
-          </p>
-          <br></br>
-          <p>
-            For example, in the Aerodynamics Workshop, students learn how
-            airflow impacts speed and efficiency by designing and testing their
-            own aerodynamic models in a mini wind tunnel. They experiment with
-            different shapes, gaining insights into how engineers use
-            aerodynamics to create faster, more efficient vehicles.
-          </p>
-          <br></br>
-          <p>
-            The Rider Development Workshop introduces students to the science
-            behind human-powered racing, teaching them how to maximise energy
-            output and optimise race strategies through gear changes and racing
-            line techniques.
-          </p>
-          <br></br>
-          <p>
-            Through these workshops, MHP makes STEM approachable and engaging
-            for younger students, showing them how mathematics, physics, and
-            engineering can solve real-world challenges. By offering interactive
-            design sessions and testing phases, MHP gives students the chance to
-            apply their creativity, learn problem-solving skills, and experience
-            the thrill of innovation firsthand. These outreach efforts not only
-            spark curiosity but also help build a pipeline of future engineers,
-            scientists, and innovators.
-          </p>
-          <br></br>
-          <p>
-            You can enquire here to organise a workshop with your own school.
-          </p>
+          <button
+            onClick={prevProgram}
+            className="z-10 p-4 bg-gray-300 rounded-full hover:bg-gray-400 text-4xl w-16 h-16 flex items-center justify-center"
+          >
+            &larr;
+          </button>
+          <h2 className="text-3xl font-bold mx-8">{currentProgram.name}</h2>
+          <button
+            onClick={nextProgram}
+            className="z-10 p-4 bg-gray-300 rounded-full hover:bg-gray-400 text-4xl w-16 h-16 flex items-center justify-center"
+          >
+            &rarr;
+          </button>
         </div>
+
+        {/* Dynamic Program Section */}
         <div
-          className="flex flex-row justify-center items-center"
+          className="items-center"
           style={{
-            paddingTop: "20px",
+            paddingTop: "40px",
             paddingBottom: "20px",
+            width: "90%",
+            margin: "0 auto",
           }}
         >
-          {/* See Options button links to separate Programs page */}
-          <Button hrefString="/programs" text="See Options" theme="dark" />
+          <div className="flex flex-col lg:flex-row lg:space-x-8 px-8">
+            {/* Image */}
+            <div className="mx-auto lg:w-1/2">
+              <div className={`transition-opacity duration-300 ${fadeClass}`}>
+                <Image
+                  src={currentProgram.image} // Dynamically load the image from JSON
+                  alt={currentProgram.name}
+                  width={600}
+                  height={800}
+                  className="rounded-3xl"
+                />
+              </div>
+            </div>
+
+            {/* Description */}
+            <div className="mt-2 lg:mt-0 lg:w-1/2  py-10 lg:py-0">
+              <div className={`transition-opacity duration-300 ${fadeClass}`}>
+                <p className="text-xl sm:text-justify">{currentProgram.description}</p>
+              </div>
+            </div>
+          </div>
         </div>
       </PageSection>
 
@@ -158,36 +189,99 @@ export default function Outreach() {
             Testimonials
           </h2>
           <div
-            className="text-center text-xl grid grid-cols-2 gap-20"
+            className="text-center text-xl grid grid-cols-1 grid-rows-2 gap-y-10 lg:grid-cols-2 lg:grid-rows-2 lg:gap-x-20"
             style={{
               paddingTop: "40px",
               paddingLeft: "10%",
               paddingRight: "10%",
             }}
           >
-            <div>
-              <p>
-                "The kids loved it and the others that missed out were super
-                jealous!"
-                <br></br>- STEM Teacher at Westall Secondary College
-              </p>
+            <div className="max-w-screen-xl mx-auto text-center grid lg:col-start-1 lg:row-start-1 lg:col-span-1">
+              <figure className="max-w-screen-md mx-auto">
+                <svg
+                  className="h-12 mx-auto mb-3"
+                  viewBox="0 0 24 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <blockquote>
+                  <p>
+                    "The kids loved it and the others that missed out were super
+                    jealous!"
+                  </p>
+                </blockquote>
+                <figcaption className="flex items-center justify-center mt-6 space-x-3">
+                  <div className="flex items-center divide-x-2">
+                    <div className="pr-3 font-medium">
+                      STEM Teacher
+                    </div>
+                    <div className="pl-3 text-sm font-light">
+                      Westall Secondary College
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
             </div>
-            <div>
-              <p>
-                "It was really fun! Had a blast being creative while teaching
-                important STEM skills."
-                <br></br>- Blake Haydon (MHP member)
-              </p>
+
+            <div className="max-w-screen-xl mx-auto text-center grid lg:col-start-2 lg:row-start-2 lg:col-span-1">
+              <figure className="max-w-screen-md mx-auto">
+                <svg
+                  className="h-12 mx-auto mb-3"
+                  viewBox="0 0 24 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <blockquote>
+                  <p>
+                    "It was really fun! Had a blast being creative while
+                    teaching important STEM skills."
+                  </p>
+                </blockquote>
+                <figcaption className="flex items-center justify-center mt-6 space-x-3">
+                  <div className="flex items-center divide-x-2">
+                    <div className="pr-3 font-medium">
+                      Blake Haydon
+                    </div>
+                    <div className="pl-3 text-sm font-light">
+                      MHP member
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
             </div>
           </div>
         </div>
       </PageSection>
 
+      {/* Epsom Primary School */}
+      <section className="relative text-center py-5 animate-fadeIn">
+        <div className="items-center overflow-hidden mx-auto">
+          <Image
+            src="/outreach_3.jpg"
+            width="800"
+            height="300"
+            objectFit="cover"
+            alt="Epsom Primary School"
+            layout="responsive"
+          />
+        </div>
+      </section>
+
       {/* Find Out More Section */}
       <PageSection colourWay="dark">
         <div
           style={{
-            borderTop: "2px solid #B3B3B3", // Top border
+            // borderTop: "2px solid #B3B3B3", // Top border
             borderBottom: "2px solid #B3B3B3", // Bottom border
             width: "90%",
             margin: "0 auto",
@@ -196,7 +290,7 @@ export default function Outreach() {
         >
           <div
             style={{
-              padding: "40px",
+              // padding: "40px",
             }}
           >
             <h2 className="text-center text-3xl font-Sensation underline decoration-green decoration-4">
