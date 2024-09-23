@@ -1,8 +1,13 @@
+'use client';
 import Button from "../components/Buttons";
 import PageSection from "../components/PageSection";
 import Image from "next/image";
 
 export default function Outreach() {
+  // function handleClick() {
+  //   window.open("https://docs.google.com/forms/d/e/1FAIpQLSd90KiSB3jNv8FTWfwkkAzr27klQ0GO_W7llYthUCPRbxSmgQ/viewform", "_blank")
+  // }
+
   return (
     <>
       {/* Battle Mountain Group Image */}
@@ -23,7 +28,7 @@ export default function Outreach() {
       {/* Join Us section */}
       <PageSection colourWay="dark">
         <div className="text-center">
-          <h1 className="text-5xl text-[#acf601] font-bold">Join Us</h1>
+          <h1 className="text-5xl text-Sansation text-[#acf601] font-bold">Join Us</h1>
           <div
             className="text-xl"
             style={{
@@ -53,14 +58,17 @@ export default function Outreach() {
             paddingBottom: "20px",
           }}
         >
+          
           {/* Expression of Interest button links to Google Form */}
-          <button className="px-4 py-2 lg:px-16 lg:py-2 rounded-full border-2 bg-green text-black border-black hover:bg-black hover:text-white hover:border-white">
-            Expression of Interest
+          <button 
+          onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSd90KiSB3jNv8FTWfwkkAzr27klQ0GO_W7llYthUCPRbxSmgQ/viewform")}
+          className="px-4 py-2 lg:px-16 lg:py-2 rounded-full border-2 bg-green text-black border-black hover:bg-black hover:text-white hover:border-green text-Sansation">
+          Expression of Interest          
           </button>
         </div>
       </PageSection>
 
-      {/* Rider Developement section */}
+      {/* Rider Development section */}
       <PageSection colourWay="dark">
         <div
           style={{
@@ -76,12 +84,12 @@ export default function Outreach() {
               paddingLeft: "5%",
             }}
           >
-            <h2 className="text-left text-3xl font-Sensation underline decoration-green decoration-4">
+            <h2 className="text-left font-semibold text-3xl font-Sansation underline decoration-green decoration-4">
               Rider Development
             </h2>
           </div>
           <div
-            className="text-left text-xl grid lg:grid-cols-2 gap-20"
+            className="text-left font-Sansation text-xl grid lg:grid-cols-2 gap-20"
             style={{
               paddingTop: "40px",
               paddingBottom: "60px",
@@ -131,44 +139,44 @@ export default function Outreach() {
             }}
           >
             <div>
-              <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
+              <h2 className="text-left text-2xl font-Sansation underline decoration-green decoration-4">
                 Responsible For
               </h2>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Collaborate with riders to enhance performance through movement
                 analysis, customised training, and technique optimisation.
               </li>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Plan and execute high-speed events and velodrome sessions,
                 including researching new event opportunities and managing
                 engagement.
               </li>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Develop and implement racing strategies by analysing data, track
                 conditions, and conducting post-race evaluations for continuous
                 improvement.
               </li>
             </div>
             <div>
-              <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
+              <h2 className="text-left text-2xl font-Sansation underline decoration-green decoration-4">
                 Key Skills
               </h2>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Strong physical and mental fitness, with a background or keen
                 interest in cycling, biomechanics, and training theory.
               </li>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Proven experience in event organisation, problem-solving, and
                 adaptability during events, with excellent communication and
                 interpersonal skills.
               </li>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Passion for competitive high-speed racing, with strong
                 analytical, problem-solving, and teamwork abilities.
               </li>
@@ -193,7 +201,7 @@ export default function Outreach() {
               paddingRight: "5%",
             }}
           >
-            <h2 className="text-left lg:text-right text-3xl font-Sensation underline decoration-green decoration-4">
+            <h2 className="text-left lg:text-right text-3xl font-Sansation underline decoration-green decoration-4">
               Aerodynamics
             </h2>
           </div>
@@ -229,7 +237,7 @@ export default function Outreach() {
               />
             </div>
             <div>
-              <p>
+              <p className="font-Sansation">
                 The Aerodynamics subteam at MHP designs and tests aerodynamic
                 components like the external shell and wheel covers to reduce
                 drag and increase bike speed. They use computational fluid
@@ -247,41 +255,41 @@ export default function Outreach() {
             }}
           >
             <div>
-              <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
+              <h2 className="text-left text-2xl font-Sansation underline decoration-green decoration-4">
                 Responsible For
               </h2>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Work with aerodynamics principles to enhance bike performance
                 through testing, design, and manufacturing.
               </li>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Gain hands-on experience using the Monash Wind Tunnel, CFD, and
                 aerodynamic component testing.
               </li>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Create, test, and troubleshoot CAD models in NX and ANSYS
                 Fluent, while upskilling other team members.
               </li>
             </div>
             <div>
-              <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
+              <h2 className="text-left text-2xl font-Sansation underline decoration-green decoration-4">
                 Key Skills
               </h2>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Strong understanding of aerodynamics, CFD simulations, and
                 experience with ANSYS Fluent, Spaceclaim, or DesignModeler.
               </li>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Proficiency in CAD software, especially NX and SolidWorks, with
                 an interest in 3D printing for prototyping.
               </li>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Ability to self-assess CFD results and refine models for
                 accurate simulations.
               </li>
@@ -306,7 +314,7 @@ export default function Outreach() {
               paddingLeft: "5%",
             }}
           >
-            <h2 className="text-left text-3xl font-Sensation underline decoration-green decoration-4">
+            <h2 className="text-left text-3xl font-Sansation underline decoration-green decoration-4">
               Chassis and Drivetrain
             </h2>
           </div>
@@ -320,7 +328,7 @@ export default function Outreach() {
             }}
           >
             <div>
-              <p>
+              <p className="font-Sansation">
                 The Chassis & Drivetrain subteam designs and manufactures all
                 mechanical components, including the chassis and moving parts.
                 They model components using CAD software and verify their
@@ -361,41 +369,41 @@ export default function Outreach() {
             }}
           >
             <div>
-              <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
+              <h2 className="text-left text-2xl font-Sansation underline decoration-green decoration-4">
                 Responsible For
               </h2>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Design and test the vehicle chassis, focusing on space-frame
                 structures with potential future use of composite materials.
               </li>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Develop strong CAD skills and deep understanding of chassis
                 engineering principles.
               </li>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Optimise and integrate drivetrain components, leveraging cycling
                 knowledge and collaborating with component engineers.
               </li>
             </div>
             <div>
-              <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
+              <h2 className="text-left text-2xl font-Sansation underline decoration-green decoration-4">
                 Key Skills
               </h2>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Strong CAD and FEA skills, with an interest in vehicular frame
                 design and prototyping to test solutions.
               </li>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Solid understanding of materials mechanics and structural
                 mechanics.
               </li>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Comprehensive knowledge of bicycle drivetrains, with experience
                 in working with and maintaining them.
               </li>
@@ -420,7 +428,7 @@ export default function Outreach() {
               paddingRight: "5%",
             }}
           >
-            <h2 className="text-left lg:text-right text-3xl font-Sensation underline decoration-green decoration-4">
+            <h2 className="text-left lg:text-right text-3xl font-Sansation underline decoration-green decoration-4">
               Operations
             </h2>
           </div>
@@ -456,11 +464,11 @@ export default function Outreach() {
               />
             </div>
             <div>
-              <p>
+              <p className="font-Sansation">
                 The Operations subteam engages external stakeholders,
                 coordinates with sponsors, and markets MHP activities. They
-                organise events like the "Build a HPV" school outreach program,
-                promote STEM pathways, and support the technical team's bike
+                organise events like the &quot;Build a HPV&quot; school outreach program,
+                promote STEM pathways, and support the technical team&apos;s bike
                 manufacturing. They are also involved in graphic design and
                 branding for MHP.
               </p>
@@ -475,44 +483,44 @@ export default function Outreach() {
             }}
           >
             <div>
-              <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
+              <h2 className="text-left text-2xl font-Sansation underline decoration-green decoration-4">
                 Responsible For
               </h2>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Identify and manage sponsorships by researching potential
                 sponsors, maintaining relationships, and negotiating agreements.
               </li>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Produce and plan media content, including photoshoots and
                 videos, to effectively communicate the brand message and align
                 with company values.
               </li>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Create, manage, and optimise engaging content across platforms
                 and social media, including editing footage and developing
                 design concepts to enhance brand presence.
               </li>
             </div>
             <div>
-              <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
+              <h2 className="text-left text-2xl font-Sansation underline decoration-green decoration-4">
                 Key Skills
               </h2>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Experience in sponsorship management is a plus, though not
                 necessary.
               </li>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Proficiency in multimedia software (Adobe Creative Suite,
                 CapCut) and social media posting, with past experience in
                 photography/videography.
               </li>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Strong communication skills, ability to work collaboratively
                 with marketing teams, and a proactive, eager-to-learn attitude.
               </li>
@@ -537,7 +545,7 @@ export default function Outreach() {
               paddingLeft: "5%",
             }}
           >
-            <h2 className="text-left text-3xl font-Sensation underline decoration-green decoration-4">
+            <h2 className="text-left text-3xl font-Sansation underline decoration-green decoration-4">
               Electrical
             </h2>
           </div>
@@ -551,8 +559,8 @@ export default function Outreach() {
             }}
           >
             <div>
-              <p>
-                The Electrical subteam manages the bike's electrical and
+              <p className="font-Sansation">
+                The Electrical subteam manages the bike&apos;s electrical and
                 software systems, including the camera and data acquisition
                 systems that enhance rider safety and performance. With no
                 windows on the fairing, the rider relies on these systems to
@@ -593,43 +601,43 @@ export default function Outreach() {
             }}
           >
             <div>
-              <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
+              <h2 className="text-left text-2xl font-Sansation underline decoration-green decoration-4">
                 Responsible For
               </h2>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Design, simulate, and document circuitry, including PCB
                 manufacturing and programming microcontrollers like Raspberry Pi
                 for sensor control.
               </li>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Develop and maintain a React-powered web app and various Python
                 projects, including physical modeling and data processing.
               </li>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Troubleshoot systems during testing and ensure thorough
                 documentation of code, APIs, and pull requests.
               </li>
             </div>
             <div>
-              <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
+              <h2 className="text-left text-2xl font-Sansation underline decoration-green decoration-4">
                 Key Skills
               </h2>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Experience with microcontrollers (Arduino, Raspberry Pi) and
                 programming in C or Python, with an interest in circuit/PCB
                 design and 3D printing.
               </li>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Proficiency in JavaScript, Python, Git, and familiarity with
                 TypeScript React.
               </li>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Strong communication skills, eagerness to learn, and industry or
                 project experience outside of the curriculum.
               </li>
@@ -656,7 +664,7 @@ export default function Outreach() {
               paddingRight: "5%",
             }}
           >
-            <h2 className="text-left lg:text-right text-3xl font-Sensation underline decoration-green decoration-4">
+            <h2 className="text-left lg:text-right text-3xl font-Sansation underline decoration-green decoration-4">
               Materials
             </h2>
           </div>
@@ -692,7 +700,7 @@ export default function Outreach() {
               />
             </div>
             <div>
-              <p>
+              <p className="font-Sansation">
                 The Materials subteam prototypes and manufactures the fairing,
                 focusing on optimising its design for aerodynamics and rider
                 safety. They research methods and materials, currently using a
@@ -711,40 +719,40 @@ export default function Outreach() {
             }}
           >
             <div>
-              <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
+              <h2 className="text-left text-2xl font-Sansation underline decoration-green decoration-4">
                 Responsible For
               </h2>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Use finite element analysis (FEA) software to design and
                 optimise composite components.
               </li>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Manufacture the fairing and supplementary composite components,
                 primarily working with carbon fiber.c
               </li>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Spend time in the workshop creating and testing various
                 composite parts.
               </li>
             </div>
             <div>
-              <h2 className="text-left text-2xl font-Sensation underline decoration-green decoration-4">
+              <h2 className="text-left text-2xl font-Sansation underline decoration-green decoration-4">
                 Key Skills
               </h2>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Experience with ANSYS Mechanical, ACP, and a solid understanding
                 of CAD and FEA is preferred.
               </li>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Strong knowledge of dynamics principles and attention to detail.
               </li>
               <br></br>
-              <li>
+              <li className="font-Sansation">
                 Willingness to learn and interest in developing hands-on skills.
               </li>
             </div>
