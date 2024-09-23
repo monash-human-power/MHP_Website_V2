@@ -2,8 +2,16 @@ import React from "react";
 import PageSection from "../components/PageSection";
 import ImageCarousel from "../components/ImageCarousel";
 
-const hpvImages = ["/hpvImage1.jpg", "/hpvImage2.jpg", "/hpvImage3.jpg"];
-const bmImages = ["/bmImage1.jpg", "/bmImage2.jpg", "/bmImage3.jpg"];
+const hpvImages = [
+  "/hpvImages/image1.jpg",
+  "/hpvImages/image2.jpg",
+  "/hpvImages/image3.jpg",
+];
+const bmImages = [
+  "/whpscImages/image1.jpg",
+  "/whpscImages/image2.jpg",
+  "/whpscImages/image3.jpg",
+];
 const ozhpvImages = ["/competitionImage2.png"];
 
 export default function Competitions() {
@@ -12,6 +20,7 @@ export default function Competitions() {
       <PageSection colourWay="dark">
         <div className="font-Aldrich bg-black text-white min-h-screen">
           <div className="text-center">
+            {/* Header Section */}
             <h1 className="text-4xl text-[#acf601] mb-5">Competitions</h1>
             <p>
               Monash Human Power participates in various competitions that
@@ -51,7 +60,6 @@ export default function Competitions() {
               single-track record, a significant milestone in their pursuit of
               speed innovation.
             </p>
-
             <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center mt-5">
               <div className="w-full lg:w-1/2 sm:h-1/2">
                 <ImageCarousel images={bmImages}></ImageCarousel>
