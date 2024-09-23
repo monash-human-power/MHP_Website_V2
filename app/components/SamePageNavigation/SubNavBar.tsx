@@ -7,14 +7,15 @@ interface SubNavBarProps {
 const SubNavBar = ({sections, activeSection, setActiveSection} : SubNavBarProps) => {
     {/* Wide Screen Navbar */}
     return (
-        <div className="hidden lg:block font-Aldrich">
-          <div className="flex justify-between items-center h-full w-full">
+        <nav className="relative w-full bg-black text-white font-Aldrich xl:text-xl lg:text-l z-1">
+             <div className="hidden lg:block font-Aldrich">
+          <div className="flex justify-start items-center h-full w-full space-x-10 pl-4 pt-2 pb-2">
             {sections.map((section, key) => (
                 <button 
                     key={section} // unique key for each section
                     className={`${activeSection===section 
-                        ? "font-Aldrich border-b-2 border-greenbutton" 
-                        : "font-Aldrich hover:border-b-2 hover:border-greenbutton"}`}
+                        ? "font-Aldrich text-greenbutton" 
+                        : "font-Aldrich hover:text-greenbutton"}`}
                         onClick={() => setActiveSection(section)} // set the active section on click
                         >
                     {section}
@@ -23,6 +24,7 @@ const SubNavBar = ({sections, activeSection, setActiveSection} : SubNavBarProps)
             }
             </div>
         </div>
+        </nav>
     );
 };
 

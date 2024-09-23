@@ -1,16 +1,11 @@
 import React, {use, useState} from 'react'
 
 import PageSection from "../components/PageSection";
-import SubNavBar from "../components/SamePageNavigation/SubNavBar";
+import BikeSection from '../components/BikeSection';
 
 import bikeData from "../../public/JSONs/bikes.json";  // Importing the JSON file
 
 export default function Page() {
-    const sections = bikeData.map((vehicle, key) => (vehicle.name))
-
-    // track the active section
-    //const [activeSection, setActiveSection] = useState
-
     return (
         <>
             <PageSection colourWay="dark">
@@ -28,16 +23,10 @@ export default function Page() {
                     </div>
                 </section>  
             </PageSection>
-            {/* <SubNavBar {vehicles, }></SubNavBar> */}
-            <div>
-                {
-                    bikeData?.map((vehicle, index) => (
-                        <div>
-                            {vehicle.name}
-                        </div>
-                    ))
-                }
-            </div>
+            {/* For each vehicle, add a BikeSection component */}
+            {Object.keys(bikeData).map(bikeName => (
+                <BikeSection key={bikeName} bike={bikeName}></BikeSection>
+            ))}
         </>
     );
 }
