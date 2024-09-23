@@ -9,8 +9,8 @@ const BikeContent = ({activeTab} : BikeContentProps) => {
         <div className="mt-4">
             {/* Depending on the item selected in the bike section sub nav bar, different bike subsections
             will render */}
-            {activeTab==='overview' && <p>This is the overview subsection</p>}
-            {activeTab==='gallery' && <p>This is the gallery subsection</p>}
+            {activeTab==='Overview' && <p>This is the overview subsection</p>}
+            {activeTab==='Gallery' && <p>This is the gallery subsection</p>}
         </div>
     );
 };
