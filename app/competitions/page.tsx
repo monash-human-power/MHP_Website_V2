@@ -1,6 +1,7 @@
 import React from "react";
 import PageSection from "../components/PageSection";
 import ImageCarousel from "../components/ImageCarousel";
+import Image from "next/image";
 
 const hpvImages = [
   "/hpvImages/image1.jpg",
@@ -12,7 +13,6 @@ const bmImages = [
   "/whpscImages/image2.jpg",
   "/whpscImages/image3.jpg",
 ];
-const ozhpvImages = ["/competitionImage2.png"];
 
 export default function Competitions() {
   return (
@@ -40,10 +40,10 @@ export default function Competitions() {
             </h1>
             <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center space-y-3 sm:space-y-0 sm:space-x-5 mb-5">
               <p className="text-center border rounded-3xl border-[#acf601] p-3 sm:mb-0">
-                Add stats here
+                Top Speed: 116 kmph
               </p>
               <p className="text-center border rounded-3xl border-[#acf601] p-3 sm:mb-0">
-                Add stats here
+                Rank: 39th
               </p>
               <p className="text-center border rounded-3xl border-[#acf601] p-3 sm:mb-0">
                 Add stats here
@@ -93,7 +93,6 @@ export default function Competitions() {
               borrowed trike while developing its custom-designed trike, aiming
               to push new boundaries in endurance HPV racing.
             </p>
-
             <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center mt-5">
               <div className="w-full lg:w-1/2 sm:h-1/2">
                 <ImageCarousel images={hpvImages}></ImageCarousel>
@@ -128,10 +127,15 @@ export default function Competitions() {
               showcasing their commitment to developing world-class
               human-powered vehicles.
             </p>
-
             <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center mt-5">
-              <div className="w-full lg:w-1/2 sm:h-1/2">
-                <ImageCarousel images={ozhpvImages}></ImageCarousel>
+              <div className="w-full lg:w-1/2 sm:h-1/2 center">
+                <Image
+                  src="/competitionImage2.png"
+                  layout="intrinsic"
+                  width={700}
+                  height={200}
+                  alt="ozhpv"
+                />
               </div>
             </div>
           </div>
