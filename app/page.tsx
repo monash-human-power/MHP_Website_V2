@@ -18,43 +18,51 @@ export default function Page() {
   return (
     <>
       <PageSection colourWay="dark">
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <h1>MONASH HUMAN POWER</h1>
+            <h1 className="text-center sm:text-left text-2xl sm:text-4xl">
+              MONASH HUMAN POWER
+            </h1>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            {/* Todo: make image largern */}
-            <Image src="/v3.png" width={1000} height={200} alt="" />
+            <img
+              src="/v3.png"
+              className="flex-grow h-full w-full object-cover"
+              alt=""
+            />
           </div>
-          <div className="text-right">
-            {" "}
-            <h2 className=" text-right ">Our Story</h2>
-            <p className="font-light">
+          <div className="text-center sm:text-right">
+            <h2 className="text-center sm:text-right  underline decoration-greenbutton decoration-4">
+              Our Story
+            </h2>
+            <p>
               {`
-            We are a student-led engineering team 
-            based at Monash University
-            in Melbourne, Australia. 
-            Since 2015 we have been designing,
-            manufacturing, and racing fully-faired human-powered vehicles (HPVs)
-            to push the limits of human speed.`}
+        We are a student-led engineering team 
+        based at Monash University
+        in Melbourne, Australia. 
+        Since 2015 we have been designing,
+        manufacturing, and racing fully-faired human-powered vehicles (HPVs)
+        to push the limits of human speed.`}
             </p>
             <Button
               hrefString="https://www.youtube.com/watch?v=psuRwd4hgEA&t=3s"
               text="Learn More"
               theme="dark"
+              className="mt-4"
             />
           </div>
         </div>
       </PageSection>
+
       <ImageCarousel images={images}></ImageCarousel>
 
-      <PageSection colourWay="light">
-        <h2 className="font-Aldrich underline  decoration-purple decoration-4">
+      <PageSection colourWay="dark">
+        <h2 className="font-Aldrich underline  decoration-greenbutton decoration-4">
           Our mission
         </h2>
-        <p>
+        <p className="my-2">
           Our team’s vision is to make the fastest HPV in Australia, and
           eventually the world. We’re hoping to break the HPV land-speed record
           in Australia (currently 96.7km/h) having ridden at faster speeds
@@ -67,11 +75,11 @@ export default function Page() {
           wider community within the framework of HPVs through school outreach
           programs.
         </p>
-        <Button hrefString="/bikes" text="Learn More" theme="light" />
+        <Button hrefString="/bikes" text="Learn More" theme="dark" />
       </PageSection>
 
       <PageSection colourWay="dark">
-        <h2 className="text-center font-Aldrich underline decoration-greenbutton decoration-4">
+        <h2 className="text-center font-Aldrich underline decoration-greenbutton decoration-4 ">
           Our Values
         </h2>
 
@@ -105,7 +113,8 @@ export default function Page() {
           </div>
         </div>
       </PageSection>
-      <PageSection colourWay="light">
+
+      <PageSection colourWay="dark">
         <SponsorshipCarousel items={sponsorData} />
       </PageSection>
     </>

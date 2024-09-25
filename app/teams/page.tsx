@@ -84,7 +84,6 @@ export default function TeamPage() {
           </div>
         </section>
       </PageSection>
-      <ArrowDown color="black" />
 
       {/* Sub-teams navigation */}
       <PageSection colourWay="dark">
@@ -125,18 +124,17 @@ export default function TeamPage() {
             {/* Description */}
             <div className="mt-2 lg:mt-0 lg:w-1/2">
               <div className={`transition-opacity duration-300 ${fadeClass}`}>
-                <h2>{currentTeam.description}</h2>
+                <h2 className="font-extralight">{currentTeam.description}</h2>
               </div>
             </div>
           </div>
         </section>
       </PageSection>
-      <ArrowDown color="black" />
 
       {/* Team Leads and Members Section */}
       <PageSection colourWay="dark">
         <section
-          className={`bg-gray-800 ${fadeClass} bg-[url('/teams_background.png')]  bg-top bg-no-repeat`}
+          className={`${fadeClass} bg-[url('/teams_background.png')]  bg-top`}
         >
           <h2 className="text-center text-4xl font-bold mb-2">Team Members</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 px-8 mb-12">
@@ -176,13 +174,12 @@ export default function TeamPage() {
                   alt={member.name}
                   width={150}
                   height={150}
-                  className="rounded-full mx-auto"
+                  className="mx-auto"
                 />
                 <h4 className="text-l font-bold mt-4 text-greenbutton">
                   {member.name}
                 </h4>
                 <p>{member.role}</p>
-                <p>{member.department}</p>
               </div>
             ))}
           </div>
