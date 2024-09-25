@@ -73,16 +73,13 @@ export default function Competitions() {
             </h1>
             <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5">
               <p className="text-center border rounded-3xl border-[#acf601] p-3 sm:mb-0">
-                Race 1: 6/9<sup>th</sup> in category | 24/58<sup>th</sup>{" "}
-                overall
+                Race 1: 6/9 In Category | 24/58 Overall
               </p>
               <p className="text-center border rounded-3xl border-[#acf601] p-3 sm:mb-0">
-                Race 2: 5/9<sup>th</sup> in category | 21/81<sup>st</sup>{" "}
-                overall
+                Race 2: 5/9 In Category | 21/81 Overall
               </p>
               <p className="text-center border rounded-3xl border-[#acf601] p-3 sm:mb-0">
-                Race 3: 4/8<sup>th</sup> in category | 25/98<sup>th</sup>{" "}
-                overall
+                Race 3: 4/8 In Category | 25/98 Overall
               </p>
             </div>
             <p className="mt-3 text-justify">
