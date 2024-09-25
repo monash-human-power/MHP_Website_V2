@@ -42,15 +42,14 @@ const BikeSection = ({bike} : BikeSectionProps) => {
                         <h1 className="text-5xl font-bold">{bike}</h1>
                     </div>
                 </section>
-                <div className="relative w-full h-64">
-                <Image
-                    src={bikeData[bike].image}
-                    alt={`Image ${bike}`}
-                    layout="fill"
-                    objectFit="cover"
-                    />
+                <div className="relative w-full h-96 flex-shrink-0">
+                    <Image
+                        src={bikeData[bike].image}
+                        alt={`Image ${bike}`}
+                        layout="fill"
+                        objectFit="cover"
+                        />
                 </div>
-                {/* Insert bike image here */}
                 <SubNavBar 
                         sections={sections}
                         activeSection={activeSection}
