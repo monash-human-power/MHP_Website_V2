@@ -38,15 +38,14 @@ export default function Competitions() {
             <h1 className="text-center text-2xl text-[#acf601] mb-5">
               World Human Powered Speed Challenge
             </h1>
-            <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center space-y-3 sm:space-y-0 sm:space-x-5 mb-5">
+            <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5">
               <p className="text-center border rounded-3xl border-[#acf601] p-3 sm:mb-0">
-                Top Speed: 116 kmph
+                Rider: Kit Kirby | Top Speed: 116.39 kmph | World Rank: 39
+                <sup>th</sup>
               </p>
               <p className="text-center border rounded-3xl border-[#acf601] p-3 sm:mb-0">
-                Rank: 39th
-              </p>
-              <p className="text-center border rounded-3xl border-[#acf601] p-3 sm:mb-0">
-                Add stats here
+                Rider: Alastair Haslam | Top Speed: 116.05 kmph | World Rank: 42
+                <sup>nd</sup>
               </p>
             </div>
             <p className="mt-3 text-justify">
@@ -72,15 +71,18 @@ export default function Competitions() {
             <h1 className="text-center text-2xl text-[#acf601] mb-5">
               Vic HPV Grand Prix Series
             </h1>
-            <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center space-y-3 sm:space-y-0 sm:space-x-5 mb-5">
+            <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5">
               <p className="text-center border rounded-3xl border-[#acf601] p-3 sm:mb-0">
-                Add stats here
+                Race 1: 6/9<sup>th</sup> in category | 24/58<sup>th</sup>{" "}
+                overall
               </p>
               <p className="text-center border rounded-3xl border-[#acf601] p-3 sm:mb-0">
-                Add stats here
+                Race 2: 5/9<sup>th</sup> in category | 21/81<sup>st</sup>{" "}
+                overall
               </p>
               <p className="text-center border rounded-3xl border-[#acf601] p-3 sm:mb-0">
-                Add stats here
+                Race 3: 4/8<sup>th</sup> in category | 25/98<sup>th</sup>{" "}
+                overall
               </p>
             </div>
             <p className="mt-3 text-justify">
@@ -105,15 +107,14 @@ export default function Competitions() {
             <h1 className="text-center text-2xl text-[#acf601] mb-5">
               OzHPV Speed Trials
             </h1>
-            <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center space-y-3 sm:space-y-0 sm:space-x-5 mb-5">
+            <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5">
               <p className="text-center border rounded-3xl border-[#acf601] p-3 sm:mb-0">
-                Add stats here
+                Rider: Ellen | Record: Women&apos;s Standing 10km | Top Speed:
+                40.328 kmph
               </p>
               <p className="text-center border rounded-3xl border-[#acf601] p-3 sm:mb-0">
-                Add stats here
-              </p>
-              <p className="text-center border rounded-3xl border-[#acf601] p-3 sm:mb-0">
-                Add stats here
+                Rider: Kit Kirby | Record: Men&apos;s F200 2 Wheel | Top Speed:
+                87.40 kmph
               </p>
             </div>
             <p className="mt-3 text-justify">
