@@ -2,12 +2,13 @@ import React, {use, useState} from 'react'
 
 import PageSection from "../components/PageSection";
 import BikeSection from '../components/BikeSection';
+import SamePageNavBar from '../components/SamePageNavigation/SamePageNavBar';
 
 import bikeData from "../../public/JSONs/bikes.json";  // Importing the JSON file
 
 export default function Page() {
     return (
-        <>
+        <div className="scroll-smooth">
             <PageSection colourWay="dark">
                 <section className="relative text-center">
                     <div className="relative z-10">
@@ -23,10 +24,13 @@ export default function Page() {
                     </div>
                 </section>  
             </PageSection>
+            <SamePageNavBar sections={Object.keys(bikeData)}></SamePageNavBar>
             {/* For each vehicle, add a BikeSection component */}
             {Object.keys(bikeData).map(bikeName => (
-                <BikeSection key={bikeName} bike={bikeName}></BikeSection>
+                <div key={bikeName} id={bikeName}>
+                    <BikeSection key={bikeName} bike={bikeName}></BikeSection>
+                </div>
             ))}
-        </>
+        </div>
     );
 }
