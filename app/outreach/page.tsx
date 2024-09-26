@@ -160,7 +160,9 @@ export default function Outreach() {
             {/* Description */}
             <div className="mt-2 lg:mt-0 lg:w-1/2  py-10 lg:py-0">
               <div className={`transition-opacity duration-300 ${fadeClass}`}>
-                <p className="text-xl sm:text-justify">{currentProgram.description}</p>
+                <p className="text-xl sm:text-justify">
+                  {currentProgram.description}
+                </p>
               </div>
             </div>
           </div>
@@ -211,15 +213,13 @@ export default function Outreach() {
                 </svg>
                 <blockquote>
                   <p>
-                    "The kids loved it and the others that missed out were super
-                    jealous!"
+                    &quot;The kids loved it and the others that missed out were
+                    super jealous!&quot;
                   </p>
                 </blockquote>
                 <figcaption className="flex items-center justify-center mt-6 space-x-3">
                   <div className="flex items-center divide-x-2">
-                    <div className="pr-3 font-medium">
-                      STEM Teacher
-                    </div>
+                    <div className="pr-3 font-medium">STEM Teacher</div>
                     <div className="pl-3 text-sm font-light">
                       Westall Secondary College
                     </div>
@@ -243,18 +243,14 @@ export default function Outreach() {
                 </svg>
                 <blockquote>
                   <p>
-                    "It was really fun! Had a blast being creative while
-                    teaching important STEM skills."
+                    &quot;It was really fun! Had a blast being creative while
+                    teaching important STEM skills.&quot;
                   </p>
                 </blockquote>
                 <figcaption className="flex items-center justify-center mt-6 space-x-3">
                   <div className="flex items-center divide-x-2">
-                    <div className="pr-3 font-medium">
-                      Blake Haydon
-                    </div>
-                    <div className="pl-3 text-sm font-light">
-                      MHP member
-                    </div>
+                    <div className="pr-3 font-medium">Blake Haydon</div>
+                    <div className="pl-3 text-sm font-light">MHP member</div>
                   </div>
                 </figcaption>
               </figure>
@@ -289,9 +285,11 @@ export default function Outreach() {
           }}
         >
           <div
-            style={{
-              // padding: "40px",
-            }}
+            style={
+              {
+                // padding: "40px",
+              }
+            }
           >
             <h2 className="text-center text-3xl font-Sensation underline decoration-green decoration-4">
               Find out more!

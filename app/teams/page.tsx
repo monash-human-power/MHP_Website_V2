@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import PageSection from "../components/PageSection";
 import teamData from "../../public/JSONs/teams.json"; // Importing the JSON file
+import ArrowDown from "../components/ArrowDown";
 
 export default function TeamPage() {
   const [currentTeamIndex, setCurrentTeamIndex] = useState(0);
@@ -59,10 +60,10 @@ export default function TeamPage() {
   return (
     <>
       <PageSection colourWay="dark">
-        <section className="relative text-center py-5 animate-fadeIn">
+        <section className="relative text-center">
           <div className="relative z-10">
             <h1 className="text-5xl font-bold">Meet our team</h1>
-            <div className="flex justify-center items-center mt-6">
+            <div className="flex justify-center items-center mt-2">
               <Image
                 src="/teams_image_1.png"
                 alt="Team photo"
@@ -72,7 +73,7 @@ export default function TeamPage() {
               />
             </div>
 
-            <h2 className="mt-4 mx-20">
+            <h2 className="mt-2 mx-20">
               We, at Monash Human Power are a diverse team of Monash University
               students, bringing together expertise from various engineering
               disciplines to design cutting-edge human-powered vehicles.
@@ -86,6 +87,16 @@ export default function TeamPage() {
 
       {/* Sub-teams navigation */}
       <PageSection colourWay="dark">
+        <div
+          className="p-4"
+          style={{
+            borderTop: "2px solid #5e5b5b", // Top border
+            width: "95%",
+            margin: "0 auto",
+            textAlign: "center",
+          }}
+        ></div>
+
         <section className="flex justify-center items-center bg-gray-900">
           <button
             onClick={prevTeam}
@@ -108,39 +119,52 @@ export default function TeamPage() {
         <section className="">
           <div className="flex flex-col lg:flex-row justify-center items-center lg:space-x-8 px-8">
             {/* Image */}
-            <div className="w-full lg:w-1/2">
+            <div className="w-full lg:w-1/2 md:w-1/2">
               <div className={`transition-opacity duration-300 ${fadeClass}`}>
                 <Image
                   src={currentTeam.image} // Dynamically load the image from JSON
                   alt={currentTeam.name}
-                  width={500}
-                  height={500}
+                  width={600}
+                  height={350}
                   className="rounded-lg"
                 />
               </div>
             </div>
 
             {/* Description */}
-            <div className="mt-2 lg:mt-0 lg:w-1/2">
+            <div className="mt-2 mx-2 lg:mt-0 lg:w-1/2 md:w-1/2 md:items-center">
               <div className={`transition-opacity duration-300 ${fadeClass}`}>
-                <h2>{currentTeam.description}</h2>
+                <h2 className="font-extralight">{currentTeam.description}</h2>
               </div>
             </div>
           </div>
         </section>
+        <div
+          className="p-4"
+          style={{
+            borderBottom: "2px solid #5e5b5b",
+            width: "95%",
+            margin: "0 auto",
+            textAlign: "center",
+          }}
+        ></div>
       </PageSection>
 
       {/* Team Leads and Members Section */}
       <PageSection colourWay="dark">
         <section
-          className={`bg-gray-800 ${fadeClass} bg-[url('/teams_background.png')]  bg-top bg-no-repeat`}
+          className={`${fadeClass} bg-[url('/teams_background.png')]  bg-top bg-no-repeat`}
         >
           <h2 className="text-center text-4xl font-bold mb-2">Team Members</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 px-8 mb-12">
             {currentTeam.Team_Leads?.map((lead, index) => (
               <div
                 key={index}
-                className="bg-gray-900 p-4 rounded-lg text-center"
+                className={`bg-gray-900 p-4 rounded-lg text-center ${
+                  currentTeam.Team_Leads.length === 3 && index === 2
+                    ? "lg:col-start-1 lg:col-end-3"
+                    : ""
+                }`}
               >
                 <Image
                   src={lead.image} // Load team lead's image
@@ -153,7 +177,6 @@ export default function TeamPage() {
                   {lead.name}
                 </h4>
                 <p>{lead.role}</p>
-                <p>{lead.department}</p>
               </div>
             ))}
           </div>
@@ -173,13 +196,12 @@ export default function TeamPage() {
                   alt={member.name}
                   width={150}
                   height={150}
-                  className="rounded-full mx-auto"
+                  className="mx-auto"
                 />
-                <h4 className="text-l font-bold mt-4 text-green">
+                <h4 className="text-lg font-bold mt-4 text-green">
                   {member.name}
                 </h4>
                 <p>{member.role}</p>
-                <p>{member.department}</p>
               </div>
             ))}
           </div>

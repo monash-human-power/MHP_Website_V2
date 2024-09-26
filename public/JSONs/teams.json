@@ -1,9 +1,33 @@
 {
     "sub_teams": [
       {
+        "name": "Management Team",
+        "description": "The Rider Development team is dedicated to enhancing rider performance. This team, which includes both riders and technical experts, designs and manages cycling and strength training programs, as well as creates personalized power plans for each rider. They also oversee training on recumbent bikes and conduct physical tests on the bikes' mechanical and electrical systems. ",
+        "image": "/JSONS/teamsImages/images/upperman.jpg",
+        "Team_Leads": [
+            {
+              "name": "Arosh Heenkenda",
+              "role": "Chief Executive Officer",
+              "department": "Mechanical Engineering and Commerce",
+              "image": "/JSONS/teamsImages/images/arosh-heenkenda.jpg"
+            },
+            {
+              "name": "James Cookson",
+              "role": "Chief Technical Officer",
+              "department": "Electrical Engineering and Biomedical Science",
+              "image": "/JSONS/teamsImages/images/james-cookson.jpg"
+            }, {
+              "name": "Rhys Watson",
+              "role": "Chief Operating Officer",
+              "department": "Electrical Engineering and Biomedical Science",
+              "image": "/JSONS/teamsImages/images/rhys-watson.jpg"
+            }
+          ]
+      },
+      {
         "name": "Rider Development",
         "description": "The Rider Development team is dedicated to enhancing rider performance. This team, which includes both riders and technical experts, designs and manages cycling and strength training programs, as well as creates personalized power plans for each rider. They also oversee training on recumbent bikes and conduct physical tests on the bikes' mechanical and electrical systems. ",
-        "image": "/JSONS/teamsImages/Electrical.png",
+        "image": "/JSONS/teamsImages/images/rider.jpg",
         "Team_Leads": [
             {
               "name": "James Gardiner",
@@ -205,7 +229,7 @@
       {
         "name": "Aerodynamics",
         "description": "The Aerodynamics team are responsible for the design and testing of the aerodynamics of the bike, designing the faring of our bike, which is the external shell of the bike. The key purpose of the the fairing is to reduce drag on the bike,  maximising speed that our vehicles can reach. Through the use of computational fluid dynamics (CFD), as well as experimental testing in the Monash Wind Tunnel, the team creates aerodynamic faring designs which optimise our vehicles performance .",
-        "image": "/JSONS/teamsImages/Electrical.png",
+        "image": "/JSONS/teamsImages/images/aero.jpg",
         "Team_Leads": [
           {
             "name": "David Cheng",
@@ -269,7 +293,7 @@
       {
         "name": "Materials",
         "description": "The Materials team is to prototype and manufacture the fairing designed by the Aerodynamics team, optimising the quality of the fairing to ensure the aerodynamic performance of the bike and rider safety. They carry out extensive research to find the most viable methods and materials to produce the fairing.",
-        "image": "/JSONS/teamsImages/Electrical.png",
+        "image": "/JSONS/teamsImages/images/materials.jpg",
         "Team_Leads": [
             {
               "name": "Casey Diep",
@@ -350,7 +374,7 @@
       {
         "name": "Operations",
         "description": "The Operations team is responsible for managing the day-to-day activities of the organization, including overseeing the design and implementation of various operational processes. They work to ensure smooth functioning of the team, including coordination between different departments, resource management, and maintaining operational efficiency.",
-        "image": "/JSONS/teamsImages/Electrical.png",
+        "image": "/JSONS/teamsImages/images/operations_team.png",
         "Team_Leads": [
           {
             "name": "Ritika Gopinath",
