@@ -36,7 +36,7 @@ const BikeSection = ({bike} : BikeSectionProps) => {
             <PageSection colourWay="dark">
                 <section className="relative text-center">
                     <div className="relative z-10">
-                        <h1 className="text-5xl font-bold">{bike.toUpperCase()}</h1>
+                        <h1 className="text-5xl text-center font-bold">{bike.toUpperCase()}</h1>
                     </div>
                 </section>
                 <div className="relative w-full h-96 flex-shrink-0">
