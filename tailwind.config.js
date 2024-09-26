@@ -52,6 +52,10 @@ module.exports = {
           '100%': { opacity: '0' },
         },
       },
+      width: {
+        '100': '25rem',
+        '120': '33rem'
+      }
     },
   },
   plugins: [],
