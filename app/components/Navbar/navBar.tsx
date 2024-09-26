@@ -45,6 +45,7 @@ const mobileNavigation: MobileNavItemsProps[] = [
   { name: "Competitions", href: "/competitions" },
   { name: "Teams", href: "/teams" },
   { name: "Blog", href: "/blog" },
+  { name: "Outreach", href: "/outreach" },
   { name: "Join", href: "/join" },
   { name: "Contact Us", href: "/contact" },
 ];
@@ -55,8 +56,8 @@ const desktopNavigation: NavItemsProps[] = [
   { name: "Teams", href: "/teams", srcString: "" },
   { name: "Home", href: "/", srcString: "/image.png" },
   { name: "Blog", href: "/blog", srcString: "" },
+  { name: "Outreach", href: "/outreach", srcString: "" },
   { name: "Join", href: "/join", srcString: "" },
-  { name: "Contact Us", href: "/contact", srcString: "" },
 ];
 
 const Navbar = () => {
@@ -164,7 +165,7 @@ const Navbar = () => {
               )
             )} */}
             <div className="px-10 py-2">
-              <Link href={"/contactUs"}>
+              <Link href={"/contact"}>
                 <button className="px-5 py-2 rounded-md border-2 border-white hover:bg-green hover:text-black hover:border-black">
                   Contact Us
                 </button>

@@ -5,7 +5,7 @@ import Image from 'next/image'
 import {ContactForm} from '../components/ContactForm'
 
 
-export default function contactUs() {
+export default function contact() {
   return (
     <>
       <PageSection colourWay="dark">
