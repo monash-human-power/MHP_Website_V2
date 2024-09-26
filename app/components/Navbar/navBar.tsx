@@ -46,7 +46,7 @@ const mobileNavigation: MobileNavItemsProps[] = [
   { name: "Teams", href: "/teams" },
   { name: "Blog", href: "/blog" },
   { name: "Join", href: "/join" },
-  { name: "Contact Us", href: "/contactUs" },
+  { name: "Contact Us", href: "/contact" },
 ];
 
 const desktopNavigation: NavItemsProps[] = [
@@ -56,6 +56,7 @@ const desktopNavigation: NavItemsProps[] = [
   { name: "Home", href: "/", srcString: "/image.png" },
   { name: "Blog", href: "/blog", srcString: "" },
   { name: "Join", href: "/join", srcString: "" },
+  { name: "Contact Us", href: "/contact", srcString: "" },
 ];
 
 const Navbar = () => {
