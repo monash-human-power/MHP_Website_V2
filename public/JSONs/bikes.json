@@ -35,7 +35,7 @@
       "development_start": 2014,
       "development_end": 2018,
       "competitions": [],
-      "description": "The original Blacksmith was developed by a team of final-year engineering students at Monash University as their Final Year Project. This initial design, known as Version 1, laid the groundwork for Monash Human Power (MHP). To improve competitiveness and address safety considerations, Blacksmith underwent revisions, leading to the enhanced Version 1.5.",
+      "description": "The original Blacksmith was developed by a team of final-year engineering students at Monash University as their Final Year Project. This initial design, known as Version 1, laid the groundwork for Monash Human Power (MHP). To improve competitiveness and address safety considerations, Blacksmith underwent a series of revisions, leading to the enhanced Version 1.5.",
       "gallery": []
     },
     "Bandicoot": {
@@ -45,7 +45,7 @@
       "development_start": 2024,
       "development_end": "Current",
       "competitions": [],
-      "description": "Bandicoot description.",
+      "description": "Marking our debut in trike racing at the Victorian Human Powered Grand Prix Series, the Bandicoot completed an impressive 102 laps, securing a commendable sixth place. This second-hand trike, crafted with care and engineering finesse, serves as our gateway to fully immerse our team in the thrilling world of trike racing.",
       "gallery": [
         "/JSONs/bikes/bandicootGallery/bandicoot_long_shot.jpg",
         "/JSONs/bikes/bandicootGallery/bandicoot_racing.jpg",
