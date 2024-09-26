@@ -18,25 +18,38 @@ module.exports = {
         searchbarbg: "#1F1F22",
         lightgray: "#EFEFEF",
         gray: "#C0BFBD",
-        greenbutton: "#ACF601",
+        green: "#ACF601",
       },
       fontFamily: {
-        //sans: ["Arial", "Helvetica", "sans-serif"],
         Aldrich: "Aldrich",
         Sansation: "Sansation",
       },
       fontSize: {
-        xs: ".75rem", // Extra small
-        sm: ".875rem", // Small
-        base: "1rem", // Base
-        lg: "1.125rem", // Large
-        xl: "1.25rem", // Extra large
-        "2xl": "1.5rem", // 2X large
-        "3xl": "1.875rem", // 3X large
-        "4xl": "2.25rem", // 4X large
-        "5xl": "3rem", // 5X large
-        "6xl": "4rem", // 6X large
-        "7xl": "5rem", // 7X large
+        xs: ".75rem",
+        sm: ".875rem",
+        base: "1rem",
+        lg: "1.125rem",
+        xl: "1.25rem",
+        "2xl": "1.5rem",
+        "3xl": "1.875rem",
+        "4xl": "2.25rem",
+        "5xl": "3rem",
+        "6xl": "4rem",
+        "7xl": "5rem",
+      },
+      animation: {
+        fadeIn: 'fadeIn 1000ms ease-in',
+        fadeOut: 'fadeOut 1000ms ease-out',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        fadeOut: {
+          '0%': { opacity: '1' },
+          '100%': { opacity: '0' },
+        },
       },
       width: {
         '100': '25rem',

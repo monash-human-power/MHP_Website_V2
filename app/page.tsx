@@ -1,6 +1,17 @@
 import PageSection from "./components/PageSection";
 import Image from "next/image";
 import Navbar from "./components/Navbar/navBar";
+import ImageCarousel from "./components/ImageCarousel";
+import SponsorshipCarousel from "./components/SponsorCarousel";
+import sponsorData from "../public/JSONs/sponsors.json";
+
+const images = [
+  "/battle_mountain_group.jpg",
+  "/trike_race.jpg",
+  "/o_week_group.jpg",
+  "/mhp_group.jpg",
+];
+import Button from "./components/Buttons";
 
 export default function Page() {
   return (
@@ -28,10 +39,15 @@ export default function Page() {
             manufacturing, and racing fully-faired human-powered vehicles (HPVs)
             to push the limits of human speed.`}
             </p>
-            <p>fake button</p>
+            <Button
+              hrefString="https://www.youtube.com/watch?v=psuRwd4hgEA&t=3s"
+              text="Learn More"
+              theme="dark"
+            />
           </div>
         </div>
       </PageSection>
+      <ImageCarousel images={images}></ImageCarousel>
 
       <PageSection colourWay="light">
         <h2 className="font-Aldrich underline  decoration-purple decoration-4">
@@ -50,15 +66,45 @@ export default function Page() {
           wider community within the framework of HPVs through school outreach
           programs.
         </p>
+        <Button hrefString="/bikes" text="Learn More" theme="light" />
+      </PageSection>
+      <PageSection colourWay="dark">
+        <h2 className="text-center font-Aldrich underline decoration-green decoration-4">
+          Our Values
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+          <div>
+            <h2 className="text-center">Quality</h2>
+            <p className="pt-5 pr-2 text-justify">
+              We are a student-led engineering team based at Monash University
+              in Melbourne, Australia. Since 2015 we have been designing,
+              manufacturing, and racing fully-faired human-powered vehicles
+              (HPVs) to push the limits of human speed.
+            </p>
+          </div>
+          <div>
+            <h2 className="text-center">Pride</h2>
+            <p className="pt-5 pr-2 text-justify">
+              We are a student-led engineering team based at Monash University
+              in Melbourne, Australia. Since 2015 we have been designing,
+              manufacturing, and racing fully-faired human-powered vehicles
+              (HPVs) to push the limits of human speed.
+            </p>
+          </div>
+          <div>
+            <h2 className="text-center">Consistency</h2>
+            <p className="pt-5 text-justify">
+              We are a student-led engineering team based at Monash University
+              in Melbourne, Australia. Since 2015 we have been designing,
+              manufacturing, and racing fully-faired human-powered vehicles
+              (HPVs) to push the limits of human speed.
+            </p>
+          </div>
+        </div>
       </PageSection>
       <PageSection colourWay="light">
-        <h2 className="font-Aldrich underline  decoration-purple decoration-4">Our Story</h2>
-        <p>
-          We are a student-led engineering team based at Monash University in
-          Melbourne, Australia. Since 2015 we have been designing,
-          manufacturing, and racing fully-faired human-powered vehicles (HPVs)
-          to push the limits of human speed.
-        </p>
+        <SponsorshipCarousel items={sponsorData} />
       </PageSection>
     </>
   );

@@ -1,0 +1,26 @@
+[
+    {
+      "image": "/JSONS/sponsorImages/MU.png",
+      "link": "https://www.monash.edu/",
+      "title": "Monash University",
+      "description": "This is the description for Monash."
+    },
+    {
+      "image": "/JSONS/sponsorImages/AARC.png",
+      "link": "https://aarconline.com/",
+      "title": "Australian Automotive Research Centre",
+      "description": "This is the description for item 2."
+    },
+    {
+      "image": "/JSONS/sponsorImages/BA.png",
+      "link": "#",
+      "title": "B&A Motor Body Repairs",
+      "description": "This is the description for item 3."
+    },
+    {
+      "image": "/JSONS/sponsorImages/BUSCH.png",
+      "link": "https://www.buschvacuum.com/au/en/",
+      "title": "Busch Vacuum Solutions AU",
+      "description": "This is the description for item 4."
+    }
+  ]
