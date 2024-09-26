@@ -16,7 +16,7 @@ export const ContactForm = () => {
       const result = await emailjs.sendForm('service_8ty54mt', 'template_t8t0zc9', form.current!, 'P4WMs7TMx12asCi2G');
       console.log(result.text);
       setStateMessage("Message sent successfully!");
-    } catch (error) {
+    } catch (error:any) {
       console.error(error.text);
       setStateMessage("Failed to send message. Please try again.");
     } finally {
