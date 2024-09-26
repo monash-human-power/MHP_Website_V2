@@ -1,10 +1,9 @@
-'use client';
+"use client";
 import Button from "../components/Buttons";
 import PageSection from "../components/PageSection";
 import Image from "next/image";
 
 export default function Outreach() {
-
   return (
     <>
       {/* Battle Mountain Group Image */}
@@ -25,7 +24,9 @@ export default function Outreach() {
       {/* Join Us section */}
       <PageSection colourWay="dark">
         <div className="text-center">
-          <h1 className="text-5xl text-Sansation text-[#acf601] font-bold">Join Us</h1>
+          <h1 className="text-5xl text-Sansation text-[#acf601] font-bold">
+            Join Us
+          </h1>
           <div
             className="text-xl"
             style={{
@@ -55,7 +56,6 @@ export default function Outreach() {
             paddingBottom: "20px",
           }}
         >
-          
           {/* Expression of Interest button links to Google Form */}
           <a href="https://forms.gle/Ek9e9jvtd57NLrRM9" target="_blank">
             <button className="px-4 py-2 lg:px-16 lg:py-2 rounded-full border-2 bg-green text-black border-black hover:bg-black hover:text-white hover:border-white">
@@ -69,7 +69,7 @@ export default function Outreach() {
       <PageSection colourWay="dark">
         <div
           style={{
-            borderTop: "2px solid #B3B3B3", // Top border
+            borderTop: "2px solid #5e5b5b", // Top border
             width: "90%",
             margin: "0 auto",
             textAlign: "center",
@@ -186,7 +186,7 @@ export default function Outreach() {
       <PageSection colourWay="dark">
         <div
           style={{
-            borderTop: "2px solid #B3B3B3", // Top border
+            borderTop: "2px solid #5e5b5b", // Top border
             width: "90%",
             margin: "0 auto",
             textAlign: "center",
@@ -299,7 +299,7 @@ export default function Outreach() {
       <PageSection colourWay="dark">
         <div
           style={{
-            borderTop: "2px solid #B3B3B3", // Top border
+            borderTop: "2px solid #5e5b5b", // Top border
             width: "90%",
             margin: "0 auto",
             textAlign: "center",
@@ -413,7 +413,7 @@ export default function Outreach() {
       <PageSection colourWay="dark">
         <div
           style={{
-            borderTop: "2px solid #B3B3B3", // Top border
+            borderTop: "2px solid #5e5b5b", // Top border
             width: "90%",
             margin: "0 auto",
             textAlign: "center",
@@ -464,10 +464,10 @@ export default function Outreach() {
               <p className="font-Sansation">
                 The Operations subteam engages external stakeholders,
                 coordinates with sponsors, and markets MHP activities. They
-                organise events like the &quot;Build a HPV&quot; school outreach program,
-                promote STEM pathways, and support the technical team&apos;s bike
-                manufacturing. They are also involved in graphic design and
-                branding for MHP.
+                organise events like the &quot;Build a HPV&quot; school outreach
+                program, promote STEM pathways, and support the technical
+                team&apos;s bike manufacturing. They are also involved in
+                graphic design and branding for MHP.
               </p>
             </div>
           </div>
@@ -530,7 +530,7 @@ export default function Outreach() {
       <PageSection colourWay="dark">
         <div
           style={{
-            borderTop: "2px solid #B3B3B3", // Top border
+            borderTop: "2px solid #5e5b5b", // Top border
             width: "90%",
             margin: "0 auto",
             textAlign: "center",
@@ -647,8 +647,8 @@ export default function Outreach() {
       <PageSection colourWay="dark">
         <div
           style={{
-            borderTop: "2px solid #B3B3B3", // Top border
-            borderBottom: "2px solid #B3B3B3", // Bottom border
+            borderTop: "2px solid #5e5b5b", // Top border
+            borderBottom: "2px solid #5e5b5b", // Bottom border
             width: "90%",
             margin: "0 auto",
             textAlign: "center",

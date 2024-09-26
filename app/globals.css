@@ -24,7 +24,7 @@
     @apply font-Aldrich  lg:text-4xl md:text-3xl sm:text-2xl;
   }
   h2 {
-    @apply font-Sansation lg:font-semibold lg:text-2xl md:text-3xl sm:text-2xl;
+    @apply font-Sansation lg:font-light lg:text-2xl md:text-3xl sm:text-2xl;
   }
   p {
     @apply font-Sansation lg:text-base md:text-sm sm:text-xs;

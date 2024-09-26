@@ -19,6 +19,7 @@ module.exports = {
         lightgray: "#EFEFEF",
         gray: "#C0BFBD",
         green: "#ACF601",
+        divborder:"#5e5b5b"
       },
       fontFamily: {
         Aldrich: "Aldrich",

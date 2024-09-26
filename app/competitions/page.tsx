@@ -17,12 +17,12 @@ const bmImages = [
 export default function Competitions() {
   return (
     <>
-      <PageSection colourWay="dark">
-        <div className="font-Aldrich bg-black text-white min-h-screen">
+      <div className="font-Aldrich bg-black text-white min-h-screen p-20">
+        <PageSection colourWay="dark">
           <div className="text-center">
             {/* Header Section */}
-            <h1 className="text-4xl text-[#acf601] mb-5">Competitions</h1>
-            <p>
+            <h1 className="text-5xl text-green mb-5">Competitions</h1>
+            <h2>
               Monash Human Power participates in various competitions that
               challenge the boundaries of human-powered vehicle innovation.
               These events offer the team opportunities to showcase their
@@ -30,12 +30,14 @@ export default function Competitions() {
               competition, Monash Human Power continues to refine its designs,
               striving to break speed records and achieve new milestones in
               human-powered transportation.
-            </p>
+            </h2>
           </div>
+        </PageSection>
 
+        <PageSection colourWay="dark">
           {/* World Human Powered Speed Challenge Section */}
           <div className="mt-20">
-            <h1 className="text-center text-2xl text-[#acf601] mb-5">
+            <h1 className="text-center text-[#acf601] mb-5">
               World Human Powered Speed Challenge
             </h1>
             <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5">
@@ -48,7 +50,7 @@ export default function Competitions() {
                 <sup>nd</sup>
               </p>
             </div>
-            <p className="mt-3 text-justify">
+            <h2 className="mt-3 text-center">
               The World Human Powered Speed Challenge, held annually on State
               Route 305 in Battle Mountain, Nevada, attracts top teams worldwide
               aiming to break the human-powered land speed record, which
@@ -58,17 +60,18 @@ export default function Competitions() {
               Monash Human Power made history by surpassing the Australian men’s
               single-track record, a significant milestone in their pursuit of
               speed innovation.
-            </p>
+            </h2>
             <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center mt-5">
               <div className="w-full lg:w-1/2 sm:h-1/2">
                 <ImageCarousel images={bmImages}></ImageCarousel>
               </div>
             </div>
           </div>
-
-          {/* Vic HPV Grand Prix Series */}
+        </PageSection>
+        {/* Vic HPV Grand Prix Series */}
+        <PageSection colourWay="dark">
           <div className="mt-20 mb-5">
-            <h1 className="text-center text-2xl text-[#acf601] mb-5">
+            <h1 className="text-center  text-[#acf601] mb-5">
               Vic HPV Grand Prix Series
             </h1>
             <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5">
@@ -82,7 +85,7 @@ export default function Competitions() {
                 Race 3: 4/8 In Category | 25/98 Overall
               </p>
             </div>
-            <p className="mt-3 text-justify">
+            <h2 className="mt-3 text-center">
               The VIC HPV Grand Prix Series is a 6-8 hour endurance race for
               human-powered vehicles (HPVs) on a circuit, offering a unique
               challenge compared to the short sprints of the World Human Powered
@@ -91,17 +94,19 @@ export default function Competitions() {
               distances. Monash Human Power has entered this competition with a
               borrowed trike while developing its custom-designed trike, aiming
               to push new boundaries in endurance HPV racing.
-            </p>
+            </h2>
             <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center mt-5">
               <div className="w-full lg:w-1/2 sm:h-1/2">
                 <ImageCarousel images={hpvImages}></ImageCarousel>
               </div>
             </div>
           </div>
+        </PageSection>
 
-          {/* OzHPV Speed Trials Section */}
+        {/* OzHPV Speed Trials Section */}
+        <PageSection colourWay="dark">
           <div className="mt-20">
-            <h1 className="text-center text-2xl text-[#acf601] mb-5">
+            <h1 className="text-center text-[#acf601] mb-5">
               OzHPV Speed Trials
             </h1>
             <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5">
@@ -114,7 +119,7 @@ export default function Competitions() {
                 87.40 kmph
               </p>
             </div>
-            <p className="mt-3 text-justify">
+            <h2 className="mt-3 text-center">
               The OzHPV Challenge is an exciting series of races designed to
               test the best combinations of human-powered vehicles and rider
               capabilities. Hosted at the Ford Proving Grounds in You Yangs,
@@ -124,7 +129,7 @@ export default function Competitions() {
               Monash Human Power competing to challenge this benchmark,
               showcasing their commitment to developing world-class
               human-powered vehicles.
-            </p>
+            </h2>
             <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center mt-5">
               <div className="w-full lg:w-1/2 sm:h-1/2 center">
                 <Image
@@ -137,8 +142,8 @@ export default function Competitions() {
               </div>
             </div>
           </div>
-        </div>
-      </PageSection>
+        </PageSection>
+      </div>
     </>
   );
 }

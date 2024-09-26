@@ -87,6 +87,16 @@ export default function TeamPage() {
 
       {/* Sub-teams navigation */}
       <PageSection colourWay="dark">
+        <div
+          className="py-2"
+          style={{
+            borderTop: "2px solid #5e5b5b", // Top border
+            width: "100%",
+            margin: "0 auto",
+            textAlign: "center",
+          }}
+        ></div>
+
         <section className="flex justify-center items-center bg-gray-900">
           <button
             onClick={prevTeam}
@@ -114,8 +124,8 @@ export default function TeamPage() {
                 <Image
                   src={currentTeam.image} // Dynamically load the image from JSON
                   alt={currentTeam.name}
-                  width={550}
-                  height={550}
+                  width={600}
+                  height={350}
                   className="rounded-lg"
                 />
               </div>
@@ -129,6 +139,15 @@ export default function TeamPage() {
             </div>
           </div>
         </section>
+        <div
+          className="py-4"
+          style={{
+            borderBottom: "2px solid #5e5b5b",
+            width: "100%",
+            margin: "0 auto",
+            textAlign: "center",
+          }}
+        ></div>
       </PageSection>
 
       {/* Team Leads and Members Section */}
