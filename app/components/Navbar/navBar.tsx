@@ -56,7 +56,6 @@ const desktopNavigation: NavItemsProps[] = [
   { name: "Teams", href: "/teams", srcString: "" },
   { name: "Home", href: "/", srcString: "/image.png" },
   { name: "Blog", href: "/blog", srcString: "" },
-  { name: "Outreach", href: "/outreach", srcString: "" },
   { name: "Join", href: "/join", srcString: "" },
 ];
 
