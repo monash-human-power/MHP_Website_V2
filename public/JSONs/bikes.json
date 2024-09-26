@@ -1,0 +1,57 @@
+{
+    "Bilby": {
+      "image": "/JSONs/bikes/bilby.jpg",
+      "iteration": 3,
+      "max_speed": 116.39,
+      "development_start": 2019,
+      "development_end": 2023,
+      "competitions": ["Battle Mountain 2023"],
+      "description": "Our latest and most advanced bike, Bilby, was introduced in May 2022. This version features enhancements across nearly every aspect compared to its predecessor. Bilby set a new Australian men’s single-track record at the 2023 World Human Powered Speed Challenge in Battle Mountain, Nevada.",
+      "gallery": [
+        "/JSONs/bikes/bilbyGallery/bilby_armour_velodrome.jpg",
+        "/JSONs/bikes/bilbyGallery/bilby_armour.jpg",
+        "/JSONs/bikes/bilbyGallery/bilby_battle_mountain.jpg",
+        "/JSONs/bikes/bilbyGallery/bilby_shell_off.jpg"
+      ]
+    },
+    "Wombat": {
+      "image": "/JSONs/bikes/wombat.jpg",
+      "iteration": 2,
+      "max_speed": 81.4,
+      "development_start": 2018,
+      "development_end": 2019,
+      "competitions": [],
+      "description": "Wombat, the second iteration of our bike, represents a significant step in our design process. For the first time, each subsystem was integrated holistically, resulting in a clearer understanding of how each component interacts and contributes to the bike’s overall performance.",
+      "gallery": [
+        "/JSONs/bikes/wombatGallery/wombat_launch_2.jpg",
+        "/JSONs/bikes/wombatGallery/wombat_launch.jpg",
+        "/JSONs/bikes/wombatGallery/wombat_shell_off.jpg"
+      ]
+    },
+    "Blacksmith": {
+      "image": "/JSONs/bikes/blacksmith.jpg",
+      "iteration": 1,
+      "max_speed": 64.8,
+      "development_start": 2014,
+      "development_end": 2018,
+      "competitions": [],
+      "description": "The original Blacksmith was developed by a team of final-year engineering students at Monash University as their Final Year Project. This initial design, known as Version 1, laid the groundwork for Monash Human Power (MHP). To improve competitiveness and address safety considerations, Blacksmith underwent a series of revisions, leading to the enhanced Version 1.5.",
+      "gallery": []
+    },
+    "Bandicoot": {
+      "image": "/JSONs/bikes/bandicoot.jpg",
+      "iteration": 1,
+      "max_speed": 77.7,
+      "development_start": 2024,
+      "development_end": "Current",
+      "competitions": [],
+      "description": "Marking our debut in trike racing at the Victorian Human Powered Grand Prix Series, the Bandicoot completed an impressive 102 laps, securing a commendable sixth place. This second-hand trike, crafted with care and engineering finesse, serves as our gateway to fully immerse our team in the thrilling world of trike racing.",
+      "gallery": [
+        "/JSONs/bikes/bandicootGallery/bandicoot_long_shot.jpg",
+        "/JSONs/bikes/bandicootGallery/bandicoot_racing.jpg",
+        "/JSONs/bikes/bandicootGallery/bandicoot_road_2.jpg",
+        "/JSONs/bikes/bandicootGallery/bandicoot_road_cropped.jpg"
+      ]
+    }
+}
+  
