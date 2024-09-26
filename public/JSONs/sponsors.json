@@ -1,26 +1,26 @@
 [
-    {
-      "image": "/JSONS/sponsorImages/MU.png",
-      "link": "https://www.monash.edu/",
-      "title": "Monash University",
-      "description": "This is the description for Monash."
-    },
-    {
-      "image": "/JSONS/sponsorImages/AARC.png",
-      "link": "https://aarconline.com/",
-      "title": "Australian Automotive Research Centre",
-      "description": "This is the description for item 2."
-    },
-    {
-      "image": "/JSONS/sponsorImages/BA.png",
-      "link": "#",
-      "title": "B&A Motor Body Repairs",
-      "description": "This is the description for item 3."
-    },
-    {
-      "image": "/JSONS/sponsorImages/BUSCH.png",
-      "link": "https://www.buschvacuum.com/au/en/",
-      "title": "Busch Vacuum Solutions AU",
-      "description": "This is the description for item 4."
-    }
-  ]
+  {
+    "image": "/JSONS/sponsorImages/MU.png",
+    "link": "https://www.monash.edu/",
+    "title": "Monash University",
+    "description": "Monash University is a leading global institution known for its excellence in education, research, and innovation. With a diverse and inclusive community, it offers a wide range of programs and world-class facilities, fostering a culture of academic rigor and real-world impact."
+  },
+  {
+    "image": "/JSONS/sponsorImages/AARC.png",
+    "link": "https://aarconline.com/",
+    "title": "Australian Automotive Research Centre",
+    "description": "The Australian Automotive Research Centre (AARC) is a premier testing facility for automotive innovation, offering comprehensive services for vehicle development, performance testing, and engineering. Its expansive, state-of-the-art tracks and laboratories support cutting-edge research in automotive technology, safety, and durability."
+  },
+  {
+    "image": "/JSONS/sponsorImages/BA.png",
+    "link": "https://bamotors.com.au",
+    "title": "B&A Motor Body Repairs",
+    "description": "B&A Motor Body Repairs is a trusted automotive repair shop specializing in high-quality collision repairs and vehicle restorations. Known for expert craftsmanship and personalized service, they deliver reliable, efficient solutions to restore vehicles to their best condition."
+  },
+  {
+    "image": "/JSONS/sponsorImages/BUSCH.png",
+    "link": "https://www.buschvacuum.com/au/en/",
+    "title": "Busch Vacuum Solutions AU",
+    "description": "Busch Vacuum Solutions AU is a leading provider of vacuum pumps, systems, and solutions for industrial applications. Renowned for innovation and reliability, they offer tailored vacuum technologies that enhance efficiency and performance across diverse industries."
+  }
+]

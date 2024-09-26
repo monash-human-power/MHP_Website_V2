@@ -52,7 +52,7 @@ export default function SponsorshipCarousel({
               />
             </a>
             <h2 className="mt-2 font-bold text-xl">{item.title}</h2>
-            <p className="text-l">{item.description}</p>
+            {/* <p className="text-l">{item.description}</p> */}
           </div>
         ))}
       </div>
