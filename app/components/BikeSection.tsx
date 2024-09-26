@@ -33,6 +33,12 @@ const BikeSection = ({bike} : BikeSectionProps) => {
 
     return (
         <>
+            <div className="py-8 bg-black" style={{
+            borderBottom: "2px solid #5e5b5b", // Top border
+            width: "95%",
+            margin: "0 auto",
+            textAlign: "center",}}></div>
+            <div className="py-4 bg-black"></div>
             <PageSection colourWay="dark">
                 <section className="relative text-center">
                     <div className="relative z-10">
@@ -53,7 +59,7 @@ const BikeSection = ({bike} : BikeSectionProps) => {
                         setActiveSection={setActiveSection}>
                 </SubNavBar>
                 {/* Insert BikeContent component here */}
-                <BikeContent activeTab={activeSection} bikeData={bikeData} bike={bike} >
+                <BikeContent activeTab={activeSection} bikeData={bikeData} bike={bike}>
                 </BikeContent>
             </PageSection>
         </>
