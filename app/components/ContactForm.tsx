@@ -12,7 +12,8 @@ export const ContactForm = () => {
     setStateMessage(null); // Reset message
 
     try {
-      const result = await emailjs.sendForm('service_daamuhi', 'template_my3ljxf', form.current!, 'KSm_g96qRck4daHBk');
+      // email is linked to emailjs acc for operations email, details are on the password database
+      const result = await emailjs.sendForm('service_8ty54mt', 'template_t8t0zc9', form.current!, 'P4WMs7TMx12asCi2G');
       console.log(result.text);
       setStateMessage("Message sent successfully!");
     } catch (error) {
