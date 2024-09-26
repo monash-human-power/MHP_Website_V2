@@ -23,10 +23,10 @@ export default function SponsorshipCarousel({
     setStartIndex((prevIndex) => (prevIndex - 1 + items.length) % items.length);
   };
 
-  // Show 2 items on mobile, 3 items on larger screens
+  // Show 1 item on mobile, 3 items on larger screens
   const visibleItems =
     window.innerWidth < 640
-      ? [items[startIndex], items[(startIndex + 1) % items.length]]
+      ? [items[startIndex]]
       : [
           items[startIndex],
           items[(startIndex + 1) % items.length],
@@ -34,14 +34,14 @@ export default function SponsorshipCarousel({
         ];
 
   return (
-    <div className="relative flex mt-5 items-center justify-center">
+    <div className="relative flex items-center justify-center">
       <button
         onClick={handlePrevious}
         className="absolute left-0 z-10 p-2 bg-gray-300 rounded-full hover:bg-gray-400"
       >
         &larr;
       </button>
-      <div className="flex-grow grid grid-cols-2  gap-4 p-10 w-3/4 h-1/4 sm:grid-cols-3 sm:p-10 ">
+      <div className="flex-grow grid grid-cols-1 grid-rows-1 gap-4 p-10 w-3/4 h-1/4 sm:grid-cols-3">
         {visibleItems.map((item, index) => (
           <div key={index} className="text-center">
             <a href={item.link}>
@@ -51,8 +51,8 @@ export default function SponsorshipCarousel({
                 className="mx-auto h-75 w-full"
               />
             </a>
-            <h2 className="mt-2 font-bold text-xl">{item.title}</h2>
-            {/* <p className="text-l">{item.description}</p> */}
+            <h2 className="mt-2 font-bold text-xl underline decoration-green decoration-4">{item.title}</h2>
+            <p className="mt-2 text-sm text-left">{item.description}</p>
           </div>
         ))}
       </div>
