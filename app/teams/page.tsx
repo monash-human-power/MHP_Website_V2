@@ -109,20 +109,20 @@ export default function TeamPage() {
         <section className="">
           <div className="flex flex-col lg:flex-row justify-center items-center lg:space-x-8 px-8">
             {/* Image */}
-            <div className="w-full lg:w-1/2">
+            <div className="w-full lg:w-1/2 md:w-1/2">
               <div className={`transition-opacity duration-300 ${fadeClass}`}>
                 <Image
                   src={currentTeam.image} // Dynamically load the image from JSON
                   alt={currentTeam.name}
-                  width={500}
-                  height={500}
+                  width={550}
+                  height={550}
                   className="rounded-lg"
                 />
               </div>
             </div>
 
             {/* Description */}
-            <div className="mt-2 lg:mt-0 lg:w-1/2">
+            <div className="mt-2 mx-2 lg:mt-0 lg:w-1/2 md:w-1/2 md:items-center">
               <div className={`transition-opacity duration-300 ${fadeClass}`}>
                 <h2 className="font-extralight">{currentTeam.description}</h2>
               </div>
@@ -134,14 +134,18 @@ export default function TeamPage() {
       {/* Team Leads and Members Section */}
       <PageSection colourWay="dark">
         <section
-          className={`${fadeClass} bg-[url('/teams_background.png')]  bg-top`}
+          className={`${fadeClass} bg-[url('/teams_background.png')]  bg-top bg-no-repeat`}
         >
           <h2 className="text-center text-4xl font-bold mb-2">Team Members</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 px-8 mb-12">
             {currentTeam.Team_Leads?.map((lead, index) => (
               <div
                 key={index}
-                className="bg-gray-900 p-4 rounded-lg text-center"
+                className={`bg-gray-900 p-4 rounded-lg text-center ${
+                  currentTeam.Team_Leads.length === 3 && index === 2
+                    ? "lg:col-start-1 lg:col-end-3"
+                    : ""
+                }`}
               >
                 <Image
                   src={lead.image} // Load team lead's image
@@ -154,7 +158,6 @@ export default function TeamPage() {
                   {lead.name}
                 </h4>
                 <p>{lead.role}</p>
-                <p>{lead.department}</p>
               </div>
             ))}
           </div>

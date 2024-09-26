@@ -41,14 +41,14 @@ export default function SponsorshipCarousel({
       >
         &larr;
       </button>
-      <div className="flex-grow grid grid-cols-2  gap-4 p-10 w-3/4 h-1/4 sm:grid-cols-3 sm:p-0 ">
+      <div className="flex-grow grid grid-cols-2  gap-4 p-10 w-3/4 h-1/4 sm:grid-cols-3 sm:p-10 ">
         {visibleItems.map((item, index) => (
           <div key={index} className="text-center">
             <a href={item.link}>
               <img
                 src={item.image}
                 alt={item.title}
-                className="mx-auto h-75% w-full"
+                className="mx-auto h-75 w-full"
               />
             </a>
             <h2 className="mt-2 font-bold text-xl">{item.title}</h2>
