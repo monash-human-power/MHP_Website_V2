@@ -2,7 +2,7 @@
     "sub_teams": [
       {
         "name": "Management Team",
-        "description": "The Rider Development team is dedicated to enhancing rider performance. This team, which includes both riders and technical experts, designs and manages cycling and strength training programs, as well as creates personalized power plans for each rider. They also oversee training on recumbent bikes and conduct physical tests on the bikes' mechanical and electrical systems. ",
+        "description": "Upper management, comprising the CEO, CTO, and COO, ensures the team’s strategic, technical, and operational success. The CEO handles long-term vision, budgeting, and representation, the CTO oversees technical development and collaboration, and the COO manages daily operations and team culture. Together, they drive cohesive direction and efficient execution across all aspects of the team.",
         "image": "/JSONS/teamsImages/images/upperman.jpg",
         "Team_Leads": [
             {
@@ -76,7 +76,7 @@
       {
         "name": "Electrical",
         "description": "The Electrical team, comprising Software and Hardware divisions, manages the vehicle's electrical systems, including data collection and camera systems. They maintain the camera systems that provide riders with essential information such as their path, speed, and power output, which is displayed on the bike’s internal screens. Additionally, they oversee data collection systems that help riders make informed race decisions. The team employs a range of skills and technologies, from programming microcontrollers to designing wiring schemes.",
-        "image": "/JSONS/teamsImages/Electrical.png",
+        "image": "/JSONS/teamsImages/images/electrical.png",
         "Team_Leads": [
           {
             "name": "Jessica Mark",
@@ -543,9 +543,9 @@
         ]
       },
       {
-        "name": "Chassis & Drive-train",
-        "description": "The Chassis & Drive-train team handles the design and production of all mechanical components, including the structural frame (chassis) and moving parts of the vehicle. Using CAD software for modelling and FEA software or hand calculations to verify strength under load, they ensure the durability of each component. The team uses manufacturing techniques such as welding, grinding, drilling and turning.",
-        "image": "/JSONS/teamsImages/Electrical.png",
+        "name": "Chassis & Drivetrain",
+        "description": "The Chassis & Drivetrain team handles the design and production of all mechanical components, including the structural frame (chassis) and moving parts of the vehicle. Using CAD software for modelling and FEA software or hand calculations to verify strength under load, they ensure the durability of each component. The team uses manufacturing techniques such as welding, grinding, drilling and turning.",
+        "image": "/JSONS/teamsImages/images/chassis_drivetrain.jpg",
         "Team_Leads": [
             {
               "name": "Aidan Graham",
