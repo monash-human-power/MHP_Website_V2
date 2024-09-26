@@ -1,4 +1,6 @@
-import React, {use, useState} from 'react'
+"use client"
+
+import React, {use, useState, useEffect, useRef} from 'react'
 
 import PageSection from "../components/PageSection";
 import BikeSection from '../components/BikeSection';
@@ -7,6 +9,39 @@ import SamePageNavBar from '../components/SamePageNavigation/SamePageNavBar';
 import bikeData from "../../public/JSONs/bikes.json";  // Importing the JSON file
 
 export default function Page() {
+    const sections = Object.keys(bikeData)
+    // track the active section
+    const [activeSection, setActiveSection] = useState(sections[0]);
+
+    const sectionRefs = useRef<(HTMLElement | null)[]>([]); // To store refs to the sections
+
+    // IntersectionObserver logic to track which section is in view
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                const sectionId = entry.target.id;
+                setActiveSection(sectionId); // Update active section based on scrolling
+            }
+            });
+        },
+        { threshold: 0.6 } // Adjust this value to trigger earlier/later
+        );
+
+        // Attach observers to each section
+        sectionRefs.current.forEach((section) => {
+        if (section) observer.observe(section);
+        });
+
+        // Clean up observer on component unmount
+        return () => {
+        sectionRefs.current.forEach((section) => {
+            if (section) observer.unobserve(section);
+        });
+        };
+    }, []);
+
     return (
         <div className="scroll-smooth">
             <PageSection colourWay="dark">
@@ -24,7 +59,8 @@ export default function Page() {
                     </div>
                 </section>  
             </PageSection>
-            <SamePageNavBar sections={Object.keys(bikeData)}></SamePageNavBar>
+            <SamePageNavBar sections={sections} activeSection={activeSection}
+                        setActiveSection={setActiveSection}></SamePageNavBar>
             {/* For each vehicle, add a BikeSection component */}
             {Object.keys(bikeData).map(bikeName => (
                 <div key={bikeName} id={bikeName}>
