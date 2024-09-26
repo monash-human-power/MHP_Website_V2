@@ -164,7 +164,7 @@ const Navbar = () => {
             )} */}
             <div className="px-10 py-2">
               <Link href={"/contactUs"}>
-                <button className="px-5 py-2 rounded-md border-2 border-white hover:bg-greenbutton hover:text-black hover:border-black">
+                <button className="px-5 py-2 rounded-md border-2 border-white hover:bg-green hover:text-black hover:border-black">
                   Contact Us
                 </button>
               </Link>
@@ -209,7 +209,7 @@ const Navbar = () => {
               className={`text-left  hover:bg-gray-700  block px-3 py-2 rounded-md text-sm font-medium`}
             >
               <button
-                className="text-sm rounded-md  bg-greenbutton text-zinc-700 border-black  px-3 py-2"
+                className="text-sm rounded-md  bg-green text-zinc-700 border-black  px-3 py-2"
                 onClick={() => setTeamMenu(!teamMenu)}
               >
                 {"< Back"}
@@ -235,7 +235,7 @@ const Navbar = () => {
               className={`text-left hover:bg-gray-700  block px-3 py-2 rounded-md text-sm font-medium`}
             >
               <button
-                className="text-sm rounded-md  bg-greenbutton text-zinc-700 border-black  px-3 py-2"
+                className="text-sm rounded-md  bg-green text-zinc-700 border-black  px-3 py-2"
                 onClick={() => setCompMenu(!compMenu)}
               >
                 {"< Back"}

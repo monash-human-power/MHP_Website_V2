@@ -14,8 +14,8 @@ const SubNavBar = ({sections, activeSection, setActiveSection} : SubNavBarProps)
                 <button 
                     key={section} // unique key for each section
                     className={`${activeSection===section 
-                        ? "font-Aldrich text-greenbutton" 
-                        : "font-Aldrich hover:text-greenbutton"}`}
+                        ? "font-Aldrich text-green" 
+                        : "font-Aldrich hover:text-green"}`}
                         onClick={() => setActiveSection(section)} // set the active section on click
                         >
                     {section}

@@ -83,7 +83,7 @@ const Footer = () => {
               Keep up to date with MHP and other related news with our
               newsletter.
             </p>
-            <button className="px-5 py-2 bg-white text-black rounded-md border-2 border-black hover:bg-greenbutton hover:text-black hover:border-black">
+            <button className="px-5 py-2 bg-white text-black rounded-md border-2 border-black hover:bg-green hover:text-black hover:border-black">
               Subscribe
             </button>
           </div>

@@ -20,8 +20,8 @@ function NavItem({ text, hrefString, srcString }: navItemProps) {
           <span
             className={
               pathname === hrefString
-                ? "font-Aldrich border-b-2 border-greenbutton"
-                : "font-Aldrich hover:border-b-2 hover:border-greenbutton"
+                ? "font-Aldrich border-b-2 border-green"
+                : "font-Aldrich hover:border-b-2 hover:border-green"
             }
           >
             {text}
