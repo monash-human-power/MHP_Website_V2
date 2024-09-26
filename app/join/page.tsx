@@ -486,7 +486,7 @@ export default function Outreach() {
               <br></br>
               <li className="font-Sansation">
                 Identify and manage sponsorships by researching potential
-                sponsors, maintaining relationships, and negotiating agreements.
+                sponsors, maintaining relationships, and negotiating agreenents.
               </li>
               <br></br>
               <li className="font-Sansation">

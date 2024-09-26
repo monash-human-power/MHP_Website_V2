@@ -27,7 +27,7 @@ export const ContactForm = () => {
   return (
     <div className="font-Aldrich bg-black">
       <div className="flex flex-wrap justify-center items-center mt-5">
-        <h2 className='font-Aldrich flex flex-wrap justify-center items-center mt-5 text-greenbutton'>Email Us</h2>
+        <h2 className='font-Aldrich flex flex-wrap justify-center items-center mt-5 text-green'>Email Us</h2>
       </div>
       <form ref={form} onSubmit={sendEmail} className="px-20">
         <div className="flex flex-wrap justify-center items-center mt-5">
@@ -87,7 +87,7 @@ export const ContactForm = () => {
         <div className="flex flex-wrap justify-center items-center mt-10">
           <button
             type="submit"
-            className="px-5 py-2 rounded-md border-2 bg-greenbutton text-black border-black font-bold"
+            className="px-5 py-2 rounded-md border-2 bg-green text-black border-black font-bold"
             disabled={isSubmitting} // Disable button while submitting
           >
             {isSubmitting ? 'Sending...' : 'Send Message'}

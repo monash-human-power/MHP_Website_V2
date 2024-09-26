@@ -9,7 +9,7 @@ export default function contactUs() {
   return (
     <>
       <PageSection colourWay="dark">
-      <div className='flex flex-wrap justify-center items-center mt-5 text-greenbutton' >
+      <div className='flex flex-wrap justify-center items-center mt-5 text-green' >
   <h1>Contact Us</h1>
 </div>
 <div>
