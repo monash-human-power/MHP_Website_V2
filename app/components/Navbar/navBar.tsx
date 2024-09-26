@@ -45,8 +45,9 @@ const mobileNavigation: MobileNavItemsProps[] = [
   { name: "Competitions", href: "/competitions" },
   { name: "Teams", href: "/teams" },
   { name: "Blog", href: "/blog" },
+  { name: "Outreach", href: "/outreach" },
   { name: "Join", href: "/join" },
-  { name: "Contact Us", href: "/contactUs" },
+  { name: "Contact Us", href: "/contact" },
 ];
 
 const desktopNavigation: NavItemsProps[] = [
@@ -163,7 +164,7 @@ const Navbar = () => {
               )
             )} */}
             <div className="px-10 py-2">
-              <Link href={"/contactUs"}>
+              <Link href={"/contact"}>
                 <button className="px-5 py-2 rounded-md border-2 border-white hover:bg-green hover:text-black hover:border-black">
                   Contact Us
                 </button>
