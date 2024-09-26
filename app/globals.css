@@ -23,6 +23,9 @@
   h1 {
     @apply font-Aldrich  lg:text-4xl md:text-3xl sm:text-2xl;
   }
+  h4 {
+    @apply font-Aldrich  lg:text-5xl md:text-4xl sm:text-2xl;
+  }
   h2 {
     @apply font-Sansation lg:font-light lg:text-2xl md:text-3xl sm:text-2xl;
   }

@@ -17,12 +17,13 @@ const bmImages = [
 export default function Competitions() {
   return (
     <>
-      <div className="font-Aldrich bg-black text-white min-h-screen p-20">
+      <div className="font-Aldrich bg-black text-white  px-15">
+        <h4 className="text-5xl text-center font-bold ">Competitions</h4>
+
         <PageSection colourWay="dark">
-          <div className="text-center">
+          <div className="">
             {/* Header Section */}
-            <h1 className="text-5xl text-green mb-5">Competitions</h1>
-            <h2>
+            <h2 className="text-center">
               Monash Human Power participates in various competitions that
               challenge the boundaries of human-powered vehicle innovation.
               These events offer the team opportunities to showcase their
@@ -37,6 +38,15 @@ export default function Competitions() {
         <PageSection colourWay="dark">
           {/* World Human Powered Speed Challenge Section */}
           <div className="mt-20">
+            <div
+              className="p-4"
+              style={{
+                borderTop: "2px solid #5e5b5b",
+                width: "95%",
+                margin: "0 auto",
+                textAlign: "center",
+              }}
+            ></div>
             <h1 className="text-center text-[#acf601] mb-5">
               World Human Powered Speed Challenge
             </h1>
@@ -66,11 +76,29 @@ export default function Competitions() {
                 <ImageCarousel images={bmImages}></ImageCarousel>
               </div>
             </div>
+            <div
+              className="p-4"
+              style={{
+                borderBottom: "2px solid #5e5b5b",
+                width: "95%",
+                margin: "0 auto",
+                textAlign: "center",
+              }}
+            ></div>
           </div>
         </PageSection>
         {/* Vic HPV Grand Prix Series */}
         <PageSection colourWay="dark">
           <div className="mt-20 mb-5">
+            <div
+              className="p-4"
+              style={{
+                borderTop: "2px solid #5e5b5b",
+                width: "95%",
+                margin: "0 auto",
+                textAlign: "center",
+              }}
+            ></div>
             <h1 className="text-center  text-[#acf601] mb-5">
               Vic HPV Grand Prix Series
             </h1>
@@ -100,6 +128,16 @@ export default function Competitions() {
                 <ImageCarousel images={hpvImages}></ImageCarousel>
               </div>
             </div>
+
+            <div
+              className="p-4"
+              style={{
+                borderBottom: "2px solid #5e5b5b",
+                width: "95%",
+                margin: "0 auto",
+                textAlign: "center",
+              }}
+            ></div>
           </div>
         </PageSection>
 
@@ -141,6 +179,15 @@ export default function Competitions() {
                 />
               </div>
             </div>
+            <div
+              className="py-2"
+              style={{
+                borderBottom: "2px solid #5e5b5b",
+                width: "95%",
+                margin: "0 auto",
+                textAlign: "center",
+              }}
+            ></div>
           </div>
         </PageSection>
       </div>

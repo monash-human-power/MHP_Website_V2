@@ -88,10 +88,10 @@ export default function TeamPage() {
       {/* Sub-teams navigation */}
       <PageSection colourWay="dark">
         <div
-          className="py-2"
+          className="p-4"
           style={{
             borderTop: "2px solid #5e5b5b", // Top border
-            width: "100%",
+            width: "95%",
             margin: "0 auto",
             textAlign: "center",
           }}
@@ -140,10 +140,10 @@ export default function TeamPage() {
           </div>
         </section>
         <div
-          className="py-4"
+          className="p-4"
           style={{
             borderBottom: "2px solid #5e5b5b",
-            width: "100%",
+            width: "95%",
             margin: "0 auto",
             textAlign: "center",
           }}
@@ -198,7 +198,7 @@ export default function TeamPage() {
                   height={150}
                   className="mx-auto"
                 />
-                <h4 className="text-l font-bold mt-4 text-green">
+                <h4 className="text-lg font-bold mt-4 text-green">
                   {member.name}
                 </h4>
                 <p>{member.role}</p>
