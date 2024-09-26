@@ -25,14 +25,6 @@ type BikeData = Record<string, Bike>; // map of bike name to bike data
 
 const BikeSection = ({bike} : BikeSectionProps) => {
     const bikeData: BikeData = bikeDataJson;
-    
-    const bikeGalleryImages = bikeData[bike].gallery.map((image, index) => ({
-        id: (index + 1).toString(),
-        src: image,
-        alt: `Image ${index + 1} of ${bike}`,
-        width: 800, // image width
-        height: 600, // image height
-    }));
 
     const sections = ["Overview", "Gallery"];
 
@@ -61,7 +53,7 @@ const BikeSection = ({bike} : BikeSectionProps) => {
                         setActiveSection={setActiveSection}>
                 </SubNavBar>
                 {/* Insert BikeContent component here */}
-                <BikeContent activeTab={activeSection} bikeData={bikeData} bike={bike} bikeGalleryImages={bikeGalleryImages}>
+                <BikeContent activeTab={activeSection} bikeData={bikeData} bike={bike} >
                 </BikeContent>
             </PageSection>
         </>

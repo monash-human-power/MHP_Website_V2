@@ -6,20 +6,22 @@ interface BikeContentProps {
     children?: React.ReactNode;
     bikeData: any;
     bike: string;
-    bikeGalleryImages: BikeGalleryImages[];
   }
 
   interface BikeGalleryImages {
     id: string;
     src: string;
     alt: string;
-    width: number;
-    height: number;
 }
   
 
-  const BikeContent: React.FC<BikeContentProps> = ({ activeTab, bikeData, bike, bikeGalleryImages }) => {
+  const BikeContent: React.FC<BikeContentProps> = ({ activeTab, bikeData, bike }) => {
 
+    const bikeGalleryImages = bikeData[bike].gallery.map((image: string, index: number) => ({
+        id: (index + 1).toString(),
+        src: image,
+        alt: `Image ${index + 1} of ${bike}`,
+    }));
     return (
 
         <div>
@@ -40,16 +42,14 @@ interface BikeContentProps {
                 </div>
                 </div>
             )}
-            {/* Render content based on activeTab */}
             {activeTab === "Gallery" && (
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
                     {bikeGalleryImages.map((image: BikeGalleryImages) => (
-                        <div key={image.id} className="bg-white rounded-lg shadow-lg">
+                        <div key={image.id} className="relative bg-white rounded-lg shadow-lg w-100 h-60">
                             <Image
                                 src={image.src}   
                                 alt={image.alt}
-                                width={800}
-                                height={500}
+                                layout="fill"
                                 objectFit="cover"
                                 className="rounded-t-lg"
                             />
@@ -58,13 +58,8 @@ interface BikeContentProps {
                 </div>
             )}
 
-
         </div>
-
     );
-
 };
-
-
 
 export default BikeContent;
