@@ -49,7 +49,7 @@ interface BikeContentProps {
             {activeTab === "Gallery" && (
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
                     {bikeGalleryImages.map((image: BikeGalleryImages) => (
-                        <div key={image.id} className="relative bg-white rounded-lg shadow-lg w-100 h-60">
+                        <div key={image.id} className="relative bg-white rounded-lg shadow-lg overflow-hidden gap-4 h-60">
                             <Image
                                 src={image.src}   
                                 alt={image.alt}
