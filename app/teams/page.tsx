@@ -78,7 +78,7 @@ export default function TeamPage() {
               students, bringing together expertise from various engineering
               disciplines to design cutting-edge human-powered vehicles.
             </h2>
-            <h3 className="mt-2 text-greenbutton">
+            <h3 className="mt-2 text-green">
               Learn more about our sub-teams below!
             </h3>
           </div>
@@ -94,7 +94,7 @@ export default function TeamPage() {
           >
             &larr;
           </button>
-          <h2 className="text-3xl font-bold mx-8 underline decoration-greenbutton">
+          <h2 className="text-3xl font-bold mx-8 underline decoration-green">
             {currentTeam.name}
           </h2>
           <button
@@ -154,7 +154,7 @@ export default function TeamPage() {
                   height={200}
                   className="mx-auto"
                 />
-                <h4 className="text-xl font-bold mt-4 text-greenbutton">
+                <h4 className="text-xl font-bold mt-4 text-green">
                   {lead.name}
                 </h4>
                 <p>{lead.role}</p>
@@ -179,7 +179,7 @@ export default function TeamPage() {
                   height={150}
                   className="mx-auto"
                 />
-                <h4 className="text-l font-bold mt-4 text-greenbutton">
+                <h4 className="text-l font-bold mt-4 text-green">
                   {member.name}
                 </h4>
                 <p>{member.role}</p>

@@ -18,7 +18,7 @@ module.exports = {
         searchbarbg: "#1F1F22",
         lightgray: "#EFEFEF",
         gray: "#C0BFBD",
-        greenbutton: "#ACF601",
+        green: "#ACF601",
       },
       fontFamily: {
         Aldrich: "Aldrich",
