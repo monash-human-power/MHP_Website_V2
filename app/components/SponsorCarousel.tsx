@@ -53,12 +53,14 @@ export default function SponsorshipCarousel({
                 />
               </a>
             </div>
-            <a href={item.link} target="_blank">
-              <h2 className="mt-2 font-bold text-xl underline decoration-green decoration-4">
-                {item.title}
-              </h2>
-            </a>
-            <p className="mt-2 text-sm text-left">{item.description}</p>
+            <div>
+              <a href={item.link} target="_blank">
+                <h2 className="mt-2 font-bold text-xl underline decoration-green decoration-4">
+                  {item.title}
+                </h2>
+              </a>
+              <p className="mt-2 text-sm text-left">{item.description}</p>
+            </div>
           </div>
         ))}
       </div>
