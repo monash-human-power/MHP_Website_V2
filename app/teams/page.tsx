@@ -34,7 +34,7 @@ export default function TeamPage() {
   const currentTeam = teamData.sub_teams[currentTeamIndex];
 
   // Helper function to determine the layout for the last row
-  const getLastRowClasses = (members, index) => {
+  const getLastRowClasses = (members: string | any[], index: number) => {
     const membersPerRow = 3;
     const totalMembers = members.length;
     const isLastRow =
