@@ -10,7 +10,7 @@ export default function Outreach() {
       <section className="animate-fadeIn">
         <div className="w-dvh h-96 items-center overflow-hidden mx-auto">
           <Image
-            src="/battle_mountain_group.jpg"
+            src="/join/join_main.jpg"
             width="800"
             height="300"
             objectFit="cover"

@@ -60,18 +60,21 @@ export default function TeamPage() {
   return (
     <>
       <PageSection colourWay="dark">
-        <section className="relative text-center">
+        <section className="relative text-center ">
           <div className="relative z-10">
             <h1 className="text-5xl font-bold">Meet our team</h1>
-            <div className="flex justify-center items-center mt-2">
-              <Image
-                src="/teams_image_1.png"
-                alt="Team photo"
-                width={1100}
-                height={500}
-                className="rounded-lg"
-              />
-            </div>
+      {/* Battle Mountain Group Image */}
+       <div className="w-dvh h-96 items-center overflow-hidden mx-auto">
+          <Image
+            src="/battle_mountain_group.jpg"
+            width="800"
+            height="300"
+            objectFit="cover"
+            alt="Battle Mountain Group"
+            layout="responsive"
+            className="top-1/2  transform -translate-y-1/3"
+          />
+        </div>
 
             <h2 className="mt-2 mx-20">
               We, at Monash Human Power are a diverse team of Monash University

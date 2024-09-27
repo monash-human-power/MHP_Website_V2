@@ -14,7 +14,7 @@ export default function contact() {
 </div>
 <div>
           <Image
-            src="/contactImage.png"
+            src="/contactImage.jpg"
             layout="responsive"
             height={50}
             width={2000}
