@@ -6,19 +6,20 @@ import Image from "next/image";
 export default function Outreach() {
   return (
     <>
-      {/* Battle Mountain Group Image */}
+      {/* Cover Image */}
       <section className="animate-fadeIn">
-        <div className="w-dvh h-96 items-center overflow-hidden mx-auto">
+      <div>
+        </div>
+
           <Image
             src="/join/join_main.jpg"
-            width="800"
-            height="300"
+            width="5184"
+            height="2309"
             objectFit="cover"
-            alt="Battle Mountain Group"
+            alt="Trike Group photo"
             layout="responsive"
-            className="top-1/2  transform -translate-y-1/3"
+            className="  transform -translate-y-"
           />
-        </div>
       </section>
 
       {/* Join Us section */}
