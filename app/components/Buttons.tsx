@@ -10,8 +10,8 @@ interface buttonProps {
 function Button({ theme, text, hrefString = "" }: buttonProps) {
   const colourWay = {
 
-    light: "px-5 py-2 rounded-full border-2 bg-purple text-white ",
-    dark: "px-5 py-2 rounded-full border-2 bg-green text-black",
+    light: "px-5 py-2 rounded-full border-2 bg-black text-white border-white hover:bg-green hover:text-black hover:border-black",
+    dark: "px-5 py-2 rounded-full border-2 bg-green text-black border-black hover:bg-black hover:text-white hover:border-white",
   };
 
   return (

@@ -5,6 +5,7 @@ import NavItem from "./NavItem";
 import MenuNavBarItem from "./MenuNavItem";
 import MobileNavItem from "./MobileNavItem";
 import { useState } from "react";
+import Button from "../Buttons";
 
 interface NavItemsProps {
   name: string;
@@ -44,7 +45,7 @@ const mobileNavigation: MobileNavItemsProps[] = [
   { name: "Bikes", href: "/bikes" },
   { name: "Competitions", href: "/competitions" },
   { name: "Teams", href: "/teams" },
-  { name: "Blog", href: "/blog" },
+  // { name: "Blog", href: "/blog" },
   { name: "Outreach", href: "/outreach" },
   { name: "Join", href: "/join" },
   { name: "Contact Us", href: "/contact" },
@@ -55,7 +56,8 @@ const desktopNavigation: NavItemsProps[] = [
   { name: "Competitions", href: "/competitions", srcString: "" },
   { name: "Teams", href: "/teams", srcString: "" },
   { name: "Home", href: "/", srcString: "/image.png" },
-  { name: "Blog", href: "/blog", srcString: "" },
+  { name: "Outreach", href: "/outreach", srcString: "" },
+  // { name: "Blog", href: "/blog", srcString: "" },
   { name: "Join", href: "/join", srcString: "" },
 ];
 

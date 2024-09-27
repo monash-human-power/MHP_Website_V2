@@ -1,19 +1,35 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+interface Item {
+  image: string;
+  link: string;
+  title: string;
+  description: string;
+}
 
 interface SponsorshipCarouselProps {
-  items: {
-    image: string;
-    link: string;
-    title: string;
-    description: string;
-  }[];
+  items: Item[];
 }
 
 export default function SponsorshipCarousel({
   items,
 }: SponsorshipCarouselProps) {
   const [startIndex, setStartIndex] = useState(0);
+  const [visibleItemsCount, setVisibleItemsCount] = useState(1);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setVisibleItemsCount(window.innerWidth < 640 ? 1 : 3);
+    };
+
+    handleResize(); // Set initial value
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const handleNext = () => {
     setStartIndex((prevIndex) => (prevIndex + 1) % items.length);
@@ -23,42 +39,41 @@ export default function SponsorshipCarousel({
     setStartIndex((prevIndex) => (prevIndex - 1 + items.length) % items.length);
   };
 
-  // Show 2 items on mobile, 3 items on larger screens
-  const visibleItems =
-    window.innerWidth < 640
-      ? [items[startIndex], items[(startIndex + 1) % items.length]]
-      : [
-          items[startIndex],
-          items[(startIndex + 1) % items.length],
-          items[(startIndex + 2) % items.length],
-        ];
+  const visibleItems = Array.from({ length: visibleItemsCount }, (_, i) => {
+    const index = (startIndex + i) % items.length;
+    return items[index];
+  });
 
   return (
-    <div className="relative flex mt-5 items-center justify-center">
+    <div className="relative flex items-center justify-center">
       <button
         onClick={handlePrevious}
         className="absolute left-0 z-10 p-2 bg-gray-300 rounded-full hover:bg-gray-400"
+        aria-label="Previous item"
       >
         &larr;
       </button>
-      <div className="flex-grow grid grid-cols-2  gap-4 p-10 w-3/4 h-1/4 sm:grid-cols-3 sm:p-10 ">
+      <div className="flex-grow grid grid-cols-1 gap-4 p-10 w-3/4 h-1/4 sm:grid-cols-3">
         {visibleItems.map((item, index) => (
           <div key={index} className="text-center">
-            <a href={item.link}>
+            <a href={item.link} target="_blank" rel="noopener noreferrer">
               <img
                 src={item.image}
                 alt={item.title}
-                className="mx-auto h-75 w-full"
+                className="mx-auto w-full h-auto"
               />
             </a>
-            <h2 className="mt-2 font-bold text-xl">{item.title}</h2>
-            {/* <p className="text-l">{item.description}</p> */}
+            <a href={item.link} target="_blank" rel="noopener noreferrer">
+              <h2 className="mt-2 font-bold text-xl underline decoration-green decoration-4">{item.title}</h2>
+            </a>
+            <p className="mt-2 text-sm text-left">{item.description}</p>
           </div>
         ))}
       </div>
       <button
         onClick={handleNext}
         className="absolute right-0 z-10 p-2 bg-gray-300 rounded-full hover:bg-gray-400"
+        aria-label="Next item"
       >
         &rarr;
       </button>

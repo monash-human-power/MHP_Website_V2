@@ -76,15 +76,6 @@ export default function Competitions() {
                 <ImageCarousel images={bmImages}></ImageCarousel>
               </div>
             </div>
-            <div
-              className="p-4"
-              style={{
-                borderBottom: "2px solid #5e5b5b",
-                width: "95%",
-                margin: "0 auto",
-                textAlign: "center",
-              }}
-            ></div>
           </div>
         </PageSection>
         {/* Vic HPV Grand Prix Series */}
@@ -143,7 +134,7 @@ export default function Competitions() {
 
         {/* OzHPV Speed Trials Section */}
         <PageSection colourWay="dark">
-          <div className="mt-20">
+          <div>
             <h1 className="text-center text-[#acf601] mb-5">
               OzHPV Speed Trials
             </h1>

@@ -1,5 +1,11 @@
 [
   {
+    "image": "/JSONS/sponsorImages/GelTech.png",
+    "link": "https://geltechsolutions.com",
+    "title": "GelTech Solutions",
+    "description": "GelTech Solutions is a dynamic and innovative chemical solutions company with dedicated engineers who design customized, industry-specific equipment to meet your needs."
+  },
+  {
     "image": "/JSONS/sponsorImages/MU.png",
     "link": "https://www.monash.edu/",
     "title": "Monash University",
@@ -16,11 +22,5 @@
     "link": "https://bamotors.com.au",
     "title": "B&A Motor Body Repairs",
     "description": "B&A Motor Body Repairs is a trusted automotive repair shop specializing in high-quality collision repairs and vehicle restorations. Known for expert craftsmanship and personalized service, they deliver reliable, efficient solutions to restore vehicles to their best condition."
-  },
-  {
-    "image": "/JSONS/sponsorImages/BUSCH.png",
-    "link": "https://www.buschvacuum.com/au/en/",
-    "title": "Busch Vacuum Solutions AU",
-    "description": "Busch Vacuum Solutions AU is a leading provider of vacuum pumps, systems, and solutions for industrial applications. Renowned for innovation and reliability, they offer tailored vacuum technologies that enhance efficiency and performance across diverse industries."
   }
 ]
