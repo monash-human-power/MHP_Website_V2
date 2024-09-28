@@ -75,7 +75,7 @@ export default function Outreach() {
           }}
         >
           {/* Learn More button links to Our Programs section */}
-          <Button hrefString="#ourPrograms" text="Learn More" theme="dark" />
+          <Button hrefString="#ourPrograms" text="Learn More" theme="dark" target=""/>
         </div>
       </PageSection>
 
@@ -310,7 +310,7 @@ export default function Outreach() {
               paddingBottom: "50px",
             }}
           >
-            <Button hrefString="/contact" text="Contact Us" theme="dark" />
+            <Button hrefString="/contact" text="Contact Us" theme="dark" target="" />
           </div>
         </div>
       </PageSection>

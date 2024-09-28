@@ -52,6 +52,7 @@ export default function Page() {
                 hrefString="https://www.youtube.com/watch?v=psuRwd4hgEA&t=3s"
                 text="Learn More"
                 theme="dark"
+                target="_blank"
               />
             </div>
           </div>
@@ -76,7 +77,7 @@ export default function Page() {
             STEAM to the wider community within the framework of HPVs through
             school outreach programs.
           </p>
-          <Button hrefString="/bikes" text="Learn More" theme="dark" />
+          <Button hrefString="/bikes" text="Learn More" theme="dark" target=""/>
         </PageSection>
 
         <PageSection colourWay="dark">
