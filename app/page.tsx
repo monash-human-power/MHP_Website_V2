@@ -104,13 +104,13 @@ export default function Page() {
   <div className="flex flex-col items-center text-center space-y-3 mb-5">
     <h2 className="text-xl font-semibold">Consistency</h2>
     <p>
-      Consistency is key to MHP's success, ensuring steady progress and reliability. By maintaining consistent testing and collaboration, the team overcomes challenges and delivers top-tier results without sacrificing quality.
+      Consistency is key to MHP&apos;s success, ensuring steady progress and reliability. By maintaining consistent testing and collaboration, the team overcomes challenges and delivers top-tier results without sacrificing quality.
     </p>
   </div>
   <div className="flex flex-col items-center text-center space-y-3 mb-5">
     <h2 className="text-xl font-semibold">Pride</h2>
     <p>
-      Pride drives MHP's passion and dedication. Each member takes ownership of their work, fueling a culture of excellence and teamwork. Pride inspires the team to push boundaries and set new records in human-powered vehicle innovation.
+      Pride drives MHP&apos;s passion and dedication. Each member takes ownership of their work, fueling a culture of excellence and teamwork. Pride inspires the team to push boundaries and set new records in human-powered vehicle innovation.
     </p>
   </div>
 </div>
