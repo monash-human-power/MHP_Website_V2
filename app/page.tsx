@@ -34,7 +34,6 @@ export default function Page() {
                 alt="Image of v3"
                 width={1316}
                 height={426}
-                
               />
             </div>
             <div className="text-center sm:text-right">
@@ -42,13 +41,12 @@ export default function Page() {
                 Our Story
               </h2>
               <p>
-                {`
-        We are a student-led engineering team 
-        based at Monash University
-        in Melbourne, Australia. 
-        Since 2015 we have been designing,
-        manufacturing, and racing fully-faired human-powered vehicles (HPVs)
-        to push the limits of human speed.`}
+                {`We are a student-led engineering team 
+                  based at Monash University
+                  in Melbourne, Australia. 
+                  Since 2015 we have been designing,
+                  manufacturing, and racing fully-faired human-powered vehicles (HPVs)
+                  to push the limits of human speed.`}
               </p>
               <Button
                 hrefString="https://www.youtube.com/watch?v=psuRwd4hgEA&t=3s"

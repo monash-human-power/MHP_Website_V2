@@ -59,7 +59,7 @@ export default function SponsorshipCarousel({
             <div className="relative flex items-center justify-center">
               <a href={item.link} target="_blank" rel="noopener noreferrer">
                 <img
-                  className="max-h-48 w-full"
+                  className="h-48 w-full object-contain"
                   src={item.image}
                   alt={item.title}
                 />
@@ -69,7 +69,7 @@ export default function SponsorshipCarousel({
               <a href={item.link} target="_blank" rel="noopener noreferrer">
                 <h2 className="mt-2 font-bold text-xl underline decoration-green decoration-4">{item.title}</h2>
               </a>
-              <p className="mt-2 text-sm text-left">{item.description}</p>
+              <p className="mt-2 text-sm text-justify">{item.description}</p>
             </div>
           </div>
         ))}
