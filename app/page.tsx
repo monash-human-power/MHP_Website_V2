@@ -77,7 +77,12 @@ export default function Page() {
             STEAM to the wider community within the framework of HPVs through
             school outreach programs.
           </p>
-          <Button hrefString="/bikes" text="Learn More" theme="dark" target=""/>
+          <Button
+            hrefString="/bikes"
+            text="Learn More"
+            theme="dark"
+            target=""
+          />
         </PageSection>
 
         <PageSection colourWay="dark">
@@ -96,54 +101,28 @@ export default function Page() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
               <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5">
+                <h2 className="text-center  p-3 sm:mb-0">Inlcusion</h2>
+                <p className="my-4">
+                  We embrace diverse perspectives and ensure every voice is
+                  valued to drive innovation and success helping the team
+                  continue to improve and go beyond expectations.
+                </p>
+              </div>
+              <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5">
                 <h2 className="text-center  p-3 sm:mb-0">Quality</h2>
                 <p className="my-4">
-                  Our team’s vision is to make the fastest HPV in Australia, and
-                  eventually the world. We’re hoping to break the HPV land-speed
-                  record in Australia (currently 96.7km/h) having ridden at
-                  faster speeds during the 2023 World Human Powered Speed
-                  Challenge, an international competition in the U.S. which we
-                  plan to return to in 2025. With support from Monash University
-                  and the Engineering faculty, we strive to provide a space
-                  where Monash students can develop valuable, real-world
-                  experience which they can carry on into their careers.
-                  Alongside our technical goals, we also aim to promote STEAM to
-                  the wider community within the framework of HPVs through
-                  school outreach programs.
+                  We are committed to delivering exceptional performance,
+                  constantly refining our processes to achieve the highest
+                  standards all of which contribute to the design and
+                  manufacturing of our HPVs.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5">
-                <h2 className="text-center  p-3 sm:mb-0">Consistency</h2>
+                <h2 className="text-center p-3 sm:mb-0">Teamwork</h2>
                 <p className="my-4">
-                  Our team’s vision is to make the fastest HPV in Australia, and
-                  eventually the world. We’re hoping to break the HPV land-speed
-                  record in Australia (currently 96.7km/h) having ridden at
-                  faster speeds during the 2023 World Human Powered Speed
-                  Challenge, an international competition in the U.S. which we
-                  plan to return to in 2025. With support from Monash University
-                  and the Engineering faculty, we strive to provide a space
-                  where Monash students can develop valuable, real-world
-                  experience which they can carry on into their careers.
-                  Alongside our technical goals, we also aim to promote STEAM to
-                  the wider community within the framework of HPVs through
-                  school outreach programs.
-                </p>
-              </div>
-              <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5">
-                <h2 className="text-center p-3 sm:mb-0">Pride</h2>
-                <p className="my-4">
-                  Our team’s vision is to make the fastest HPV in Australia, and
-                  eventually the world. We’re hoping to break the HPV land-speed
-                  record in Australia (currently 96.7km/h) having ridden at
-                  faster speeds during the 2023 World Human Powered Speed
-                  Challenge, an international competition in the U.S. which we
-                  plan to return to in 2025. With support from Monash University
-                  and the Engineering faculty, we strive to provide a space
-                  where Monash students can develop valuable, real-world
-                  experience which they can carry on into their careers.
-                  Alongside our technical goals, we also aim to promote STEAM to
-                  the wider community within the framework of HPVs through
-                  school outreach programs.
+                  We build and thrive together, leveraging each team member's
+                  strengths to power our shared vision of breaking the world
+                  land speed record.
                 </p>
               </div>
             </div>
@@ -159,6 +138,7 @@ export default function Page() {
               width: "100%",
               margin: "0 auto",
               textAlign: "center",
+              paddingBottom: "20px"
             }}
           >
             <SponsorshipCarousel items={sponsorData} />
