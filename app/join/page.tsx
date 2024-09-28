@@ -3,23 +3,19 @@ import Button from "../components/Buttons";
 import PageSection from "../components/PageSection";
 import Image from "next/image";
 
-export default function Outreach() {
+export default function Join() {
   return (
     <>
       {/* Cover Image */}
       <section className="animate-fadeIn">
-      <div>
-        </div>
-
-          <Image
-            src="/join/join_main.jpg"
-            width="5184"
-            height="2309"
-            objectFit="cover"
-            alt="Trike Group photo"
-            layout="responsive"
-            className="  transform -translate-y-"
-          />
+        <Image
+          src="/join/join_main.jpg"
+          width="5184"
+          height="2309"
+          objectFit="cover"
+          alt="Trike Group photo"
+          layout="responsive"
+        />
       </section>
 
       {/* Join Us section */}

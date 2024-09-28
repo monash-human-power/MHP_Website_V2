@@ -28,13 +28,12 @@ export default function Page() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-            <Image
+              <Image
                 src="/v3.png"
                 className="flex-grow h-full w-full object-scale-down"
                 alt="Image of v3"
                 width={1316}
                 height={426}
-
               />
             </div>
             <div className="text-center sm:text-right">
