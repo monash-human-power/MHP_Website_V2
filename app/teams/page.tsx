@@ -62,7 +62,7 @@ export default function TeamPage() {
       <PageSection colourWay="dark">
         <section className="relative text-center ">
           <div className="relative z-10">
-            <h1 className="text-5xl font-bold">Meet our team</h1>
+            <h1 className="text-center text-5xl">Meet our Team</h1>
       {/* Battle Mountain Group Image */}
        <div className="w-dvh h-96 items-center overflow-hidden mx-auto">
           <Image

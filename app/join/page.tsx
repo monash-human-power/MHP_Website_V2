@@ -25,7 +25,7 @@ export default function Outreach() {
       {/* Join Us section */}
       <PageSection colourWay="dark">
         <div className="text-center">
-          <h1 className="text-5xl text-Sansation text-[#acf601] font-bold">
+          <h1 className="text-center text-5xl">
             Join Us
           </h1>
           <div

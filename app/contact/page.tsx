@@ -9,8 +9,8 @@ export default function contact() {
   return (
     <>
       <PageSection colourWay="dark">
-      <div className='flex flex-wrap justify-center items-center mt-5 text-green' >
-  <h1>Contact Us</h1>
+      <div className='flex flex-wrap justify-center items-center mt-5 ' >
+  <h1 className='text-center text-5xl'>Contact Us</h1>
 </div>
 <div>
           <Image

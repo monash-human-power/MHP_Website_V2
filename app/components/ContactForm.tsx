@@ -27,7 +27,7 @@ export const ContactForm = () => {
   return (
     <div className="font-Aldrich bg-black">
       <div className="flex flex-wrap justify-center items-center mt-5">
-        <h2 className='font-Aldrich flex flex-wrap justify-center items-center mt-5 text-green'>Email Us</h2>
+        <h2 className='font-Aldrich flex flex-wrap justify-center items-center mt-5 underline decoration-green decoration-4'>Email Us</h2>
       </div>
       <form ref={form} onSubmit={sendEmail} className="px-20">
         <div className="flex flex-wrap justify-center items-center mt-5">
