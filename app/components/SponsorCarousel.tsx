@@ -53,7 +53,7 @@ export default function SponsorshipCarousel({
       >
         &larr;
       </button>
-      <div className="flex-grow grid grid-cols-1 gap-4 p-10 w-3/4 h-1/4 sm:grid-cols-3">
+      <div className="flex-grow grid grid-cols-1 gap-4 px-10 py-4 w-3/4 h-1/4 sm:grid-cols-3">
         {visibleItems.map((item, index) => (
           <div key={index} className="text-center">
             <div className="relative flex items-center justify-center">
@@ -67,9 +67,11 @@ export default function SponsorshipCarousel({
             </div>
             <div>
               <a href={item.link} target="_blank" rel="noopener noreferrer">
-                <h2 className="mt-2 font-bold text-xl underline decoration-green decoration-4">{item.title}</h2>
+                <h2 className="mt-2 font-bold text-xl underline decoration-green decoration-4">
+                  {item.title}
+                </h2>
               </a>
-              <p className="mt-2 text-sm text-justify">{item.description}</p>
+              <p className="mt-2 text-sm text-center lg:text-justify">{item.description}</p>
             </div>
           </div>
         ))}
