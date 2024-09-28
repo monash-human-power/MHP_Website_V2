@@ -63,7 +63,7 @@ export default function Page() {
 
         <PageSection colourWay="dark">
           <h2 className="font-Aldrich underline  decoration-green decoration-4">
-            Our mission
+            Our Mission
           </h2>
           <p className="my-2">
             Our team’s vision is to make the fastest HPV in Australia, and
@@ -96,55 +96,25 @@ export default function Page() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-            <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5">
-              <h2 className="text-center  p-3 sm:mb-0">Quality</h2>
-              <p className="my-4">
-                Our team’s vision is to make the fastest HPV in Australia, and
-                eventually the world. We’re hoping to break the HPV land-speed
-                record in Australia (currently 96.7km/h) having ridden at faster
-                speeds during the 2023 World Human Powered Speed Challenge, an
-                international competition in the U.S. which we plan to return to
-                in 2025. With support from Monash University and the Engineering
-                faculty, we strive to provide a space where Monash students can
-                develop valuable, real-world experience which they can carry on
-                into their careers. Alongside our technical goals, we also aim
-                to promote STEAM to the wider community within the framework of
-                HPVs through school outreach programs.
-              </p>
-            </div>
-            <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5">
-              <h2 className="text-center  p-3 sm:mb-0">Consistency</h2>
-              <p className="my-4">
-                Our team’s vision is to make the fastest HPV in Australia, and
-                eventually the world. We’re hoping to break the HPV land-speed
-                record in Australia (currently 96.7km/h) having ridden at faster
-                speeds during the 2023 World Human Powered Speed Challenge, an
-                international competition in the U.S. which we plan to return to
-                in 2025. With support from Monash University and the Engineering
-                faculty, we strive to provide a space where Monash students can
-                develop valuable, real-world experience which they can carry on
-                into their careers. Alongside our technical goals, we also aim
-                to promote STEAM to the wider community within the framework of
-                HPVs through school outreach programs.
-              </p>
-            </div>
-            <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5">
-              <h2 className="text-center p-3 sm:mb-0">Pride</h2>
-              <p className="my-4">
-                Our team’s vision is to make the fastest HPV in Australia, and
-                eventually the world. We’re hoping to break the HPV land-speed
-                record in Australia (currently 96.7km/h) having ridden at faster
-                speeds during the 2023 World Human Powered Speed Challenge, an
-                international competition in the U.S. which we plan to return to
-                in 2025. With support from Monash University and the Engineering
-                faculty, we strive to provide a space where Monash students can
-                develop valuable, real-world experience which they can carry on
-                into their careers. Alongside our technical goals, we also aim
-                to promote STEAM to the wider community within the framework of
-                HPVs through school outreach programs.
-              </p>
-            </div>
-          </div>
+  <div className="flex flex-col items-center text-center space-y-3 mb-5">
+    <h2 className="text-xl font-semibold">Quality</h2>
+    <p>
+      MHP prioritizes excellence in every aspect of vehicle design, ensuring each component meets the highest standards. This commitment to quality allows the team to push the limits of HPV performance on the global stage.
+    </p>
+  </div>
+  <div className="flex flex-col items-center text-center space-y-3 mb-5">
+    <h2 className="text-xl font-semibold">Consistency</h2>
+    <p>
+      Consistency is key to MHP's success, ensuring steady progress and reliability. By maintaining consistent testing and collaboration, the team overcomes challenges and delivers top-tier results without sacrificing quality.
+    </p>
+  </div>
+  <div className="flex flex-col items-center text-center space-y-3 mb-5">
+    <h2 className="text-xl font-semibold">Pride</h2>
+    <p>
+      Pride drives MHP's passion and dedication. Each member takes ownership of their work, fueling a culture of excellence and teamwork. Pride inspires the team to push boundaries and set new records in human-powered vehicle innovation.
+    </p>
+  </div>
+</div>
           <div
             className="py-2"
             style={{
@@ -157,6 +127,11 @@ export default function Page() {
         </PageSection>
 
         <PageSection colourWay="dark">
+        <h2 className="text-center font-Aldrich underline decoration-green decoration-4 ">
+            Our Sponsors
+          </h2>
+          <p>
+          Thank you to our amazing sponsors for empowering Monash Human Power to push innovation and achieve new milestones. Your support makes our success possible!    </p>
           <SponsorshipCarousel items={sponsorData} />
         </PageSection>
       </div>
