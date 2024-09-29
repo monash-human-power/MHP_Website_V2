@@ -78,14 +78,15 @@ const Footer = () => {
           </div>
           {/* Subscribe section */}
           <div className="flex flex-col justify-center items-center">
-            <p className="text-xl mb-2">Subscribe To Us</p>
+            <br></br>
+            {/* <p className="text-xl mb-2">Subscribe To Us</p>
             <p className="text-sm mb-2 text-center">
               Keep up to date with MHP and other related news with our
               newsletter.
             </p>
             <button className="px-5 py-2 bg-white text-black rounded-md border-2 border-black hover:bg-green hover:text-black hover:border-black">
               Subscribe
-            </button>
+            </button> */}
           </div>
           {/* Quick links */}
           <div>
