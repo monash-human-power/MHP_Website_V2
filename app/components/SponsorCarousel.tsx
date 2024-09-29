@@ -53,7 +53,7 @@ export default function SponsorshipCarousel({
       >
         &larr;
       </button>
-      <div className="flex-grow grid grid-cols-1 gap-4 px-10 py-4 w-3/4 h-1/4 sm:grid-cols-3">
+      <div className="flex-grow grid grid-cols-1 gap-8 px-10 py-4 w-3/4 h-1/4 sm:grid-cols-3">
         {visibleItems.map((item, index) => (
           <div key={index} className="text-center">
             <div className="relative flex items-center justify-center">
