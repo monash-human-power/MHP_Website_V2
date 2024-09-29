@@ -35,6 +35,9 @@ export default function Outreach() {
 
   return (
     <>
+      <title>
+        Outreach | MHP
+      </title>
       {/* Our Vision Section */}
       <PageSection colourWay="dark">
         <div>

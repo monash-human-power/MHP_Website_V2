@@ -1,18 +1,20 @@
-"use client"
-import React from 'react'
-import PageSection from '../components/PageSection'
-import Image from 'next/image'
-import {ContactForm} from '../components/ContactForm'
-
+"use client";
+import React from "react";
+import PageSection from "../components/PageSection";
+import Image from "next/image";
+import { ContactForm } from "../components/ContactForm";
 
 export default function contact() {
   return (
     <>
+      <title>
+        Contact Us | MHP
+      </title>
       <PageSection colourWay="dark">
-      <div className='flex flex-wrap justify-center items-center mt-5 text-green' >
-  <h1>Contact Us</h1>
-</div>
-<div>
+        <div className="flex flex-wrap justify-center items-center mt-5 text-green">
+          <h1>Contact Us</h1>
+        </div>
+        <div>
           <Image
             src="/contactImage.png"
             layout="responsive"
@@ -23,20 +25,18 @@ export default function contact() {
           />
         </div>
 
-
-<br></br>
+        <br></br>
         <p className="font-light text-center">
-            Interested in contacting us? Want to book workshop or help us become the fastest HPV?
-            </p>
-            <br></br>
+          Interested in contacting us? Want to book workshop or help us become
+          the fastest HPV?
+        </p>
+        <br></br>
 
-            <p className="font-light text-center">
-            Contact us at monashhpt@gmail.com, or fill in the form below:
-            </p>
+        <p className="font-light text-center">
+          Contact us at monashhpt@gmail.com, or fill in the form below:
+        </p>
 
-    <ContactForm/>
-
-
+        <ContactForm />
       </PageSection>
     </>
   );

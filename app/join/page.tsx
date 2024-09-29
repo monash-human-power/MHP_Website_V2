@@ -6,6 +6,9 @@ import Image from "next/image";
 export default function Outreach() {
   return (
     <>
+    <title>
+      Join | MHP
+    </title>
       {/* Battle Mountain Group Image */}
       <section className="animate-fadeIn">
         <div className="w-dvh h-96 items-center overflow-hidden mx-auto">
