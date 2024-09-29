@@ -51,7 +51,7 @@ export default function Page() {
             <PageSection colourWay="dark">
                 <section className="relative text-center">
                     <div className="relative z-10">
-                        <h1 className="text-5xl sm:text-3xl md:text-5xl font-bold">Our bikes</h1>
+                        <h1 className="text-5xl sm:text-3xl md:text-5xl ">Our Bikes</h1>
                         <h2 className="text-lg sm:text-xl md:text-2xl mt-2 mx-4">
                         Monash Human Power (MHP) has continuously pushed the boundaries of human-powered 
                         vehicle design with our innovative range of bikes and our trike. Each of our models 

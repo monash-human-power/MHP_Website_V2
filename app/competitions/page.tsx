@@ -21,7 +21,7 @@ export default function Competitions() {
         Competitions | MHP
       </title>
       <div className="font-Aldrich bg-black text-white  px-15">
-        <h4 className="text-5xl text-center font-bold ">Competitions</h4>
+        <h4 className="text-center text-5xl ">Competitions</h4>
 
         <PageSection colourWay="dark">
           <div className="">

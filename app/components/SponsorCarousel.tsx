@@ -67,11 +67,11 @@ export default function SponsorshipCarousel({
             </div>
             <div>
               <a href={item.link} target="_blank" rel="noopener noreferrer">
-                <h2 className="mt-2 font-bold text-xl underline decoration-green decoration-4">
+                <h2 className="mt-2 font-bold text-xl">
                   {item.title}
                 </h2>
               </a>
-              <p className="mt-2 text-sm text-center lg:text-justify">{item.description}</p>
+              <p className="mt-2 text-sm text-left lg:text-justify">{item.description}</p>
             </div>
           </div>
         ))}

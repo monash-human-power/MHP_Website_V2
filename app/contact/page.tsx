@@ -10,13 +10,14 @@ export default function contact() {
       <title>
         Contact Us | MHP
       </title>
+      
       <PageSection colourWay="dark">
-        <div className="flex flex-wrap justify-center items-center mt-5 text-green">
+        <div className="flex flex-wrap justify-center items-center mt-5">
           <h1>Contact Us</h1>
         </div>
         <div>
           <Image
-            src="/contactImage.png"
+            src="/contactImage.jpg"
             layout="responsive"
             height={50}
             width={2000}

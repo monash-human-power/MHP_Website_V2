@@ -30,7 +30,7 @@ export default function Page() {
             <div>
               <Image
                 src="/v3.png"
-                className="flex-grow h-full w-full object-cover"
+                className="flex-grow h-full w-full object-scale-down"
                 alt="Image of v3"
                 width={1316}
                 height={426}
@@ -62,7 +62,7 @@ export default function Page() {
 
         <PageSection colourWay="dark">
           <h2 className="font-Aldrich underline  decoration-green decoration-4">
-            Our mission
+            Our Mission
           </h2>
           <p className="my-2">
             Our team’s vision is to make the fastest HPV in Australia, and
@@ -101,7 +101,7 @@ export default function Page() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
               <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5">
-                <h2 className="text-center  p-3 sm:mb-0">Inlcusion</h2>
+                <h2 className="text-xl font-semibold text-center p-3 sm:mb-0">Inlcusion</h2>
                 <p className="my-4">
                   We embrace diverse perspectives and ensure every voice is
                   valued to drive innovation and success helping the team
@@ -109,7 +109,7 @@ export default function Page() {
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5">
-                <h2 className="text-center  p-3 sm:mb-0">Quality</h2>
+                <h2 className="text-xl font-semibold text-center p-3 sm:mb-0">Quality</h2>
                 <p className="my-4">
                   We are committed to delivering exceptional performance,
                   constantly refining our processes to achieve the highest
@@ -118,7 +118,7 @@ export default function Page() {
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5">
-                <h2 className="text-center p-3 sm:mb-0">Teamwork</h2>
+                <h2 className="text-xl font-semibold text-center p-3 sm:mb-0">Teamwork</h2>
                 <p className="my-4">
                   We build and thrive together, leveraging each team member's
                   strengths to power our shared vision of breaking the world
@@ -140,9 +140,16 @@ export default function Page() {
               textAlign: "center",
               paddingBottom: "20px"
             }}
-          >
-            <SponsorshipCarousel items={sponsorData} />
-          </div>
+          ></div>
+        </PageSection>
+
+        <PageSection colourWay="dark">
+        <h2 className="text-center font-Aldrich underline decoration-green decoration-4 ">
+            Our Sponsors
+          </h2>
+          <p>
+          Thank you to our amazing sponsors for empowering Monash Human Power to push innovation and achieve new milestones. Your support makes our success possible!    </p>
+          <SponsorshipCarousel items={sponsorData} />
         </PageSection>
       </div>
     </>

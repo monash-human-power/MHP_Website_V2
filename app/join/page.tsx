@@ -3,31 +3,29 @@ import Button from "../components/Buttons";
 import PageSection from "../components/PageSection";
 import Image from "next/image";
 
-export default function Outreach() {
+export default function Join() {
   return (
     <>
-    <title>
-      Join | MHP
-    </title>
-      {/* Battle Mountain Group Image */}
+      <title>
+        Join | MHP
+      </title>
+      
+      {/* Cover Image */}
       <section className="animate-fadeIn">
-        <div className="w-dvh h-96 items-center overflow-hidden mx-auto">
-          <Image
-            src="/battle_mountain_group.jpg"
-            width="800"
-            height="300"
-            objectFit="cover"
-            alt="Battle Mountain Group"
-            layout="responsive"
-            className="top-1/2  transform -translate-y-1/3"
-          />
-        </div>
+        <Image
+          src="/join/join_main.jpg"
+          width="5184"
+          height="2309"
+          objectFit="cover"
+          alt="Trike Group photo"
+          layout="responsive"
+        />
       </section>
 
       {/* Join Us section */}
       <PageSection colourWay="dark">
         <div className="text-center">
-          <h1 className="text-5xl text-Sansation text-[#acf601] font-bold">
+          <h1 className="text-center text-5xl">
             Join Us
           </h1>
           <div

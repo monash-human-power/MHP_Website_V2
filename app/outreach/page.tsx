@@ -41,7 +41,7 @@ export default function Outreach() {
       {/* Our Vision Section */}
       <PageSection colourWay="dark">
         <div>
-          <h1 className="text-center text-5xl">OUTREACH</h1>
+          <h1 className="text-center text-5xl">Outreach</h1>
           <div
             style={{
               padding: "30px",
