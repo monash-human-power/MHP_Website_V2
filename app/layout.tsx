@@ -22,7 +22,7 @@ export default function RootLayout({
         className={inter.className + " bg-black flex flex-col min-h-screen"}
       >
         <Navbar />
-        <div className="flex-1">{children}</div>
+        <div className="flex-1 " style={{width: "95%", margin: "0 auto", textAlign: "center",} } >{children}</div>
         <Footer />
       </body>
     </html>
