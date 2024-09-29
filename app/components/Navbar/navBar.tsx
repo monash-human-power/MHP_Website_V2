@@ -91,7 +91,9 @@ const Navbar = () => {
           {/* Image */}
           <div className="flex-1/4"></div>
           <div className="justify-center items-center">
-            <Image src="/mobile_image.png" alt="Logo" width={100} height={50} />
+            <a href="/">
+              <Image src="/mobile_image.png" alt="Logo" width={100} height={50} />
+            </a>
           </div>
           {/* Menu button */}
           <button
@@ -141,30 +143,6 @@ const Navbar = () => {
                 srcString={item.srcString}
               />
             ))}
-            {/* {desktopNavigation.map((item, index) =>
-              item.name !== "Teams" && item.name !== "Competitions" ? (
-                <NavItem
-                  key={index}
-                  text={item.name}
-                  hrefString={item.href}
-                  srcString={item.srcString}
-                />
-              ) : (
-                <MenuNavBarItem
-                  key={index}
-                  title={
-                    item.name === "Teams"
-                      ? teamItems.title
-                      : competitionItems.title
-                  }
-                  items={
-                    item.name === "Teams"
-                      ? teamItems.items
-                      : competitionItems.items
-                  }
-                />
-              )
-            )} */}
             <div className="px-10 py-2">
               <Link href={"/contact"}>
                 <button className="px-5 py-2 rounded-md border-2 border-white hover:bg-green hover:text-black hover:border-black">
@@ -182,17 +160,6 @@ const Navbar = () => {
         >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {mobileNavigation.map((item, index) => (
-              // item.name === "Competitions" || item.name === "Teams" ? (
-              //   <Link
-              //     key={index}
-              //     href=""
-              //     className="text-center hover:bg-gray-700 block px-3 py-2 rounded-md text-sm font-medium"
-              //   >
-              //     <button onClick={() => handleItemClick(item)}>
-              //       {item.name + " >"}
-              //     </button>
-              //   </Link>
-              // ) : (
               <MobileNavItem
                 key={index}
                 name={item.name}

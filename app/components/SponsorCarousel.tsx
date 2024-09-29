@@ -53,20 +53,26 @@ export default function SponsorshipCarousel({
       >
         &larr;
       </button>
-      <div className="flex-grow grid grid-cols-1 gap-4 p-10 w-3/4 h-1/4 sm:grid-cols-3">
+      <div className="flex-grow grid grid-cols-1 gap-8 px-10 py-4 w-3/4 h-1/4 sm:grid-cols-3">
         {visibleItems.map((item, index) => (
           <div key={index} className="text-center">
-            <a href={item.link} target="_blank" rel="noopener noreferrer">
-              <img
-                src={item.image}
-                alt={item.title}
-                className="mx-auto w-full h-auto"
-              />
-            </a>
-            <a href={item.link} target="_blank" rel="noopener noreferrer">
-              <h2 className="mt-2 font-bold text-xl ">{item.title}</h2>
-            </a>
-            <p className="mt-2 text-sm text-left">{item.description}</p>
+            <div className="relative flex items-center justify-center">
+              <a href={item.link} target="_blank" rel="noopener noreferrer">
+                <img
+                  className="h-48 w-full object-contain"
+                  src={item.image}
+                  alt={item.title}
+                />
+              </a>
+            </div>
+            <div>
+              <a href={item.link} target="_blank" rel="noopener noreferrer">
+                <h2 className="mt-2 font-bold text-xl">
+                  {item.title}
+                </h2>
+              </a>
+              <p className="mt-2 text-sm text-left lg:text-justify">{item.description}</p>
+            </div>
           </div>
         ))}
       </div>

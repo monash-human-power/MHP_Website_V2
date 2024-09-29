@@ -43,6 +43,10 @@ export default function Page() {
     }, []);
 
     return (
+        <>
+        <title>
+            Bikes | MHP
+        </title>
         <div className="scroll-smooth">
             <PageSection colourWay="dark">
                 <section className="relative text-center">
@@ -68,5 +72,6 @@ export default function Page() {
                 </div>
             ))}
         </div>
+        </>
     );
 }

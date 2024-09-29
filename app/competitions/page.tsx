@@ -17,6 +17,9 @@ const bmImages = [
 export default function Competitions() {
   return (
     <>
+      <title>
+        Competitions | MHP
+      </title>
       <div className="font-Aldrich bg-black text-white  px-15">
         <h4 className="text-center text-5xl ">Competitions</h4>
 

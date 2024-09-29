@@ -1,26 +1,50 @@
 [
   {
-    "image": "/JSONS/sponsorImages/GelTech.png",
-    "link": "https://geltechsolutions.com",
-    "title": "GelTech Solutions",
-    "description": "GelTech Solutions is a dynamic and innovative chemical solutions company with dedicated engineers who design customized, industry-specific equipment to meet your needs."
+    "image": "/JSONS/sponsorImages/Sponsors/Gelteq.png",
+    "link": "https://www.gelteq.com",
+    "title": "Gelteq",
+    "description": "Gelteq specialises in the formulation, development and manufacturing of products utilising our patented, gel-based oral drug delivery system. We are dedicated to delivering products that contribute to the success of our partners, and the health of our patients."
   },
   {
-    "image": "/JSONS/sponsorImages/MU.png",
+    "image": "/JSONS/sponsorImages/Sponsors/YarraEnergy.png",
+    "link": "https://solarimpulse.com/companies/yarra-energy#",
+    "title": "Yarra Energy",
+    "description": "Yarra Energy is a forward-thinking company focused on delivering sustainable energy solutions. Specialising in renewable energy projects, they drive innovation in clean energy generation and efficiency, helping communities and businesses reduce their environmental impact."
+  },
+  {
+    "image": "/JSONS/sponsorImages/Sponsors/Monash.png",
     "link": "https://www.monash.edu/",
     "title": "Monash University",
     "description": "Monash University is a leading global institution known for its excellence in education, research, and innovation. With a diverse and inclusive community, it offers a wide range of programs and world-class facilities, fostering a culture of academic rigor and real-world impact."
   },
   {
-    "image": "/JSONS/sponsorImages/AARC.png",
+    "image": "/JSONS/sponsorImages/Sponsors/Monash.png",
+    "link": "https://www.monash.edu/engineering/student-experience/teams-and-clubs#teams",
+    "title": "Monash Student Teams Initiative",
+    "description": "The Monash Student Teams Initiative (MSTI) brings together interdisciplinary student teams to work on innovative, real-world projects. It fosters hands-on learning, collaboration, and skill development, preparing students for industry challenges through immersive, team-based experiences."
+  },
+  {
+    "image": "/JSONS/sponsorImages/Sponsors/AARC.jpg",
     "link": "https://aarconline.com/",
     "title": "Australian Automotive Research Centre",
     "description": "The Australian Automotive Research Centre (AARC) is a premier testing facility for automotive innovation, offering comprehensive services for vehicle development, performance testing, and engineering. Its expansive, state-of-the-art tracks and laboratories support cutting-edge research in automotive technology, safety, and durability."
   },
   {
-    "image": "/JSONS/sponsorImages/BA.png",
+    "image": "/JSONS/sponsorImages/Sponsors/BA Motor.png",
     "link": "https://bamotors.com.au",
     "title": "B&A Motor Body Repairs",
-    "description": "B&A Motor Body Repairs is a trusted automotive repair shop specializing in high-quality collision repairs and vehicle restorations. Known for expert craftsmanship and personalized service, they deliver reliable, efficient solutions to restore vehicles to their best condition."
+    "description": "B&A Motor Body Repairs is a trusted automotive repair shop specialising in high-quality collision repairs and vehicle restorations. Known for expert craftsmanship and personalised service, they deliver reliable, efficient solutions to restore vehicles to their best condition."
+  },
+  {
+    "image": "/JSONS/sponsorImages/Sponsors/AkzoNobel.png",
+    "link": "https://www.akzonobel.com/en",
+    "title": "AkzoNobel",
+    "description": "AkzoNobel is a global leader in paints and coatings, renowned for innovative and sustainable solutions. With a rich heritage, they provide high-performance products that protect and enhance surfaces across industries, driving advancements in color, performance, and environmental responsibility."
+  },
+  {
+    "image": "/JSONS/sponsorImages/Sponsors/LEAP.png",
+    "link": "https://www.leapaust.com.au",
+    "title": "LEAP",
+    "description": "For over 25 years, LEAP has assisted thousands of companies from diverse industries to implement technology solutions to digitise their product development with solutions like AR for training, PLM, multiphysics simulation, IoT, machine learning, CAD/CAM, and documentation control."
   }
 ]

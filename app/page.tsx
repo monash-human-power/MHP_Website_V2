@@ -41,18 +41,18 @@ export default function Page() {
                 Our Story
               </h2>
               <p>
-                {`
-        We are a student-led engineering team 
-        based at Monash University
-        in Melbourne, Australia. 
-        Since 2015 we have been designing,
-        manufacturing, and racing fully-faired human-powered vehicles (HPVs)
-        to push the limits of human speed.`}
+                {`We are a student-led engineering team 
+                  based at Monash University
+                  in Melbourne, Australia. 
+                  Since 2015 we have been designing,
+                  manufacturing, and racing fully-faired human-powered vehicles (HPVs)
+                  to push the limits of human speed.`}
               </p>
               <Button
                 hrefString="https://www.youtube.com/watch?v=psuRwd4hgEA&t=3s"
                 text="Learn More"
                 theme="dark"
+                target="_blank"
               />
             </div>
           </div>
@@ -77,7 +77,12 @@ export default function Page() {
             STEAM to the wider community within the framework of HPVs through
             school outreach programs.
           </p>
-          <Button hrefString="/bikes" text="Learn More" theme="dark" />
+          <Button
+            hrefString="/bikes"
+            text="Learn More"
+            theme="dark"
+            target=""
+          />
         </PageSection>
 
         <PageSection colourWay="dark">
@@ -88,50 +93,74 @@ export default function Page() {
               width: "100%",
               margin: "0 auto",
               textAlign: "center",
+              paddingTop: "20px"
             }}
-          ></div>
-          <h2 className="text-center font-Aldrich underline decoration-green decoration-4 ">
-            Our Values
-          </h2>
+          >
+            <h2 className="text-center font-Aldrich underline decoration-green decoration-4 ">
+              Our Values
+            </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-  <div className="flex flex-col items-center text-center space-y-3 mb-5">
-    <h2 className="text-xl font-semibold">Quality</h2>
-    <p>
-      MHP prioritizes excellence in every aspect of vehicle design, ensuring each component meets the highest standards. This commitment to quality allows the team to push the limits of HPV performance on the global stage.
-    </p>
-  </div>
-  <div className="flex flex-col items-center text-center space-y-3 mb-5">
-    <h2 className="text-xl font-semibold">Consistency</h2>
-    <p>
-      Consistency is key to MHP&apos;s success, ensuring steady progress and reliability. By maintaining consistent testing and collaboration, the team overcomes challenges and delivers top-tier results without sacrificing quality.
-    </p>
-  </div>
-  <div className="flex flex-col items-center text-center space-y-3 mb-5">
-    <h2 className="text-xl font-semibold">Pride</h2>
-    <p>
-      Pride drives MHP&apos;s passion and dedication. Each member takes ownership of their work, fueling a culture of excellence and teamwork. Pride inspires the team to push boundaries and set new records in human-powered vehicle innovation.
-    </p>
-  </div>
-</div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+              <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5">
+                <h2 className="text-xl font-semibold text-center p-3 sm:mb-0">
+                  Inlcusion
+                </h2>
+                <p className="my-4">
+                  We embrace diverse perspectives and ensure every voice is
+                  valued to drive innovation and success helping the team
+                  continue to improve and go beyond expectations.
+                </p>
+              </div>
+              <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5">
+                <h2 className="text-xl font-semibold text-center p-3 sm:mb-0">
+                  Quality
+                </h2>
+                <p className="my-4">
+                  We are committed to delivering exceptional performance,
+                  constantly refining our processes to achieve the highest
+                  standards all of which contribute to the design and
+                  manufacturing of our HPVs.
+                </p>
+              </div>
+              <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5">
+                <h2 className="text-xl font-semibold text-center p-3 sm:mb-0">
+                  Teamwork
+                </h2>
+                <p className="my-4">
+                  We build and thrive together, leveraging each team member's
+                  strengths to power our shared vision of breaking the world
+                  land speed record.
+                </p>
+              </div>
+            </div>
+          </div>
+        </PageSection>
+
+        <PageSection colourWay="dark">
           <div
             className="py-2"
             style={{
               borderTop: "2px solid #5e5b5b", // Top border
+              borderBottom: "2px solid #5e5b5b", // Bottom border
               width: "100%",
               margin: "0 auto",
               textAlign: "center",
+              paddingTop: "20px",
+              paddingBottom: "20px",
             }}
-          ></div>
-        </PageSection>
-
-        <PageSection colourWay="dark">
-        <h2 className="text-center font-Aldrich underline decoration-green decoration-4 ">
-            Our Sponsors
-          </h2>
-          <p>
-          Thank you to our amazing sponsors for empowering Monash Human Power to push innovation and achieve new milestones. Your support makes our success possible!    </p>
-          <SponsorshipCarousel items={sponsorData} />
+          >
+            <h2 className="text-center font-Aldrich underline decoration-green decoration-4 ">
+              Our Sponsors
+            </h2>
+            <div className="mt-4">
+              <p>
+                Thank you to our amazing sponsors for empowering Monash Human
+                Power to push innovation and achieve new milestones. Your support
+                makes our success possible!{" "}
+              </p>
+            </div>
+            <SponsorshipCarousel items={sponsorData} />
+          </div>
         </PageSection>
       </div>
     </>
