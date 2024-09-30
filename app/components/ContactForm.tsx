@@ -32,20 +32,20 @@ export const ContactForm = () => {
       <form ref={form} onSubmit={sendEmail} className="px-20">
         <div className="flex flex-wrap justify-center items-center mt-5">
           <div className="flex flex-col justify-left mt-5 md:mr-10">
-            <label className="text-white">First Name*</label>
+            <label className="text-white text-left pl-4">First Name*</label>
             <input
-              className="border bg-black h-10 w-50 md:w-60"
-              style={{ borderColor: "#acf601" }}
+              className="border text-black bg-white px-2 h-10 w-50 md:w-60"
+              style={{ borderRadius: 10 }}
               type="text"
               name="first_name" 
               required
             />
           </div>
           <div className="flex flex-col justify-left mt-5">
-            <label className="text-white">Last Name*</label>
+            <label className="text-white text-left pl-4">Last Name*</label>
             <input
-              className="border bg-black h-10 w-50 md:w-60"
-              style={{ borderColor: "#acf601" }}
+              className="border text-black bg-white px-2 h-10 w-50 md:w-60"
+              style={{ borderRadius: 10 }}
               type="text"
               name="last_name" 
               required
@@ -55,14 +55,10 @@ export const ContactForm = () => {
 
         <div className="flex flex-col justify-center items-center">
           <div className="flex flex-col justify-left mt-5">
-            <label className="text-white">E-mail*</label>
+            <label className="text-white text-left pl-4">E-mail*</label>
             <input
-              className="border h-10 w-60 md:w-120"
-              style={{
-                backgroundColor: "black",
-                color: "white",
-                borderColor: "#acf601",
-              }}
+              className="border text-black bg-white px-2 h-10 w-60 md:w-120"
+              style={{ borderRadius: 10 }}
               type="email"
               name="email" 
               required
@@ -70,16 +66,13 @@ export const ContactForm = () => {
           </div>
 
           <div className="flex flex-col justify-left mt-5">
-            <label htmlFor="message" className="text-white">Message*</label>
+            <label htmlFor="message" className="text-white text-left pl-4">Message*</label>
             <textarea
-              className="border min-h-20 w-60 md:w-120"
-              style={{
-                backgroundColor: "black",
-                color: "white",
-                borderColor: "#acf601",
-              }}
+              className="border text-black bg-white px-2 py-2 h-10 w-60 md:w-120 sm:h-full min-h-[150px] sm:w-full resize-none"
+              style={{ borderRadius: 10 }}
               name="message"
               required
+              placeholder='Write a message here !'
             />
           </div>
         </div>
@@ -87,7 +80,7 @@ export const ContactForm = () => {
         <div className="flex flex-wrap justify-center items-center mt-10">
           <button
             type="submit"
-            className="px-5 py-2 rounded-md border-2 bg-green text-black border-black font-bold"
+            className="px-5 py-2 rounded-md border-2 bg-green text-black border-black font-bold hover:bg-black hover:text-white hover:border-white"
             disabled={isSubmitting} // Disable button while submitting
           >
             {isSubmitting ? 'Sending...' : 'Send Message'}
