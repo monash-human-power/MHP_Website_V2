@@ -65,8 +65,8 @@ export default function Page() {
             Our Mission
           </h2>
           <p className="my-2">
-            Our team’s vision is to make the fastest HPV in Australia, and
-            eventually the world. We’re hoping to break the HPV land-speed
+            Our team&apos;s vision is to make the fastest HPV in Australia, and
+            eventually the world. We&apos;re hoping to break the HPV land-speed
             record in Australia (currently 96.7km/h) having ridden at faster
             speeds during the 2023 World Human Powered Speed Challenge, an
             international competition in the U.S. which we plan to return to in
