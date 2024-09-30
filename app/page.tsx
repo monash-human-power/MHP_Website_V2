@@ -127,7 +127,7 @@ export default function Page() {
                   Teamwork
                 </h2>
                 <p className="my-4">
-                  We build and thrive together, leveraging each team member's
+                  We build and thrive together, leveraging each team member&apos;s
                   strengths to power our shared vision of breaking the world
                   land speed record.
                 </p>
