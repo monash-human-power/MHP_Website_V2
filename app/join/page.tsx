@@ -6,6 +6,10 @@ import Image from "next/image";
 export default function Join() {
   return (
     <>
+      <title>
+        Join | MHP
+      </title>
+      
       {/* Cover Image */}
       <section className="animate-fadeIn">
         <Image

@@ -59,6 +59,9 @@ export default function TeamPage() {
 
   return (
     <>
+      <title>
+        Teams | MHP
+      </title>
       <PageSection colourWay="dark">
         <section className="relative text-center ">
           <div className="relative z-10">
