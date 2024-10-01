@@ -103,7 +103,7 @@ export default function Page() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
               <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5">
                 <h2 className="text-xl font-semibold text-center p-3 sm:mb-0">
-                  Inlcusion
+                  Inclusion
                 </h2>
                 <p className="my-4">
                   We embrace diverse perspectives and ensure every voice is
