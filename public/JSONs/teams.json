@@ -70,15 +70,15 @@
       "Team_Leads": [
         {
           "name": "Jessica Mark",
-          "role": "Team Lead",
+          "role": "Software Team Lead",
           "department": "Software Engineering and Computer Science",
           "image": "/JSONS/teamsImages/images/Electrical/jessica_mark.jpg"
         },
         {
-          "name": "Jotham Gates",
-          "role": "Team Lead",
+          "name": "Nivantha Abeysekera",
+          "role": "Hardware Team Lead",
           "department": "Electrical Engineering",
-          "image": "/JSONS/teamsImages/images/Electrical/jotham_gates.jpg"
+          "image": "/JSONS/teamsImages/images/Electrical/nivantha_abeysekara.jpg"
         }
       ],
       "members": [
@@ -95,10 +95,10 @@
           "image": "/JSONS/teamsImages/images/Electrical/ngoc_thao_vy_nguyen.jpg"
         },
         {
-          "name": "Nivantha Abeysekera",
+          "name": "Jotham Gates",
           "role": "Team Member",
           "department": "Electrical Engineering",
-          "image": "/JSONS/teamsImages/images/Electrical/nivantha_abeysekara.jpg"
+          "image": "/JSONS/teamsImages/images/Electrical/jotham_gates.jpg"
         },
 
         {
