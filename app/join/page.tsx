@@ -728,7 +728,7 @@ export default function Join() {
               <br></br>
               <li className="font-Sansation">
                 Manufacture the fairing and supplementary composite components,
-                primarily working with carbon fiber.c
+                primarily working with carbon fiber.
               </li>
               <br></br>
               <li className="font-Sansation">
