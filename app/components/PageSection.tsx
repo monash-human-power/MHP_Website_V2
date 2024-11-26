@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect, useRef, useState } from "react";
 
 interface PageSectionProps {
   colourWay: "light" | "dark"; //Options are dark and light
@@ -6,11 +7,47 @@ interface PageSectionProps {
 }
 
 const sectionThemes = {
-  light: "position-relative bg-white text-black p-12 w-full z-0 ",
-  dark: "position-relative bg-black text-white p-12 w-full z-0 ",
+  light: "position-relative bg-white text-black p-6 w-full z-0",
+  dark: "position-relative bg-black text-white p-6 w-full z-0",
 };
 
-// Page section component are essentaily just a container class used to enforce colour themes
 export default function PageSection({ colourWay, children }: PageSectionProps) {
-  return <div className={sectionThemes[colourWay]}>{children}</div>;
+  const sectionRef = useRef<HTMLDivElement | null>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+          } else {
+            setIsVisible(false);
+          }
+        });
+      },
+      { threshold: 0.05 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
+  return (
+    <div
+      ref={sectionRef}
+      className={`${sectionThemes[colourWay]} ${
+        isVisible ? "animate-fadeIn" : "opacity-0"
+      }`}
+    >
+      {children}
+    </div>
+  );
 }

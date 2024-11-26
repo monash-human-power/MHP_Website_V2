@@ -1,7 +1,7 @@
 "use client";
 
-import React from "react"
-import { useState, useEffect } from 'react';
+import React from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 
 // Set types of props
@@ -9,40 +9,32 @@ interface ImageCarouselProps {
   images: string[];
 }
 
+export default function ImageCarousel({ images }: ImageCarouselProps) {
+  // Stores the index of the image that is currently visible
+  const [currentImage, setCurrentImage] = useState(0);
 
-export default function ImageCarousel({
-  images,
-}: ImageCarouselProps ) {
+  // Automatically go to the next image every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000);
 
-// Stores the index of the image that is currently visible
-const [currentImage, setCurrentImage] = useState(0);
+    return () => clearInterval(interval);
+  }, [images.length]);
 
-// Automatically go to the next image every 3 seconds
-useEffect(() => {
-  const interval = setInterval(() => {
-    setCurrentImage((prevIndex) => (prevIndex + 1) % images.length);
-  }, 3000);
-
-  return () => clearInterval(interval);
-}, [images.length]);
-
-
-// When the button is clicked, the image index is updated
-function handleClick(index: number) {
-  setCurrentImage(index);
-}
+  // When the button is clicked, the image index is updated
+  function handleClick(index: number) {
+    setCurrentImage(index);
+  }
 
   return (
-    <div className="relative w-full h-96 overflow-hidden">
+    <div className="relative w-full h-96 overflow-hidden mb-5">
       <div
         className="flex transition-transform duration-500"
         style={{ transform: `translateX(-${currentImage * 100}%)` }}
       >
         {images.map((image, index) => (
-          <div
-            key={index}
-            className="relative w-full h-96 flex-shrink-0"
-          >
+          <div key={index} className="relative w-full h-96 flex-shrink-0">
             <Image
               src={image}
               alt={`Image ${index + 1}`}
@@ -56,7 +48,9 @@ function handleClick(index: number) {
         {images.map((_, index) => (
           <button
             key={index}
-            className={`w-3 h-3 rounded-full ${index === currentImage ? 'bg-black' : 'bg-white opacity-50'} focus:outline-none`}
+            className={`w-3 h-3 rounded-full ${
+              index === currentImage ? "bg-black" : "bg-white opacity-50"
+            } focus:outline-none`}
             onClick={() => handleClick(index)}
           ></button>
         ))}

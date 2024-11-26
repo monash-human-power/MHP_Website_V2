@@ -1,0 +1,529 @@
+{
+  "sub_teams": [
+    {
+      "name": "Management Team",
+      "description": "Upper management, comprising the CEO, CTO, and COO, ensures the team’s strategic, technical, and operational success. The CEO handles long-term vision, budgeting, and representation, the CTO oversees technical development and collaboration, and the COO manages daily operations and team culture. Together, they drive cohesive direction and efficient execution across all aspects of the team.",
+      "image": "/JSONS/teamsImages/images/upperman.jpg",
+      "Team_Leads": [
+          {
+            "name": "Arosh Heenkenda",
+            "role": "Chief Executive Officer",
+            "department": "Mechanical Engineering and Commerce",
+            "image": "/JSONS/teamsImages/images/UpperManage/arosh_heenkenda.jpg"
+          },
+          {
+            "name": "James Cookson",
+            "role": "Chief Technical Officer",
+            "department": "Electrical Engineering and Biomedical Science",
+            "image": "/JSONS/teamsImages/images/UpperManage/james_cookson.jpg"
+          }, {
+            "name": "Rhys Watson",
+            "role": "Chief Operating Officer",
+            "department": "Electrical Engineering and Biomedical Science",
+            "image": "/JSONS/teamsImages/images/UpperManage/rhys_watson.jpg"
+          }
+        ]
+    },
+    {
+      "name": "Rider Development",
+      "description": "The Rider Development team is dedicated to enhancing rider performance. This team, which includes both riders and technical experts, designs and manages cycling and strength training programs, as well as creating personalized power plans for each rider. Additionally this team tests the changes and developments from the other teams, providing vital feedback to the various technical sub teams to improve integration. Through optimising our riders strength and endurance, they help support the human power in our human powered vehicles . ",
+      "image": "/JSONS/teamsImages/images/rider.jpg",
+      "Team_Leads": [
+          {
+            "name": "James Gardiner",
+            "role": "Team Lead",
+            "department": "Mechanical Engineering and Commerce",
+            "image": "/JSONS/teamsImages/images/RiderDev/james_gardiner.jpg"
+          },
+          {
+            "name": "Sean Solnik",
+            "role": "Team Lead",
+            "department": "Electrical Engineering and Biomedical Science",
+            "image": "/JSONS/teamsImages/images/RiderDev/sean_solnik.png"
+          }
+        ],
+        "members": [
+            {
+              "name": "Kit Kirby",
+              "role": "Team Member",
+              "department": "Materials Engineering",
+              "image": "/JSONS/teamsImages/images/RiderDev/kit_kirby.jpg"
+            }
+            ,{
+              "name": "Sandra Kalta",
+              "role": "Team Member",
+              "department": "Engineering and Biomedical Science",
+              "image": "/JSONS/teamsImages/images/RiderDev/sandra_kalta.jpg"
+            },{
+              "name": "Victoria Ly",
+              "role": "Team Member",
+              "department": "",
+              "image": "/JSONS/teamsImages/images/RiderDev/victoria_ly.jpg"
+            }
+            
+          ]
+    },
+    {
+      "name": "Electrical",
+      "description": "The Electrical team, comprising Software and Hardware divisions, manages the vehicle's electrical systems, including data collection and camera systems. They maintain the camera systems that allow the riders to see where they are going and display essential information including speed, power and target power on the bike’s internal screens. Additionally, they oversee data collection systems that help riders make informed race decisions and the rest of the team to optimise their designs and approaches. The team employs a range of skills and technologies, from programming microcontrollers and dashboards to embedded electronics and circuit board design and assembly.",
+      "image": "/JSONS/teamsImages/images/electrical.png",
+      "Team_Leads": [
+        {
+          "name": "Jessica Mark",
+          "role": "Software Team Lead",
+          "department": "Software Engineering and Computer Science",
+          "image": "/JSONS/teamsImages/images/Electrical/jessica_mark.jpg"
+        },
+        {
+          "name": "Nivantha Abeysekera",
+          "role": "Hardware Team Lead",
+          "department": "Electrical Engineering",
+          "image": "/JSONS/teamsImages/images/Electrical/nivantha_abeysekara.jpg"
+        }
+      ],
+      "members": [
+        {
+          "name": "Amy Tjea",
+          "role": "Team Member",
+          "department": "Software Engineering and Computer Science",
+          "image": "/JSONS/teamsImages/images/Electrical/amy_tjea.jpg"
+        },
+        {
+          "name": "Ngoc Thao Vy Nguyen",
+          "role": "Team Member",
+          "department": "Engineering",
+          "image": "/JSONS/teamsImages/images/Electrical/ngoc_thao_vy_nguyen.jpg"
+        },
+        {
+          "name": "Jotham Gates",
+          "role": "Team Member",
+          "department": "Electrical Engineering",
+          "image": "/JSONS/teamsImages/images/Electrical/jotham_gates.jpg"
+        },
+
+        {
+          "name": "Prince (Jeremy) Mendel-Idowu",
+          "role": "Team Member",
+          "department": "",
+          "image": "/JSONS/teamsImages/images/Ops/prince_mendel-idowu.jpg"
+        },
+        {
+          "name": "Aarabi Kugathas",
+          "role": "Team Member",
+          "department": "",
+          "image": "/JSONS/teamsImages/images/Electrical/aarabi_kugathas.jpg"
+        },
+        {
+          "name": "Arnav Singh Sethi",
+          "role": "Team Member",
+          "department": "",
+          "image": "/JSONS/teamsImages/images/Electrical/arnav_singh_sethi.jpg"
+        },
+        {
+          "name": "Daniel He",
+          "role": "Team Member",
+          "department": "",
+          "image": "/JSONS/teamsImages/images/Electrical/daniel_he.jpg"
+        },
+        {
+          "name": "Jason Qi Heng Zheng",
+          "role": "Team Member",
+          "department": "",
+          "image": "/JSONS/teamsImages/images/Electrical/jason_qi_hang_zheng.jpg"
+        },
+        {
+          "name": "Jayden Le",
+          "role": "Team Member",
+          "department": "",
+          "image": "/JSONS/teamsImages/images/Electrical/jayden_le.jpg"
+        },
+        {
+          "name": "Jeongwoo Choi",
+          "role": "Team Member",
+          "department": "",
+          "image": "/JSONS/teamsImages/images/Electrical/jeongwoo_choi.jpg"
+        },        {
+          "name": "Joseph Lim",
+          "role": "Team Member",
+          "department": "",
+          "image": "/JSONS/teamsImages/images/Electrical/joseph_lim.jpg"
+        },
+        {
+          "name": "Joseph Ooi",
+          "role": "Team Member",
+          "department": "",
+          "image": "/JSONS/teamsImages/images/Electrical/joseph_ooi.jpg"
+        },
+        {
+          "name": "Yixu (Sonny) Wang",
+          "role": "Team Member",
+          "department": "",
+          "image": "/JSONS/teamsImages/images/Electrical/yixu_wang.jpg"
+        },
+        {
+          "name": "Iris Nguyen",
+          "role": "Team Member",
+          "department": "",
+          "image": "/JSONS/teamsImages/images/Electrical/iris_nguyen.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Aerodynamics",
+      "description": "The Aerodynamics team are responsible for the design and testing of the aerodynamics of the bike, designing the faring of our bike, which is the external shell of the bike. The key purpose of the the fairing is to reduce drag on the bike,  maximising speed that our vehicles can reach. Through the use of computational fluid dynamics (CFD), parametric CAD, as well as practical validation/ testing in the Monash Wind Tunnel and in the field, the team creates aerodynamic faring designs which optimise our vehicles and rider performance.",
+      "image": "/JSONS/teamsImages/images/aero.jpg",
+      "Team_Leads": [
+        {
+          "name": "David Cheng",
+          "role": "Team Lead",
+          "department": "Mechanical Engineering and Biomedical Science",
+          "image": "/JSONS/teamsImages/images/Aero/david_cheng.jpg"
+        },
+        {
+          "name": "Oscar James Varney",
+          "role": "Team Lead",
+          "department": "Mechanical Engineering",
+          "image": "/JSONS/teamsImages/images/Aero/oscar_varney.jpg"
+        }
+      ],
+      "members": [
+          {
+              "name": "Abel Thevathason",
+              "role": "Team Member",
+              "department": " ",
+              "image": "/JSONS/teamsImages/images/Aero/abel_thevathason.jpg"
+            },
+            {
+              "name": "Cooper Thurman",
+              "role": "Team Member",
+              "department": "Engineering and Science",
+              "image": "/JSONS/teamsImages/images/Aero/cooper_thurman.jpg"
+            }
+            ,{
+              "name": "Milan Umesh",
+              "role": "Team Member",
+              "department": "",
+              "image": "/JSONS/teamsImages/images/Aero/milan_umesh.jpg"
+            }
+            ,{
+              "name": "Oliver Huang",
+              "role": "Team Member",
+              "department": "",
+              "image": "/JSONS/teamsImages/images/Aero/oliver_huang.jpg"
+            },{
+              "name": "Tai Villiers",
+              "role": "Team Member",
+              "department": "",
+              "image": "/JSONS/teamsImages/images/Aero/tai_villiers.jpg"
+            },{
+              "name": "Vraj Patel",
+              "role": "Team Member",
+              "department": "",
+              "image": "/JSONS/teamsImages/images/Aero/vraj_patel.jpg"
+            },
+            {
+              "name": "Shriabhay Shriharsha",
+              "role": "Team Member",
+              "department": "Mechatronics Engineering",
+              "image": "/JSONS/teamsImages/images/Materials/shriabhay_shriharsha.jpg"
+            },{
+              "name": "Zachary Port",
+              "role": "Team Member",
+              "department": "Mechanical Engineering and Art",
+              "image": "/JSONS/teamsImages/images/Ops/zachary_port.jpg"
+            },{
+              "name": "James Di Nicolantonio",
+              "role": "Team Member",
+              "department": "",
+              "image": "/JSONS/teamsImages/images/Aero/james_di_nicolantonio.jpg"
+            }
+        ]
+    },
+    {
+      "name": "Materials",
+      "description": "The Materials team prototypes and manufactures the fairing designed by the Aerodynamics team, optimising the quality of the fairing to ensure the aerodynamic performance of the bike and rider safety. They carry out extensive research to find the most viable methods and materials to produce the fairing. Currently, the fairing is fabricated using a resin infusion technique, which uses epoxy resin and carbon fibre. The Materials sub team uses power tools, applies surface finishing processes and creates composite components in order to produce the fairing.",
+      "image": "/JSONS/teamsImages/images/materials_2.jpg",
+      "Team_Leads": [
+          {
+            "name": "Casey Diep",
+            "role": "Team Lead",
+            "department": "Engineering",
+            "image": "/JSONS/teamsImages/images/Materials/casey_diep.jpg"
+          },
+          {
+            "name": "Clarisse Liew",
+            "role": "Team Lead",
+            "department": "Materials Engineering and Commerce",
+            "image": "/JSONS/teamsImages/images/Materials/clarisse_liew.jpg"
+          }
+        ],
+        "members": [
+            {
+              "name": "Charles Bessel",
+              "role": "Team Member",
+              "department": "",
+              "image": "/JSONS/teamsImages/images/Materials/charles_bessel.jpg"
+            },{
+              "name": "Duc Thuan Le",
+              "role": "Team Member",
+              "department": "Mechanical Engineering",
+              "image": "/JSONS/teamsImages/images/Materials/duc_thuan_le.jpg"
+            },{
+              "name": "Krish Bajaj",
+              "role": "Team Member",
+              "department": "",
+              "image": "/JSONS/teamsImages/images/Materials/krish_bajaj.jpg"
+            },{
+              "name": "Louis Hansford",
+              "role": "Team Member",
+              "department": "",
+              "image": "/JSONS/teamsImages/images/Materials/louis_hansford.jpg"
+            },
+            {
+              "name": "Oliver Chen",
+              "role": "Team Member",
+              "department": "Mechanical Engineering and Commerce",
+              "image": "/JSONS/teamsImages/images/Materials/oliver_chen.jpg"
+            },
+            {
+              "name": "Sammi Dao",
+              "role": "Team Member",
+              "department": "",
+              "image": "/JSONS/teamsImages/images/Materials/sammi_dao.jpg"
+            },
+            {
+              "name": "Shriabhay Shriharsha",
+              "role": "Team Member",
+              "department": "Mechatronics Engineering",
+              "image": "/JSONS/teamsImages/images/Materials/shriabhay_shriharsha.jpg"
+            },
+            {
+              "name": "Xavier Curcio",
+              "role": "Team Member",
+              "department": "",
+              "image": "/JSONS/teamsImages/images/Materials/xavier_curcio.jpg"
+            },
+            {
+              "name": "Sasun Karunaratne",
+              "role": "Team Member",
+              "department": "",
+              "image": "/JSONS/teamsImages/images/Materials/sasun_karunaratne.jpg"
+            }
+          ]
+    },
+    {
+      "name": "Operations",
+      "description": "The Operations team manages external relationships, including sponsor partnerships, while overseeing MHP’s marketing and event coordination. They lead initiatives like the \"Build a HPV\" school outreach program, aimed at promoting STEM education and sustainable transport. Alongside these efforts, the Operations team also provides essential support for the technical teams during bike production and is heavily involved in MHP's graphic design and branding, ensuring a cohesive and professional visual identity across all platforms.",
+      "image": "/JSONS/teamsImages/images/operations_team.png",
+      "Team_Leads": [
+        {
+          "name": "Ritika Gopinath",
+          "role": "Team Lead",
+          "department": "Engineering",
+          "image": "/JSONS/teamsImages/images/Ops/ritika_gopinath.jpg"
+        },
+        {
+          "name": "Sophie Windust",
+          "role": "Team Lead",
+          "department": "Engineering and Commerce",
+          "image": "/JSONS/teamsImages/images/Ops/sophie_windust.jpg"
+        }
+      ],
+      "members": [
+        {
+          "name": "Ahmed Zahid",
+          "role": "Team Member",
+          "department": "Software Engineering",
+          "image": "/JSONS/teamsImages/images/Ops/ahmed_zahid.jpg"
+        },{
+          "name": "Nguyen Khang Huynh",
+          "role": "Team Member",
+          "department": "",
+          "image": "/JSONS/teamsImages/images/Ops/nguyen_khang_huynh.jpg"
+        },
+        {
+          "name": "Valerie Tang",
+          "role": "Team Member",
+          "department": "Science and Information Technology",
+          "image": "/JSONS/teamsImages/images/Ops/valerie_tang.jpg"
+        },
+        {
+          "name": "Sai Ashish Ramishetty",
+          "role": "Team Member",
+          "department": "Software Engineering",
+          "image": "/JSONS/teamsImages/images/Ops/sai_ramishetty.jpg"
+        },
+        {
+          "name": "Vicky Huang",
+          "role": "Team Member",
+          "department": "Software Engineering and Computer Science",
+          "image": "/JSONS/teamsImages/images/Ops/vicky_huang.jpg"
+        },
+        {
+          "name": "Prince (Jeremy) Mendel-Idowu",
+          "role": "Team Member",
+          "department": "Unknown",
+          "image": "/JSONS/teamsImages/images/Ops/prince_mendel-idowu.jpg"
+        },
+        {
+          "name": "Zachary Port",
+          "role": "Team Member",
+          "department": "Mechanical Engineering and Art",
+          "image": "/JSONS/teamsImages/images/Ops/zachary_port.jpg"
+        },
+        {
+          "name": "Alvin Fung",
+          "role": "Team Member",
+          "department": "Mechanical Engineering and Art",
+          "image": "/JSONS/teamsImages/images/Ops/alvin_fung.jpg"
+        },
+        {
+          "name": "Naailah Taqui Hasan",
+          "role": "Team Member",
+          "department": "Engineering",
+          "image": "/JSONS/teamsImages/images/Ops/naailah_taqui_hasan.jpg"
+        },
+        {
+          "name": "James Robbs",
+          "role": "Team Member",
+          "department": "Engineering and Science",
+          "image": "/JSONS/teamsImages/images/Ops/james_robbs.jpg"
+        },
+        {
+          "name": "Nethara Athukorala",
+          "role": "Team Member",
+          "department": "Software Engineering",
+          "image": "/JSONS/teamsImages/images/Ops/nethara_athukorala.jpg"
+        },
+        {
+          "name": "Emma Lim",
+          "role": "Team Member",
+          "department": "Biomedical Engineering",
+          "image": "/JSONS/teamsImages/images/Ops/lim_xin_hui.jpg"
+        },
+        {
+          "name": "Maureen Pham",
+          "role": "Team Member",
+          "department": "",
+          "image": "/JSONS/teamsImages/images/Ops/maureen_pham.jpg"
+        },
+        {
+          "name": "Peter Kwok",
+          "role": "Team Member",
+          "department": "",
+          "image": "/JSONS/teamsImages/images/Ops/peter_kwok.jpg"
+        },
+        {
+          "name": "Choong (Connor) Ming Xuan",
+          "role": "Team Member",
+          "department": "",
+          "image": "/JSONS/teamsImages/images/Ops/choong_ming_xuan.jpg"
+        },
+        {
+          "name": "Hoor E Jannat Urboshi",
+          "role": "Team Member",
+          "department": "",
+          "image": "/JSONS/teamsImages/images/Ops/hoor_e_jannat_urboshi.jpg"
+        },
+        {
+          "name": "Joshua Acabado",
+          "role": "Team Member",
+          "department": "",
+          "image": "/JSONS/teamsImages/images/Ops/joshua_acabado.jpg"
+        },
+        {
+          "name": "Keith Andre Abraham",
+          "role": "Team Member",
+          "department": "",
+          "image": "/JSONS/teamsImages/images/Ops/keith_andre_abraham.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Chassis & Drivetrain",
+      "description": "The Chassis & Drive-train team handles the design and production of all mechanical components, including the structural frame (chassis) and moving parts of the vehicle. Using CAD software for modelling, FEA simulation and hand calculations to verify the system's under load, the team ensures durability when breaking records. The team uses manufacturing techniques and practices such as welding and fabrication, along side manual and CNC operated machining to create the bulk of the bike's mechanisms. The team is dedicated to pushing the boundaries of efficiency and performance to get the most out of the the bike and the rider. Without the Chassis & Drive-train team, Monash Human Power cannot move forward.",
+      "image": "/JSONS/teamsImages/images/chassis_drivetrain.jpg",
+      "Team_Leads": [
+          {
+            "name": "Cameron Fieldew",
+            "role": "Team Lead",
+            "department": "Mechanical Engineering",
+            "image": "/JSONS/teamsImages/images/Chassis/cameron_fieldew.jpg"
+          },
+          {
+            "name": "Yashen Ahangama",
+            "role": "Team Lead",
+            "department": "Engineering",
+            "image": "/JSONS/teamsImages/images/Chassis/yashen_ahangama.jpg"
+          }
+        ],
+        "members": [
+            {
+              "name": "Harvey Cook",
+              "role": "Team Member",
+              "department": "",
+              "image": "/JSONS/teamsImages/images/Chassis/harvey_cook.jpg"
+            },{
+              "name": "Marcel Randles",
+              "role": "Team Member",
+              "department": "",
+              "image": "/JSONS/teamsImages/images/Chassis/marcel_randles.jpg"
+            },
+            {
+              "name": "Martin Grozev",
+              "role": "Team Member",
+              "department": "Mechanical Engineering and Commerce",
+              "image": "/JSONS/teamsImages/images/Chassis/martin_grozev.jpg"
+            },{
+              "name": "Nicholas Johnson",
+              "role": "Team Member",
+              "department": "",
+              "image": "/JSONS/teamsImages/images/Chassis/nicholas_johnson.jpg"
+            },{
+              "name": "Ran Wei",
+              "role": "Team Member",
+              "department": "",
+              "image": "/JSONS/teamsImages/images/Chassis/ran_wei.jpg"
+            },{
+              "name": "Robert Glavan",
+              "role": "Team Member",
+              "department": "Engineering",
+              "image": "/JSONS/teamsImages/images/Chassis/robert_glavan.jpg"
+            },{
+              "name": "Vinura Abeygunawardhane",
+              "role": "Team Member",
+              "department": "Mechatronics Engineering",
+              "image": "/JSONS/teamsImages/images/Chassis/vinura_abeygunavardhane.jpg"
+            },{
+              "name": "Xuan Nguyen",
+              "role": "Team Member",
+              "department": "Engineering and Biomedical Science",
+              "image": "/JSONS/teamsImages/images/Chassis/xuan_nguyen.jpg"
+            }
+          ]
+    },{
+      "name": "Auxiliary",
+      "description": "The Auxiliary Team at Monash Human Power is the backbone that supports the project’s non-engineering aspects, enabling the team to function smoothly and efficiently. They handle a wide array of crucial tasks, from managing logistics and securing sponsorships to organizing events and fostering media relationships. This team is responsible for ensuring the smooth execution of competitions, public outreach events, and internal operations. Their work behind the scenes helps secure vital resources, enhance the team’s public profile, and streamline communication with sponsors and the community.",
+      "image": "/JSONs/teamsImages/images/chris-clarisse-spray-paint.jpg",
+      "Team_Leads": [
+          {
+            "name": "Amanda Zhou",
+            "role": "HR Manager",
+            "department": "Mechanical Engineering",
+            "image": "/JSONS/teamsImages/images/Auxil/amanda_zhou.jpg"
+          },
+          {
+            "name": "Arnav Acharekar",
+            "role": "Finance Manager",
+            "department": "Electrical Engineering",
+            "image": "/JSONS/teamsImages/images/Auxil/arnav_acharekar.jpg"
+          },        {
+            "name": "Samuel Zhang",
+            "role": "Safety Manager",
+            "department": "Mechatronics Engineering",
+            "image": "/JSONS/teamsImages/images/Auxil/samuel_zhang.jpg"
+          }
+        ]
+    }
+  ]
+}

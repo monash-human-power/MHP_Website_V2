@@ -10,7 +10,7 @@ export default function MenuNavBarItem({ title, items }: MenuItemProps) {
   return (
     <div className="group relative">
       <div className="flex items-center justify-between ">
-        <span className="menu-hover lg:mx-4 hover:border-b-2 hover:border-greenbutton hover:-translate-y-1">
+        <span className="menu-hover lg:mx-4 hover:border-b-2 hover:border-green hover:-translate-y-1">
           {title}
         </span>
         <span>
@@ -34,7 +34,7 @@ export default function MenuNavBarItem({ title, items }: MenuItemProps) {
       <div className="  invisible absolute z-50 flex w-full flex-col bg-black text-sm text-white shadow-xl group-hover:visible">
         {items.map((item, index) => (
           <Link key={index} href={item.href}>
-            <li className="my-2 block border-b border-gray-100 py-1  hover:text-greenbutton md:mx-2">
+            <li className="my-2 block border-b border-gray-100 py-1  hover:text-green md:mx-2">
               {item.name}
             </li>
           </Link>

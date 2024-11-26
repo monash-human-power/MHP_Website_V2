@@ -5,6 +5,7 @@ import NavItem from "./NavItem";
 import MenuNavBarItem from "./MenuNavItem";
 import MobileNavItem from "./MobileNavItem";
 import { useState } from "react";
+import Button from "../Buttons";
 
 interface NavItemsProps {
   name: string;
@@ -42,11 +43,12 @@ const competitionItems = {
 const mobileNavigation: MobileNavItemsProps[] = [
   { name: "Home", href: "/" },
   { name: "Bikes", href: "/bikes" },
-  { name: "Competitions", href: "/" },
-  { name: "Teams", href: "/" },
-  { name: "Blog", href: "/blog" },
+  { name: "Competitions", href: "/competitions" },
+  { name: "Teams", href: "/teams" },
+  // { name: "Blog", href: "/blog" },
+  { name: "Outreach", href: "/outreach" },
   { name: "Join", href: "/join" },
-  { name: "Contact Us", href: "/contactUs" },
+  { name: "Contact Us", href: "/contact" },
 ];
 
 const desktopNavigation: NavItemsProps[] = [
@@ -54,7 +56,8 @@ const desktopNavigation: NavItemsProps[] = [
   { name: "Competitions", href: "/competitions", srcString: "" },
   { name: "Teams", href: "/teams", srcString: "" },
   { name: "Home", href: "/", srcString: "/image.png" },
-  { name: "Blog", href: "/blog", srcString: "" },
+  { name: "Outreach", href: "/outreach", srcString: "" },
+  // { name: "Blog", href: "/blog", srcString: "" },
   { name: "Join", href: "/join", srcString: "" },
 ];
 
@@ -81,14 +84,16 @@ const Navbar = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50">
+    <header className="sticky top-0 z-20">
       <nav className="relative w-full bg-black text-white font-Aldrich xl:text-xl lg:text-l z-1">
         {/* Mobile Navbar */}
         <div className="block lg:hidden py-5 flex justify-between items-center">
           {/* Image */}
           <div className="flex-1/4"></div>
           <div className="justify-center items-center">
-            <Image src="/mobile_image.png" alt="Logo" width={100} height={50} />
+            <a href="/">
+              <Image src="/mobile_image.png" alt="Logo" width={100} height={50} />
+            </a>
           </div>
           {/* Menu button */}
           <button
@@ -130,33 +135,17 @@ const Navbar = () => {
         {/* Wide Screen Navbar */}
         <div className="hidden lg:block font-Aldrich">
           <div className="flex justify-between items-center h-full w-full">
-            {desktopNavigation.map((item, index) =>
-              item.name !== "Teams" && item.name !== "Competitions" ? (
-                <NavItem
-                  key={index}
-                  text={item.name}
-                  hrefString={item.href}
-                  srcString={item.srcString}
-                />
-              ) : (
-                <MenuNavBarItem
-                  key={index}
-                  title={
-                    item.name === "Teams"
-                      ? teamItems.title
-                      : competitionItems.title
-                  }
-                  items={
-                    item.name === "Teams"
-                      ? teamItems.items
-                      : competitionItems.items
-                  }
-                />
-              )
-            )}
+            {desktopNavigation.map((item, index) => (
+              <NavItem
+                key={index}
+                text={item.name}
+                hrefString={item.href}
+                srcString={item.srcString}
+              />
+            ))}
             <div className="px-10 py-2">
-              <Link href={"/contactUs"}>
-                <button className="px-5 py-2 rounded-md border-2 border-white hover:bg-greenbutton hover:text-black hover:border-black">
+              <Link href={"/contact"}>
+                <button className="px-5 py-2 rounded-md border-2 border-white hover:bg-green hover:text-black hover:border-black">
                   Contact Us
                 </button>
               </Link>
@@ -170,25 +159,13 @@ const Navbar = () => {
           }`}
         >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {mobileNavigation.map((item, index) =>
-              item.name === "Competitions" || item.name === "Teams" ? (
-                <Link
-                  key={index}
-                  href=""
-                  className="text-center hover:bg-gray-700 block px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  <button onClick={() => handleItemClick(item)}>
-                    {item.name + " >"}
-                  </button>
-                </Link>
-              ) : (
-                <MobileNavItem
-                  key={index}
-                  name={item.name}
-                  hrefString={item.href}
-                />
-              )
-            )}
+            {mobileNavigation.map((item, index) => (
+              <MobileNavItem
+                key={index}
+                name={item.name}
+                hrefString={item.href}
+              />
+            ))}
           </div>
         </div>
         <div
@@ -202,7 +179,7 @@ const Navbar = () => {
               className={`text-left  hover:bg-gray-700  block px-3 py-2 rounded-md text-sm font-medium`}
             >
               <button
-                className="text-sm rounded-md  bg-greenbutton text-zinc-700 border-black  px-3 py-2"
+                className="text-sm rounded-md  bg-green text-zinc-700 border-black  px-3 py-2"
                 onClick={() => setTeamMenu(!teamMenu)}
               >
                 {"< Back"}
@@ -228,7 +205,7 @@ const Navbar = () => {
               className={`text-left hover:bg-gray-700  block px-3 py-2 rounded-md text-sm font-medium`}
             >
               <button
-                className="text-sm rounded-md  bg-greenbutton text-zinc-700 border-black  px-3 py-2"
+                className="text-sm rounded-md  bg-green text-zinc-700 border-black  px-3 py-2"
                 onClick={() => setCompMenu(!compMenu)}
               >
                 {"< Back"}
