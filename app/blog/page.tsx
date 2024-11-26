@@ -35,7 +35,7 @@ export default function Blog() {
     <>
       {/* MHP Vehicles Section */}
       <PageSection colourWay="dark">
-        <h1 className="font-Aldrich text-5xl text-center mb-12 drop-shadow-lg text-gradient bg-gradient-to-b from-greenbutton to-white-300">
+        <h1 className="font-Aldrich text-5xl text-center mb-12 drop-shadow-lg ">
           MHP Blogs
         </h1>
         {/* Search bar */}
