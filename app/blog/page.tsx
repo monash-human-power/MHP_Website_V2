@@ -1,21 +1,26 @@
 "use client";
 
 import PageSection from "../components/PageSection";
-import Image from "next/image";
 import { useState } from "react";
-import articles from "../blog/article";
+import BlogCard from "../components/BlogCard";
+import blogData from "../../public/JSONs/blogs.json";  // in json, have titles as keys
+
+type BlogData = {
+  title: string;
+    image: string;
+    author: string;
+    date: string;
+    shortText: string;
+    fullText: string;
+    tags: { name: string; url: string }[];
+};
 
 export default function Blog() {
-  const [showFullText, setShowFullText] = useState<{ [key: number]: boolean }>({});
   const [searchQuery, setSearchQuery] = useState("");
   const [searchTriggered, setSearchTriggered] = useState(false);
 
-  const toggleFullText = (index: number) => {
-    setShowFullText((prevState) => ({
-      ...prevState,
-      [index]: !prevState[index],
-    }));
-  };
+  const articles:BlogData[] = Object.values(blogData);
+
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
@@ -33,7 +38,6 @@ export default function Blog() {
 
   return (
     <>
-      {/* MHP Vehicles Section */}
       <PageSection colourWay="dark">
         <h1 className="font-Aldrich text-5xl text-center mb-12 drop-shadow-lg ">
           MHP Blogs
@@ -50,50 +54,10 @@ export default function Blog() {
           />
         </div>
         <div className="relative">
-          <div className="flex overflow-x-scroll space-x-6" style={{ scrollbarWidth: 'thin', scrollbarColor: '#ACF601 black' }}>
+          <div className="flex overflow-x-scroll overflow-y-hidden  space-x-6" style={{ scrollbarWidth: 'thin', scrollbarColor: '#ACF601 black' }}>
             {articlesToDisplay.map((article, index) => (
-              <div
-                key={index}
-                className="flex-none w-full md:w-1/3 bg-black rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
-                style={{ minHeight: showFullText[index] ? "auto" : "500px" }}  // Adjust the card's height dynamically
-              >
-                <Image
-                  src={article.image}
-                  width={1000}
-                  height={500}
-                  alt={article.title}
-                  className="w-full h-64 object-cover"
-                />
-                <div className="p-6">
-                  <h2 className="text-3xl font-semibold text-purple-700 decoration-purple-400 decoration-4 mb-4 drop-shadow-md">
-                    {article.title}
-                  </h2>
-                  <div className="mb-4">
-                    {article.tags.map((tag, idx) => (
-                      <a
-                        key={idx}
-                        href={tag.url}
-                        className="inline-block bg-[#ACF601] text-black text-xs font-medium rounded-full px-3 py-1 mr-2 mb-2"
-                      >
-                        {tag.name}
-                      </a>
-                    ))}
-                  </div>
-                  {/* Show full text or truncated version */}
-                  <p className={`text-gray-300 mb-4 ${showFullText[index] ? "block" : "line-clamp-3"} md:line-clamp-none`}>
-                    {showFullText[index] ? article.fullText : article.shortText}
-                  </p>
-                  {/* Toggle for read more / show less */}
-                  <h4
-                    className="text-lg text-green-600 decoration-green-400 decoration-4 mb-2 cursor-pointer hover:text-green-800 transition-colors duration-200"
-                    onClick={() => toggleFullText(index)}
-                  >
-                    <i className="fas fa-arrow-right"></i> {showFullText[index] ? "Show less" : "Read more"}
-                  </h4>
-                  <p className="text-gray-600">{article.author} • {article.date}</p>
-                </div>
-              </div>
-            ))}
+              <BlogCard key={index} article={article} index={index} ></BlogCard>
+          ))}
           </div>
         </div>
       </PageSection>
