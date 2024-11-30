@@ -45,7 +45,7 @@ const BlogCard = ({ article, index, onClick }: BlogCardProps) => {
           className="w-full h-64 object-cover"
         />
         <div className="p-6">
-          <h2 className="text-3xl font-semibold text-purple-700 decoration-purple-400 decoration-4 mb-4 drop-shadow-md">
+          <h2 className="text-3xl font-semibold text-purple-700 font-Sansation decoration-purple-400 decoration-4 mb-4 drop-shadow-md">
             {article.title}
           </h2>
           <div className="mb-4">
@@ -53,7 +53,7 @@ const BlogCard = ({ article, index, onClick }: BlogCardProps) => {
               <a
                 key={idx}
                 // todo: have when tag which clicked to show only articles with that tag
-                className="inline-block bg-[#ACF601] text-black text-xs font-medium rounded-full px-3 py-1 mr-2 mb-2"
+                className="inline-block bg-[#ACF601] text-black  font-Aldrich text-xs font-medium rounded-full px-3 py-1 mr-2 mb-2"
               >
                 {tag.name}
               </a>

@@ -34,6 +34,10 @@ export default function News() {
     }
   };
 
+  const closePDFModal = () => {
+    setSelectedBlog(null);
+  };
+
   //todo - verify search on tags
   const filteredArticles = articles.filter(
     (article) =>
@@ -54,7 +58,7 @@ export default function News() {
           News
         </h1>
         {/* Search bar */}
-        <div className="mb-8 flex justify-start">
+        <div className="mb-8 flex justify-center lg:justify-start">
           <input
             type="text"
             placeholder="Search by headline or tag..."
@@ -69,50 +73,54 @@ export default function News() {
             className="flex justify-evenly overflow-x-auto overflow-y-hidden space-x-6"
             style={{ scrollbarWidth: "thin", scrollbarColor: "#ACF601 black" }}
           >
-            {//if no articles match search display nothing
+            {
+              //if no articles match search display nothing
               articlesToDisplay.length === 0 ? (
-              <p>No articles match your query</p>
-            ) : (
-              articlesToDisplay.map((article, index) => (
-                <BlogCard
-                  key={index}
-                  article={article}
-                  index={index}
-                  onClick={() => handleBlogClick(article)}
-                />
-              ))
-            )}
+                <p>No articles match your query</p>
+              ) : (
+                articlesToDisplay.map((article, index) => (
+                  <BlogCard
+                    key={index}
+                    article={article}
+                    index={index}
+                    onClick={() => handleBlogClick(article)}
+                  />
+                ))
+              )
+            }
           </div>
         </div>
-
         {/* PDF Embed */}
         {selectedBlog && (
-          <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex justify-center items-center z-50">
-            <div className="bg-black border border-green rounded-lg p-6 max-w-4xl w-full relative">
+          <div
+            className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex justify-center items-center z-50"
+            onClick={closePDFModal}
+          >
+            <div className="bg-black border border-green rounded-lg p-4 sm:p-6 max-w-[90%] w-[80vh] relative"
+              onClick={(e) => e.stopPropagation()} // Prevents closing when clicking inside
+            >
+              {/* Close Button */}
               <button
-                className="absolute top-2 right-2 text-black"
-                onClick={() => setSelectedBlog(null)}
+                className="absolute top-2 right-2 text-white hover:text-green focus:outline-none"
+                onClick={closePDFModal}
               >
-                <p className="text-white">&#10006;</p>
+                <p className="text-xl">&#10006;</p>
               </button>
-              <h2 className="text-2xl mb-4">{selectedBlog.title}</h2>
-              <div
-                className="relative w-full"
-                style={{
-                  aspectRatio: "1 / 1.414", // Ensures proper A4 aspect ratio
-                  maxWidth: "100%",
-                  maxHeight: "80vh",
-                }}
-              >
+              {/* Title */}
+              <h2 className="text-lg sm:text-2xl font-Aldrich mb-4 text-center">
+                {selectedBlog.title}
+              </h2>
+              {/* PDF Viewer */}
+              <div className="relative w-full aspect-[1/1.414] max-w-full max-h-[80vh]">
                 <iframe
                   src={selectedBlog.source}
-                  className="absolute top-0 left-0 w-full h-full"
-                  style={{ border: "none" }} // Removes default iframe border
+                  className="absolute top-0 left-0 w-full h-full border-0"
+                  title={selectedBlog.title}
                 />
               </div>
             </div>
           </div>
-        )}
+        )}{" "}
       </PageSection>
     </>
   );
