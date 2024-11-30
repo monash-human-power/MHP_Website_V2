@@ -138,10 +138,10 @@ const Navbar = () => {
           </button>
         </div>
         {/* Wide Screen Navbar */}
-        <div className="hidden lg:block font-Aldrich max-w-screen-xl mx-auto">
+        <div className="hidden lg:block font-Aldrich  mx-auto">
           <div className="flex justify-between items-center h-full w-full">
             {/* Left Navigation Items */}
-            <div className="flex-[2] flex justify-start">
+            <div className="flex-[2] flex justify-around">
               {desktopNavigation.slice(0, 3).map((item, index) => (
                 <NavItem
                   key={index}
@@ -166,7 +166,7 @@ const Navbar = () => {
             </div>
 
             {/* Right Navigation Items */}
-            <div className="flex-[2] flex justify-end items-center">
+            <div className="flex-[2] flex justify-around items-center">
               {desktopNavigation
                 .slice(3)
                 .map(
@@ -180,13 +180,14 @@ const Navbar = () => {
                       />
                     )
                 )}
-              <div className="ml-4">
-                <Link href="/contact">
-                  <button className="px-5 py-2 rounded-md border-2 border-white hover:bg-green hover:text-black hover:border-black">
-                    Contact Us
-                  </button>
-                </Link>
-              </div>
+<div className="ml-4 mr-4">
+  <Link href="/contact">
+    <button className="px-5 py-2 rounded-md border-2 border-white hover:bg-green hover:text-black hover:border-black">
+      Contact Us
+    </button>
+  </Link>
+</div>
+
             </div>
           </div>
         </div>{" "}
