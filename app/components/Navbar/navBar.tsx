@@ -57,7 +57,7 @@ const desktopNavigation: NavItemsProps[] = [
   { name: "Teams", href: "/teams", srcString: "" },
   { name: "Home", href: "/", srcString: "/image.png" },
   { name: "Outreach", href: "/outreach", srcString: "" },
-  // { name: "Blog", href: "/blog", srcString: "" },
+  { name: "News", href: "/news", srcString: "" },
   { name: "Join", href: "/join", srcString: "" },
 ];
 
@@ -92,7 +92,12 @@ const Navbar = () => {
           <div className="flex-1/4"></div>
           <div className="justify-center items-center">
             <a href="/">
-              <Image src="/mobile_image.png" alt="Logo" width={100} height={50} />
+              <Image
+                src="/mobile_image.png"
+                alt="Logo"
+                width={100}
+                height={50}
+              />
             </a>
           </div>
           {/* Menu button */}
@@ -133,25 +138,58 @@ const Navbar = () => {
           </button>
         </div>
         {/* Wide Screen Navbar */}
-        <div className="hidden lg:block font-Aldrich">
+        <div className="hidden lg:block font-Aldrich max-w-screen-xl mx-auto">
           <div className="flex justify-between items-center h-full w-full">
-            {desktopNavigation.map((item, index) => (
-              <NavItem
-                key={index}
-                text={item.name}
-                hrefString={item.href}
-                srcString={item.srcString}
-              />
-            ))}
-            <div className="px-10 py-2">
-              <Link href={"/contact"}>
-                <button className="px-5 py-2 rounded-md border-2 border-white hover:bg-green hover:text-black hover:border-black">
-                  Contact Us
-                </button>
+            {/* Left Navigation Items */}
+            <div className="flex-[2] flex justify-start">
+              {desktopNavigation.slice(0, 3).map((item, index) => (
+                <NavItem
+                  key={index}
+                  text={item.name}
+                  hrefString={item.href}
+                  srcString={item.srcString}
+                />
+              ))}
+            </div>
+
+            {/* Center Logo */}
+            <div className="flex-[1] flex justify-center">
+              <Link href="/">
+                <Image
+                  src="/image.png"
+                  alt="Logo"
+                  width={100}
+                  height={50}
+                  className="cursor-pointer"
+                />
               </Link>
             </div>
+
+            {/* Right Navigation Items */}
+            <div className="flex-[2] flex justify-end items-center">
+              {desktopNavigation
+                .slice(3)
+                .map(
+                  (item, index) =>
+                    item.name !== "Home" && (
+                      <NavItem
+                        key={index}
+                        text={item.name}
+                        hrefString={item.href}
+                        srcString={item.srcString}
+                      />
+                    )
+                )}
+              <div className="ml-4">
+                <Link href="/contact">
+                  <button className="px-5 py-2 rounded-md border-2 border-white hover:bg-green hover:text-black hover:border-black">
+                    Contact Us
+                  </button>
+                </Link>
+              </div>
+            </div>
           </div>
-        </div>
+        </div>{" "}
         {/* Mobile Menu */}
         <div
           className={`lg:hidden ${

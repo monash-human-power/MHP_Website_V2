@@ -5,7 +5,7 @@ import { useState } from "react";
 import BlogCard from "../components/BlogCard";
 import blogData from "../../public/JSONs/blogs.json"; // in json, have titles as keys
 
-type BlogData = {
+type Article = {
   title: string;
   image: string;
   date: string;
@@ -14,19 +14,19 @@ type BlogData = {
   tags: { name: string }[];
 };
 
-export default function Blog() {
+export default function News() {
   // states for searching
   const [searchQuery, setSearchQuery] = useState("");
   const [searchTriggered, setSearchTriggered] = useState(false);
 
   //states for displaying newletters
   // const [pdfDisplayed, setPdfDisplayed] = useState(false);
-  const [selectedBlog, setSelectedBlog] = useState<BlogData|null>(null);
+  const [selectedBlog, setSelectedBlog] = useState<Article|null>(null);
 
-  const handleBlogClick = (article:BlogData) => {
+  const handleBlogClick = (article:Article) => {
     setSelectedBlog(article); // Set the clicked blog as the selected blog
   };
-  const articles: BlogData[] = Object.values(blogData);
+  const articles: Article[] = Object.values(blogData);
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
@@ -51,7 +51,7 @@ export default function Blog() {
     <>
       <PageSection colourWay="dark">
         <h1 className="font-Aldrich text-5xl text-center mb-12 drop-shadow-lg ">
-          MHP Blogs
+          News
         </h1>
         {/* Search bar */}
         <div className="mb-8">
