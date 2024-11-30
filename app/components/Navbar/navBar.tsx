@@ -45,7 +45,7 @@ const mobileNavigation: MobileNavItemsProps[] = [
   { name: "Bikes", href: "/bikes" },
   { name: "Competitions", href: "/competitions" },
   { name: "Teams", href: "/teams" },
-  // { name: "Blog", href: "/blog" },
+  { name: "News", href: "/news" },
   { name: "Outreach", href: "/outreach" },
   { name: "Join", href: "/join" },
   { name: "Contact Us", href: "/contact" },
