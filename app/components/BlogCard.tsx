@@ -7,17 +7,6 @@ interface BlogCardProps {
   onClick: () => void;
 }
 
-// interface Article {
-//     image: string;
-//     iteration: number;
-//     max_speed: number;
-//     development_start: number;
-//     development_end: number | string; // to allow "current"
-//     competitions: string[];
-//     description: string;
-//     gallery: string[];
-// }
-
 interface Article {
   title: string;
   image: string;
@@ -44,7 +33,7 @@ const BlogCard = ({ article, index, onClick }: BlogCardProps) => {
     <>
       <div
         key={index}
-        className="flex-none w-full md:w-1/3 bg-black rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+        className="flex-none w-full  md:w-1/3 bg-black rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
         style={{ minHeight: "auto" }} // Adjust the card's height dynamically
         onClick={onClick}
       >
@@ -70,17 +59,9 @@ const BlogCard = ({ article, index, onClick }: BlogCardProps) => {
               </a>
             ))}
           </div>
-          {/* Show full text or truncated version */}
           <p className={`text-gray-300 mb-4 "line-clamp-3" md:line-clamp-none`}>
             {article.description}
           </p>
-          {/* Toggle for read more / show less
-                  <h4
-                    className="text-lg text-green-600 decoration-green-400 decoration-4 mb-2 cursor-pointer hover:text-green-800 transition-colors duration-200"
-                    onClick={() => toggleFullText(index)}
-                  >
-                    <i className="fas fa-arrow-right"></i> {showFullText[index] ? "Show less" : "Read more"}
-                  </h4> */}
           <p className="text-gray-600">
              {article.date}
           </p>
