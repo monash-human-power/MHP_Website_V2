@@ -1,33 +1,15 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import { Article } from "../types";
 
-interface BlogCardProps {
+interface NewsCardProps {
   article: Article;
   index: number;
   onClick: () => void;
 }
 
-interface Article {
-  title: string;
-  image: string;
-  date: string;
-  description: string;
-  source: string;
-  tags: { name: string }[];
-}
-//todo
 
-const BlogCard = ({ article, index, onClick }: BlogCardProps) => {
-  const [showArticle, setShowFullText] = useState<{ [key: number]: boolean }>(
-    {}
-  );
-
-  const toggleFullText = (index: number) => {
-    setShowFullText((prevState) => ({
-      ...prevState,
-      [index]: !prevState[index],
-    }));
-  };
+const NewsCard = ({ article, index, onClick }: NewsCardProps) => {
 
   return (
     <>
@@ -52,7 +34,7 @@ const BlogCard = ({ article, index, onClick }: BlogCardProps) => {
             {article.tags.map((tag, idx) => (
               <a
                 key={idx}
-                // todo: have when tag which clicked to show only articles with that tag
+                // todo: when tag is clicked, filter to show only articles with that tag
                 className="inline-block bg-[#ACF601] text-black  font-Aldrich text-xs font-medium rounded-full px-3 py-1 mr-2 mb-2"
               >
                 {tag.name}
@@ -71,4 +53,4 @@ const BlogCard = ({ article, index, onClick }: BlogCardProps) => {
   );
 };
 
-export default BlogCard;
+export default NewsCard;

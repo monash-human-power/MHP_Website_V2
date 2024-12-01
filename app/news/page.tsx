@@ -2,17 +2,10 @@
 
 import PageSection from "../components/PageSection";
 import { useState } from "react";
-import BlogCard from "../components/BlogCard";
-import blogData from "../../public/JSONs/blogs.json"; // in json, have titles as keys
+import NewsCard from "../components/NewsCard";
+import articleData from "../../public/JSONs/blogs.json"; 
+import { Article } from "../types";
 
-type Article = {
-  title: string;
-  image: string;
-  date: string;
-  description: string;
-  source: string;
-  tags: { name: string }[];
-};
 
 export default function News() {
   // states for searching
@@ -20,13 +13,12 @@ export default function News() {
   const [searchTriggered, setSearchTriggered] = useState(false);
 
   //states for displaying newletters
-  // const [pdfDisplayed, setPdfDisplayed] = useState(false);
   const [selectedBlog, setSelectedBlog] = useState<Article | null>(null);
 
   const handleBlogClick = (article: Article) => {
     setSelectedBlog(article); // Set the clicked blog as the selected blog
   };
-  const articles: Article[] = Object.values(blogData);
+  const articles: Article[] = Object.values(articleData);
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
@@ -79,7 +71,7 @@ export default function News() {
                 <p>No articles match your query</p>
               ) : (
                 articlesToDisplay.map((article, index) => (
-                  <BlogCard
+                  <NewsCard
                     key={index}
                     article={article}
                     index={index}
