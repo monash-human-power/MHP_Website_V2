@@ -87,7 +87,7 @@ const Navbar = () => {
     <header className="sticky top-0 z-20">
       <nav className="relative w-full bg-black text-white font-Aldrich xl:text-xl lg:text-l z-1">
         {/* Mobile Navbar */}
-        <div className="block lg:hidden py-5 flex justify-between items-center">
+        <div className=" lg:hidden py-5 flex justify-between items-center">
           {/* Image */}
           <div className="flex-1/4"></div>
           <div className="justify-center items-center">
@@ -103,12 +103,13 @@ const Navbar = () => {
           {/* Menu button */}
           <button
             onClick={handleOpen}
-            className="flex-1/4 hover:text-gray-300 focus:outline-none focus:text-gray-300"
+            className="flex-1/4  hover:text-gray-300 focus:outline-none focus:text-gray-300"
           >
             {/* Toggle button icon */}
             {menuOpen ? (
+              // cross icon
               <svg
-                className="h-6 w-6"
+                className="h-6 w-6 mr-1"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -121,8 +122,9 @@ const Navbar = () => {
                 />
               </svg>
             ) : (
+                // hamburger icon
               <svg
-                className="h-6 w-6"
+                className="h-6 w-6 mr-1"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -137,6 +139,8 @@ const Navbar = () => {
             )}
           </button>
         </div>
+
+
         {/* Wide Screen Navbar */}
         <div className="hidden lg:block font-Aldrich  mx-auto">
           <div className="flex justify-between items-center h-full w-full">
