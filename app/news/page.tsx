@@ -3,9 +3,8 @@
 import PageSection from "../components/PageSection";
 import { useState } from "react";
 import NewsCard from "../components/NewsCard";
-import articleData from "../../public/JSONs/blogs.json"; 
+import articleData from "../../public/JSONs/blogs.json";
 import { Article } from "../types";
-
 
 export default function News() {
   // states for searching
@@ -88,20 +87,37 @@ export default function News() {
             className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex justify-center items-center z-50"
             onClick={closePDFModal}
           >
-            <div className="bg-black border border-green rounded-lg p-4 sm:p-6 max-w-[90%] w-[80vh] relative"
+            <div
+              className="bg-black border border-green rounded-lg p-4 sm:p-6 max-w-[90%] w-[80vh] relative"
               onClick={(e) => e.stopPropagation()} // Prevents closing when clicking inside
             >
-              {/* Close Button */}
-              <button
-                className="absolute top-2 right-2 text-white hover:text-green focus:outline-none"
-                onClick={closePDFModal}
-              >
-                <p className="text-xl">&#10006;</p>
-              </button>
-              {/* Title */}
-              <h2 className="text-lg sm:text-2xl font-Aldrich mb-4 text-center">
-                {selectedBlog.title}
-              </h2>
+              <div className="relative">
+                <h2 className="text-lg sm:text-2xl font-Aldrich mb-4 text-center">
+                  {selectedBlog.title}
+                </h2>
+
+                {/* Close Button */}
+                <button
+                  className="absolute top-1 right-2 text-white hover:text-green-500 focus:outline-none"
+                  onClick={closePDFModal}
+                  aria-label="Close"
+                >
+                  <svg
+                    className="h-6 w-6 mr-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>{" "}
+                </button>
+              </div>
+
               {/* PDF Viewer */}
               <div className="relative w-full aspect-[1/1.414] max-w-full max-h-[80vh]">
                 <iframe
