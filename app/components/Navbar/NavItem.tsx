@@ -12,7 +12,7 @@ interface navItemProps {
 function NavItem({ text, hrefString, srcString }: navItemProps) {
   const pathname = usePathname();
   return (
-    <div className="transition ease-in-out hover:-translate-y-1 px-10 py-2">
+    <div className="transition ease-in-out hover:-translate-y-1 px-2 py-2">
       <Link href={hrefString}>
         {srcString !== "" ? (
           <Image src={srcString} alt="Logo" width={100} height={10} />
