@@ -45,7 +45,7 @@ const mobileNavigation: MobileNavItemsProps[] = [
   { name: "Bikes", href: "/bikes" },
   { name: "Competitions", href: "/competitions" },
   { name: "Teams", href: "/teams" },
-  // { name: "Blog", href: "/blog" },
+  { name: "News", href: "/news" },
   { name: "Outreach", href: "/outreach" },
   { name: "Join", href: "/join" },
   { name: "Contact Us", href: "/contact" },
@@ -57,7 +57,7 @@ const desktopNavigation: NavItemsProps[] = [
   { name: "Teams", href: "/teams", srcString: "" },
   { name: "Home", href: "/", srcString: "/image.png" },
   { name: "Outreach", href: "/outreach", srcString: "" },
-  // { name: "Blog", href: "/blog", srcString: "" },
+  { name: "News", href: "/news", srcString: "" },
   { name: "Join", href: "/join", srcString: "" },
 ];
 
@@ -87,23 +87,29 @@ const Navbar = () => {
     <header className="sticky top-0 z-20">
       <nav className="relative w-full bg-black text-white font-Aldrich xl:text-xl lg:text-l z-1">
         {/* Mobile Navbar */}
-        <div className="block lg:hidden py-5 flex justify-between items-center">
+        <div className=" lg:hidden py-5 flex justify-between items-center">
           {/* Image */}
           <div className="flex-1/4"></div>
           <div className="justify-center items-center">
             <a href="/">
-              <Image src="/mobile_image.png" alt="Logo" width={100} height={50} />
+              <Image
+                src="/mobile_image.png"
+                alt="Logo"
+                width={100}
+                height={50}
+              />
             </a>
           </div>
           {/* Menu button */}
           <button
             onClick={handleOpen}
-            className="flex-1/4 hover:text-gray-300 focus:outline-none focus:text-gray-300"
+            className="flex-1/4  hover:text-gray-300 focus:outline-none focus:text-gray-300"
           >
             {/* Toggle button icon */}
             {menuOpen ? (
+              // cross icon
               <svg
-                className="h-6 w-6"
+                className="h-6 w-6 mr-1"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -116,8 +122,9 @@ const Navbar = () => {
                 />
               </svg>
             ) : (
+                // hamburger icon
               <svg
-                className="h-6 w-6"
+                className="h-6 w-6 mr-1"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -132,26 +139,62 @@ const Navbar = () => {
             )}
           </button>
         </div>
+
+
         {/* Wide Screen Navbar */}
-        <div className="hidden lg:block font-Aldrich">
+        <div className="hidden lg:block font-Aldrich  mx-auto">
           <div className="flex justify-between items-center h-full w-full">
-            {desktopNavigation.map((item, index) => (
-              <NavItem
-                key={index}
-                text={item.name}
-                hrefString={item.href}
-                srcString={item.srcString}
-              />
-            ))}
-            <div className="px-10 py-2">
-              <Link href={"/contact"}>
-                <button className="px-5 py-2 rounded-md border-2 border-white hover:bg-green hover:text-black hover:border-black">
-                  Contact Us
-                </button>
+            {/* Left Navigation Items */}
+            <div className="flex-[2] flex justify-around">
+              {desktopNavigation.slice(0, 3).map((item, index) => (
+                <NavItem
+                  key={index}
+                  text={item.name}
+                  hrefString={item.href}
+                  srcString={item.srcString}
+                />
+              ))}
+            </div>
+
+            {/* Center Logo */}
+            <div className="flex-[1] flex justify-center">
+              <Link href="/">
+                <Image
+                  src="/image.png"
+                  alt="Logo"
+                  width={100}
+                  height={50}
+                  className="cursor-pointer"
+                />
               </Link>
             </div>
+
+            {/* Right Navigation Items */}
+            <div className="flex-[2] flex justify-around items-center">
+              {desktopNavigation
+                .slice(3)
+                .map(
+                  (item, index) =>
+                    item.name !== "Home" && (
+                      <NavItem
+                        key={index}
+                        text={item.name}
+                        hrefString={item.href}
+                        srcString={item.srcString}
+                      />
+                    )
+                )}
+<div className="ml-4 mr-4">
+  <Link href="/contact">
+    <button className="px-5 py-2 rounded-md border-2 border-white hover:bg-green hover:text-black hover:border-black">
+      Contact Us
+    </button>
+  </Link>
+</div>
+
+            </div>
           </div>
-        </div>
+        </div>{" "}
         {/* Mobile Menu */}
         <div
           className={`lg:hidden ${
