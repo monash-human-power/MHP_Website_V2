@@ -6,6 +6,7 @@ import MenuNavBarItem from "./MenuNavItem";
 import MobileNavItem from "./MobileNavItem";
 import { useState } from "react";
 import Button from "../Buttons";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 interface NavItemsProps {
   name: string;
@@ -84,6 +85,8 @@ const Navbar = () => {
   };
 
   return (
+    <>
+    <GoogleAnalytics gaId="G-T8HB40Y133" /> 
     <header className="sticky top-0 z-20">
       <nav className="relative w-full bg-black text-white font-Aldrich xl:text-xl lg:text-l z-1">
         {/* Mobile Navbar */}
@@ -265,6 +268,7 @@ const Navbar = () => {
         </div>
       </nav>
     </header>
+    </>
   );
 };
 

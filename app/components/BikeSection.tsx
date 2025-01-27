@@ -6,6 +6,7 @@ import PageSection from './PageSection';
 import SubNavBar from "./SamePageNavigation/SubNavBar";
 import BikeContent from './BikeContent';
 import bikeDataJson from "../../public/JSONs/bikes.json";  // Importing the JSON file
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 interface BikeSectionProps {
     bike: string
@@ -33,6 +34,7 @@ const BikeSection = ({bike} : BikeSectionProps) => {
 
     return (
         <>
+        <GoogleAnalytics gaId="G-T8HB40Y133" /> 
             <div className="py-8 bg-black" style={{
             borderBottom: "2px solid #5e5b5b", // Top border
             width: "95%",

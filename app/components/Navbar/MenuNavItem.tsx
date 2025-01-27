@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 interface MenuItemProps {
   title: String;
@@ -8,6 +9,8 @@ interface MenuItemProps {
 
 export default function MenuNavBarItem({ title, items }: MenuItemProps) {
   return (
+    <>
+    <GoogleAnalytics gaId="G-T8HB40Y133" />
     <div className="group relative">
       <div className="flex items-center justify-between ">
         <span className="menu-hover lg:mx-4 hover:border-b-2 hover:border-green hover:-translate-y-1">
@@ -42,5 +45,6 @@ export default function MenuNavBarItem({ title, items }: MenuItemProps) {
         {/* */}
       </div>
     </div>
+    </>
   );
 }

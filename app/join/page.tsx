@@ -2,10 +2,12 @@
 import Button from "../components/Buttons";
 import PageSection from "../components/PageSection";
 import Image from "next/image";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 export default function Join() {
   return (
     <>
+    <GoogleAnalytics gaId="G-T8HB40Y133" /> 
       <title>
         Join | MHP
       </title>

@@ -5,6 +5,7 @@ import { useState } from "react";
 import NewsCard from "../components/NewsCard";
 import articleData from "../../public/JSONs/blogs.json";
 import { Article } from "../types";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 export default function News() {
   // states for searching
@@ -44,6 +45,7 @@ export default function News() {
 
   return (
     <>
+    <GoogleAnalytics gaId="G-T8HB40Y133" /> 
       <PageSection colourWay="dark">
         <h1 className="font-Aldrich text-5xl text-center mb-12 drop-shadow-lg ">
           News

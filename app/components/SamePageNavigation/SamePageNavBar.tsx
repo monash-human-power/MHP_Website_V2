@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 interface SamePageNavBarProps {
     sections: string[]; // list of the sections to scroll to
@@ -10,6 +11,8 @@ interface SamePageNavBarProps {
 
 const SamePageNavBar = ({ sections , activeSection, setActiveSection} : SamePageNavBarProps) => {
     return (
+        <>
+        <GoogleAnalytics gaId="G-T8HB40Y133" /> 
         <nav className="sticky w-full bg-black text-white font-Aldrich xl:text-xl lg:text-l z-50 top-28">
             <div className="hidden lg:block font-Aldrich">
             <div className="flex justify-center items-center h-full w-full space-x-10 pl-4 pt-2 pb-2">
@@ -23,6 +26,7 @@ const SamePageNavBar = ({ sections , activeSection, setActiveSection} : SamePage
             </div>
             </div>
         </nav>
+        </>
     )
 }
 

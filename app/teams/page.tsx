@@ -4,6 +4,7 @@ import Image from "next/image";
 import PageSection from "../components/PageSection";
 import teamData from "../../public/JSONs/teams.json"; // Importing the JSON file
 import ArrowDown from "../components/ArrowDown";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 export default function TeamPage() {
   const [currentTeamIndex, setCurrentTeamIndex] = useState(0);
@@ -59,6 +60,7 @@ export default function TeamPage() {
 
   return (
     <>
+    <GoogleAnalytics gaId="G-T8HB40Y133" /> 
       <title>
         Teams | MHP
       </title>

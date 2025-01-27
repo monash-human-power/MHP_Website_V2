@@ -3,6 +3,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 // Set types of props
 interface ImageCarouselProps {
@@ -28,6 +29,8 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
   }
 
   return (
+    <>
+    <GoogleAnalytics gaId="G-T8HB40Y133" /> 
     <div className="relative w-full h-96 overflow-hidden mb-5">
       <div
         className="flex transition-transform duration-500"
@@ -56,5 +59,6 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
         ))}
       </div>
     </div>
+    </>
   );
 }

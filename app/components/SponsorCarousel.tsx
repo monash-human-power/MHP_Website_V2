@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 interface Item {
   image: string;
@@ -45,6 +46,8 @@ export default function SponsorshipCarousel({
   });
 
   return (
+    <>
+    <GoogleAnalytics gaId="G-T8HB40Y133" /> 
     <div className="relative flex items-center justify-center">
       <button
         onClick={handlePrevious}
@@ -84,5 +87,6 @@ export default function SponsorshipCarousel({
         &rarr;
       </button>
     </div>
+    </>
   );
 }

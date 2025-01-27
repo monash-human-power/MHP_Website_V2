@@ -5,6 +5,7 @@ import PageSection from "../components/PageSection";
 import Image from "next/image";
 import programData from "../../public/JSONs/programs.json"; // Importing the JSON file
 import Page from "../page";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 export default function Outreach() {
   const [currentProgramIndex, setCurrentProgramIndex] = useState(0);
@@ -35,6 +36,7 @@ export default function Outreach() {
 
   return (
     <>
+    <GoogleAnalytics gaId="G-T8HB40Y133" /> 
       <title>
         Outreach | MHP
       </title>
