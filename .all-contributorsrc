@@ -1,13 +1,25 @@
 {
+  "projectName": "MHP_Website_V2",
+  "projectOwner": "monash-human-power",
+  "repoType": "github",
+  "repoHost": "https://github.com",
   "files": [
     "README.md"
   ],
   "imageSize": 100,
-  "commit": false,
-  "contributors": [],
+  "commit": true,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "fung-alvin",
+      "name": "Alvin Fung",
+      "avatar_url": "https://avatars.githubusercontent.com/u/164455066?v=4",
+      "profile": "https://github.com/fung-alvin",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
   "contributorsPerLine": 7,
-  "projectName": "mhp-website-v2",
-  "projectOwner": "monash-human-power",
-  "repoType": "github",
-  "repoHost": "https://github.com"
+  "linkToUsage": true
 }
