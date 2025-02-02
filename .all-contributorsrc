@@ -10,23 +10,14 @@
   "commit": true,
   "commitConvention": "angular",
   "contributors": [
-    {
-      "login": "fung-alvin",
-      "name": "Alvin Fung",
-      "avatar_url": "https://avatars.githubusercontent.com/u/164455066?v=4",
-      "profile": "https://github.com/fung-alvin",
-      "contributions": [
-        "code",
-        "doc"
-      ]
-    },
+
     {
       "login": "AmyTjea",
       "name": "Amy T",
       "avatar_url": "https://avatars.githubusercontent.com/u/49554284?v=4",
       "profile": "https://github.com/AmyTjea",
       "contributions": [
-        "code"
+        "code","design","content","projectManagement"
       ]
     },
     {
@@ -35,7 +26,7 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/127728772?v=4",
       "profile": "https://github.com/mars0003",
       "contributions": [
-        "code"
+        "code","design","content"
       ]
     },
     {
@@ -44,7 +35,15 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/103304397?v=4",
       "profile": "https://github.com/viggy21",
       "contributions": [
-        "code"
+        "code","design","content"
+      ]
+    },    {
+      "login": "fung-alvin",
+      "name": "Alvin Fung",
+      "avatar_url": "https://avatars.githubusercontent.com/u/164455066?v=4",
+      "profile": "https://github.com/fung-alvin",
+      "contributions": [
+        "code","design","content"
       ]
     },
     {
@@ -53,7 +52,8 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/126831873?v=4",
       "profile": "https://github.com/maureen1907",
       "contributions": [
-        "code"
+        "code","design","content"
+
       ]
     },
     {
@@ -62,7 +62,7 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/153081137?v=4",
       "profile": "https://github.com/nkat001",
       "contributions": [
-        "code"
+        "code","design","content"
       ]
     },
     {
@@ -71,7 +71,7 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/155885179?v=4",
       "profile": "https://github.com/NgocDuy1234",
       "contributions": [
-        "code"
+        "code","design"
       ]
     },
     {
@@ -80,7 +80,7 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/162103344?v=4",
       "profile": "https://github.com/Khang0018",
       "contributions": [
-        "code"
+        "projectManagement","design","content"
       ]
     },
     {
@@ -89,7 +89,7 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/111645579?v=4",
       "profile": "https://github.com/nath0002",
       "contributions": [
-        "code"
+        "code","design","content"
       ]
     }
   ],
