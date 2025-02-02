@@ -40,6 +40,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Khang0018"><img src="https://avatars.githubusercontent.com/u/162103344?v=4?s=100" width="100px;" alt="Khang0018"/><br /><sub><b>Khang0018</b></sub></a><br /><a href="https://github.com/monash-human-power/MHP_Website_V2/commits?author=Khang0018" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/nath0002"><img src="https://avatars.githubusercontent.com/u/111645579?v=4?s=100" width="100px;" alt="nath0002"/><br /><sub><b>nath0002</b></sub></a><br /><a href="https://github.com/monash-human-power/MHP_Website_V2/commits?author=nath0002" title="Code">💻</a></td>
     </tr>
   </tbody>
   <tfoot>
