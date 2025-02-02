@@ -38,6 +38,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/nkat001"><img src="https://avatars.githubusercontent.com/u/153081137?v=4?s=100" width="100px;" alt="nkat001"/><br /><sub><b>nkat001</b></sub></a><br /><a href="https://github.com/monash-human-power/MHP_Website_V2/commits?author=nkat001" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/NgocDuy1234"><img src="https://avatars.githubusercontent.com/u/155885179?v=4?s=100" width="100px;" alt="NgocDuy1234"/><br /><sub><b>NgocDuy1234</b></sub></a><br /><a href="https://github.com/monash-human-power/MHP_Website_V2/commits?author=NgocDuy1234" title="Code">💻</a></td>
     </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Khang0018"><img src="https://avatars.githubusercontent.com/u/162103344?v=4?s=100" width="100px;" alt="Khang0018"/><br /><sub><b>Khang0018</b></sub></a><br /><a href="https://github.com/monash-human-power/MHP_Website_V2/commits?author=Khang0018" title="Code">💻</a></td>
+    </tr>
   </tbody>
   <tfoot>
     <tr>
