@@ -19,6 +19,15 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "AmyTjea",
+      "name": "Amy T",
+      "avatar_url": "https://avatars.githubusercontent.com/u/49554284?v=4",
+      "profile": "https://github.com/AmyTjea",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
