@@ -32,6 +32,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/fung-alvin"><img src="https://avatars.githubusercontent.com/u/164455066?v=4?s=100" width="100px;" alt="Alvin Fung"/><br /><sub><b>Alvin Fung</b></sub></a><br /><a href="https://github.com/monash-human-power/MHP_Website_V2/commits?author=fung-alvin" title="Code">💻</a> <a href="https://github.com/monash-human-power/MHP_Website_V2/commits?author=fung-alvin" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/AmyTjea"><img src="https://avatars.githubusercontent.com/u/49554284?v=4?s=100" width="100px;" alt="Amy T"/><br /><sub><b>Amy T</b></sub></a><br /><a href="https://github.com/monash-human-power/MHP_Website_V2/commits?author=AmyTjea" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/mars0003"><img src="https://avatars.githubusercontent.com/u/127728772?v=4?s=100" width="100px;" alt="mars0003"/><br /><sub><b>mars0003</b></sub></a><br /><a href="https://github.com/monash-human-power/MHP_Website_V2/commits?author=mars0003" title="Code">💻</a></td>
     </tr>
   </tbody>
   <tfoot>
