@@ -34,6 +34,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/AmyTjea"><img src="https://avatars.githubusercontent.com/u/49554284?v=4?s=100" width="100px;" alt="Amy T"/><br /><sub><b>Amy T</b></sub></a><br /><a href="https://github.com/monash-human-power/MHP_Website_V2/commits?author=AmyTjea" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/mars0003"><img src="https://avatars.githubusercontent.com/u/127728772?v=4?s=100" width="100px;" alt="mars0003"/><br /><sub><b>mars0003</b></sub></a><br /><a href="https://github.com/monash-human-power/MHP_Website_V2/commits?author=mars0003" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/viggy21"><img src="https://avatars.githubusercontent.com/u/103304397?v=4?s=100" width="100px;" alt="Vicky Huang"/><br /><sub><b>Vicky Huang</b></sub></a><br /><a href="https://github.com/monash-human-power/MHP_Website_V2/commits?author=viggy21" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/maureen1907"><img src="https://avatars.githubusercontent.com/u/126831873?v=4?s=100" width="100px;" alt="Maureen Pham"/><br /><sub><b>Maureen Pham</b></sub></a><br /><a href="https://github.com/monash-human-power/MHP_Website_V2/commits?author=maureen1907" title="Code">💻</a></td>
     </tr>
   </tbody>
   <tfoot>
