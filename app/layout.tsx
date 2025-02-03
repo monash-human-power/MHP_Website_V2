@@ -19,13 +19,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <GoogleAnalytics gaId="G-T8HB40Y133" /> 
+      </head>
       <body
         className={inter.className + " bg-black flex flex-col min-h-screen"}
       >
         <Navbar />
         <div className="flex-1 " style={{width: "95%", margin: "0 auto", textAlign: "center",} } >{children}</div>
         <Footer />
-        <GoogleAnalytics gaId="G-T8HB40Y133" /> 
       </body>
     </html>
   );
