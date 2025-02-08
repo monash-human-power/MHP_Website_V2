@@ -7,7 +7,6 @@ import { GoogleAnalytics } from '@next/third-parties/google';
 export default function Join() {
   return (
     <>
-    <GoogleAnalytics gaId="G-T8HB40Y133" /> 
       <title>
         Join | MHP
       </title>

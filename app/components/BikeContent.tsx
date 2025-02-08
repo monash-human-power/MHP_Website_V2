@@ -25,7 +25,6 @@ interface BikeContentProps {
     }));
     return (
         <>
-        <GoogleAnalytics gaId="G-T8HB40Y133" /> 
         <div>
             {activeTab === 'Overview' && (
                 <div className="flex text-xl h-full">

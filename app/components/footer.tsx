@@ -14,7 +14,6 @@ import { GoogleAnalytics } from '@next/third-parties/google';
 const Footer = () => {
   return (
     <>
-    <GoogleAnalytics gaId="G-T8HB40Y133" /> 
     <footer className="bg-black text-white font-Aldrich py-3">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 gap-4 justify-center">

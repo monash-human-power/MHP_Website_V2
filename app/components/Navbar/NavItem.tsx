@@ -14,7 +14,6 @@ function NavItem({ text, hrefString, srcString }: navItemProps) {
   const pathname = usePathname();
   return (
     <>
-    <GoogleAnalytics gaId="G-T8HB40Y133" /> 
     <div className="transition ease-in-out hover:-translate-y-1 px-2 py-2">
       <Link href={hrefString}>
         {srcString !== "" ? (

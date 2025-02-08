@@ -4,7 +4,6 @@ import { GoogleAnalytics } from '@next/third-parties/google';
 function ArrowDown(props: { color: string }) {
   return (
     <>
-    <GoogleAnalytics gaId="G-T8HB40Y133" /> 
     <div className={props.color === "white" ? "bg-black" : "bg-greenbutton"}>
       <svg
         className="flex w-full h-12 mt-[-1px] z-0"

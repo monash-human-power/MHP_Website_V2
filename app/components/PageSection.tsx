@@ -43,7 +43,6 @@ export default function PageSection({ colourWay, children }: PageSectionProps) {
 
   return (
     <>
-    <GoogleAnalytics gaId="G-T8HB40Y133" /> 
     <div
       ref={sectionRef}
       className={`${sectionThemes[colourWay]} ${

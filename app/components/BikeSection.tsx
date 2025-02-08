@@ -34,7 +34,6 @@ const BikeSection = ({bike} : BikeSectionProps) => {
 
     return (
         <>
-        <GoogleAnalytics gaId="G-T8HB40Y133" /> 
             <div className="py-8 bg-black" style={{
             borderBottom: "2px solid #5e5b5b", // Top border
             width: "95%",

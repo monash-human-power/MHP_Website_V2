@@ -47,7 +47,6 @@ export default function SponsorshipCarousel({
 
   return (
     <>
-    <GoogleAnalytics gaId="G-T8HB40Y133" /> 
     <div className="relative flex items-center justify-center">
       <button
         onClick={handlePrevious}

@@ -8,7 +8,6 @@ import { GoogleAnalytics } from '@next/third-parties/google';
 export default function contact() {
   return (
     <>
-    <GoogleAnalytics gaId="G-T8HB40Y133" /> 
       <title>
         Contact Us | MHP
       </title>

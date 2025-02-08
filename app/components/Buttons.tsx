@@ -18,7 +18,6 @@ function Button({ theme, text, hrefString = "", target}: buttonProps) {
 
   return (
     <>
-    <GoogleAnalytics gaId="G-T8HB40Y133" /> 
     <Link href={hrefString} target={target}>
       <button className={colourWay[theme]}>{text}</button>
     </Link>

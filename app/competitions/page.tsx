@@ -18,7 +18,6 @@ const bmImages = [
 export default function Competitions() {
   return (
     <>
-    <GoogleAnalytics gaId="G-T8HB40Y133" />    
       <title>
         Competitions | MHP
       </title>

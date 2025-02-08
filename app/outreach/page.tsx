@@ -36,7 +36,6 @@ export default function Outreach() {
 
   return (
     <>
-    <GoogleAnalytics gaId="G-T8HB40Y133" /> 
       <title>
         Outreach | MHP
       </title>

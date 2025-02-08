@@ -60,7 +60,6 @@ export default function TeamPage() {
 
   return (
     <>
-    <GoogleAnalytics gaId="G-T8HB40Y133" /> 
       <title>
         Teams | MHP
       </title>

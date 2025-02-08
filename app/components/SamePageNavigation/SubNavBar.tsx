@@ -10,7 +10,6 @@ const SubNavBar = ({sections, activeSection, setActiveSection} : SubNavBarProps)
     {/* Wide Screen Navbar */}
     return (
         <>
-        <GoogleAnalytics gaId="G-T8HB40Y133" /> 
         <nav className="relative w-full bg-black text-white font-Aldrich xl:text-xl lg:text-l z-1">
              <div className="block font-Aldrich">
           <div className="flex justify-start items-center h-full w-full space-x-10 pl-4 pt-2 pb-2">

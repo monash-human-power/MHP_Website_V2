@@ -45,7 +45,6 @@ export default function Page() {
 
     return (
     <>
-    <GoogleAnalytics gaId="G-T8HB40Y133" />
       <title>
             Bikes | MHP
         </title>

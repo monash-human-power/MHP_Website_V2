@@ -14,7 +14,6 @@ const NewsCard = ({ article, index, onClick }: NewsCardProps) => {
 
   return (
     <>
-    <GoogleAnalytics gaId="G-T8HB40Y133" /> 
       <div
         key={index}
         className="flex-none w-full  md:w-1/3 bg-black rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
