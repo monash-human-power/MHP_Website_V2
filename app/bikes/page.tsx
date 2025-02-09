@@ -7,6 +7,7 @@ import BikeSection from '../components/BikeSection';
 import SamePageNavBar from '../components/SamePageNavigation/SamePageNavBar';
 
 import bikeData from "../../public/JSONs/bikes.json";  // Importing the JSON file
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 export default function Page() {
     const sections = Object.keys(bikeData)
@@ -43,8 +44,8 @@ export default function Page() {
     }, []);
 
     return (
-        <>
-        <title>
+    <>
+      <title>
             Bikes | MHP
         </title>
         <div className="scroll-smooth">

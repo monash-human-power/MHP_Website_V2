@@ -1,7 +1,9 @@
 import React from "react";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 function ArrowDown(props: { color: string }) {
   return (
+    <>
     <div className={props.color === "white" ? "bg-black" : "bg-greenbutton"}>
       <svg
         className="flex w-full h-12 mt-[-1px] z-0"
@@ -11,6 +13,7 @@ function ArrowDown(props: { color: string }) {
         <polygon fill={props.color} points="0,0 50,100,100,0" />
       </svg>
     </div>
+    </>
   );
 }
 

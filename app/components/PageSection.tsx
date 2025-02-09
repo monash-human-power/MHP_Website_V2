@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 interface PageSectionProps {
   colourWay: "light" | "dark"; //Options are dark and light
@@ -41,6 +42,7 @@ export default function PageSection({ colourWay, children }: PageSectionProps) {
   }, []);
 
   return (
+    <>
     <div
       ref={sectionRef}
       className={`${sectionThemes[colourWay]} ${
@@ -49,5 +51,6 @@ export default function PageSection({ colourWay, children }: PageSectionProps) {
     >
       {children}
     </div>
+    </>
   );
 }

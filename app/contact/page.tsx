@@ -3,6 +3,7 @@ import React from "react";
 import PageSection from "../components/PageSection";
 import Image from "next/image";
 import { ContactForm } from "../components/ContactForm";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 export default function contact() {
   return (

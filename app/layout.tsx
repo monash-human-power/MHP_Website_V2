@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar/navBar";
 import Footer from "./components/footer";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <GoogleAnalytics gaId="G-T8HB40Y133" /> 
+      </head>
       <body
         className={inter.className + " bg-black flex flex-col min-h-screen"}
       >
