@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 export const ContactForm = () => {
   const form = useRef<HTMLFormElement | null>(null); // Initialize with null
@@ -25,6 +26,7 @@ export const ContactForm = () => {
   };
 
   return (
+    <>
     <div className="font-Aldrich bg-black">
       <div className="flex flex-wrap justify-center items-center mt-5">
         <h2 className='font-Aldrich flex flex-wrap justify-center items-center mt-5 underline decoration-green decoration-4'>Email Us</h2>
@@ -92,5 +94,6 @@ export const ContactForm = () => {
         )}
       </form>
     </div>
+    </>
   );
 };

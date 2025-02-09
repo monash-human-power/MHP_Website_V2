@@ -2,6 +2,7 @@ import React from "react";
 import PageSection from "../components/PageSection";
 import ImageCarousel from "../components/ImageCarousel";
 import Image from "next/image";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const hpvImages = [
   "/hpvImages/image1.jpg",

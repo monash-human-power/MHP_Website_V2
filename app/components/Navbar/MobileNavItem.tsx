@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import React from "react";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 interface navItemProps {
   name: string;
@@ -9,12 +10,14 @@ interface navItemProps {
 
 function MobileNavItem({ name, hrefString }: navItemProps) {
   return (
+    <>
     <Link
       className="text-center hover:bg-gray-700 block px-3 py-2 rounded-md text-sm"
       href={hrefString}
     >
       <span>{name}</span>
     </Link>
+    </>
   );
 }
 

@@ -5,6 +5,7 @@ import ImageCarousel from "./components/ImageCarousel";
 import SponsorshipCarousel from "./components/SponsorCarousel";
 import sponsorData from "../public/JSONs/sponsors.json";
 import ArrowDown from "./components/ArrowDown";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const images = [
   "/battle_mountain_group.jpg",

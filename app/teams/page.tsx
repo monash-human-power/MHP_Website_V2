@@ -4,6 +4,7 @@ import Image from "next/image";
 import PageSection from "../components/PageSection";
 import teamData from "../../public/JSONs/teams.json"; // Importing the JSON file
 import ArrowDown from "../components/ArrowDown";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 export default function TeamPage() {
   const [currentTeamIndex, setCurrentTeamIndex] = useState(0);
