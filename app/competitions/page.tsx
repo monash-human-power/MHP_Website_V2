@@ -5,14 +5,14 @@ import Image from "next/image";
 import { GoogleAnalytics } from '@next/third-parties/google';
 
 const hpvImages = [
-  "/hpvImages/image1.jpg",
-  "/hpvImages/image2.jpg",
-  "/hpvImages/image3.jpg",
+  "/images/competition_page/hpvImages/image1.jpg",
+  "/images/competition_page/hpvImages/image2.jpg",
+  "/images/competition_page/hpvImages/image3.jpg",
 ];
 const bmImages = [
-  "/whpscImages/image1.jpg",
-  "/whpscImages/image2.jpg",
-  "/whpscImages/image3.jpg",
+  "/images/competition_page/whpscImages/image1.jpg",
+  "/images/competition_page/whpscImages/image2.jpg",
+  "/images/competition_page/whpscImages/image3.jpg",
 ];
 
 export default function Competitions() {
