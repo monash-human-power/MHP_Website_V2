@@ -18,6 +18,7 @@
             "image": "/images/teams_page/UpperManage/james_cookson.jpg"
           }, {
             "name": "Sophie Windust",
+            "name": "Sophie Windust",
             "role": "Chief Operating Officer",
             "department": "Engineering and Commerce",
             "image": "/images/teams_page/Ops/sophie_windust.jpg"
@@ -235,6 +236,7 @@
             "image": "/images/teams_page/Materials/casey_diep.jpg"
           },
           {
+            "name": "Xavier Curcio",
             "name": "Xavier Curcio",
             "role": "Team Lead",
             "department": "",
