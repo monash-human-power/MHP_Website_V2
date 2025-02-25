@@ -70,7 +70,7 @@ export default function TeamPage() {
       {/* Battle Mountain Group Image */}
        <div className="w-dvh h-96 items-center overflow-hidden mx-auto">
           <Image
-            src="/battle_mountain_group.jpg"
+            src="/images/home_page/battle_mountain_group.jpg"
             width="800"
             height="300"
             objectFit="cover"
