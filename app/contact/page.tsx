@@ -18,7 +18,7 @@ export default function contact() {
         </div>
         <div>
           <Image
-            src="/contactImage.jpg"
+            src="/images/contact_page/neraj_v3.jpg"
             layout="responsive"
             height={50}
             width={2000}
