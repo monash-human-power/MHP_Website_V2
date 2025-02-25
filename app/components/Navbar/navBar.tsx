@@ -56,7 +56,7 @@ const desktopNavigation: NavItemsProps[] = [
   { name: "Bikes", href: "/bikes", srcString: "" },
   { name: "Competitions", href: "/competitions", srcString: "" },
   { name: "Teams", href: "/teams", srcString: "" },
-  { name: "Home", href: "/", srcString: "/image.png" },
+  { name: "Home", href: "/", srcString: "/images/logo.png" },
   { name: "Outreach", href: "/outreach", srcString: "" },
   { name: "News", href: "/news", srcString: "" },
   { name: "Join", href: "/join", srcString: "" },
@@ -95,7 +95,7 @@ const Navbar = () => {
           <div className="justify-center items-center">
             <a href="/">
               <Image
-                src="/mobile_image.png"
+                src="/images/mobile_logo.png"
                 alt="Logo"
                 width={100}
                 height={50}
