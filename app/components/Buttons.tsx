@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 interface buttonProps {
   theme: "light" | "dark";
@@ -16,9 +17,11 @@ function Button({ theme, text, hrefString = "", target}: buttonProps) {
   };
 
   return (
+    <>
     <Link href={hrefString} target={target}>
       <button className={colourWay[theme]}>{text}</button>
     </Link>
+    </>
   );
 }
 

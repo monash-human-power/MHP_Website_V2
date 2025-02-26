@@ -2,16 +2,17 @@ import React from "react";
 import PageSection from "../components/PageSection";
 import ImageCarousel from "../components/ImageCarousel";
 import Image from "next/image";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const hpvImages = [
-  "/hpvImages/image1.jpg",
-  "/hpvImages/image2.jpg",
-  "/hpvImages/image3.jpg",
+  "/images/competition_page/hpvImages/image1.jpg",
+  "/images/competition_page/hpvImages/image2.jpg",
+  "/images/competition_page/hpvImages/image3.jpg",
 ];
 const bmImages = [
-  "/whpscImages/image1.jpg",
-  "/whpscImages/image2.jpg",
-  "/whpscImages/image3.jpg",
+  "/images/competition_page/whpscImages/image1.jpg",
+  "/images/competition_page/whpscImages/image2.jpg",
+  "/images/competition_page/whpscImages/image3.jpg",
 ];
 
 export default function Competitions() {
@@ -165,7 +166,7 @@ export default function Competitions() {
             <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center mt-5">
               <div className="w-full lg:w-1/2 sm:h-1/2 center">
                 <Image
-                  src="/competitionImage2.png"
+                  src="\images\competition_page\competitionImage2.png"
                   layout="intrinsic"
                   width={700}
                   height={200}

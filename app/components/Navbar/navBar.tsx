@@ -6,6 +6,7 @@ import MenuNavBarItem from "./MenuNavItem";
 import MobileNavItem from "./MobileNavItem";
 import { useState } from "react";
 import Button from "../Buttons";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 interface NavItemsProps {
   name: string;
@@ -55,7 +56,7 @@ const desktopNavigation: NavItemsProps[] = [
   { name: "Bikes", href: "/bikes", srcString: "" },
   { name: "Competitions", href: "/competitions", srcString: "" },
   { name: "Teams", href: "/teams", srcString: "" },
-  { name: "Home", href: "/", srcString: "/image.png" },
+  { name: "Home", href: "/", srcString: "/images/logo.png" },
   { name: "Outreach", href: "/outreach", srcString: "" },
   { name: "News", href: "/news", srcString: "" },
   { name: "Join", href: "/join", srcString: "" },
@@ -84,6 +85,7 @@ const Navbar = () => {
   };
 
   return (
+    <>
     <header className="sticky top-0 z-20">
       <nav className="relative w-full bg-black text-white font-Aldrich xl:text-xl lg:text-l z-1">
         {/* Mobile Navbar */}
@@ -93,7 +95,7 @@ const Navbar = () => {
           <div className="justify-center items-center">
             <a href="/">
               <Image
-                src="/mobile_image.png"
+                src="/images/mobile_logo.png"
                 alt="Logo"
                 width={100}
                 height={50}
@@ -265,6 +267,7 @@ const Navbar = () => {
         </div>
       </nav>
     </header>
+    </>
   );
 };
 

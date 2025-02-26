@@ -3,6 +3,7 @@ import React from "react";
 import PageSection from "../components/PageSection";
 import Image from "next/image";
 import { ContactForm } from "../components/ContactForm";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 export default function contact() {
   return (
@@ -17,7 +18,7 @@ export default function contact() {
         </div>
         <div>
           <Image
-            src="/contactImage.jpg"
+            src="/images/contact_page/neraj_v3.jpg"
             layout="responsive"
             height={50}
             width={2000}

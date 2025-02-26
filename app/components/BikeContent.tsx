@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 interface BikeContentProps {
     activeTab: String;
@@ -23,7 +24,7 @@ interface BikeContentProps {
         alt: `Image ${index + 1} of ${bike}`,
     }));
     return (
-
+        <>
         <div>
             {activeTab === 'Overview' && (
                 <div className="flex text-xl h-full">
@@ -63,6 +64,7 @@ interface BikeContentProps {
             )}
 
         </div>
+        </>
     );
 };
 
