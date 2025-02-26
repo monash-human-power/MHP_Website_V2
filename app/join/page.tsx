@@ -1,8 +1,6 @@
 "use client";
-import Button from "../components/Buttons";
 import PageSection from "../components/PageSection";
 import Image from "next/image";
-import { GoogleAnalytics } from '@next/third-parties/google';
 
 export default function Join() {
   return (
@@ -38,7 +36,7 @@ export default function Join() {
               margin: "0 auto",
             }}
           >
-            <p>Applications are currently closed.</p>
+            <p>Applications are open.</p>
             <br></br>
             <p>
               Fill out an expression of interest and sign up to our mailing
@@ -61,7 +59,7 @@ export default function Join() {
           {/* Expression of Interest button links to Google Form */}
           <a href="https://forms.gle/Ek9e9jvtd57NLrRM9" target="_blank">
             <button className="px-4 py-2 lg:px-16 lg:py-2 rounded-full border-2 bg-green text-black border-black hover:bg-black hover:text-white hover:border-white">
-              Expression of Interest
+              Application Form
             </button>
           </a>
         </div>
