@@ -26,8 +26,10 @@ type BikeData = Record<string, Bike>; // map of bike name to bike data
 
 const BikeSection = ({bike} : BikeSectionProps) => {
     const bikeData: BikeData = bikeDataJson;
-
-    const sections = ["Overview", "Gallery"];
+    let sections = ["Overview"];
+    if (bikeData[bike].gallery.length > 0)
+    {        sections.push("Gallery")
+    } 
 
     // track the active section
     const [activeSection, setActiveSection] = useState(sections[0]);

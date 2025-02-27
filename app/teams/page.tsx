@@ -70,7 +70,7 @@ export default function TeamPage() {
       {/* Battle Mountain Group Image */}
        <div className="w-dvh h-96 items-center overflow-hidden mx-auto">
           <Image
-            src="/battle_mountain_group.jpg"
+            src="/images/home_page/battle_mountain_group.jpg"
             width="800"
             height="300"
             objectFit="cover"
@@ -160,7 +160,7 @@ export default function TeamPage() {
       {/* Team Leads and Members Section */}
       <PageSection colourWay="dark">
         <section
-          className={`${fadeClass} bg-[url('/teams_background.png')]  bg-top bg-no-repeat`}
+          className={`${fadeClass} bg-[url('/images/teams_page/teams_background.png')]  bg-top bg-no-repeat`}
         >
           <h2 className="text-center text-4xl font-bold mb-2">Team Members</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 px-8 mb-12">

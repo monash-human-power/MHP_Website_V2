@@ -1,8 +1,6 @@
 "use client";
-import Button from "../components/Buttons";
 import PageSection from "../components/PageSection";
 import Image from "next/image";
-import { GoogleAnalytics } from '@next/third-parties/google';
 
 export default function Join() {
   return (
@@ -14,7 +12,7 @@ export default function Join() {
       {/* Cover Image */}
       <section className="animate-fadeIn">
         <Image
-          src="/join/join_main.jpg"
+          src="/images/join_page/join_main.jpg"
           width="5184"
           height="2309"
           objectFit="cover"
@@ -38,7 +36,7 @@ export default function Join() {
               margin: "0 auto",
             }}
           >
-            <p>Applications are currently closed.</p>
+            <p>Applications are open.</p>
             <br></br>
             <p>
               Fill out an expression of interest and sign up to our mailing
@@ -59,9 +57,9 @@ export default function Join() {
           }}
         >
           {/* Expression of Interest button links to Google Form */}
-          <a href="https://forms.gle/Ek9e9jvtd57NLrRM9" target="_blank">
+          <a href="https://forms.gle/zpoMhDDBW4yRJjXv5" target="_blank">
             <button className="px-4 py-2 lg:px-16 lg:py-2 rounded-full border-2 bg-green text-black border-black hover:bg-black hover:text-white hover:border-white">
-              Expression of Interest
+              Application Form
             </button>
           </a>
         </div>
@@ -117,7 +115,7 @@ export default function Join() {
               }}
             >
               <Image
-                src="/join/join_rider_dev.jpg"
+                src="/images/join_page/join_rider_dev.jpg"
                 width="200"
                 height="100"
                 objectFit="cover"
@@ -224,7 +222,7 @@ export default function Join() {
               }}
             >
               <Image
-                src="/join/join_aerodynamics.jpg"
+                src="/images/join_page/join_aerodynamics.jpg"
                 width="800"
                 height="300"
                 objectFit="cover"
@@ -347,7 +345,7 @@ export default function Join() {
               }}
             >
               <Image
-                src="/join/join_chassis_drivetrain.jpg"
+                src="/images/join_page/join_chassis_drivetrain.jpg"
                 width="800"
                 height="300"
                 objectFit="cover"
@@ -451,7 +449,7 @@ export default function Join() {
               }}
             >
               <Image
-                src="/join/join_operations.jpg"
+                src="/images/join_page/join_operations.jpg"
                 width="800"
                 height="300"
                 objectFit="cover"
@@ -579,7 +577,7 @@ export default function Join() {
               }}
             >
               <Image
-                src="/join/join_electrical.jpg"
+                src="/images/join_page/join_electrical.jpg"
                 width="800"
                 height="300"
                 objectFit="cover"
@@ -687,7 +685,7 @@ export default function Join() {
               }}
             >
               <Image
-                src="/join/join_materials.jpg"
+                src="/images/join_page/join_materials.jpg"
                 width="800"
                 height="300"
                 objectFit="cover"

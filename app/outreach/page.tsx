@@ -87,7 +87,7 @@ export default function Outreach() {
       <section className="relative text-center py-5 animate-fadeIn">
         <div className="items-center overflow-hidden mx-auto">
           <Image
-            src="/outreach_1.jpg"
+            src="/images/outreach_page/outreach_1.jpg"
             width="800"
             height="300"
             objectFit="cover"
@@ -177,7 +177,7 @@ export default function Outreach() {
       <section className="relative text-center py-5 animate-fadeIn">
         <div className="items-center overflow-hidden">
           <Image
-            src="/outreach_2.jpg"
+            src="/images/outreach_page/outreach_2.jpg"
             width="800"
             height="300"
             objectFit="cover"
@@ -267,7 +267,7 @@ export default function Outreach() {
       <section className="relative text-center py-5 animate-fadeIn">
         <div className="items-center overflow-hidden mx-auto">
           <Image
-            src="/outreach_3.jpg"
+            src="/images/outreach_page/outreach_3.jpg"
             width="800"
             height="300"
             objectFit="cover"

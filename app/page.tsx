@@ -8,10 +8,10 @@ import ArrowDown from "./components/ArrowDown";
 import { GoogleAnalytics } from '@next/third-parties/google';
 
 const images = [
-  "/battle_mountain_group.jpg",
-  "/trike_race.jpg",
-  "/o_week_group.jpg",
-  "/mhp_group.jpg",
+  "/images/home_page/battle_mountain_group.jpg",
+  "/images/home_page/trike_race.jpg",
+  "/images/home_page/o_week_group.jpg",
+  "/images/home_page/mhp_group.jpg",
 ];
 import Button from "./components/Buttons";
 
@@ -30,7 +30,7 @@ export default function Page() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <Image
-                src="/v3.png"
+                src="/images/home_page/v3.png"
                 className="flex-grow h-full w-full object-scale-down"
                 alt="Image of v3"
                 width={1316}

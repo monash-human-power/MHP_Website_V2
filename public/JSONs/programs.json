@@ -3,17 +3,17 @@
     {
       "name": "Build A Human Powered Vehicle",
       "description": "Based on the Victorian Curriculum's Cross-curriculum Priority: Learning about Sustainability, these hands-on STEM lessons guide secondary students through a systems engineering approach that takes into account the aerodynamic and eco-friendly aspects of their HPV.",
-      "image": "/JSONS/programsImages/buildHPVProgram.jpg"
+      "image": "/images/outreach_page/buildHPVProgram.jpg"
     },
     {
       "name": "Aerodynamics Workshop",
       "description": "In the Aerodynamics Workshop, students learn how airflow impacts speed and efficiency by designing and testing their own aerodynamic models in a mini wind tunnel. They experiment with different shapes, gaining insights into how engineers use aerodynamics to create faster, more efficient vehicles.",
-      "image": "/JSONS/programsImages/aerodynamicsProgram.jpg"
+      "image": "/images/outreach_page/aerodynamicsProgram.jpg"
     },
     {
       "name": "Rider Development Workshop",
       "description": "The Rider Development Workshop introduces students to the science behind human-powered racing, teaching them how to maximise energy output and optimise race strategies through gear changes and racing line techniques. Especially ideal for schools with trikes, this workshop has a wide range of available options depending on the knowledge, year level and time length available to the students.",
-      "image": "/JSONS/programsImages/drivetrainProgram.jpg"
+      "image": "/images/outreach_page/drivetrainProgram.jpg"
     }
   ]
 }
