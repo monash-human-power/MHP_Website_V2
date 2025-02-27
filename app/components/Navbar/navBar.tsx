@@ -162,7 +162,7 @@ const Navbar = () => {
             <div className="flex-[1] flex justify-center">
               <Link href="/">
                 <Image
-                  src="/image.png"
+                  src="/images/logo.png"
                   alt="Logo"
                   width={100}
                   height={50}
