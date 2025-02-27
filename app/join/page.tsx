@@ -57,7 +57,7 @@ export default function Join() {
           }}
         >
           {/* Expression of Interest button links to Google Form */}
-          <a href="https://forms.gle/Ek9e9jvtd57NLrRM9" target="_blank">
+          <a href="https://forms.gle/zpoMhDDBW4yRJjXv5" target="_blank">
             <button className="px-4 py-2 lg:px-16 lg:py-2 rounded-full border-2 bg-green text-black border-black hover:bg-black hover:text-white hover:border-white">
               Application Form
             </button>
