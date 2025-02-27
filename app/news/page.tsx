@@ -5,7 +5,6 @@ import { useState } from "react";
 import NewsCard from "../components/NewsCard";
 import articleData from "../../public/JSONs/blogs.json";
 import { Article } from "../types";
-import { GoogleAnalytics } from '@next/third-parties/google';
 
 export default function News() {
   // states for searching

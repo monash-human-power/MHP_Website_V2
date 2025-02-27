@@ -1,13 +1,98 @@
 {
+  "projectName": "MHP_Website_V2",
+  "projectOwner": "monash-human-power",
+  "repoType": "github",
+  "repoHost": "https://github.com",
   "files": [
     "README.md"
   ],
   "imageSize": 100,
-  "commit": false,
-  "contributors": [],
+  "commit": true,
+  "commitConvention": "angular",
+  "contributors": [
+
+    {
+      "login": "AmyTjea",
+      "name": "Amy T",
+      "avatar_url": "https://avatars.githubusercontent.com/u/49554284?v=4",
+      "profile": "https://github.com/AmyTjea",
+      "contributions": [
+        "code","design","content","projectManagement"
+      ]
+    },
+    {
+      "login": "mars0003",
+      "name": "mars0003",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127728772?v=4",
+      "profile": "https://github.com/mars0003",
+      "contributions": [
+        "code","design","content"
+      ]
+    },
+    {
+      "login": "viggy21",
+      "name": "Vicky Huang",
+      "avatar_url": "https://avatars.githubusercontent.com/u/103304397?v=4",
+      "profile": "https://github.com/viggy21",
+      "contributions": [
+        "code","design","content"
+      ]
+    },    {
+      "login": "fung-alvin",
+      "name": "Alvin Fung",
+      "avatar_url": "https://avatars.githubusercontent.com/u/164455066?v=4",
+      "profile": "https://github.com/fung-alvin",
+      "contributions": [
+        "code","design","content"
+      ]
+    },
+    {
+      "login": "maureen1907",
+      "name": "Maureen Pham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/126831873?v=4",
+      "profile": "https://github.com/maureen1907",
+      "contributions": [
+        "code","design","content"
+
+      ]
+    },
+    {
+      "login": "nkat001",
+      "name": "nkat001",
+      "avatar_url": "https://avatars.githubusercontent.com/u/153081137?v=4",
+      "profile": "https://github.com/nkat001",
+      "contributions": [
+        "code","design","content"
+      ]
+    },
+    {
+      "login": "NgocDuy1234",
+      "name": "NgocDuy1234",
+      "avatar_url": "https://avatars.githubusercontent.com/u/155885179?v=4",
+      "profile": "https://github.com/NgocDuy1234",
+      "contributions": [
+        "code","design"
+      ]
+    },
+    {
+      "login": "Khang0018",
+      "name": "Khang0018",
+      "avatar_url": "https://avatars.githubusercontent.com/u/162103344?v=4",
+      "profile": "https://github.com/Khang0018",
+      "contributions": [
+        "projectManagement","design","content"
+      ]
+    },
+    {
+      "login": "nath0002",
+      "name": "nath0002",
+      "avatar_url": "https://avatars.githubusercontent.com/u/111645579?v=4",
+      "profile": "https://github.com/nath0002",
+      "contributions": [
+        "code","design","content"
+      ]
+    }
+  ],
   "contributorsPerLine": 7,
-  "projectName": "mhp-website-v2",
-  "projectOwner": "monash-human-power",
-  "repoType": "github",
-  "repoHost": "https://github.com"
+  "linkToUsage": true
 }
