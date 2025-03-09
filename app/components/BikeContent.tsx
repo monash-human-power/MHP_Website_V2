@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image';
-import { GoogleAnalytics } from '@next/third-parties/google';
 
 interface BikeContentProps {
     activeTab: String;

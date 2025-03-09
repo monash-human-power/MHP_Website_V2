@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import { GoogleAnalytics } from '@next/third-parties/google';
 
 interface PageSectionProps {
   colourWay: "light" | "dark"; //Options are dark and light

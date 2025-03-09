@@ -2,11 +2,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import NavItem from "./NavItem";
-import MenuNavBarItem from "./MenuNavItem";
 import MobileNavItem from "./MobileNavItem";
 import { useState } from "react";
-import Button from "../Buttons";
-import { GoogleAnalytics } from '@next/third-parties/google';
 
 interface NavItemsProps {
   name: string;

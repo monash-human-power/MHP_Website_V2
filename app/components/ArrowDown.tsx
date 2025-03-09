@@ -1,5 +1,4 @@
 import React from "react";
-import { GoogleAnalytics } from '@next/third-parties/google';
 
 function ArrowDown(props: { color: string }) {
   return (

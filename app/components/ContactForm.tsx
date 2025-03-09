@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { GoogleAnalytics } from '@next/third-parties/google';
 
 export const ContactForm = () => {
   const form = useRef<HTMLFormElement | null>(null); // Initialize with null
