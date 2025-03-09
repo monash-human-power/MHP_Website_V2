@@ -1,4 +1,3 @@
-import { GoogleAnalytics } from '@next/third-parties/google';
 
 interface SubNavBarProps {
     sections: string[]; // List of section names

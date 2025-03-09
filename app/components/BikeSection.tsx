@@ -6,7 +6,6 @@ import PageSection from './PageSection';
 import SubNavBar from "./SamePageNavigation/SubNavBar";
 import BikeContent from './BikeContent';
 import bikeDataJson from "../../public/JSONs/bikes.json";  // Importing the JSON file
-import { GoogleAnalytics } from '@next/third-parties/google';
 
 interface BikeSectionProps {
     bike: string

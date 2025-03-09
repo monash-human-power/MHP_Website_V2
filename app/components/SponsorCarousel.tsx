@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import { GoogleAnalytics } from '@next/third-parties/google';
 
 interface Item {
   image: string;
