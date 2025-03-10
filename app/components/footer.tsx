@@ -8,8 +8,6 @@ import {
   faTiktok,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import Link from "next/link";
-import { GoogleAnalytics } from '@next/third-parties/google';
 
 const Footer = () => {
   return (

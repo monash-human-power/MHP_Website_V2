@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import { GoogleAnalytics } from '@next/third-parties/google';
 
 interface navItemProps {
   name: string;

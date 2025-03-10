@@ -1,7 +1,6 @@
 "use client"
 
 import Link from "next/link";
-import { GoogleAnalytics } from '@next/third-parties/google';
 
 interface SamePageNavBarProps {
     sections: string[]; // list of the sections to scroll to

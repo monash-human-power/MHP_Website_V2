@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import { Article } from "../types";
-import { GoogleAnalytics } from '@next/third-parties/google';
 
 interface NewsCardProps {
   article: Article;
