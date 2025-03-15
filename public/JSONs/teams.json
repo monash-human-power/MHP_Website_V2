@@ -16,13 +16,13 @@
             "role": "Chief Technical Officer",
             "department": "Electrical Engineering and Biomedical Science",
             "image": "/images/teams_page/UpperManage/james_cookson.jpg"
-          }, {
-            "name": "Sophie Windust",
+          },
+          {
             "name": "Sophie Windust",
             "role": "Chief Operating Officer",
             "department": "Engineering and Commerce",
             "image": "/images/teams_page/Ops/sophie_windust.jpg"
-            }
+          }
         ]
     },
     {
@@ -84,25 +84,6 @@
       ],
       "members": [
         {
-          "name": "Amy Tjea",
-          "role": "Team Member",
-          "department": "Software Engineering and Computer Science",
-          "image": "/images/teams_page/Electrical/amy_tjea.jpg"
-        },
-        {
-          "name": "Ngoc Thao Vy Nguyen",
-          "role": "Team Member",
-          "department": "Engineering",
-          "image": "/images/teams_page/Electrical/ngoc_thao_vy_nguyen.jpg"
-        },
-
-        {
-          "name": "Prince (Jeremy) Mendel-Idowu",
-          "role": "Team Member",
-          "department": "",
-          "image": "/images/teams_page/Ops/prince_mendel-idowu.jpg"
-        },
-        {
           "name": "Aarabi Kugathas",
           "role": "Team Member",
           "department": "",
@@ -119,6 +100,12 @@
           "role": "Team Member",
           "department": "",
           "image": "/images/teams_page/Electrical/daniel_he.jpg"
+        },
+        {
+          "name": "Iris Nguyen",
+          "role": "Team Member",
+          "department": "",
+          "image": "/images/teams_page/Electrical/iris_nguyen.jpg"
         },
         {
           "name": "Jayden Le",
@@ -144,22 +131,34 @@
           "image": "/images/teams_page/Electrical/joseph_ooi.jpg"
         },
         {
+          "name": "Maureen Pham",
+          "role": "Team Member",
+          "department": "",
+          "image": "/images/teams_page/Electrical/maureen_pham.jpg"
+        },
+        {
+          "name": "Ngoc Thao Vy Nguyen",
+          "role": "Team Member",
+          "department": "Engineering",
+          "image": "/images/teams_page/Electrical/ngoc_thao_vy_nguyen.jpg"
+        },
+        {
           "name": "Nguyen Khang Huynh",
           "role": "Team Member",
           "department": "",
           "image": "/images/teams_page/Ops/nguyen_khang_huynh.jpg"
         },
         {
+          "name": "Prince (Jeremy) Mendel-Idowu",
+          "role": "Team Member",
+          "department": "",
+          "image": "/images/teams_page/Electrical/prince_mendel-idowu.jpg"
+        },
+        {
           "name": "Yixu (Sonny) Wang",
           "role": "Team Member",
           "department": "",
           "image": "/images/teams_page/Electrical/yixu_wang.jpg"
-        },
-        {
-          "name": "Iris Nguyen",
-          "role": "Team Member",
-          "department": "",
-          "image": "/images/teams_page/Electrical/iris_nguyen.jpg"
         }
       ]
     },
@@ -169,16 +168,16 @@
       "image": "/images/teams_page/aero.jpg",
       "Team_Leads": [
         {
-          "name": "Zachary Port",
-          "role": "Team Member",
-          "department": "Mechanical Engineering and Art",
-          "image": "/images/teams_page/Ops/zachary_port.jpg"
-        },
-        {
           "name": "Oliver Huang",
           "role": "Team Member",
           "department": "",
           "image": "/images/teams_page/Aero/oliver_huang.jpg"
+        },
+        {
+          "name": "Zachary Port",
+          "role": "Team Member",
+          "department": "Mechanical Engineering and Art",
+          "image": "/images/teams_page/Ops/zachary_port.jpg"
         }
       ],
       "members": [
@@ -193,34 +192,36 @@
               "role": "Team Member",
               "department": "Engineering and Science",
               "image": "/images/teams_page/Aero/cooper_thurman.jpg"
-            }
-            ,{
+            },
+            {
+              "name": "James Di Nicolantonio",
+              "role": "Team Member",
+              "department": "",
+              "image": "/images/teams_page/Aero/james_di_nicolantonio.jpg"
+            },
+            {
               "name": "Milan Umesh",
               "role": "Team Member",
               "department": "",
               "image": "/images/teams_page/Aero/milan_umesh.jpg"
-            }
-            ,{
-              "name": "Tai Villiers",
-              "role": "Team Member",
-              "department": "",
-              "image": "/images/teams_page/Aero/tai_villiers.jpg"
-            },{
-              "name": "Vraj Patel",
-              "role": "Team Member",
-              "department": "",
-              "image": "/images/teams_page/Aero/vraj_patel.jpg"
             },
             {
               "name": "Shriabhay Shriharsha",
               "role": "Team Member",
               "department": "Mechatronics Engineering",
               "image": "/images/teams_page/Materials/shriabhay_shriharsha.jpg"
-            },{
-              "name": "James Di Nicolantonio",
+            },
+            {
+              "name": "Tai Villiers",
               "role": "Team Member",
               "department": "",
-              "image": "/images/teams_page/Aero/james_di_nicolantonio.jpg"
+              "image": "/images/teams_page/Aero/tai_villiers.jpg"
+            },
+            {
+              "name": "Vraj Patel",
+              "role": "Team Member",
+              "department": "",
+              "image": "/images/teams_page/Aero/vraj_patel.jpg"
             }
         ]
     },
@@ -237,7 +238,6 @@
           },
           {
             "name": "Xavier Curcio",
-            "name": "Xavier Curcio",
             "role": "Team Lead",
             "department": "",
             "image": "/images/teams_page/Materials/xavier_curcio.jpg"
@@ -245,10 +245,10 @@
         ],
         "members": [
             {
-              "name": "Charles Bessel",
+              "name": "Clarisse Liew",
               "role": "Team Member",
-              "department": "",
-              "image": "/images/teams_page/Materials/charles_bessel.jpg"
+              "department": "Materials Engineering and Commerce",
+              "image": "/images/teams_page/Materials/clarisse_liew.jpg"
             },{
               "name": "Duc Thuan Le",
               "role": "Team Member",
@@ -278,16 +278,16 @@
               "image": "/images/teams_page/Materials/sammi_dao.jpg"
             },
             {
-              "name": "Shriabhay Shriharsha",
-              "role": "Team Member",
-              "department": "Mechatronics Engineering",
-              "image": "/images/teams_page/Materials/shriabhay_shriharsha.jpg"
-            },
-            {
               "name": "Sasun Karunaratne",
               "role": "Team Member",
               "department": "",
               "image": "/images/teams_page/Materials/sasun_karunaratne.jpg"
+            },
+            {
+              "name": "Shriabhay Shriharsha",
+              "role": "Team Member",
+              "department": "Mechatronics Engineering",
+              "image": "/images/teams_page/Materials/shriabhay_shriharsha.jpg"
             }
           ]
     },
@@ -317,70 +317,16 @@
           "image": "/images/teams_page/Ops/ahmed_zahid.jpg"
         },
         {
-          "name": "Valerie Tang",
-          "role": "Team Member",
-          "department": "Science and Information Technology",
-          "image": "/images/teams_page/Ops/valerie_tang.jpg"
-        },
-        {
-          "name": "Sai Ashish Ramishetty",
-          "role": "Team Member",
-          "department": "Software Engineering",
-          "image": "/images/teams_page/Ops/sai_ramishetty.jpg"
-        },
-        {
-          "name": "Vicky Huang",
-          "role": "Team Member",
-          "department": "Software Engineering and Computer Science",
-          "image": "/images/teams_page/Ops/vicky_huang.jpg"
-        },
-        {
-          "name": "Prince (Jeremy) Mendel-Idowu",
-          "role": "Team Member",
-          "department": "Unknown",
-          "image": "/images/teams_page/Ops/prince_mendel-idowu.jpg"
-        },
-        {
           "name": "Alvin Fung",
           "role": "Team Member",
-          "department": "Mechanical Engineering and Art",
+          "department": "Software Engineering and Science",
           "image": "/images/teams_page/Ops/alvin_fung.jpg"
         },
         {
-          "name": "Naailah Taqui Hasan",
-          "role": "Team Member",
-          "department": "Engineering",
-          "image": "/images/teams_page/Ops/naailah_taqui_hasan.jpg"
-        },
-        {
-          "name": "James Robbs",
-          "role": "Team Member",
-          "department": "Engineering and Science",
-          "image": "/images/teams_page/Ops/james_robbs.jpg"
-        },
-        {
-          "name": "Nethara Athukorala",
-          "role": "Team Member",
-          "department": "Software Engineering",
-          "image": "/images/teams_page/Ops/nethara_athukorala.jpg"
-        },
-        {
-          "name": "Emma Lim",
-          "role": "Team Member",
-          "department": "Biomedical Engineering",
-          "image": "/images/teams_page/Ops/lim_xin_hui.jpg"
-        },
-        {
-          "name": "Maureen Pham",
-          "role": "Team Member",
-          "department": "",
-          "image": "/images/teams_page/Ops/maureen_pham.jpg"
-        },
-        {
-          "name": "Peter Kwok",
-          "role": "Team Member",
-          "department": "",
-          "image": "/images/teams_page/Ops/peter_kwok.jpg"
+          "name": "Amy Tjea",
+          "role": "Website Lead",
+          "department": "Software Engineering and Computer Science",
+          "image": "/images/teams_page/Ops/amy_tjea.jpg"
         },
         {
           "name": "Choong (Connor) Ming Xuan",
@@ -389,16 +335,64 @@
           "image": "/images/teams_page/Ops/choong_ming_xuan.jpg"
         },
         {
+          "name": "Emma Lim",
+          "role": "Team Member",
+          "department": "Biomedical Engineering",
+          "image": "/images/teams_page/Ops/lim_xin_hui.jpg"
+        },
+        {
           "name": "Hoor E Jannat Urboshi",
           "role": "Team Member",
           "department": "",
           "image": "/images/teams_page/Ops/hoor_e_jannat_urboshi.jpg"
         },
         {
+          "name": "James Robbs",
+          "role": "Team Member",
+          "department": "Engineering and Science",
+          "image": "/images/teams_page/Ops/james_robbs.jpg"
+        },
+        {
           "name": "Keith Andre Abraham",
           "role": "Team Member",
           "department": "",
           "image": "/images/teams_page/Ops/keith_andre_abraham.jpg"
+        },
+        {
+          "name": "Naailah Taqui Hasan",
+          "role": "Team Member",
+          "department": "Engineering",
+          "image": "/images/teams_page/Ops/naailah_taqui_hasan.jpg"
+        },
+        {
+          "name": "Nethara Athukorala",
+          "role": "Team Member",
+          "department": "Software Engineering",
+          "image": "/images/teams_page/Ops/nethara_athukorala.jpg"
+        },
+        {
+          "name": "Peter Kwok",
+          "role": "Team Member",
+          "department": "",
+          "image": "/images/teams_page/Ops/peter_kwok.jpg"
+        },
+        {
+          "name": "Sai Ashish Ramishetty",
+          "role": "Team Member",
+          "department": "Software Engineering",
+          "image": "/images/teams_page/Ops/sai_ramishetty.jpg"
+        },
+        {
+          "name": "Valerie Tang",
+          "role": "Team Member",
+          "department": "Science and Information Technology",
+          "image": "/images/teams_page/Ops/valerie_tang.jpg"
+        },
+        {
+          "name": "Vicky Huang",
+          "role": "Team Member",
+          "department": "Software Engineering and Computer Science",
+          "image": "/images/teams_page/Ops/vicky_huang.jpg"
         }
       ]
     },
@@ -426,7 +420,8 @@
               "role": "Team Member",
               "department": "",
               "image": "/images/teams_page/Chassis/harvey_cook.jpg"
-            },{
+            },
+            {
               "name": "Marcel Randles",
               "role": "Team Member",
               "department": "",
@@ -437,27 +432,32 @@
               "role": "Team Member",
               "department": "Mechanical Engineering and Commerce",
               "image": "/images/teams_page/Chassis/martin_grozev.jpg"
-            },{
+            },
+            {
               "name": "Nicholas Johnson",
               "role": "Team Member",
               "department": "",
               "image": "/images/teams_page/Chassis/nicholas_johnson.jpg"
-            },{
+            },
+            {
               "name": "Ran Wei",
               "role": "Team Member",
               "department": "",
               "image": "/images/teams_page/Chassis/ran_wei.jpg"
-            },{
+            },
+            {
               "name": "Robert Glavan",
               "role": "Team Member",
               "department": "Engineering",
               "image": "/images/teams_page/Chassis/robert_glavan.jpg"
-            },{
+            },
+            {
               "name": "Vinura Abeygunawardhane",
               "role": "Team Member",
               "department": "Mechatronics Engineering",
               "image": "/images/teams_page/Chassis/vinura_abeygunavardhane.jpg"
-            },{
+            },
+            {
               "name": "Xuan Nguyen",
               "role": "Team Member",
               "department": "Engineering and Biomedical Science",
@@ -470,27 +470,29 @@
       "image": "/images/teams_page/chris-clarisse-spray-paint.jpg",
       "Team_Leads": [
         {
+          "name": "Arnav Acharekar",
+          "role": "Finance Manager",
+          "department": "Electrical Engineering",
+          "image": "/images/teams_page/Auxil/arnav_acharekar.jpg"
+        },
+        {
+          "name": "James Di Nicolantonio",
+          "role": "Systems Engineer",
+          "department": "",
+          "image": "/images/teams_page/Aero/james_di_nicolantonio.jpg"
+        },
+        {
           "name": "Ngoc Thao Vy Nguyen",
           "role": "HR Manager",
           "department": "Engineering",
           "image": "/images/teams_page/Electrical/ngoc_thao_vy_nguyen.jpg"
         },
-          {
-            "name": "Arnav Acharekar",
-            "role": "Finance Manager",
-            "department": "Electrical Engineering",
-            "image": "/images/teams_page/Auxil/arnav_acharekar.jpg"
-          },{
-            "name": "Prince (Jeremy) Mendel-Idowu",
-            "role": "Safety Manager",
-            "department": "",
-            "image": "/images/teams_page/Ops/prince_mendel-idowu.jpg"
-          },{
-            "name": "James Di Nicolantonio",
-            "role": "Systems Engineer",
-            "department": "",
-            "image": "/images/teams_page/Aero/james_di_nicolantonio.jpg"
-          }
+        {
+          "name": "Prince (Jeremy) Mendel-Idowu",
+          "role": "Safety Manager",
+          "department": "",
+          "image": "/images/teams_page/Electrical/prince_mendel-idowu.jpg"
+        }
         ]
     }
   ]
