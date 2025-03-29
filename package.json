@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "export": "npm run build && next export",
     "lint": "next lint"
   },
   "dependencies": {
@@ -16,6 +17,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@next/third-parties": "^15.1.6",
+    "decap-cms-app": "^3.6.2",
     "next": "^14.2.13",
     "react": "^18",
     "react-dom": "^18"

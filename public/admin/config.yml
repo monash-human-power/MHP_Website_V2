@@ -1,0 +1,29 @@
+backend:
+  name: test-repo
+  branch: main
+
+# local_backend: true
+
+# publish_mode: editorial_workflow
+
+# editor:
+#   preview: false
+
+display_url: https://monashhumanpower.org 
+
+media_folder: "public/images" # Store media in the repo
+public_folder: "/images"      # Public path for images
+
+collections:
+  - name: "sponsors"
+    label: "Sponsors"
+    files:
+      - file: "sponsors/AARC.md"  # Change to a Markdown file
+        label: "AARC"
+        name: "aarc"
+        fields:
+          - label: "AARC Logo"
+            name: "image"
+            widget: "image"
+            default: "/images/home_page/sponsorsAARC.jpg" # Ensure the file is inside `public/images`
+            choose_url: false
