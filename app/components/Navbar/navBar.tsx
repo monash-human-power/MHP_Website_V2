@@ -85,7 +85,7 @@ const Navbar = () => {
   return (
     <>
     <header className="sticky top-0 z-20">
-      <nav className="relative w-full bg-black text-white font-Aldrich xl:text-xl lg:text-l z-1">
+      <nav className="relative w-full shadow-2xl bg-black text-white font-Aldrich xl:text-xl lg:text-l z-1">
         {/* Mobile Navbar */}
         <div className=" lg:hidden py-5 flex justify-between items-center">
           {/* Image */}
@@ -93,7 +93,7 @@ const Navbar = () => {
           <div className="justify-center items-center">
             <a href="/">
               <Image
-                src="/images/logo.png"
+                src="/images/mobile_logo.png"
                 alt="Logo"
                 width={80}
                 height={50}
@@ -207,6 +207,7 @@ const Navbar = () => {
                 key={index}
                 name={item.name}
                 hrefString={item.href}
+                onClick={handleOpen}
               />
             ))}
           </div>
@@ -233,6 +234,7 @@ const Navbar = () => {
                 key={index}
                 name={item.name}
                 hrefString={item.href}
+                onClick={handleOpen}
               />
             ))}
           </div>
@@ -259,6 +261,8 @@ const Navbar = () => {
                 key={index}
                 name={item.name}
                 hrefString={item.href}
+                onClick={handleOpen}
+
               />
             ))}
           </div>
