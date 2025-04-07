@@ -14,7 +14,7 @@ module.exports = {
         stroke: "#36434E",
         purple: "#381fff",
         white: "#FFFFFF",
-        black: "#121010",
+        black: "#141212", 
         gray: "#C0BFBD",
         green: "#ACF601",
         divborder:"#5e5b5b"
