@@ -49,7 +49,9 @@ const ImageCarousel = () => {
             key={index}
             type="button"
             className={`w-3 h-3 rounded-full ${
-              index === currentIndex ? "bg-white" : "bg-gray-400"
+              index === currentIndex
+                ? "bg-white"
+                : "bg-gray-300 border border-white"
             }`}
             aria-current={index === currentIndex}
             aria-label={`Slide ${index + 1}`}
