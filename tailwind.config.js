@@ -14,10 +14,7 @@ module.exports = {
         stroke: "#36434E",
         purple: "#381fff",
         white: "#FFFFFF",
-        black: "#242121",
-        navbarbg: "#09090A",
-        searchbarbg: "#1F1F22",
-        lightgray: "#EFEFEF",
+        black: "#121010",
         gray: "#C0BFBD",
         green: "#ACF601",
         divborder:"#5e5b5b"

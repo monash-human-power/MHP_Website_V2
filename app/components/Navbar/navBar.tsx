@@ -73,13 +73,14 @@ const Navbar = () => {
     }
   };
 
-  const handleItemClick = (item: MobileNavItemsProps) => {
-    if (item.name === "Teams") {
-      setTeamMenu(true);
-    } else if (item.name === "Competitions") {
-      setCompMenu(true);
-    }
-  };
+  // Old code for drop down menus
+  // const handleItemClick = (item: MobileNavItemsProps) => {
+  //   if (item.name === "Teams") {
+  //     setTeamMenu(true);
+  //   } else if (item.name === "Competitions") {
+  //     setCompMenu(true);
+  //   }
+  // };
 
   return (
     <>
@@ -92,9 +93,9 @@ const Navbar = () => {
           <div className="justify-center items-center">
             <a href="/">
               <Image
-                src="/images/mobile_logo.png"
+                src="/images/logo.png"
                 alt="Logo"
-                width={100}
+                width={80}
                 height={50}
               />
             </a>
