@@ -48,7 +48,7 @@ export default function Page() {
             Bikes | MHP
         </title>
         <div className="scroll-smooth">
-            <PageSection colourWay="dark">
+            <PageSection >
                 <section className="relative text-center">
                     <div className="relative z-10">
                         <h1 className="text-5xl sm:text-3xl md:text-5xl ">Our Bikes</h1>

@@ -41,7 +41,7 @@ const BikeSection = ({bike} : BikeSectionProps) => {
             margin: "0 auto",
             textAlign: "center",}}></div>
             <div className="py-4 bg-black"></div>
-            <PageSection colourWay="dark">
+            <PageSection >
                 <section className="relative text-center">
                     <div className="relative z-10">
                         <h1 className="text-5xl text-center font-bold">{bike.toUpperCase()}</h1>

@@ -61,7 +61,7 @@ export default function TeamPage() {
       <title>
         Teams | MHP
       </title>
-      <PageSection colourWay="dark">
+      <PageSection >
         <section className="relative text-center ">
           <div className="relative z-10">
             <h1 className="text-center text-5xl">Meet our Team</h1>
@@ -91,7 +91,7 @@ export default function TeamPage() {
       </PageSection>
 
       {/* Sub-teams navigation */}
-      <PageSection colourWay="dark">
+      <PageSection >
         <div
           className="p-4"
           style={{
@@ -156,7 +156,7 @@ export default function TeamPage() {
       </PageSection>
 
       {/* Team Leads and Members Section */}
-      <PageSection colourWay="dark">
+      <PageSection >
         <section
           className={`${fadeClass} bg-[url('/images/teams_page/teams_background.png')]  bg-top bg-no-repeat`}
         >

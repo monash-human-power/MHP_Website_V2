@@ -38,7 +38,7 @@ export default function Outreach() {
         Outreach | MHP
       </title>
       {/* Our Vision Section */}
-      <PageSection colourWay="dark">
+      <PageSection >
         <div>
           <h1 className="text-center text-5xl">Outreach</h1>
           <div
@@ -98,7 +98,7 @@ export default function Outreach() {
       </section>
 
       {/* Our Programs section */}
-      <PageSection colourWay="dark">
+      <PageSection >
         <div
           style={{
             paddingTop: "40px",
@@ -187,7 +187,7 @@ export default function Outreach() {
       </section>
 
       {/* Testimonials Section */}
-      <PageSection colourWay="dark">
+      <PageSection >
         <div>
           <h2 className="text-center text-3xl font-Sensation underline decoration-green decoration-4">
             Testimonials
@@ -276,7 +276,7 @@ export default function Outreach() {
       </section>
 
       {/* Find Out More Section */}
-      <PageSection colourWay="dark">
+      <PageSection >
         <div
           style={{
             // borderTop: "2px solid #B3B3B3", // Top border

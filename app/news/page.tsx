@@ -44,7 +44,7 @@ export default function News() {
 
   return (
     <>
-      <PageSection colourWay="dark">
+      <PageSection >
         <h1 className="font-Aldrich text-5xl text-center mb-12 drop-shadow-lg ">
           News
         </h1>

@@ -22,7 +22,7 @@ export default function Join() {
       </section>
 
       {/* Join Us section */}
-      <PageSection colourWay="dark">
+      <PageSection >
         <div className="text-center">
           <h1 className="text-center text-5xl">
             Join Us
@@ -66,7 +66,7 @@ export default function Join() {
       </PageSection>
 
       {/* Rider Development section */}
-      <PageSection colourWay="dark">
+      <PageSection >
         <div
           style={{
             borderTop: "2px solid #5e5b5b", // Top border
@@ -183,7 +183,7 @@ export default function Join() {
       </PageSection>
 
       {/* Aerodynamics section */}
-      <PageSection colourWay="dark">
+      <PageSection >
         <div
           style={{
             borderTop: "2px solid #5e5b5b", // Top border
@@ -296,7 +296,7 @@ export default function Join() {
       </PageSection>
 
       {/* Chassis and Drivetrain section */}
-      <PageSection colourWay="dark">
+      <PageSection >
         <div
           style={{
             borderTop: "2px solid #5e5b5b", // Top border
@@ -410,7 +410,7 @@ export default function Join() {
       </PageSection>
 
       {/* Operations section */}
-      <PageSection colourWay="dark">
+      <PageSection >
         <div
           style={{
             borderTop: "2px solid #5e5b5b", // Top border
@@ -527,7 +527,7 @@ export default function Join() {
       </PageSection>
 
       {/* Electrical section */}
-      <PageSection colourWay="dark">
+      <PageSection >
         <div
           style={{
             borderTop: "2px solid #5e5b5b", // Top border
@@ -644,7 +644,7 @@ export default function Join() {
       </PageSection>
 
       {/* Materials section */}
-      <PageSection colourWay="dark">
+      <PageSection >
         <div
           style={{
             borderTop: "2px solid #5e5b5b", // Top border

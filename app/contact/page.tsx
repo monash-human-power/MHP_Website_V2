@@ -11,7 +11,7 @@ export default function contact() {
         Contact Us | MHP
       </title>
       
-      <PageSection colourWay="dark">
+      <PageSection >
         <div className="flex flex-wrap justify-center items-center mt-5">
           <h1>Contact Us</h1>
         </div>

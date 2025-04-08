@@ -16,7 +16,7 @@ export default function Page() {
   return (
     <>
       <div className="px-5">
-        <PageSection colourWay="dark">
+        <PageSection >
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <h1 className="text-center sm:text-left text-2xl sm:text-4xl">
@@ -58,7 +58,7 @@ export default function Page() {
 
         <ImageCarousel images={images}></ImageCarousel>
 
-        <PageSection colourWay="dark">
+        <PageSection >
           <h2 className="font-Aldrich underline  decoration-green decoration-4">
             Our Mission
           </h2>
@@ -68,7 +68,7 @@ export default function Page() {
             record in Australia (currently 96.7km/h) having ridden at faster
             speeds during the 2023 World Human Powered Speed Challenge, an
             international competition in the U.S. which we plan to return to in
-            2025. 
+            2025.
             <br />
             <br />
             With support from Monash University and the Engineering
@@ -86,71 +86,98 @@ export default function Page() {
           />
         </PageSection>
 
-        <PageSection colourWay="dark">
+
+
+        <PageSection  hasDivider={true}>
+          
+          <h2             
+ className="font-Aldrich underline  decoration-green decoration-4">
+            Join the Ride, Make a Difference!
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+            <div className="flex flex-col justify-start items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5 h-full">
+              <h2 className="text-xl font-semibold text-center p-3 sm:mb-0">
+                KMs ridden
+              </h2>
+            </div>
+            <div style={{
+              borderLeft: "2px dotted #5e5b5b", // Top border
+              borderRight: "2px dotted #5e5b5b", // Bottom border
+            }} className="flex flex-col justify-start items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5 h-full">
+              <h2 className="text-xl font-semibold text-center p-3 sm:mb-0">
+                we are partneing with
+              </h2>
+            </div>
+            <div className="flex flex-col justify-start items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5 h-full">
+              <h2 className="text-xl font-semibold text-center p-3 sm:mb-0">
+                KMs ridden
+              </h2>
+            </div>
+          </div>
+
+          <p className="my-2">
+
+            Help us make an impact by donating or riding a bike!
+            All proceeds will be shared between Monash Human Power and Greenfleet.
+            Greenfleet is a not-for-profit environmental organisation dedicated to combating climate change by planting trees and restoring forests across Australia and New Zealand. Your support will help us create a greener, more sustainable future.
+          </p>
+          <Button
+            hrefString="/bikes"
+            text="Donate"
+            theme="dark"
+            target=""
+          />
+        </PageSection>
+        <PageSection  hasDivider={true}>
           <div
             className="py-2"
-            style={{
-              borderTop: "2px solid #5e5b5b", // Top border
-              width: "100%",
-              margin: "0 auto",
-              textAlign: "center",
-              paddingTop: "20px"
-            }}
+
           >
             <h2 className="text-center font-Aldrich underline decoration-green decoration-4 ">
               Our Values
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-  <div className="flex flex-col justify-start items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5 h-full">
-    <h2 className="text-xl font-semibold text-center p-3 sm:mb-0">
-      Community
-    </h2>
-    <p className="my-4 max-w-prose text-center">
-      We foster meaningful relationships.
-      <br />We celebrate each other.
-      <br />We promote education and collaboration with the HPV community.
-    </p>
-  </div>
-  <div className="flex flex-col justify-start items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5 h-full">
-    <h2 className="text-xl font-semibold text-center p-3 sm:mb-0">
-      Curiosity
-    </h2>
-    <p className="my-4 max-w-prose text-center">
-      We encourage innovation.
-      <br />We ask questions.
-      <br />We push the bounds of what is thought possible.
-    </p>
-  </div>
-  <div className="flex flex-col justify-start items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5 h-full">
-    <h2 className="text-xl font-semibold text-center p-3 sm:mb-0">
-      Class
-    </h2>
-    <p className="my-4 max-w-prose text-center">
-      We take pride in our work.
-      <br />We deliver exceptional results.
-      <br />We never compromise safety.
-    </p>
-  </div>
-</div>
+              <div className="flex flex-col justify-start items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5 h-full">
+                <h2 className="text-xl font-semibold text-center p-3 sm:mb-0">
+                  Community
+                </h2>
+                <p className="my-4 max-w-prose text-center">
+                  We foster meaningful relationships.
+                  <br />We celebrate each other.
+                  <br />We promote education and collaboration with the HPV community.
+                </p>
+              </div>
+              <div className="flex flex-col justify-start items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5 h-full">
+                <h2 className="text-xl font-semibold text-center p-3 sm:mb-0">
+                  Curiosity
+                </h2>
+                <p className="my-4 max-w-prose text-center">
+                  We encourage innovation.
+                  <br />We ask questions.
+                  <br />We push the bounds of what is thought possible.
+                </p>
+              </div>
+              <div className="flex flex-col justify-start items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5 h-full">
+                <h2 className="text-xl font-semibold text-center p-3 sm:mb-0">
+                  Class
+                </h2>
+                <p className="my-4 max-w-prose text-center">
+                  We take pride in our work.
+                  <br />We deliver exceptional results.
+                  <br />We never compromise safety.
+                </p>
+              </div>
+            </div>
 
 
 
           </div>
         </PageSection>
-
-        <PageSection colourWay="dark">
+        <PageSection  hasDivider={true}>
           <div
             className="py-2"
-            style={{
-              borderTop: "2px solid #5e5b5b", // Top border
-              borderBottom: "2px solid #5e5b5b", // Bottom border
-              width: "100%",
-              margin: "0 auto",
-              textAlign: "center",
-              paddingTop: "20px",
-              paddingBottom: "20px",
-            }}
+
           >
             <h2 className="text-center font-Aldrich underline decoration-green decoration-4 ">
               Our Sponsors

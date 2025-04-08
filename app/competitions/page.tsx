@@ -23,7 +23,7 @@ export default function Competitions() {
       <div className="font-Aldrich bg-black text-white  px-15">
         <h4 className="text-center text-5xl ">Competitions</h4>
 
-        <PageSection colourWay="dark">
+        <PageSection >
           <div className="">
             {/* Header Section */}
             <h2 className="text-center">
@@ -38,7 +38,7 @@ export default function Competitions() {
           </div>
         </PageSection>
 
-        <PageSection colourWay="dark">
+        <PageSection >
           {/* World Human Powered Speed Challenge Section */}
           <div className="mt-20">
             <div
@@ -82,7 +82,7 @@ export default function Competitions() {
           </div>
         </PageSection>
         {/* Vic HPV Grand Prix Series */}
-        <PageSection colourWay="dark">
+        <PageSection >
           <div className="mt-20 mb-5">
             <div
               className="p-4"
@@ -136,7 +136,7 @@ export default function Competitions() {
         </PageSection>
 
         {/* OzHPV Speed Trials Section */}
-        <PageSection colourWay="dark">
+        <PageSection >
           <div>
             <h1 className="text-center text-[#acf601] mb-5">
               OzHPV Speed Trials
