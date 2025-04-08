@@ -73,18 +73,19 @@ const Navbar = () => {
     }
   };
 
-  const handleItemClick = (item: MobileNavItemsProps) => {
-    if (item.name === "Teams") {
-      setTeamMenu(true);
-    } else if (item.name === "Competitions") {
-      setCompMenu(true);
-    }
-  };
+  // Old code for drop down menus
+  // const handleItemClick = (item: MobileNavItemsProps) => {
+  //   if (item.name === "Teams") {
+  //     setTeamMenu(true);
+  //   } else if (item.name === "Competitions") {
+  //     setCompMenu(true);
+  //   }
+  // };
 
   return (
     <>
     <header className="sticky top-0 z-20">
-      <nav className="relative w-full bg-black text-white font-Aldrich xl:text-xl lg:text-l z-1">
+      <nav className="relative w-full shadow-2xl bg-black text-white font-Aldrich xl:text-xl lg:text-l z-1">
         {/* Mobile Navbar */}
         <div className=" lg:hidden py-5 flex justify-between items-center">
           {/* Image */}
@@ -94,7 +95,7 @@ const Navbar = () => {
               <Image
                 src="/images/mobile_logo.png"
                 alt="Logo"
-                width={100}
+                width={80}
                 height={50}
               />
             </a>
@@ -206,6 +207,7 @@ const Navbar = () => {
                 key={index}
                 name={item.name}
                 hrefString={item.href}
+                onClick={handleOpen}
               />
             ))}
           </div>
@@ -232,6 +234,7 @@ const Navbar = () => {
                 key={index}
                 name={item.name}
                 hrefString={item.href}
+                onClick={handleOpen}
               />
             ))}
           </div>
@@ -258,6 +261,8 @@ const Navbar = () => {
                 key={index}
                 name={item.name}
                 hrefString={item.href}
+                onClick={handleOpen}
+
               />
             ))}
           </div>
