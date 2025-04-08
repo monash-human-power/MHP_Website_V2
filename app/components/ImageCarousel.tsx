@@ -10,7 +10,7 @@ const images = [
   "/images/home_page/v3.png",
 ];
 
-const ImageCarousel = () => {
+const ImageCarousel = ({images}:{images:string[]}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
