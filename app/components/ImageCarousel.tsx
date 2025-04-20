@@ -6,7 +6,7 @@ interface ImageCarouselProps {
   images: string[];
 }
 
-const ImageCarousel = ({ images }: ImageCarouselProps) => {
+const ImageCarousel = ({images}:{images:string[]}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
