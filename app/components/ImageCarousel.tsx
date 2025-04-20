@@ -2,15 +2,11 @@
 
 import React, { useState, useEffect } from "react";
 
-const images = [
-  "/images/home_page/battle_mountain_group.jpg",
-  "/images/home_page/mhp_group.jpg",
-  "/images/home_page/o_week_group.jpg",
-  "/images/home_page/trike_race.jpg",
-  "/images/home_page/v3.png",
-];
+interface ImageCarouselProps {
+  images: string[];
+}
 
-const ImageCarousel = () => {
+const ImageCarousel = ({ images }: ImageCarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -24,9 +20,9 @@ const ImageCarousel = () => {
   };
 
   useEffect(() => {
-    const interval = setInterval(nextSlide, 4000);
+    const interval = setInterval(nextSlide, 3000);
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]);
 
   return (
     <div className="relative w-full">
