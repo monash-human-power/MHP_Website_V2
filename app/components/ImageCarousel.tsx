@@ -1,63 +1,104 @@
 "use client";
 
-import React from "react";
-import { useState, useEffect } from "react";
-import Image from "next/image";
-import { GoogleAnalytics } from '@next/third-parties/google';
+import React, { useState, useEffect } from "react";
 
-// Set types of props
 interface ImageCarouselProps {
   images: string[];
 }
 
-export default function ImageCarousel({ images }: ImageCarouselProps) {
-  // Stores the index of the image that is currently visible
-  const [currentImage, setCurrentImage] = useState(0);
+const ImageCarousel = ({images}:{images:string[]}) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Automatically go to the next image every 3 seconds
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
+
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImage((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000);
-
+    const interval = setInterval(nextSlide, 3000);
     return () => clearInterval(interval);
   }, [images.length]);
 
-  // When the button is clicked, the image index is updated
-  function handleClick(index: number) {
-    setCurrentImage(index);
-  }
-
   return (
-    <>
-    <div className="relative w-full h-96 overflow-hidden mb-5">
-      <div
-        className="flex transition-transform duration-500"
-        style={{ transform: `translateX(-${currentImage * 100}%)` }}
-      >
+    <div className="relative w-full">
+      <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
         {images.map((image, index) => (
-          <div key={index} className="relative w-full h-96 flex-shrink-0">
-            <Image
-              src={image}
-              alt={`Image ${index + 1}`}
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
+          <img
+            key={index}
+            src={image}
+            className={`absolute w-full h-full object-cover transition-opacity duration-700 ease-in-out ${
+              index === currentIndex ? "opacity-100" : "opacity-0"
+            }`}
+            alt={`Slide ${index + 1}`}
+          />
         ))}
       </div>
-      <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-2">
+
+      <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3">
         {images.map((_, index) => (
           <button
             key={index}
+            type="button"
             className={`w-3 h-3 rounded-full ${
-              index === currentImage ? "bg-black" : "bg-white opacity-50"
-            } focus:outline-none`}
-            onClick={() => handleClick(index)}
+              index === currentIndex
+                ? "bg-white"
+                : "bg-gray-300 border border-white"
+            }`}
+            aria-current={index === currentIndex}
+            aria-label={`Slide ${index + 1}`}
+            onClick={() => setCurrentIndex(index)}
           ></button>
         ))}
       </div>
+
+      <button
+        type="button"
+        className="absolute top-1/2 left-5 z-30 flex items-center justify-center w-12 h-12 -translate-y-1/2 cursor-pointer group focus:outline-none bg-black/30 hover:bg-black/50 rounded-full"
+        onClick={prevSlide}
+      >
+        <svg
+          className="w-6 h-6 text-white"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 6 10"
+        >
+          <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M5 1 1 5l4 4"
+          />
+        </svg>
+      </button>
+
+      <button
+        type="button"
+        className="absolute top-1/2 right-5 z-30 flex items-center justify-center w-12 h-12 -translate-y-1/2 cursor-pointer group focus:outline-none bg-black/30 hover:bg-black/50 rounded-full"
+        onClick={nextSlide}
+      >
+        <svg
+          className="w-6 h-6 text-white"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 6 10"
+        >
+          <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="m1 9 4-4-4-4"
+          />
+        </svg>
+      </button>
     </div>
-    </>
   );
-}
+};
+
+export default ImageCarousel;
