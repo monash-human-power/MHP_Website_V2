@@ -3,6 +3,7 @@ import { useRef, useState } from "react";
 import Image from "next/image";
 import PageSection from "../components/PageSection";
 import teamData from "../../public/JSONs/teams.json"; // Importing the JSON file
+import teamDescriptionData from "../../public/JSONs/teamsDescription.json"
 import SamePageNavBar from "../components/SamePageNavigation/SamePageNavBar";
 import TeamSection from "../components/TeamSection";
 
@@ -125,7 +126,7 @@ export default function TeamPage() {
         {/* Inserting sub navbar */}
         <section>
             {/* For each vehicle, add a TeamSection component */}
-            {Object.keys(teamData).map(teamName => (
+            {Object.keys(teamDescriptionData).map(teamName => (
                 <div key={teamName} id={teamName}>
                     <TeamSection key={teamName} team={teamName}></TeamSection>
                 </div>
