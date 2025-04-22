@@ -1,8 +1,10 @@
 "use client";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Image from "next/image";
 import PageSection from "../components/PageSection";
 import teamData from "../../public/JSONs/teams.json"; // Importing the JSON file
+import SamePageNavBar from "../components/SamePageNavigation/SamePageNavBar";
+import TeamSection from "../components/TeamSection";
 
 export default function TeamPage() {
   const [currentTeamIndex, setCurrentTeamIndex] = useState(0);
@@ -118,6 +120,16 @@ export default function TeamPage() {
           >
             &rarr;
           </button>
+        </section>
+        
+        {/* Inserting sub navbar */}
+        <section>
+            {/* For each vehicle, add a TeamSection component */}
+            {Object.keys(teamData).map(teamName => (
+                <div key={teamName} id={teamName}>
+                    <TeamSection key={teamName} team={teamName}></TeamSection>
+                </div>
+            ))}
         </section>
 
         {/* Dynamic Team Section */}
