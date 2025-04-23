@@ -4,39 +4,29 @@ import { useState } from "react";
 import PageSection from "./PageSection";
 import SubNavBar from "./SamePageNavigation/SubNavBar";
 import TeamContent from "./TeamContent";
-import teamDataJson from "../../public/JSONs/teamsDescription.json";  // Importing the JSON file
+import teamDataJson from "../../public/JSONs/teams.json";  // Importing the JSON file
+import React from "react";
 
-interface TeamSectionPage {
-  team: string;
+interface TeamSection {
+    team: any;
 }
 
-interface Team {
-    description: string;
-    responsibilities: string;
-    image: string;
-}
-
-type TeamData = Record<string, Team>; // map of team name to team data
-
-const TeamSection = ({ team }: TeamSectionPage) => {
-    const teamData: TeamData = teamDataJson;
+const TeamSection: React.FC<TeamSection> = ({team}) => {
     let sections = ["Overview", "Responsibilities"];
 
     // track the active section
     const [activeSection, setActiveSection] = useState(sections[0]);
+    
 
     return (
         <>
-        <div className=""></div>
             <SubNavBar
             sections={sections}
             activeSection={activeSection}
             setActiveSection={setActiveSection}
             ></SubNavBar>
 
-            <TeamContent activeTab={activeSection} teamData={teamData} team={team}>
-            </TeamContent>
-
+            <TeamContent activeTab={activeSection} team={team}></TeamContent>
         </>
     );
 };

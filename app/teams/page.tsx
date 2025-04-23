@@ -125,12 +125,12 @@ export default function TeamPage() {
         
         {/* Inserting sub navbar */}
         <section>
-            {/* For each vehicle, add a TeamSection component */}
-            {Object.keys(teamDescriptionData).map(teamName => (
-                <div key={teamName} id={teamName}>
-                    <TeamSection key={teamName} team={teamName}></TeamSection>
-                </div>
-            ))}
+          <TeamSection team={currentTeam}>
+
+          </TeamSection>
+
+          {/* <h2 className="font-extralight">{currentTeam.responsibilities}</h2> */}
+
         </section>
 
         {/* Dynamic Team Section */}
