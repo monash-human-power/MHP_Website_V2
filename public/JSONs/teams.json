@@ -29,7 +29,9 @@
     {
       "name": "Rider Development",
       "description": "The Rider Development team is dedicated to enhancing rider performance. This team, which includes both riders and technical experts, designs and manages cycling and strength training programs, as well as creating personalized power plans for each rider. Additionally this team tests the changes and developments from the other teams, providing vital feedback to the various technical sub teams to improve integration. Through optimising our riders strength and endurance, they help support the human power in our human powered vehicles . ",
-      "responsibilities": "Collaborate with riders to enhance performance through movement analysis, customised training, and technique optimisation. Plan and execute high-speed events and velodrome sessions, including researching new event opportunities and managing engagement. Develop and implement racing strategies by analysing data, track conditions, and conducting post-race evaluations for continuous improvement.",
+      "responsibilities": [
+        "Collaborate with riders to enhance performance through movement analysis, customised training, and technique optimisation.",
+        "Plan and execute high-speed events and velodrome sessions, including researching new event opportunities and managing engagement."],
       "image": "/images/teams_page/rider.jpg",
       "Team_Leads": [
           {

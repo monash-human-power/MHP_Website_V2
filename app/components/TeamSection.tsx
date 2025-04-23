@@ -1,10 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import PageSection from "./PageSection";
 import SubNavBar from "./SamePageNavigation/SubNavBar";
 import TeamContent from "./TeamContent";
-import teamDataJson from "../../public/JSONs/teams.json";  // Importing the JSON file
 import React from "react";
 
 interface TeamSection {
