@@ -121,12 +121,10 @@ export default function TeamPage() {
           </button>
         </section>
         
-        {/* Inserting sub navbar */}
+        {/* Inserting team description */}
         <section>
           <TeamSection team={currentTeam}>
-
           </TeamSection>
-
         </section>
 
       </PageSection>

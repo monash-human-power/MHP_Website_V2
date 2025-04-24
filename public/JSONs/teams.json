@@ -3,7 +3,10 @@
     {
       "name": "Management Team",
       "description": "Upper management, comprising the CEO, CTO, and COO, ensures the team’s strategic, technical, and operational success. The CEO handles long-term vision, budgeting, and representation, the CTO oversees technical development and collaboration, and the COO manages daily operations and team culture. Together, they drive cohesive direction and efficient execution across all aspects of the team.",
-      "responsibilities": ["Uppermanagement","resposnibilites"],
+      "responsibilities":
+        ["CEO: ", "Represent the team in university matters and forums, while maintaining a high-level understanding of all major activities across subteams.", "Drive long-term direction by shaping team vision, mission, and strategy in collaboration with the leadership team, including budgeting and timeline development.", "Oversee team performance through reviews and 1-on-1s, resolve internal and external disputes, and prepare materials for smooth leadership transition.",
+        "CTO:", "Maintain a cohesive vehicle design aligned with team goals by guiding critical decisions and ensuring system-wide collaboration across subteams.","Develop and manage technical timelines and budgets in alignment with the broader team strategy, ensuring milestones are met without straining manufacturing resources.","Foster technical excellence by promoting TAFE training and organizing workshops to upskill team members.",
+        "COO:", "Oversee daily team functions to ensure smooth and efficient operations aligned with strategic goals set by the CEO and CTO.", " Foster a strong, participatory team culture with high engagement and workshop involvement.", "Lead logistical preparation for major competitions and testing events, while preparing resources for seamless leadership transition."],
       "image": "/images/teams_page/upperman.jpg",
       "Team_Leads": [
           {
@@ -28,7 +31,7 @@
     },
     {
       "name": "Rider Development",
-      "description": "The Rider Development team is dedicated to enhancing rider performance. This team, which includes both riders and technical experts, designs and manages cycling and strength training programs, as well as creating personalized power plans for each rider. Additionally this team tests the changes and developments from the other teams, providing vital feedback to the various technical sub teams to improve integration. Through optimising our riders strength and endurance, they help support the human power in our human powered vehicles . ",
+      "description": "The Rider Development subteam focuses on maximising rider performance. Comprised of riders and technical members, they arrange cycling and strength training, develop personal power plans, and organise competency training for recumbent bikes. They also coordinate testing days at the Holden and Ford Proving Grounds.",
       "responsibilities": [
         "Collaborate with riders to enhance performance through movement analysis, customised training, and technique optimisation.",
         "Plan and execute high-speed events and velodrome sessions, including researching new event opportunities and managing engagement."],
@@ -70,8 +73,8 @@
     },
     {
       "name": "Electrical",
-      "description": "The Electrical team, comprising Software and Hardware divisions, manages the vehicle's electrical systems, including data collection and camera systems. They maintain the camera systems that allow the riders to see where they are going and display essential information including speed, power and target power on the bike’s internal screens. Additionally, they oversee data collection systems that help riders make informed race decisions and the rest of the team to optimise their designs and approaches. The team employs a range of skills and technologies, from programming microcontrollers and dashboards to embedded electronics and circuit board design and assembly.",
-      "responsibilities": ["electrical","responbsoenls"],
+      "description": "The Electrical subteam manages the bike&apos;s electrical and software systems, including the camera and data acquisition systems that enhance rider safety and performance. With no windows on the fairing, the rider relies on these systems to monitor surroundings. The setup includes Raspberry Pis, microcontrollers, and sensors, along with custom software for recording and analysing performance data from field tests.",
+      "responsibilities": ["Hardware Team:","Design, simulate, and document circuitry, including PCB manufacturing and programming microcontrollers like Raspberry Pi for sensor control.", "Software Team:", "Develop and maintain a React-powered web app and various Python projects, including physical modeling and data processing.", "Troubleshoot systems during testing and ensure thorough documentation of code, APIs, and pull requests."],
       "image": "/images/teams_page/electrical.png",
       "Team_Leads": [
         {
@@ -169,8 +172,8 @@
     },
     {
       "name": "Aerodynamics",
-      "description": "The Aerodynamics team are responsible for the design and testing of the aerodynamics of the bike, designing the faring of our bike, which is the external shell of the bike. The key purpose of the the fairing is to reduce drag on the bike,  maximising speed that our vehicles can reach. Through the use of computational fluid dynamics (CFD), parametric CAD, as well as practical validation/ testing in the Monash Wind Tunnel and in the field, the team creates aerodynamic faring designs which optimise our vehicles and rider performance.",
-      "responsibilities": ["aerofyncamics","reposnefj"],
+      "description": "The Aerodynamics subteam at MHP designs and tests aerodynamic components like the external shell and wheel covers to reduce drag and increase bike speed. They use computational fluid dynamics (CFD) and experimental testing in the Monash Wind Tunnel to make design choices that enhance bike performance.",
+      "responsibilities": ["Work with aerodynamics principles to enhance bike performance through testing, design, and manufacturing.","Gain hands-on experience using the Monash Wind Tunnel, CFD, and aerodynamic component testing.", "Create, test, and troubleshoot CAD models in NX and ANSYS Fluent, while upskilling other team members."],
       "image": "/images/teams_page/aero.jpg",
       "Team_Leads": [
         {
@@ -233,8 +236,8 @@
     },
     {
       "name": "Materials",
-      "description": "The Materials team prototypes and manufactures the fairing designed by the Aerodynamics team, optimising the quality of the fairing to ensure the aerodynamic performance of the bike and rider safety. They carry out extensive research to find the most viable methods and materials to produce the fairing. Currently, the fairing is fabricated using a resin infusion technique, which uses epoxy resin and carbon fibre. The Materials sub team uses power tools, applies surface finishing processes and creates composite components in order to produce the fairing.",
-      "responsibilities": ["materials","erpsons"],
+      "description": "The Materials subteam prototypes and manufactures the fairing, focusing on optimising its design for aerodynamics and rider safety. They research methods and materials, currently using a resin infusion technique with epoxy resin and carbon fiber. They also use power tools, surface finishing, and composite creation to produce the fairing.",
+      "responsibilities": ["Use finite element analysis (FEA) software to design and optimise composite components.","Manufacture the fairing and supplementary composite components, primarily working with carbon fiber.", "Spend time in the workshop creating and testing various composite parts."],
       "image": "/images/teams_page/materials_2.jpg",
       "Team_Leads": [
           {
@@ -301,7 +304,7 @@
     {
       "name": "Operations",
       "description": "The Operations team manages external relationships, including sponsor partnerships, while overseeing MHP’s marketing and event coordination. They lead initiatives like the \"Build a HPV\" school outreach program, aimed at promoting STEM education and sustainable transport. Alongside these efforts, the Operations team also provides essential support for the technical teams during bike production and is heavily involved in MHP's graphic design and branding, ensuring a cohesive and professional visual identity across all platforms.",
-      "responsibilities":["operations","blajsblajs"],
+      "responsibilities":["Sponsorship Team:", "Identify and manage sponsorships by researching potential sponsors, maintaining relationships, and negotiating agreenents.","Marketing Team:", "Produce and plan media content, including photoshoots and videos, to effectively communicate the brand message and align with company values.", "Events Team:", "Create, manage, and optimise engaging content across platforms and social media, including editing footage and developing design concepts to enhance brand presence."],
       "image": "/images/teams_page/operations_team.png",
       "Team_Leads": [
         {
@@ -406,8 +409,8 @@
     },
     {
       "name": "Chassis & Drivetrain",
-      "description": "The Chassis & Drive-train team handles the design and production of all mechanical components, including the structural frame (chassis) and moving parts of the vehicle. Using CAD software for modelling, FEA simulation and hand calculations to verify the system's under load, the team ensures durability when breaking records. The team uses manufacturing techniques and practices such as welding and fabrication, along side manual and CNC operated machining to create the bulk of the bike's mechanisms. The team is dedicated to pushing the boundaries of efficiency and performance to get the most out of the the bike and the rider. Without the Chassis & Drive-train team, Monash Human Power cannot move forward.",
-      "responsibilities": ["chasis dt","reponsjsn","kjnedkw"],
+      "description": "The Chassis & Drivetrain subteam designs and manufactures all mechanical components, including the chassis and moving parts. They model components using CAD software and verify their strength through FEA testing or hand calculations. The team uses Monash University resources for manufacturing, employing techniques like welding, grinding, drilling, and turning.",
+      "responsibilities": ["Design and test the vehicle chassis, focusing on space-frame structures with potential future use of composite materials.","Develop strong CAD skills and deep understanding of chassis engineering principles.","Optimise and integrate drivetrain components, leveraging cycling knowledge and collaborating with component engineers."],
       "image": "/images/teams_page/chassis_drivetrain.jpg",
       "Team_Leads": [
           {
@@ -476,7 +479,7 @@
     },{
       "name": "Auxiliary",
       "description": "The Auxiliary Team at Monash Human Power is the backbone that supports the project’s non-engineering aspects, enabling the team to function smoothly and efficiently. They handle a wide array of crucial tasks, from managing logistics and securing sponsorships to organizing events and fostering media relationships. This team is responsible for ensuring the smooth execution of competitions, public outreach events, and internal operations. Their work behind the scenes helps secure vital resources, enhance the team’s public profile, and streamline communication with sponsors and the community.",
-      "responsibilities": ["aux","otehr","other"],
+      "responsibilities": ["Financial Manager:", "Budgets, tracks expenses, and secures sponsorships to ensure the team's financial sustainability.", "Systems Engineer:", "Maintains internal tools, workflows, and documentation to streamline operations.", "HR Manager:", "Oversees recruitment, team wellbeing and policy enforcement within the team.", "Safety Manager:", "Ensures all activities meet health and safety standards"],
       "image": "/images/teams_page/chris-clarisse-spray-paint.jpg",
       "Team_Leads": [
         {

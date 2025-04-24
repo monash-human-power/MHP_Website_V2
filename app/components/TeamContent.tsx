@@ -32,7 +32,7 @@ const TeamContent: React.FC<TeamContentProps> = ({activeTab, team}) => {
           {/* Description */}
           <div className="mt-2 mx-2 lg:mt-0 lg:w-1/2 md:w-1/2 md:items-center">
             <div className={`transition-opacity duration-300 ${fadeClass}`}>
-              <h2 className="font-extralight">{team.description}</h2>
+              <p>{team.description}</p>
             </div>
           </div>
         </div>
@@ -50,10 +50,7 @@ const TeamContent: React.FC<TeamContentProps> = ({activeTab, team}) => {
               textAlign: "left",
             }}
           >
-            {/* <li className="font-Sansation">
-              {team.responsibilities}
-            </li> */}
-
+            
             {/* Dynamically inserting responsibilities from JSON file */}
             <div>
               {team.responsibilities.map((responsibility, index) => (
