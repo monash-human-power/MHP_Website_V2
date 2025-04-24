@@ -11,6 +11,7 @@ const images = [
   "/images/home_page/mhp_group.jpg",
 ];
 import Button from "./components/Buttons";
+import ProgressBar from "./components/ProgressBar";
 
 export default function Page() {
   return (
@@ -88,47 +89,63 @@ export default function Page() {
 
 
 
-        <PageSection  hasDivider={true}>
-          
-          <h2             
- className="font-Aldrich underline  decoration-green decoration-4">
+        <PageSection hasDivider={true}>
+
+            <h2 className="text-center font-Aldrich underline decoration-green decoration-4 ">
             Join the Ride, Make a Difference!
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-            <div className="flex flex-col justify-start items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5 h-full">
-              <h2 className="text-xl font-semibold text-center p-3 sm:mb-0">
-                KMs ridden
-              </h2>
-            </div>
-            <div style={{
-              borderLeft: "2px dotted #5e5b5b", // Top border
-              borderRight: "2px dotted #5e5b5b", // Bottom border
-            }} className="flex flex-col justify-start items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5 h-full">
-              <h2 className="text-xl font-semibold text-center p-3 sm:mb-0">
-                we are partneing with
-              </h2>
-            </div>
-            <div className="flex flex-col justify-start items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5 h-full">
-              <h2 className="text-xl font-semibold text-center p-3 sm:mb-0">
-                KMs ridden
-              </h2>
-            </div>
-          </div>
 
-          <p className="my-2">
+          <div className="w-full px-4 py-4 md:px-0 grid grid-cols-1 md:grid-cols-3 gap-4 items-center text-white max-w-screen-lg mx-auto">
 
-            Help us make an impact by donating or riding a bike!
-            All proceeds will be shared between Monash Human Power and Greenfleet.
-            Greenfleet is a not-for-profit environmental organisation dedicated to combating climate change by planting trees and restoring forests across Australia and New Zealand. Your support will help us create a greener, more sustainable future.
-          </p>
+{/* Left: Money Raised */}
+<div className="flex flex-row items-center justify-center space-x-3">
+  <ProgressBar fillPercentage={35} />
+  <div className="pl-3">
+    <p className="text-4xl font-bold">$7,000</p>
+    <p className="text-2xl">dollars raised</p>
+  </div>
+</div>
+
+{/* Center: Greenfleet */}
+<div className="flex flex-col items-center justify-center space-y-2 border-x border-dotted border-gray-500 px-2 text-center">
+  <p className="xl">We are <br></br>partnering with</p>
+  <Image
+    src="/images/home_page/GreenFleet_Dark.png"
+    alt="Greenfleet"
+    width={200}
+    height={40}
+  />
           <Button
             hrefString="/bikes"
             text="Donate"
             theme="dark"
             target=""
           />
+
+</div>
+
+{/* Right: KM Ridden */}
+<div className="flex flex-row items-center justify-center space-x-3">
+<div className="pr-3">
+  <p className="text-4xl font-bold">850 km</p>
+    <p className="text-2xl">ridden</p>
+  </div>
+  <ProgressBar fillPercentage={50} />
+</div>
+
+
+</div>
+
+
+          <p className="my-2">
+
+            Help us make an impact by donating or riding a bike!
+            All proceeds will be shared between Monash Human Power and Greenfleet.
+            <br></br>
+            Greenfleet is a not-for-profit environmental organisation dedicated to combating climate change by planting trees and restoring forests across Australia and New Zealand. Your support will help us create a greener, more sustainable future.
+          </p>
         </PageSection>
-        <PageSection  hasDivider={true}>
+        <PageSection hasDivider={true}>
           <div
             className="py-2"
 
@@ -174,7 +191,7 @@ export default function Page() {
 
           </div>
         </PageSection>
-        <PageSection  hasDivider={true}>
+        <PageSection hasDivider={true}>
           <div
             className="py-2"
 

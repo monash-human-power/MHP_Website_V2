@@ -6,11 +6,6 @@ interface PageSectionProps {
   children: React.ReactNode;
 }
 
-PageSection.defaultProps = {
-  message: 'Hello',
-  haveDivider:true,
-};
-
 
 export default function PageSection({  hasDivider,children }: PageSectionProps) {
   const sectionRef = useRef<HTMLDivElement | null>(null);
