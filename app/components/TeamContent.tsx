@@ -50,37 +50,18 @@ const TeamContent: React.FC<TeamContentProps> = ({activeTab, team}) => {
               textAlign: "left",
             }}
           >
-            <li className="font-Sansation">
+            {/* <li className="font-Sansation">
               {team.responsibilities}
-            </li>
+            </li> */}
 
             {/* Dynamically inserting responsibilities from JSON file */}
             <div>
               {team.responsibilities.map((responsibility, index) => (
-                <li key={index}>
+                <li className="font-Sansation" key={index}>
                   {responsibility}
                 </li>
               ))}
 
-            </div>
-
-            <div>
-              <li className="font-Sansation">
-                Collaborate with riders to enhance performance through movement
-                analysis, customised training, and technique optimisation.
-              </li>
-              <br></br>
-              <li className="font-Sansation">
-                Plan and execute high-speed events and velodrome sessions,
-                including researching new event opportunities and managing
-                engagement.
-              </li>
-              <br></br>
-              <li className="font-Sansation">
-                Develop and implement racing strategies by analysing data, track
-                conditions, and conducting post-race evaluations for continuous
-                improvement.
-              </li>
             </div>
 
           </div>

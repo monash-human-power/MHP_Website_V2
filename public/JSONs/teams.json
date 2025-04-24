@@ -3,7 +3,7 @@
     {
       "name": "Management Team",
       "description": "Upper management, comprising the CEO, CTO, and COO, ensures the team’s strategic, technical, and operational success. The CEO handles long-term vision, budgeting, and representation, the CTO oversees technical development and collaboration, and the COO manages daily operations and team culture. Together, they drive cohesive direction and efficient execution across all aspects of the team.",
-      "responsibilities": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.",
+      "responsibilities": ["Uppermanagement","resposnibilites"],
       "image": "/images/teams_page/upperman.jpg",
       "Team_Leads": [
           {
@@ -71,7 +71,7 @@
     {
       "name": "Electrical",
       "description": "The Electrical team, comprising Software and Hardware divisions, manages the vehicle's electrical systems, including data collection and camera systems. They maintain the camera systems that allow the riders to see where they are going and display essential information including speed, power and target power on the bike’s internal screens. Additionally, they oversee data collection systems that help riders make informed race decisions and the rest of the team to optimise their designs and approaches. The team employs a range of skills and technologies, from programming microcontrollers and dashboards to embedded electronics and circuit board design and assembly.",
-      "responsibilities": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.",
+      "responsibilities": ["electrical","responbsoenls"],
       "image": "/images/teams_page/electrical.png",
       "Team_Leads": [
         {
@@ -170,7 +170,7 @@
     {
       "name": "Aerodynamics",
       "description": "The Aerodynamics team are responsible for the design and testing of the aerodynamics of the bike, designing the faring of our bike, which is the external shell of the bike. The key purpose of the the fairing is to reduce drag on the bike,  maximising speed that our vehicles can reach. Through the use of computational fluid dynamics (CFD), parametric CAD, as well as practical validation/ testing in the Monash Wind Tunnel and in the field, the team creates aerodynamic faring designs which optimise our vehicles and rider performance.",
-      "responsibilities": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.",
+      "responsibilities": ["aerofyncamics","reposnefj"],
       "image": "/images/teams_page/aero.jpg",
       "Team_Leads": [
         {
@@ -234,7 +234,7 @@
     {
       "name": "Materials",
       "description": "The Materials team prototypes and manufactures the fairing designed by the Aerodynamics team, optimising the quality of the fairing to ensure the aerodynamic performance of the bike and rider safety. They carry out extensive research to find the most viable methods and materials to produce the fairing. Currently, the fairing is fabricated using a resin infusion technique, which uses epoxy resin and carbon fibre. The Materials sub team uses power tools, applies surface finishing processes and creates composite components in order to produce the fairing.",
-      "responsibilities": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.",
+      "responsibilities": ["materials","erpsons"],
       "image": "/images/teams_page/materials_2.jpg",
       "Team_Leads": [
           {
@@ -301,7 +301,7 @@
     {
       "name": "Operations",
       "description": "The Operations team manages external relationships, including sponsor partnerships, while overseeing MHP’s marketing and event coordination. They lead initiatives like the \"Build a HPV\" school outreach program, aimed at promoting STEM education and sustainable transport. Alongside these efforts, the Operations team also provides essential support for the technical teams during bike production and is heavily involved in MHP's graphic design and branding, ensuring a cohesive and professional visual identity across all platforms.",
-      "responsibilities": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.",
+      "responsibilities":["operations","blajsblajs"],
       "image": "/images/teams_page/operations_team.png",
       "Team_Leads": [
         {
@@ -407,7 +407,7 @@
     {
       "name": "Chassis & Drivetrain",
       "description": "The Chassis & Drive-train team handles the design and production of all mechanical components, including the structural frame (chassis) and moving parts of the vehicle. Using CAD software for modelling, FEA simulation and hand calculations to verify the system's under load, the team ensures durability when breaking records. The team uses manufacturing techniques and practices such as welding and fabrication, along side manual and CNC operated machining to create the bulk of the bike's mechanisms. The team is dedicated to pushing the boundaries of efficiency and performance to get the most out of the the bike and the rider. Without the Chassis & Drive-train team, Monash Human Power cannot move forward.",
-      "responsibilities": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.",
+      "responsibilities": ["chasis dt","reponsjsn","kjnedkw"],
       "image": "/images/teams_page/chassis_drivetrain.jpg",
       "Team_Leads": [
           {
@@ -476,7 +476,7 @@
     },{
       "name": "Auxiliary",
       "description": "The Auxiliary Team at Monash Human Power is the backbone that supports the project’s non-engineering aspects, enabling the team to function smoothly and efficiently. They handle a wide array of crucial tasks, from managing logistics and securing sponsorships to organizing events and fostering media relationships. This team is responsible for ensuring the smooth execution of competitions, public outreach events, and internal operations. Their work behind the scenes helps secure vital resources, enhance the team’s public profile, and streamline communication with sponsors and the community.",
-      "responsibilities": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.",
+      "responsibilities": ["aux","otehr","other"],
       "image": "/images/teams_page/chris-clarisse-spray-paint.jpg",
       "Team_Leads": [
         {
