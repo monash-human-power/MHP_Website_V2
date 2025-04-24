@@ -32,7 +32,8 @@ export default function Join() {
             style={{
               paddingTop: "40px",
               paddingBottom: "20px",
-              width: "60%",
+              borderTop: "2px solid #5e5b5b", // Top border
+              width: "80%",
               margin: "0 auto",
             }}
           >
@@ -53,7 +54,10 @@ export default function Join() {
           className="text-center text-xl lg:text-3xl"
           style={{
             paddingTop: "40px",
-            paddingBottom: "20px",
+            paddingBottom: "40px",
+            borderBottom: "2px solid #5e5b5b", // Bottom border
+            width: "80%",
+            margin: "0 auto",
           }}
         >
           {/* Expression of Interest button links to Google Form */}
@@ -66,7 +70,7 @@ export default function Join() {
       </PageSection>
 
       {/* Rider Development section */}
-      <PageSection colourWay="dark">
+      {/* <PageSection colourWay="dark">
         <div
           style={{
             borderTop: "2px solid #5e5b5b", // Top border
@@ -180,10 +184,10 @@ export default function Join() {
             </div>
           </div>
         </div>
-      </PageSection>
+      </PageSection> */}
 
       {/* Aerodynamics section */}
-      <PageSection colourWay="dark">
+      {/* <PageSection colourWay="dark">
         <div
           style={{
             borderTop: "2px solid #5e5b5b", // Top border
@@ -293,10 +297,10 @@ export default function Join() {
             </div>
           </div>
         </div>
-      </PageSection>
+      </PageSection> */}
 
       {/* Chassis and Drivetrain section */}
-      <PageSection colourWay="dark">
+      {/* <PageSection colourWay="dark">
         <div
           style={{
             borderTop: "2px solid #5e5b5b", // Top border
@@ -407,10 +411,10 @@ export default function Join() {
             </div>
           </div>
         </div>
-      </PageSection>
+      </PageSection> */}
 
       {/* Operations section */}
-      <PageSection colourWay="dark">
+      {/* <PageSection colourWay="dark">
         <div
           style={{
             borderTop: "2px solid #5e5b5b", // Top border
@@ -524,10 +528,10 @@ export default function Join() {
             </div>
           </div>
         </div>
-      </PageSection>
+      </PageSection> */}
 
       {/* Electrical section */}
-      <PageSection colourWay="dark">
+      {/* <PageSection colourWay="dark">
         <div
           style={{
             borderTop: "2px solid #5e5b5b", // Top border
@@ -641,10 +645,10 @@ export default function Join() {
             </div>
           </div>
         </div>
-      </PageSection>
+      </PageSection> */}
 
       {/* Materials section */}
-      <PageSection colourWay="dark">
+      {/* <PageSection colourWay="dark">
         <div
           style={{
             borderTop: "2px solid #5e5b5b", // Top border
@@ -755,7 +759,7 @@ export default function Join() {
             </div>
           </div>
         </div>
-      </PageSection>
+      </PageSection> */}
     </>
   );
 }
