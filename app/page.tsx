@@ -75,7 +75,7 @@ export default function Page() {
             faculty, we strive to provide a space where Monash students can
             develop valuable, real-world experience which they can carry on into
             their careers. Alongside our technical goals, we also aim to promote
-            STEAM to the wider community within the framework of HPVs through
+            STEM to the wider community within the framework of HPVs through
             school outreach programs.
           </p>
           <Button
