@@ -502,6 +502,11 @@
           "role": "Safety Manager",
           "department": "",
           "image": "/images/teams_page/Electrical/prince_mendel-idowu.jpg"
+        },{
+          "name": "Kit Kirby",
+          "role": "Team Member",
+          "department": "AHPSC Project Manager",
+          "image": "/images/teams_page/RiderDev/kit_kirby.jpg"
         }
         ]
     }
