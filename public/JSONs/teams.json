@@ -6,15 +6,18 @@
       "roles": [
           {
             "role": "CEO",
-            "responsibilities": ["Represent the team in university matters and forums, while maintaining a high-level understanding of all major activities across subteams.", "Drive long-term direction by shaping team vision, mission, and strategy in collaboration with the leadership team, including budgeting and timeline development.", "Oversee team performance through reviews and 1-on-1s, resolve internal and external disputes, and prepare materials for smooth leadership transition."]
+            "responsibilities": ["Represent the team in university matters and forums, while maintaining a high-level understanding of all major activities across subteams.", "Drive long-term direction by shaping team vision, mission, and strategy in collaboration with the leadership team, including budgeting and timeline development.", "Oversee team performance through reviews and 1-on-1s, resolve internal and external disputes, and prepare materials for smooth leadership transition."],
+            "image": "/images/teams_page/responsibilities/CEO.jpg"
           },
           {
             "role": "CTO",
-            "responsibilities": ["Maintain a cohesive vehicle design aligned with team goals by guiding critical decisions and ensuring system-wide collaboration across subteams.","Develop and manage technical timelines and budgets in alignment with the broader team strategy, ensuring milestones are met without straining manufacturing resources.","Foster technical excellence by promoting TAFE training and organizing workshops to upskill team members."]
+            "responsibilities": ["Maintain a cohesive vehicle design aligned with team goals by guiding critical decisions and ensuring system-wide collaboration across subteams.","Develop and manage technical timelines and budgets in alignment with the broader team strategy, ensuring milestones are met without straining manufacturing resources.","Foster technical excellence by promoting TAFE training and organizing workshops to upskill team members."],
+            "image":""
           },
           {
             "role": "COO",
-            "responsibilities": ["Oversee daily team functions to ensure smooth and efficient operations aligned with strategic goals set by the CEO and CTO.", "Foster a strong, participatory team culture with high engagement and workshop involvement.", "Lead logistical preparation for major competitions and testing events, while preparing resources for seamless leadership transition."]
+            "responsibilities": ["Oversee daily team functions to ensure smooth and efficient operations aligned with strategic goals set by the CEO and CTO.", "Foster a strong, participatory team culture with high engagement and workshop involvement.", "Lead logistical preparation for major competitions and testing events, while preparing resources for seamless leadership transition."],
+            "image":""
           }],
       "image": "/images/teams_page/upperman.jpg",
       "Team_Leads": [
@@ -44,7 +47,8 @@
       "roles": [
         {
           "role": "Rider Development",
-          "responsibilities": ["Collaborate with riders to enhance performance through movement analysis, customised training, and technique optimisation.", "Plan and execute high-speed events and velodrome sessions, including researching new event opportunities and managing engagement."]
+          "responsibilities": ["Collaborate with riders to enhance performance through movement analysis, customised training, and technique optimisation.", "Plan and execute high-speed events and velodrome sessions, including researching new event opportunities and managing engagement."],
+          "image":"/images/teams_page/responsibilities/rider_dev.jpg"
         }],
       "image": "/images/teams_page/rider.jpg",
       "Team_Leads": [
@@ -88,11 +92,13 @@
       "roles": [
         {
           "role": "Hardware Team",
-          "responsibilities": ["Design, simulate, and document circuitry, including PCB manufacturing and programming microcontrollers like Raspberry Pi for sensor control."]
+          "responsibilities": ["Design, simulate, and document circuitry, including PCB manufacturing and programming microcontrollers like Raspberry Pi for sensor control."],
+          "image": "/images/teams_page/responsibilities/electrical.jpg"
         },
         {
           "role": "Software Team",
-          "responsibilities": ["Develop and maintain a React-powered web app and various Python projects, including physical modeling and data processing.", "Troubleshoot systems during testing and ensure thorough documentation of code, APIs, and pull requests."]
+          "responsibilities": ["Develop and maintain a React-powered web app and various Python projects, including physical modeling and data processing.", "Troubleshoot systems during testing and ensure thorough documentation of code, APIs, and pull requests."],
+          "image": "/images/teams_page/responsibilities/electrical.jpg"
         }],
       "image": "/images/teams_page/electrical.png",
       "Team_Leads": [
@@ -195,7 +201,8 @@
       "roles": [
         {
         "role": "Aerodynamics Team",
-        "responsibilities": ["Work with aerodynamics principles to enhance bike performance through testing, design, and manufacturing.","Gain hands-on experience using the Monash Wind Tunnel, CFD, and aerodynamic component testing.", "Create, test, and troubleshoot CAD models in NX and ANSYS Fluent, while upskilling other team members."]
+        "responsibilities": ["Work with aerodynamics principles to enhance bike performance through testing, design, and manufacturing.","Gain hands-on experience using the Monash Wind Tunnel, CFD, and aerodynamic component testing.", "Create, test, and troubleshoot CAD models in NX and ANSYS Fluent, while upskilling other team members."],
+        "image": "/images/teams_page/responsibilities/aerodynamics.jpg"
         }],
       "image": "/images/teams_page/aero.jpg",
       "Team_Leads": [
@@ -263,7 +270,8 @@
       "roles": [
         {
           "role": "Materials Team",
-          "responsibilities": ["Use finite element analysis (FEA) software to design and optimise composite components.","Manufacture the fairing and supplementary composite components, primarily working with carbon fiber.", "Spend time in the workshop creating and testing various composite parts."]
+          "responsibilities": ["Use finite element analysis (FEA) software to design and optimise composite components.","Manufacture the fairing and supplementary composite components, primarily working with carbon fiber.", "Spend time in the workshop creating and testing various composite parts."],
+          "image": "/images/teams_page/responsibilities/materials.jpg"
         }],
       "image": "/images/teams_page/materials_2.jpg",
       "Team_Leads": [
@@ -334,19 +342,23 @@
       "roles":[
         {
           "role": "Sponsorship Team",
-          "responsibilities": ["Identify and manage sponsorships by researching potential sponsors, maintaining relationships, and negotiating agreenents."]
+          "responsibilities": ["Identify and manage sponsorships by researching potential sponsors, maintaining relationships, and negotiating agreenents."],
+          "image": "/images/teams_page/responsibilities/operations.jpg"
         },
         {
           "role": "Marketing Team",
-          "responsibilities": ["Produce and plan media content, including photoshoots and videos, to effectively communicate the brand message and align with company values."]
+          "responsibilities": ["Produce and plan media content, including photoshoots and videos, to effectively communicate the brand message and align with company values."],
+          "image": "/images/teams_page/responsibilities/operations.jpg"
         },
         {
           "role": "Events Team",
-          "responsibilities": ["Create, manage, and optimise engaging content across platforms and social media, including editing footage and developing design concepts to enhance brand presence."]
+          "responsibilities": ["Create, manage, and optimise engaging content across platforms and social media, including editing footage and developing design concepts to enhance brand presence."],
+          "image": "/images/teams_page/responsibilities/operations.jpg"
         },
         {
           "role": "Website Team",
-          "responsibilities": ["Design, code, maintain and improve the aesthetic and function of our website.", "Ensure they are visually appealing, user-friendly and technically optimised", "Conduct thorough testing and debugging to ensure functionality and performance"]
+          "responsibilities": ["Design, code, maintain and improve the aesthetic and function of our website.", "Ensure they are visually appealing, user-friendly and technically optimised", "Conduct thorough testing and debugging to ensure functionality and performance"],
+          "image": "/images/teams_page/responsibilities/operations.jpg"
         }],
       "image": "/images/teams_page/operations_team.png",
       "Team_Leads": [
@@ -456,11 +468,13 @@
       "roles": [
         {
           "role": "Chassis Team",
-          "responsibilities": ["Design and test the vehicle chassis, focusing on space-frame structures with potential future use of composite materials.", "Develop strong CAD skills and deep understanding of chassis engineering principles."]
+          "responsibilities": ["Design and test the vehicle chassis, focusing on space-frame structures with potential future use of composite materials.", "Develop strong CAD skills and deep understanding of chassis engineering principles."],
+          "image": "/images/teams_page/responsibilities/chassis_drivetrain.jpg"
         },
         {
           "role": "Drivetrain Team",
-          "responsibilities": ["Optimise and integrate drivetrain components, leveraging cycling knowledge and collaborating with component engineers."]
+          "responsibilities": ["Optimise and integrate drivetrain components, leveraging cycling knowledge and collaborating with component engineers."],
+          "image": "/images/teams_page/responsibilities/chassis_drivetrain.jpg"
         }],
       "image": "/images/teams_page/chassis_drivetrain.jpg",
       "Team_Leads": [

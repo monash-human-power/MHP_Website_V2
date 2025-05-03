@@ -10,6 +10,7 @@ interface TeamContentProps {
 type subRole = {
   role: string;
   responsibilities: string[];
+  image: string;
 };
 
 const TeamContent: React.FC<TeamContentProps> = ({activeTab, team}) => {
@@ -57,16 +58,40 @@ const TeamContent: React.FC<TeamContentProps> = ({activeTab, team}) => {
           >
             
             {/* Dynamically inserting responsibilities from JSON file */}
-            <div className="flex flex-wrap gap-8">
+            <div className="flex flex-col gap-12">
               {team.roles.map((subRole, index) => (
-                <div key={index} className="flex-1 min-w-[calc(100%-2rem)] md:min-w-[calc(50%-2rem)] lg:min-w-[calc(33.333%-2rem)]">
-                  <div className="xl:text-2xl lg:text-xl">{subRole.role}</div>
-                  {subRole.responsibilities.map((responsibility, i) => (
-                    <li key={i}>{responsibility}</li>
-                  ))}
+                <div
+                  key={index}
+                  className="grid grid-cols-1 md:grid-cols-2 items-center gap-8"
+                >
+                  {/* Responsibilities on left side for even rows, image on right side for odd rows for medium screens and above.
+                  Otherwise, stack normally in single column */}
+                  <div className={`${index % 2 === 0 ? 'md:order-1' : 'md:order-2'} flex flex-col`}>
+                    <div className="xl:text-2xl lg:text-xl font-semibold mb-2">
+                      {subRole.role}
+                    </div>
+                    {subRole.responsibilities.map((responsibility, i) => (
+                      <li key={i}>{responsibility}</li>
+                    ))}
+                  </div>
+
+                  <div className={`${index % 2 === 0 ? 'md:order-2' : 'md:order-1'}` + ` flex justify-center items-center`}>
+                    <img
+                      src={`${subRole.image}`}
+                      alt={`${subRole.role}`}
+                      className="
+                      h-auto object-contain rounded-xl
+                      max-w-[200px] max-h-[150px]
+                      sm:max-w-[250px] sm:max-h-[200px]
+                      md:max-w-[300px] md:max-h-[250px]
+                      lg:max-w-[400px] lg:max-h-[300px]
+                    "
+                    />
+                  </div>
                 </div>
               ))}
             </div>
+
 
           </div>
         )}
