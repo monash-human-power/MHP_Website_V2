@@ -346,7 +346,7 @@
         },
         {
           "role": "Website Team",
-          "responsibilities": ["Design, code, maintain and improve the aesthetic and function of our website. Ensuring they are visually appealing, user-friendly and technically optimised", "Conduct thorough testing and debugging to ensure functionality and performance"]
+          "responsibilities": ["Design, code, maintain and improve the aesthetic and function of our website.", "Ensure they are visually appealing, user-friendly and technically optimised", "Conduct thorough testing and debugging to ensure functionality and performance"]
         }],
       "image": "/images/teams_page/operations_team.png",
       "Team_Leads": [

@@ -57,15 +57,13 @@ const TeamContent: React.FC<TeamContentProps> = ({activeTab, team}) => {
           >
             
             {/* Dynamically inserting responsibilities from JSON file */}
-            <div>
+            <div className="flex flex-wrap gap-8">
               {team.roles.map((subRole, index) => (
-                <div key={index}>
-                  <div className="xl: text-2xl lg: text-xl">{subRole.role}</div>
-                  {subRole.responsibilities.map((responsibility: string, i: number) => (
+                <div key={index} className="flex-1 min-w-[calc(100%-2rem)] md:min-w-[calc(50%-2rem)] lg:min-w-[calc(33.333%-2rem)]">
+                  <div className="xl:text-2xl lg:text-xl">{subRole.role}</div>
+                  {subRole.responsibilities.map((responsibility, i) => (
                     <li key={i}>{responsibility}</li>
                   ))}
-                  <br></br>
-                  <br></br>
                 </div>
               ))}
             </div>
