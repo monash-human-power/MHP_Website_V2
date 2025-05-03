@@ -4,8 +4,13 @@ import Image from "next/image";
 interface TeamContentProps {
   children?: React.ReactNode;
   activeTab: String;
-  team: { name: string; description: string; responsibilities: string[]; image: string; Team_Leads: string[];};
+  team: { name: string; description: string; roles: subRole[]; image: string; Team_Leads: string[];};
 }
+
+type subRole = {
+  role: string;
+  responsibilities: string[];
+};
 
 const TeamContent: React.FC<TeamContentProps> = ({activeTab, team}) => {
   const [fadeClass, setFadeClass] = useState("animate-fadeIn");
@@ -53,12 +58,16 @@ const TeamContent: React.FC<TeamContentProps> = ({activeTab, team}) => {
             
             {/* Dynamically inserting responsibilities from JSON file */}
             <div>
-              {team.responsibilities.map((responsibility, index) => (
-                <li className="font-Sansation" key={index}>
-                  {responsibility}
-                </li>
+              {team.roles.map((subRole, index) => (
+                <div key={index}>
+                  <div className="xl: text-2xl lg: text-xl">{subRole.role}</div>
+                  {subRole.responsibilities.map((responsibility: string, i: number) => (
+                    <li key={i}>{responsibility}</li>
+                  ))}
+                  <br></br>
+                  <br></br>
+                </div>
               ))}
-
             </div>
 
           </div>
