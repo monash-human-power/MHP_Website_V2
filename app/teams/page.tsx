@@ -161,7 +161,7 @@ export default function TeamPage() {
           className={`${fadeClass} bg-[url('/images/teams_page/teams_background.png')]  bg-top bg-no-repeat`}
         >
           <h2 className="text-center text-4xl font-bold mb-2">Team Members</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 px-8 mb-12">
+          <div className={`${currentTeam.Team_Leads.length == 1?"flex flex-row align-baseline justify-center":"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2"} gap-8 px-8 mb-12`}>
             {currentTeam.Team_Leads?.map((lead, index) => (
               <div
                 key={index}
