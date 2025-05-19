@@ -31,12 +31,6 @@
       "image": "/images/teams_page/rider.jpg",
       "Team_Leads": [
           {
-            "name": "James Gardiner",
-            "role": "Team Lead",
-            "department": "Mechanical Engineering and Commerce",
-            "image": "/images/teams_page/RiderDev/james_gardiner.jpg"
-          },
-          {
             "name": "Sean Solnik",
             "role": "Team Lead",
             "department": "Electrical Engineering and Biomedical Science",
@@ -499,7 +493,7 @@
           "image": "/images/teams_page/Electrical/ngoc_thao_vy_nguyen.jpg"
         },
         {
-          "name": "Prince (Jeremy) Mendel-Idowu",
+          "name": "Prince Jeremy Mendel-Idowu",
           "role": "Safety Manager",
           "department": "",
           "image": "/images/teams_page/Electrical/prince_mendel-idowu.jpg"
