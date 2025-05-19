@@ -82,6 +82,11 @@
           "role": "Team Member",
           "department": "",
           "image": "/images/teams_page/Electrical/aarabi_kugathas.jpg"
+        },{
+          "name": "Arnav Acharekar",
+          "role": "Team Member",
+          "department": "Electrical Engineering",
+          "image": "/images/teams_page/Auxil/arnav_acharekar.jpg"
         },
         {
           "name": "Arnav Singh Sethi",
@@ -153,17 +158,6 @@
           "role": "Team Member",
           "department": "",
           "image": "/images/teams_page/Electrical/yixu_wang.jpg"
-        },
-        {
-          "name": "Prince Jeremy Mendel-Idowu",
-          "role": "Team Member",
-          "department": "",
-          "image": "/images/teams_page/Electrical/prince_mendel-idowu.jpg"
-        },{
-          "name": "Arnav Acharekar",
-          "role": "Team Member",
-          "department": "Electrical Engineering",
-          "image": "/images/teams_page/Auxil/arnav_acharekar.jpg"
         }
       ]
     },
