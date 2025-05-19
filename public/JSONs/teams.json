@@ -143,7 +143,7 @@
           "image": "/images/teams_page/Ops/nguyen_khang_huynh.jpg"
         },
         {
-          "name": "Prince (Jeremy) Mendel-Idowu",
+          "name": "Prince Jeremy Mendel-Idowu",
           "role": "Team Member",
           "department": "",
           "image": "/images/teams_page/Electrical/prince_mendel-idowu.jpg"
@@ -474,6 +474,13 @@
       "description": "The Auxiliary Team at Monash Human Power is the backbone that supports the project’s non-engineering aspects, enabling the team to function smoothly and efficiently. They handle a wide array of crucial tasks, from managing logistics and securing sponsorships to organizing events and fostering media relationships. This team is responsible for ensuring the smooth execution of competitions, public outreach events, and internal operations. Their work behind the scenes helps secure vital resources, enhance the team’s public profile, and streamline communication with sponsors and the community.",
       "image": "/images/teams_page/chris-clarisse-spray-paint.jpg",
       "Team_Leads": [
+        {
+          "name": "Kit Kirby",
+          "role": "AHPSC Project Manager",
+          "department": "Materials Engineering",
+          "image": "/images/teams_page/RiderDev/kit_kirby.jpg"
+        }
+        ,
         {
           "name": "Arnav Acharekar",
           "role": "Finance Manager",
