@@ -133,7 +133,7 @@ export default function Page() {
             <div className="grid grid-cols-2   md:grid-cols-3 gap-4 mt-8">
               {values.map((value,idx) => (
                 <div key={idx} className="flex flex-col justify-start items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5 h-full">
-                  <h2 className="text-xl font-semibold text-center p-3 sm:mb-0">
+                  <h2 className="text-l font-semibold  text-wrap text-center p-3 sm:mb-0   md:text-xl">
                   {value.name}
                   </h2>
                   <p className="my-4 max-w-prose text-center">
