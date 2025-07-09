@@ -35,7 +35,7 @@ export default function Page() {
               />
             </div>
             <div className="text-center sm:text-right">
-              <h2 className="text-center sm:text-right  underline decoration-green decoration-4">
+              <h2 className=" font-Aldrich text-center sm:text-right  underline decoration-green decoration-4">
                 Our Story
               </h2>
               <p>
