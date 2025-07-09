@@ -14,15 +14,16 @@ export default function ApplicationCard({
   img,
   formLink,
 }: ApplicationCardProps) {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
+  // TODO: Consider mobile view, compact info into the card?
   return (
-    <div className="m-10 flex flex-col items-center justify-center p-5  gap-5 ">
+    <div className="m-10 flex-shrink-0  flex flex-col items-center justify-center p-5  gap-5 ">
       {/* Card */}
       <div className="flex flex-row -gap-5">
         {/* Grid container for overlaying */}
         <div onClick={ ()=>setIsOpen(prev => !prev)} className="grid grid-cols-1 grid-rows-1 h-[400px]">
           {/* Image container */}
-          <div className="col-start-1 row-start-1 z-10 relative h-[400px] max-w-[250px] rounded-xl overflow-hidden  ">
+          <div className="col-start-1 row-start-1 z-10 relative h-[400px] w-[250px] rounded-xl overflow-hidden  ">
             <Image
               src={img}
               width="800"
@@ -39,7 +40,7 @@ export default function ApplicationCard({
         {/* Info slide out */}
 
         {isOpen && (
-          <div className=" relative z-0 -ml-20 pl-20 p-5 h-[400px] w-[75%] bg-red-400 rounded-xl">
+          <div className=" relative z-0 -ml-20 pl-20 p-5 h-[400px] min-w-2xl bg-red-400 rounded-xl">
             BSDBUIA;IKBDASO;HDIOA IJBFIBUSDF
           </div>
         )}
@@ -49,7 +50,7 @@ export default function ApplicationCard({
         text="Apply for sub-team"
         theme={"dark"}
         hrefString={formLink}
-        target={""}
+        target={"_blank"}
         className="relative"
       />
     </div>

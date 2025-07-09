@@ -5,7 +5,7 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
-    "!./node_modules/**"
+    "!./node_modules/**",
   ],
   theme: {
     extend: {
@@ -15,10 +15,10 @@ module.exports = {
         stroke: "#36434E",
         purple: "#381fff",
         white: "#FFFFFF",
-        black: "#141212", 
+        black: "#141212",
         gray: "#C0BFBD",
         green: "#ACF601",
-        divborder:"#5e5b5b"
+        divborder: "#5e5b5b",
       },
       fontFamily: {
         Aldrich: "Aldrich",
@@ -38,23 +38,27 @@ module.exports = {
         "7xl": "5rem",
       },
       animation: {
-        fadeIn: 'fadeIn 1000ms ease-in',
-        fadeOut: 'fadeOut 1000ms ease-out',
+        fadeIn: "fadeIn 1000ms ease-in",
+        fadeOut: "fadeOut 1000ms ease-out",
       },
       keyframes: {
         fadeIn: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
         },
         fadeOut: {
-          '0%': { opacity: '1' },
-          '100%': { opacity: '0' },
+          "0%": { opacity: "1" },
+          "100%": { opacity: "0" },
+        },
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
         },
       },
       width: {
-        '100': '25rem',
-        '120': '33rem'
-      }
+        "100": "25rem",
+        "120": "33rem",
+      },
     },
   },
   plugins: [],

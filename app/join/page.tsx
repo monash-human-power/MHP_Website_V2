@@ -1,4 +1,5 @@
 "use client";
+import ApplicationCarousel from "../components/ApplicationCarousel/ApplicationCarousel";
 import PageSection from "../components/PageSection";
 import Image from "next/image";
 
@@ -64,6 +65,8 @@ export default function Join() {
           </a>
         </div>
       </PageSection>
+
+      <ApplicationCarousel />
 
       {/* Rider Development section */}
       <PageSection colourWay="dark">
