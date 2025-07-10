@@ -90,12 +90,6 @@
           "image": "/images/teams_page/Electrical/aarabi_kugathas.jpg"
         },
         {
-          "name": "Arnav Acharekar",
-          "role": "Team Member",
-          "department": "Electrical Engineering",
-          "image": "/images/teams_page/Auxil/arnav_acharekar.jpg"
-        },
-        {
           "name": "Arnav Singh Sethi",
           "role": "Team Member",
           "department": "",
@@ -170,7 +164,7 @@
         },
         {
           "name": "Nivantha Abeysekera",
-          "role": "Hardware Team Lead",
+          "role": "Team Member",
           "department": "Electrical Engineering",
           "image": "/images/teams_page/Electrical/nivantha_abeysekara.jpg"
         }
@@ -183,13 +177,13 @@
       "Team_Leads": [
         {
           "name": "Oliver Huang",
-          "role": "Team Member",
+          "role": "Team Lead",
           "department": "",
           "image": "/images/teams_page/Aero/oliver_huang.jpg"
         },
         {
           "name": "Zachary Port",
-          "role": "Team Member",
+          "role": "Team Lead",
           "department": "Mechanical Engineering and Art",
           "image": "/images/teams_page/Ops/zachary_port.jpg"
         }
@@ -252,7 +246,7 @@
         },
         {
           "name": "Krish Bajaj",
-          "role": "Team Member",
+          "role": "Team Lead",
           "department": "",
           "image": "/images/teams_page/Materials/krish_bajaj.jpg"
         }
@@ -415,11 +409,12 @@
       "image": "/images/teams_page/chassis_drivetrain.jpg",
       "Team_Leads": [
         {
-          "name": "Cameron Fieldew",
+          "name": "Marcel Randles",
           "role": "Team Lead",
-          "department": "Mechanical Engineering",
-          "image": "/images/teams_page/Chassis/cameron_fieldew.jpg"
+          "department": "",
+          "image": "/images/teams_page/Chassis/marcel_randles.jpg"
         },
+
         {
           "name": "Yashen Ahangama",
           "role": "Team Lead",
@@ -429,10 +424,10 @@
       ],
       "members": [
         {
-          "name": "Marcel Randles",
+          "name": "Cameron Fieldew",
           "role": "Team Member",
-          "department": "",
-          "image": "/images/teams_page/Chassis/marcel_randles.jpg"
+          "department": "Mechanical Engineering",
+          "image": "/images/teams_page/Chassis/cameron_fieldew.jpg"
         },
         {
           "name": "Martin Grozev",

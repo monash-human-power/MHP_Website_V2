@@ -160,8 +160,8 @@ export default function TeamPage() {
         <section
           className={`${fadeClass} bg-[url('/images/teams_page/teams_background.png')]  bg-top bg-no-repeat`}
         >
-          <h2 className="text-center text-4xl font-bold mb-2">Team Members</h2>
-          <div className={`${currentTeam.Team_Leads.length == 1?"flex flex-row align-baseline justify-center":"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2"} gap-8 px-8 mb-12`}>
+          <h2 className="text-center text-4xl font-bold mb-2">{currentTeam.name=="Management Team"?"Upper management":"Team Members"}</h2>
+          <div className={`${(currentTeam.Team_Leads.length != 2 && currentTeam.name!="Management Team"  && currentTeam.name!="Auxiliary")?"flex flex-row align-baseline justify-center":"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2"} gap-8 px-8 mb-12`}>
             {currentTeam.Team_Leads?.map((lead, index) => (
               <div
                 key={index}
@@ -176,7 +176,7 @@ export default function TeamPage() {
                   alt={lead.name}
                   width={200}
                   height={200}
-                  className="mx-auto"
+                  className="mx-auto rounded-md"
                 />
                 <h4 className="text-xl font-bold mt-4 text-green">
                   {lead.name}
@@ -201,7 +201,7 @@ export default function TeamPage() {
                   alt={member.name}
                   width={150}
                   height={150}
-                  className="mx-auto"
+                  className="mx-auto rounded-md"
                 />
                 <h4 className="text-lg font-bold mt-4 text-green">
                   {member.name}
