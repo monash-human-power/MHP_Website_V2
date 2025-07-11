@@ -35,7 +35,7 @@ export default function ApplicationCard({
               alt={`Subteam ${subteam}`}
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#000000b1] flex flex-col justify-end align-middle p-5">
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#000000]/60 flex flex-col justify-end align-middle p-5">
               <p className="z-10 font-bold text-lg text-white">{subteam}</p>
             </div>
           </div>
@@ -45,17 +45,17 @@ export default function ApplicationCard({
 
         {isOpen && (
           <AnimatePresence>
-          <motion.div
-            // onClick={() => setIsOpen((prev) => !prev)} TODO: add a collapse button
-            initial={{ opacity: 0, x: 0 }}
-            animate={{ opacity: 1, x: 20 }}
-              exit={{ opacity: 0}}
+            <motion.div
+              // onClick={() => setIsOpen((prev) => !prev)} TODO: add a collapse button
+              initial={{ opacity: 0, x: 0 }}
+              animate={{ opacity: 1, x: 20 }}
+              exit={{ opacity: 0 }}
               key={subteam}
-            className=" relative z-0 -ml-20 pl-20 p-5 h-[400px] min-w-2xl bg-red-400 rounded-xl"
-          >
-            BSDBUIA;IKBDASO;HDIOA IJBFIBUSDF
+              className=" relative z-0 -ml-20 pl-20 p-5 h-[400px] min-w-2xl bg-[#000000]/80 text-white  rounded-xl"
+            >
+              BSDBUIA;IKBDASO;HDIOA IJBFIBUSDF
             </motion.div>
-            </AnimatePresence>
+          </AnimatePresence>
         )}
       </div>
       {/* Form button */}

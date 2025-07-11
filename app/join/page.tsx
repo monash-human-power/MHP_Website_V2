@@ -37,14 +37,12 @@ export default function Join() {
               margin: "0 auto",
             }}
           >
-            <p>Applications are closed.</p>
-            <br></br>
+            <p>Applications are open!</p>
+            <br/>
+
             <p>
-              Fill out an expression of interest and sign up to our mailing
-              list!
-            </p>
-            <br></br>
-            <p>
+              Apply for one of MHP's subteams below.            <br/>
+
               If you have any further questions or queries, feel free to direct
               them to monashhpt@gmail.com
             </p>

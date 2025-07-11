@@ -123,10 +123,10 @@ export default function ApplicationCarousel() {
   }, [xMotionValue, isHovered]);
   
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden ">
       <motion.div
         ref={scrollRef}
-        className="w-full mt-12 sticky flex flex-row nowrap justify-between bg-red-500 cursor-grab active:cursor-grabbing"
+        className="w-full mt-12 sticky flex flex-row nowrap justify-between  cursor-grab active:cursor-grabbing"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         onPointerDown={handlePointerDown}
