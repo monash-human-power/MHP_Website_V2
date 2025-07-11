@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Button from "../Buttons";
 import Image from "next/image";
+import { AnimatePresence, motion } from "motion/react";
 
 interface ApplicationCardProps {
   subteam: string;
@@ -21,7 +22,10 @@ export default function ApplicationCard({
       {/* Card */}
       <div className="flex flex-row -gap-5">
         {/* Grid container for overlaying */}
-        <div onClick={ ()=>setIsOpen(prev => !prev)} className="grid grid-cols-1 grid-rows-1 h-[400px]">
+        <div
+          onClick={() => setIsOpen((prev) => !prev)}
+          className="grid grid-cols-1 grid-rows-1 h-[400px]"
+        >
           {/* Image container */}
           <div className="col-start-1 row-start-1 z-10 relative h-[400px] w-[250px] rounded-xl overflow-hidden  ">
             <Image
@@ -31,7 +35,7 @@ export default function ApplicationCard({
               alt={`Subteam ${subteam}`}
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#000000] flex flex-col justify-end align-middle p-5">
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#000000b1] flex flex-col justify-end align-middle p-5">
               <p className="z-10 font-bold text-lg text-white">{subteam}</p>
             </div>
           </div>
@@ -40,9 +44,18 @@ export default function ApplicationCard({
         {/* Info slide out */}
 
         {isOpen && (
-          <div className=" relative z-0 -ml-20 pl-20 p-5 h-[400px] min-w-2xl bg-red-400 rounded-xl">
+          <AnimatePresence>
+          <motion.div
+            // onClick={() => setIsOpen((prev) => !prev)} TODO: add a collapse button
+            initial={{ opacity: 0, x: 0 }}
+            animate={{ opacity: 1, x: 20 }}
+              exit={{ opacity: 0}}
+              key={subteam}
+            className=" relative z-0 -ml-20 pl-20 p-5 h-[400px] min-w-2xl bg-red-400 rounded-xl"
+          >
             BSDBUIA;IKBDASO;HDIOA IJBFIBUSDF
-          </div>
+            </motion.div>
+            </AnimatePresence>
         )}
       </div>
       {/* Form button */}
