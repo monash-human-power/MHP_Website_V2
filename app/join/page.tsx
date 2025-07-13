@@ -6,12 +6,11 @@ import Image from "next/image";
 export default function Join() {
   return (
     <>
-      <title>
-        Join | MHP
-      </title>
-      
+      <title>Join | MHP</title>
+
       {/* Cover Image */}
-      <section className="animate-fadeIn">
+      <PageSection colourWay="dark">
+        <h1 className="text-center text-5xl">Join Us</h1>
         <Image
           src="/images/join_page/join_main.jpg"
           width="5184"
@@ -20,14 +19,11 @@ export default function Join() {
           alt="Trike Group photo"
           layout="responsive"
         />
-      </section>
+      </PageSection>
 
       {/* Join Us section */}
       <PageSection colourWay="dark">
         <div className="text-center">
-          <h1 className="text-center text-5xl">
-            Join Us
-          </h1>
           <div
             className="text-xl"
             style={{
@@ -38,11 +34,10 @@ export default function Join() {
             }}
           >
             <p>Applications are open!</p>
-            <br/>
+            <br />
 
             <p>
-              Apply for one of MHP's subteams below.            <br/>
-
+              Apply for one of MHP&apos;s subteams below. <br />
               If you have any further questions or queries, feel free to direct
               them to monashhpt@gmail.com
             </p>
@@ -65,8 +60,6 @@ export default function Join() {
       </PageSection>
 
       <ApplicationCarousel />
-
-
     </>
   );
 }

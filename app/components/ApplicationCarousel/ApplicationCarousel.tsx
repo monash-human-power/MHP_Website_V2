@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, {  useEffect, useRef, useState } from "react";
 import ApplicationCard from "./ApplicationCard";
 import { animate } from "motion";
 import { motion, useInView, useMotionValue } from "motion/react";
@@ -7,32 +7,36 @@ const teamApplications = [
   {
     subteam: "Operations",
     img: "/images/join_page/join_operations.jpg",
-    formLink: "https://www.google.com",
+    formLink: "https://forms.gle/HHhRFBUFKCiRtEyH9",
   },
   {
-    subteam: "Electrical",
+    subteam: "Electrical - Software",
     img: "/images/join_page/join_electrical.jpg",
-    formLink: "https://www.google.com",
+    formLink: "https://forms.gle/TjAdcGJ4XshRsRn49",
+  },  {
+    subteam: "Electrical - Hardware",
+    img: "/images/join_page/join_electrical.jpg",
+    formLink: "https://forms.gle/7PQXNrRSYSEDM9NF8",
   },
   {
     subteam: "Materials",
     img: "/images/join_page/join_materials.jpg",
-    formLink: "https://www.google.com",
+    formLink: "https://forms.gle/kpHaodUN7fvxmfjh9",
   },
   {
     subteam: "Aerodynamics",
     img: "/images/join_page/join_aerodynamics.jpg",
-    formLink: "https://www.google.com",
+    formLink: "https://forms.gle/Mz3PqnVuEYwZ2CM17",
   },
   {
     subteam: "Rider Development",
     img: "/images/join_page/join_rider_dev.jpg",
-    formLink: "https://www.google.com",
+    formLink: "https://forms.gle/Xm8KgDh1M4Vb54PP9",
   },
   {
     subteam: "Chassis and Drivetrain",
     img: "/images/join_page/join_chassis_drivetrain.jpg",
-    formLink: "https://www.google.com",
+    formLink: "https://forms.gle/wJXyqcAnRGDGUYSv9",
   },
 ];
 
@@ -130,7 +134,7 @@ export default function ApplicationCarousel() {
   }, [xMotionValue, isHovered]);
 
   return (
-    <div className="overflow-x-scroll overflow-y-hidden ">
+    <div className="overflow-x-scroll overflow-y-hidden  scrollbar-dark">
       <motion.div
         ref={scrollRef}
         className="w-full mt-12 sticky flex flex-row nowrap justify-between  cursor-grab active:cursor-grabbing"
