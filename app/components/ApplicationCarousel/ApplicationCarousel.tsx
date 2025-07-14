@@ -1,4 +1,4 @@
-import React, {  useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import ApplicationCard from "./ApplicationCard";
 import { animate } from "motion";
 import { motion, useInView, useMotionValue } from "motion/react";
@@ -6,37 +6,411 @@ import { motion, useInView, useMotionValue } from "motion/react";
 const teamApplications = [
   {
     subteam: "Operations",
+    role: "Events officer",
     img: "/images/join_page/join_operations.jpg",
     formLink: "https://forms.gle/HHhRFBUFKCiRtEyH9",
+    content: (
+      <div className="flex flex-col text-left overflow-y-scroll">
+        The Operations subteam handles marketing, sponsorship, events, and
+        outreach to promote MHP and engage the community. They run programs like
+        “Build a HPV,” manage sponsor relations, and support STEM engagement,
+        branding, and the team&apos;s website.
+        <br />
+        <b>Responsibilities:</b>
+        <ul className="pl-4">
+          <li>
+            Plan and deliver engaging events to strengthen relationships with
+            sponsors and maintain strong partnerships.
+          </li>
+          <li>
+            Organise social activities and initiatives to build a strong,
+            connected team culture within MHP.
+          </li>
+          <li>
+            Lead outreach programs that promote STEM and MHP to schools and the
+            public.
+          </li>
+        </ul>
+        <b>Key Skills:</b>
+        <ul className="pl-4">
+          <li>
+            Strong organisational and time management skills to coordinate
+            multiple events smoothly.
+          </li>
+          <li>
+            Excellent communication and interpersonal skills for engaging
+            stakeholders and attendees.
+          </li>{" "}
+          <li>
+            Creativity and initiative to design engaging, impactful events that
+            align with MHP&apos;s mission.
+          </li>
+        </ul>
+      </div>
+    ),
   },
   {
-    subteam: "Electrical - Software",
+    subteam: "Operations",
+    role: "Marketing Officer / Graphic Designer ",
+    img: "/images/join_page/join_operations.jpg",
+    formLink: "https://forms.gle/HHhRFBUFKCiRtEyH9",
+    content: (
+      <div className="flex flex-col text-left overflow-y-scroll">
+        The Operations subteam handles marketing, sponsorship, events, and
+        outreach to promote MHP and engage the community. They run programs like
+        “Build a HPV,” manage sponsor relations, and support STEM engagement,
+        branding, and the team&apos;s website.
+        <br />
+        <b>Responsibilities:</b>
+        <ul className="pl-4">
+          <li>
+            Create and manage visual, written, and social media content that
+            aligns with MHP&apos;s brand.
+          </li>
+          <li>
+            Plan and execute marketing strategies, including event promotion and
+            sponsor engagement.
+          </li>
+          <li>
+            Analyse social media performance and adapt content to maximise
+            outreach and engagement.
+          </li>
+        </ul>
+        <b>Key Skills:</b>
+        <ul className="pl-4">
+          <li>
+            Proficiency in content creation tools (photo/video editing, graphic
+            design, social platforms).
+          </li>
+          <li>Creating thinking and visual storytelling.</li>{" "}
+          <li>
+            Strategic thinking and data driven decision making in social media
+            and branding.
+          </li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    subteam: "Operations",
+    role: "Sponsorship Officer ",
+    img: "/images/join_page/join_operations.jpg",
+    formLink: "https://forms.gle/HHhRFBUFKCiRtEyH9",
+    content: (
+      <div className="flex flex-col text-left overflow-y-scroll">
+        The Operations subteam handles marketing, sponsorship, events, and
+        outreach to promote MHP and engage the community. They run programs like
+        “Build a HPV,” manage sponsor relations, and support STEM engagement,
+        branding, and the team&apos;s website.
+        <br />
+        <b>Responsibilities:</b>
+        <ul className="pl-4">
+          <li>
+            Engage and build relationships with potential sponsors through
+            professional communication and rapport-building.
+          </li>
+          <li>
+            Understand sponsor needs and align MHP&apos;s value proposition to their
+            goals and interests.
+          </li>
+          <li>
+            Secure and maintain sponsorships by presenting compelling proposals,
+            handling objections, and ensuring consistent follow-up.
+          </li>
+        </ul>
+        <b>Key Skills:</b>
+        <ul className="pl-4">
+          <li>
+            Confident communication and relationship-building with industry
+            professionals.
+          </li>
+          <li>
+            Strategic thinking and persuasive storytelling to secure support and
+            funding.
+          </li>{" "}
+          <li>
+            Resilience to manage rejection and foster long-term partnerships.
+          </li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    subteam: "Electrical",
+    role: "Software Developer ",
     img: "/images/join_page/join_electrical.jpg",
     formLink: "https://forms.gle/TjAdcGJ4XshRsRn49",
-  },  {
-    subteam: "Electrical - Hardware",
+    content: (
+      <div className="flex flex-col text-left overflow-y-scroll">
+        The Electrical subteam oversees the bike&apos;s electrical and software
+        systems, including cameras and data acquisition tools essential for
+        rider safety and performance. The setup features Raspberry Pis,
+        microcontrollers, sensors, and custom software for field data analysis.{" "}
+        <br />
+        <b>Responsibilities:</b>
+        <ul className="pl-4">
+          <li>Develop and maintain the team&apos;s React-based web application.</li>
+          <li>
+            Contribute to Python projects for physical modelling, data
+            processing, and microcontroller programming.
+          </li>
+          <li>
+            Write clear documentation for codebases, APIs, and pull requests to
+            support team collaboration.
+          </li>
+        </ul>
+        <b>Key Skills:</b>
+        <ul className="pl-4">
+          <li>Experience with Javascript/TypeScript, React and/or Python.</li>
+          <li>Familiarity with Git version control.</li>{" "}
+          <li>Experience with maintaining and documenting code.</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    subteam: "Electrical",
+    role: "Hardware Member ",
     img: "/images/join_page/join_electrical.jpg",
     formLink: "https://forms.gle/7PQXNrRSYSEDM9NF8",
+    content: (
+      <div className="flex flex-col text-left overflow-y-scroll">
+        The Electrical subteam oversees the bike&apos;s electrical and software
+        systems, including cameras and data acquisition tools essential for
+        rider safety and performance. The setup features Raspberry Pis,
+        microcontrollers, sensors, and custom software for field data analysis.{" "}
+        <br />
+        <b>Responsibilities:</b>
+        <ul className="pl-4">
+          <li>
+            Design and manufacture PCBs, including schematics, simulations, and
+            documentation.
+          </li>
+          <li>
+            {" "}
+            Program Raspberry Pi and microcontrollers to interface with sensor
+            systems.
+          </li>
+          <li>
+            Support testing and troubleshooting of electronic systems during
+            on-track sessions.
+          </li>
+        </ul>
+        <b>Key Skills:</b>
+        <ul className="pl-4">
+          <li>
+            Experience with practical projects using Arduino, Raspberry Pi or
+            similar printed circuit boards (PCBs).
+          </li>
+          <li>Knowledge in C or Python programming.</li>
+          <li>
+            Interested in circuit/PCB design for microcontrollers and sensors.
+          </li>
+        </ul>
+      </div>
+    ),
   },
   {
     subteam: "Materials",
+    role: "Team Member",
+
     img: "/images/join_page/join_materials.jpg",
     formLink: "https://forms.gle/kpHaodUN7fvxmfjh9",
+    content: (
+      <div className="flex flex-col text-left overflow-y-scroll">
+        The Materials subteam prototypes and manufactures the fairing, focusing
+        on optimising its design for aerodynamics and rider safety. They
+        research and experiment with various composite manufacturing methods and
+        composite materials to create the aerodynamic fairing.
+        <br />
+        <b>Responsibilities:</b>
+        <ul className="pl-4">
+          <li>
+            Using finite element analysis (FEA) software to design and optimise
+            composite components.
+          </li>
+          <li>
+            {" "}
+            Manufacturing the fairing and supplementary composite components.
+          </li>
+          <li>
+            Critically analysing processes and testing samples to improve the
+            team&apos;s understanding of composites and optimise manufacturing
+            methods.
+          </li>
+        </ul>
+        <b>Key Skills:</b>
+        <ul className="pl-4">
+          <li>
+            Experience with ANSYS Mechanical, ACP, and a solid understanding of
+            CAD and FEA is preferred.
+          </li>
+          <li>Basic understanding of composites.</li>
+          <li>High attention to detail and willingness to learn.</li>{" "}
+          <li>
+            Strong sense of initiative, creativity and experience with personal
+            hands on projects.
+          </li>
+        </ul>
+      </div>
+    ),
   },
   {
     subteam: "Aerodynamics",
+    role: "Team Member",
     img: "/images/join_page/join_aerodynamics.jpg",
     formLink: "https://forms.gle/Mz3PqnVuEYwZ2CM17",
+    content: (
+      <div className="flex flex-col text-left overflow-y-scroll">
+        The Aerodynamics subteam at MHP designs and tests aerodynamic components
+        like the external shell and wheel covers to reduce drag and increase
+        bike speed. They use computational fluid dynamics (CFD) to learn and
+        make aerodynamic design choices that optimise and enhance bike
+        performance.
+        <br />
+        <b>Responsibilities:</b>
+        <ul className="pl-4">
+          <li>
+            Design and test aerodynamic components using CAD tools like NX.
+          </li>
+          <li> Conduct CFD simliations using ANSYS Fluent.</li>
+          <li>
+            Contribute to manufacturing, data analysis, and upskilling fellow
+            team members in aerodynamic principles and tools.
+          </li>
+        </ul>
+        <b>Key Skills:</b>
+        <ul className="pl-4">
+          <li>
+            Strong understanding of aerodynamics, CFD simliations, and
+            experience with ANSYS Fluent.
+          </li>
+          <li>
+            Proficiency in CAD software, especially NX and SolidWorks, with an
+            interest in 3D printing for prototyping.
+          </li>
+        </ul>
+      </div>
+    ),
   },
   {
     subteam: "Rider Development",
+    role: "Rider",
     img: "/images/join_page/join_rider_dev.jpg",
     formLink: "https://forms.gle/Xm8KgDh1M4Vb54PP9",
+    content: (
+      <div className="flex flex-col text-left overflow-y-scroll">
+        The Rider Development subteam focuses on maximising rider performance.
+        Comprised of riders and technical members, they arrange cycling and
+        strength training, develop personal power plans, and coordinate training
+        days at the Packer Park Velodrome.
+        <br />
+        <b>Responsibilities:</b>
+        <ul className="pl-4">
+          <li>
+            Train consistently to develop the physical and mental strength
+            required for high-speed intensive cycling.
+          </li>
+          <li>
+            Master the use of the onboard camera system to maintain control and
+            awareness while riding.
+          </li>
+          <li>
+            Participate in testing sessions and race events, including
+            international competitions like Battle Mountain, to push the limits
+            of human-powered speed.
+          </li>
+        </ul>
+        <b>Key Skills:</b>
+        <ul className="pl-4">
+          <li>
+            Strong physical and mental fitness, with a background or keen
+            interest in cycling
+          </li>
+          <li>
+            Possess strong cardiovascular endurance required to maintain high
+            intensity cycling over extended periods.
+          </li>
+          <li>Passion for competitive high-speed racing.</li>
+        </ul>
+      </div>
+    ),
   },
   {
     subteam: "Chassis and Drivetrain",
+    role: "Chassis Engineer",
     img: "/images/join_page/join_chassis_drivetrain.jpg",
     formLink: "https://forms.gle/wJXyqcAnRGDGUYSv9",
+    content: (
+      <div className="flex flex-col text-left overflow-y-scroll">
+        The Chassis & Drivetrain subteam designs and manufactures all mechanical
+        components of the vehicle, using CAD and Finite Element Analysis (FEA)
+        to model and verify their strength. They utilise Monash University
+        facilities for manufacturing, employing techniques like welding and 3D
+        printing.
+        <br />
+        <b>Responsibilities:</b>
+        <ul className="pl-4">
+          <li>
+            Design and test the vehicle&apos;s chassis, currently using a chromoly
+            steel space-frame.
+          </li>{" "}
+          <li>
+            Develop and validate CAD models and structural components using FEA
+            tools.
+          </li>{" "}
+          <li>
+            Contribute to future design improvements, including exploration of
+            composite materials.
+          </li>
+        </ul>
+        <b>Key Skills:</b>
+        <ul className="pl-4">
+          <li>
+            Strong CAD and FEA skills, with an interest in vehicular frame
+            design and prototyping to test solutions.
+          </li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    subteam: "Chassis and Drivetrain",
+    role: "Drivetrain Expert",
+    img: "/images/join_page/join_chassis_drivetrain.jpg",
+    formLink: "https://forms.gle/wJXyqcAnRGDGUYSv9",
+    content: (
+      <div className="flex flex-col text-left overflow-y-scroll">
+        The Chassis & Drivetrain subteam designs and manufactures all mechanical
+        components of the vehicle, using CAD and Finite Element Analysis (FEA)
+        to model and verify their strength. They utilise Monash University
+        facilities for manufacturing, employing techniques like welding and 3D
+        printing.
+        <br />
+        <b>Responsibilities:</b>
+        <ul className="pl-4">
+          <li>
+            Optimise drivetrain performance using cycling knowledge and
+            industry-standard components.
+          </li>
+          <li>
+            Advise on component selection and configuration to improve
+            efficiency and reliability.
+          </li>
+          <li>
+            Collaborate with other engineers to ensure seamless integration
+            within the vehicle system.
+          </li>
+        </ul>
+        <b>Key Skills:</b>
+        <ul className="pl-4">
+          <li>
+            Comprehensive knowledge of bicycle drivetrains, with experience in
+            working with and maintaining them.
+          </li>
+        </ul>{" "}
+      </div>
+    ),
   },
 ];
 
@@ -49,7 +423,6 @@ export default function ApplicationCarousel() {
   const xMotionValue = useMotionValue(0);
   const isInView = useInView(scrollRef, { once: true, amount: 0.8 });
 
-
   const handlePointerDown = (e: React.PointerEvent) => {
     setPointerDown(true);
     setDragStart({
@@ -57,8 +430,6 @@ export default function ApplicationCarousel() {
       scrollX: xMotionValue.get(),
     });
   };
-
-
 
   // Track pointer move when pointer is down
   useEffect(() => {
@@ -85,7 +456,6 @@ export default function ApplicationCarousel() {
         );
         xMotionValue.set(newX);
       }
-
     };
 
     const handlePointerUp = () => {
@@ -117,10 +487,8 @@ export default function ApplicationCarousel() {
         // allow for vertical scrolling + horizontal
         const newX = Math.max(
           -maxScroll,
-          Math.min(0, currentX - (e.deltaX * 0.9+ e.deltaY * 0.9))
+          Math.min(0, currentX - (e.deltaX * 0.9 + e.deltaY * 0.9))
         );
-
-
 
         animate(xMotionValue, newX, {
           type: "spring",
