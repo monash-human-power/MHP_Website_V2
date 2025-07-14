@@ -113,10 +113,14 @@ export default function ApplicationCarousel() {
         const maxScroll =
           scrollRef.current.scrollWidth - scrollRef.current.clientWidth;
         const currentX = xMotionValue.get();
+
+        // allow for vertical scrolling + horizontal
         const newX = Math.max(
           -maxScroll,
-          Math.min(0, currentX - e.deltaY * 0.5)
+          Math.min(0, currentX - (e.deltaX * 0.9+ e.deltaY * 0.9))
         );
+
+
 
         animate(xMotionValue, newX, {
           type: "spring",
