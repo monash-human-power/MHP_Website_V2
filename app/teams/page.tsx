@@ -185,9 +185,7 @@ export default function TeamPage() {
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
           <div className="relative z-10">
             <h2 className="text-center text-4xl font-bold mb-2">
-              {currentTeam.name == "Management Team"
-                ? "Upper management"
-                : "Team Members"}
+              Team Members
             </h2>
             <div className={`${getLeadLayoutClasses(currentTeam.Team_Leads, currentTeam.name)} px-8 mb-12`}>
               {currentTeam.Team_Leads?.map((lead, index) => (
@@ -196,7 +194,7 @@ export default function TeamPage() {
                   className={`bg-gray-900 p-4 rounded-lg text-center ${
                     currentTeam.Team_Leads.length === 3 && index === 2
                       ? "lg:col-start-1 lg:col-end-3"
-                      : ""
+                      : currentTeam.name === "Management Team" ? "lg:col-start-1 lg:col-end-3" : ""
                   }`}
                 >
                   <Image

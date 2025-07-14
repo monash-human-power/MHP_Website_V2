@@ -10,7 +10,9 @@
           "role": "Chief Executive Officer",
           "department": "Science and Information Technology",
           "image": "/images/teams_page/Ops/valerie_tang.jpg"
-        },
+        }
+      ],
+      "members": [
         {
           "name": "Harvey Cook",
           "role": "Chief Technical Officer",
