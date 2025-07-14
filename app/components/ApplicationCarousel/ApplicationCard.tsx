@@ -39,7 +39,7 @@ export default function ApplicationCard({
               alt={`Subteam ${subteam}`}
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#000000]/60 flex flex-col justify-end align-middle p-5">
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#000000]/80 flex flex-col justify-end align-middle p-5">
               {role && (
                 <p className="z-10 font-bold text-lg text-white">{role}</p>
               )}

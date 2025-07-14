@@ -52,7 +52,7 @@ const teamApplications = [
   {
     subteam: "Operations",
     role: "Marketing Officer / Graphic Designer ",
-    img: "/images/join_page/join_operations.jpg",
+    img: "/images/join_page/join_operations_marketing.jpg",
     formLink: "https://forms.gle/HHhRFBUFKCiRtEyH9",
     content: (
       <div className="flex flex-col text-left overflow-y-scroll">
@@ -94,7 +94,7 @@ const teamApplications = [
   {
     subteam: "Operations",
     role: "Sponsorship Officer ",
-    img: "/images/join_page/join_operations.jpg",
+    img: "/images/join_page/join_operations_sponsor.jpg",
     formLink: "https://forms.gle/HHhRFBUFKCiRtEyH9",
     content: (
       <div className="flex flex-col text-left overflow-y-scroll">
@@ -114,7 +114,7 @@ const teamApplications = [
             goals and interests.
           </li>
           <li>
-            Secure and maintain sponsorships by presenting compelling proposals,
+            Secure and maintain sponsorships by presenting compelling proposals,
             handling objections, and ensuring consistent follow-up.
           </li>
         </ul>
@@ -138,7 +138,7 @@ const teamApplications = [
   {
     subteam: "Electrical",
     role: "Software Developer ",
-    img: "/images/join_page/join_electrical.jpg",
+    img: "/images/join_page/join_electrical_software.jpg",
     formLink: "https://forms.gle/TjAdcGJ4XshRsRn49",
     content: (
       <div className="flex flex-col text-left overflow-y-scroll">
@@ -339,7 +339,7 @@ const teamApplications = [
   {
     subteam: "Chassis and Drivetrain",
     role: "Chassis Engineer",
-    img: "/images/join_page/join_chassis_drivetrain.jpg",
+    img: "/images/join_page/join_chassis_engineer.jpg",
     formLink: "https://forms.gle/wJXyqcAnRGDGUYSv9",
     content: (
       <div className="flex flex-col text-left overflow-y-scroll">
