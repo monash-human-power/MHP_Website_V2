@@ -130,7 +130,7 @@ export default function Page() {
               Our Values
             </h2>
 
-            <div className="grid grid-cols-2   md:grid-cols-3 gap-4 mt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
               {values.map((value,idx) => (
                 <div key={idx} className="flex flex-col justify-start items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5 h-full">
                   <h2 className="text-l font-semibold  text-wrap text-center p-3 sm:mb-0   md:text-xl">
@@ -141,42 +141,6 @@ export default function Page() {
                   </p>
                 </div>
               ))}
-              {/* <div className="flex flex-col justify-start items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5 h-full">
-                <h2 className="text-xl font-semibold text-center p-3 sm:mb-0">
-                  Community
-                </h2>
-                <p className="my-4 max-w-prose text-center">
-                  We foster meaningful relationships.
-                  <br />
-                  We celebrate each other.
-                  <br />
-                  We promote education and collaboration with the HPV community.
-                </p>
-              </div>
-              <div className="flex flex-col justify-start items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5 h-full">
-                <h2 className="text-xl font-semibold text-center p-3 sm:mb-0">
-                  Curiosity
-                </h2>
-                <p className="my-4 max-w-prose text-center">
-                  We encourage innovation.
-                  <br />
-                  We ask questions.
-                  <br />
-                  We push the bounds of what is thought possible.
-                </p>
-              </div>
-              <div className="flex flex-col justify-start items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5 h-full">
-                <h2 className="text-xl font-semibold text-center p-3 sm:mb-0">
-                  Class
-                </h2>
-                <p className="my-4 max-w-prose text-center">
-                  We take pride in our work.
-                  <br />
-                  We deliver exceptional results.
-                  <br />
-                  We never compromise safety.
-                </p>
-              </div> */}
             </div>
           </div>
         </PageSection>
