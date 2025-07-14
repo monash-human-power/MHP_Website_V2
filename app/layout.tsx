@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar/navBar";
 import Footer from "./components/footer";
 import { GoogleAnalytics } from '@next/third-parties/google';
+import Banner from "./components/Banner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({
         className={inter.className + " bg-black flex flex-col min-h-screen"}
       >
         <Navbar />
+        <Banner />
         <div className="flex-1 " style={{width: "95%", margin: "0 auto", textAlign: "center",} } >{children}</div>
         <Footer />
       </body>
