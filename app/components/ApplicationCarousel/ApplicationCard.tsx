@@ -40,10 +40,14 @@ export default function ApplicationCard({
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#000000]/80 flex flex-col justify-end align-middle p-5">
-              {role && (
-                <p className="z-10 font-bold text-lg text-white">{role}</p>
-              )}
+            {/* Hide role + subteam info if on mobile and info is opened */}
+            <div className={`${isOpen&&" hidden md:block"}`}>
+            <p className="z-10 font-bold text-lg text-white">
+                {role ? role : "Team member"}
+              </p>
               <p className="z-10  text-lg text-green">{subteam}</p>{" "}
+            </div>
+
             </div>
 
             {/* Mobile info */}
@@ -51,9 +55,9 @@ export default function ApplicationCard({
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                className=" flex sm:hidden p-5 absolute inset-0 bg-gradient-to-b from-[#000000]/80 to-[#000000]/90 "
+                className=" flex sm:hidden p-5 absolute inset-0 bg-gradient-to-b from-[#000000]/80 to-[#000000]/90 text-white "
               >
-                <p className="z-10 font-bold text-lg text-white">{content}</p>
+                {content}
               </motion.div>
             )}
           </div>
