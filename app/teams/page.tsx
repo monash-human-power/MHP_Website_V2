@@ -224,8 +224,8 @@ export default function TeamPage() {
                   <Image
                     src={member.image} // Load team member's image
                     alt={member.name}
-                    width={150}
-                    height={150}
+                    width={200}
+                    height={200}
                     className="mx-auto rounded-md"
                   />
                   <h4 className="text-lg font-bold mt-4 text-green">
