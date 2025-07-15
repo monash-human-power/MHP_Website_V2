@@ -18,6 +18,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
+  // Banner text
+  const BANNER_TEXT = "Showcase 01 Jan 2025"
+
+
   return (
     <html lang="en">
       <head>
@@ -27,7 +32,7 @@ export default function RootLayout({
         className={inter.className + " bg-black flex flex-col min-h-screen"}
       >
         <Navbar />
-        <Banner />
+        <Banner text={BANNER_TEXT} isVisible={true} />
         <div className="flex-1 " style={{width: "95%", margin: "0 auto", textAlign: "center",} } >{children}</div>
         <Footer />
       </body>
