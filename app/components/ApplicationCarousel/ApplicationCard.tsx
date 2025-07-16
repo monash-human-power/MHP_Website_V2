@@ -10,6 +10,8 @@ interface ApplicationCardProps {
   img: string;
   formLink: string;
   content: React.ReactNode;
+  onMouseHover: ()=>void;
+  onMouseLeave: ()=>void;
 }
 
 export default function ApplicationCard({
@@ -18,20 +20,21 @@ export default function ApplicationCard({
   img,
   formLink,
   content,
+  onMouseHover,onMouseLeave
 }: ApplicationCardProps) {
   const [isOpen, setIsOpen] = useState(false);
   // TODO: Consider mobile view, compact info into the card?
   return (
-    <div className="m-10 flex-shrink-0  flex flex-col items-center justify-center p-5  gap-5 ">
+    <div className="m-10 flex-shrink-0  flex flex-col items-center justify-center p-5  gap-5  ">
       {/* Card */}
-      <div className="flex flex-row -gap-5">
+      <div className="flex flex-row -gap-5 ">
         {/* Grid container for overlaying */}
         <div
           onClick={() => setIsOpen((prev) => !prev)}
           className="grid grid-cols-1 grid-rows-1 h-[400px]"
         >
           {/* Image container */}
-          <div className="col-start-1 row-start-1 z-10 relative h-[400px] w-[250px] rounded-xl overflow-hidden  ">
+          <div className="col-start-1 row-start-1 z-10 relative h-[400px] w-[250px] rounded-xl overflow-hidden hover:cursor-pointer ">
             <Image
               src={img}
               width="800"
@@ -65,6 +68,7 @@ export default function ApplicationCard({
 
         {/* Info slide out */}
 
+{/* TODO: ALLOW FOR SCROLLING WITH WHEEL HERE */}
         {isOpen && (
           <AnimatePresence>
             <motion.div
@@ -74,6 +78,9 @@ export default function ApplicationCard({
               exit={{ opacity: 0 }}
               key={subteam}
               className=" hidden sm:flex relative z-0 -ml-20 pl-20 p-5 h-[400px] max-w-2xl bg-[#000000]/80 text-white  rounded-xl"
+              onMouseEnter={onMouseHover}
+              onMouseLeave={onMouseLeave}
+
             >
               {content}
             </motion.div>

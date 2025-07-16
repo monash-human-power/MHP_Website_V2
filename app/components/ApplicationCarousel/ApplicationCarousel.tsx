@@ -110,8 +110,8 @@ const teamApplications = [
             professional communication and rapport-building.
           </li>
           <li>
-            Understand sponsor needs and align MHP&apos;s value proposition to their
-            goals and interests.
+            Understand sponsor needs and align MHP&apos;s value proposition to
+            their goals and interests.
           </li>
           <li>
             Secure and maintain sponsorships by presenting compelling proposals,
@@ -149,7 +149,9 @@ const teamApplications = [
         <br />
         <b>Responsibilities:</b>
         <ul className="pl-4">
-          <li>Develop and maintain the team&apos;s React-based web application.</li>
+          <li>
+            Develop and maintain the team&apos;s React-based web application.
+          </li>
           <li>
             Contribute to Python projects for physical modelling, data
             processing, and microcontroller programming.
@@ -352,8 +354,8 @@ const teamApplications = [
         <b>Responsibilities:</b>
         <ul className="pl-4">
           <li>
-            Design and test the vehicle&apos;s chassis, currently using a chromoly
-            steel space-frame.
+            Design and test the vehicle&apos;s chassis, currently using a
+            chromoly steel space-frame.
           </li>{" "}
           <li>
             Develop and validate CAD models and structural components using FEA
@@ -420,6 +422,7 @@ export default function ApplicationCarousel() {
   const [pointerDown, setPointerDown] = useState(false);
   const [dragStart, setDragStart] = useState({ x: 0, scrollX: 0 });
   const [isHovered, setIsHovered] = useState(false);
+  const [isCardHovered, setIsCardHovered] = useState(false); // if hovering over a card, scroll card not div :D
   const xMotionValue = useMotionValue(0);
   const isInView = useInView(scrollRef, { once: true, amount: 0.8 });
 
@@ -477,7 +480,9 @@ export default function ApplicationCarousel() {
 
   // Wheel scrolling handling
   useEffect(() => {
+    console.log(isCardHovered)
     const handleWheel = (e: WheelEvent) => {
+      let newX = 0;
       if (isHovered && scrollRef.current) {
         e.preventDefault();
         const maxScroll =
@@ -485,25 +490,31 @@ export default function ApplicationCarousel() {
         const currentX = xMotionValue.get();
 
         // allow for vertical scrolling + horizontal
-        const newX = Math.max(
-          -maxScroll,
-          Math.min(0, currentX - (e.deltaX * 0.9 + e.deltaY * 0.9))
-        );
-
-        animate(xMotionValue, newX, {
-          type: "spring",
-          stiffness: 400,
-          damping: 30,
-          mass: 0.5,
-        });
+        if (isCardHovered) {
+          // If hovering over card, only allow moving via horizontal scrolling
+          newX = Math.max(-maxScroll, Math.min(0, currentX - e.deltaX * 0.9));
+        } else {
+          // else allow both
+          newX = Math.max(
+            -maxScroll,
+            Math.min(0, currentX - (e.deltaX * 0.9 + e.deltaY * 0.9))
+          );
+        }
       }
+
+      animate(xMotionValue, newX, {
+        type: "spring",
+        stiffness: 400,
+        damping: 30,
+        mass: 0.5,
+      });
     };
 
     document.addEventListener("wheel", handleWheel, { passive: false });
     return () => {
       document.removeEventListener("wheel", handleWheel);
     };
-  }, [xMotionValue, isHovered]);
+  }, [xMotionValue, isHovered,isCardHovered]);
 
   return (
     <div className="overflow-x-scroll overflow-y-hidden  scrollbar-dark">
@@ -529,7 +540,12 @@ export default function ApplicationCarousel() {
               userSelect: isDragging ? "none" : "auto",
             }}
           >
-            <ApplicationCard {...team} key={idx} />
+            <ApplicationCard
+              {...team}
+              onMouseHover={() => setIsCardHovered(true)}
+              onMouseLeave={() => setIsCardHovered(false)}
+              key={idx}
+            />
           </motion.div>
         ))}
       </motion.div>
