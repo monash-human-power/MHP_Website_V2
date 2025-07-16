@@ -3,12 +3,11 @@ import ApplicationCarousel from "../components/ApplicationCarousel/ApplicationCa
 import PageSection from "../components/PageSection";
 import Image from "next/image";
 
-
 // TODO: Perhaps convert into json for consistency
 const teamApplications = [
   {
     subteam: "Operations",
-    role: "Events officer",
+    role: "Events Officer",
     img: "/images/join_page/join_operations.jpg",
     formLink: "https://forms.gle/HHhRFBUFKCiRtEyH9",
     content: (
@@ -132,6 +131,47 @@ const teamApplications = [
           </li>{" "}
           <li>
             Resilience to manage rejection and foster long-term partnerships.
+          </li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    subteam: "Operations",
+    role: "Web Developer ",
+    img: "/images/join_page/join_operations_website.jpg",
+    formLink: "https://forms.gle/HHhRFBUFKCiRtEyH9",
+    content: (
+      <div className="flex flex-col text-left overflow-y-auto">
+        The Operations subteam handles marketing, sponsorship, events, and
+        outreach to promote MHP and engage the community. They run programs like
+        “Build a HPV,” manage sponsor relations, and support STEM engagement,
+        branding, and the team&apos;s website.
+        <br />
+        <b>Responsibilities:</b>
+        <ul className="pl-4">
+          <li>
+            Design, build, and maintain a visually appealing, user-friendly, and
+            engaging website.
+          </li>
+          <li>
+            Test, debug, and optimise website features to ensure smooth
+            functionality across different devices.
+          </li>
+          <li>
+            Create UI designs and prototypes that align with MHP&apos;s brand
+            and user needs.
+          </li>
+        </ul>
+        <b>Key Skills:</b>
+        <ul className="pl-4">
+          <li>
+            Proficient in React, Tailwind CSS, and version control systems like
+            Git.{" "}
+          </li>
+          <li>Strong grasp of UX/UI principles. </li>
+          <li>
+            Experience working with content management systems (CMS) is a plus.{" "}
           </li>
         </ul>
       </div>
@@ -342,16 +382,14 @@ const teamApplications = [
   },
   {
     subteam: "Chassis and Drivetrain",
-    role: "Chassis Engineer",
-    img: "/images/join_page/join_chassis_engineer.jpg",
+    img: "/images/join_page/join_chassis.jpg",
     formLink: "https://forms.gle/wJXyqcAnRGDGUYSv9",
     content: (
       <div className="flex flex-col text-left overflow-y-auto">
         The Chassis & Drivetrain subteam designs and manufactures all mechanical
         components of the vehicle, using CAD and Finite Element Analysis (FEA)
         to model and verify their strength. They utilise Monash University
-        facilities for manufacturing, employing techniques like welding and 3D
-        printing.
+        facilities for manufacturing, employing techniques like welding and building.
         <br />
         <b>Responsibilities:</b>
         <ul className="pl-4">
@@ -367,32 +405,6 @@ const teamApplications = [
             Contribute to future design improvements, including exploration of
             composite materials.
           </li>
-        </ul>
-        <b>Key Skills:</b>
-        <ul className="pl-4">
-          <li>
-            Strong CAD and FEA skills, with an interest in vehicular frame
-            design and prototyping to test solutions.
-          </li>
-        </ul>
-      </div>
-    ),
-  },
-  {
-    subteam: "Chassis and Drivetrain",
-    role: "Drivetrain Expert",
-    img: "/images/join_page/join_chassis_drivetrain.jpg",
-    formLink: "https://forms.gle/wJXyqcAnRGDGUYSv9",
-    content: (
-      <div className="flex flex-col text-left overflow-y-auto">
-        The Chassis & Drivetrain subteam designs and manufactures all mechanical
-        components of the vehicle, using CAD and Finite Element Analysis (FEA)
-        to model and verify their strength. They utilise Monash University
-        facilities for manufacturing, employing techniques like welding and 3D
-        printing.
-        <br />
-        <b>Responsibilities:</b>
-        <ul className="pl-4">
           <li>
             Optimise drivetrain performance using cycling knowledge and
             industry-standard components.
@@ -409,15 +421,18 @@ const teamApplications = [
         <b>Key Skills:</b>
         <ul className="pl-4">
           <li>
+            Strong CAD and FEA skills, with an interest in vehicular frame
+            design and prototyping to test solutions.
+          </li>
+          <li>
             Comprehensive knowledge of bicycle drivetrains, with experience in
             working with and maintaining them.
           </li>
-        </ul>{" "}
+        </ul>
       </div>
     ),
-  },
+  }
 ];
-
 
 export default function Join() {
   return (
