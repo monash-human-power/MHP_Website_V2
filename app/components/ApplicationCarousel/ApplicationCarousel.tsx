@@ -492,12 +492,12 @@ export default function ApplicationCarousel() {
         // allow for vertical scrolling + horizontal
         if (isCardHovered) {
           // If hovering over card, only allow moving via horizontal scrolling
-          newX = Math.max(-maxScroll, Math.min(0, currentX - e.deltaX * 0.9));
+          newX = Math.max(-maxScroll, Math.min(0, currentX - e.deltaX ));
         } else {
           // else allow both
           newX = Math.max(
             -maxScroll,
-            Math.min(0, currentX - (e.deltaX * 0.9 + e.deltaY * 0.9))
+            Math.min(0, currentX - (e.deltaX + e.deltaY ))
           );
         }
       }
