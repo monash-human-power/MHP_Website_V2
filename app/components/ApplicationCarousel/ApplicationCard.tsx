@@ -4,15 +4,18 @@ import Button from "../Buttons";
 import Image from "next/image";
 import { AnimatePresence, motion } from "motion/react";
 
-interface ApplicationCardProps {
+export type ApplicationCardInfo = {
   subteam: string;
   role?: string;
   img: string;
   formLink: string;
   content: React.ReactNode;
-  onMouseHover: ()=>void;
-  onMouseLeave: ()=>void;
-}
+};
+type ApplicationCardProps = ApplicationCardInfo & {
+  content: React.ReactNode;
+  onMouseHover: () => void;
+  onMouseLeave: () => void;
+};
 
 export default function ApplicationCard({
   subteam,
@@ -20,10 +23,14 @@ export default function ApplicationCard({
   img,
   formLink,
   content,
-  onMouseHover,onMouseLeave
+  onMouseHover,
+  onMouseLeave,
 }: ApplicationCardProps) {
   const [isOpen, setIsOpen] = useState(false);
-  // TODO: Consider mobile view, compact info into the card?
+
+  
+  // TODO: FIX HANDLING ON CHROME, 
+
   return (
     <div className="m-10 flex-shrink-0  flex flex-col items-center justify-center p-5  gap-5  ">
       {/* Card */}
@@ -43,14 +50,13 @@ export default function ApplicationCard({
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#000000]/80 flex flex-col justify-end align-middle p-5">
-            {/* Hide role + subteam info if on mobile and info is opened */}
-            <div className={`${isOpen&&" hidden md:block"}`}>
-            <p className="z-10 font-bold text-lg text-white">
-                {role ? role : "Team member"}
-              </p>
-              <p className="z-10  text-lg text-green">{subteam}</p>{" "}
-            </div>
-
+              {/* Hide role + subteam info if on mobile and info is opened */}
+              <div className={`${isOpen && " hidden md:block"}`}>
+                <p className="z-10 font-bold text-lg text-white">
+                  {role ? role : "Team member"}
+                </p>
+                <p className="z-10  text-lg text-green">{subteam}</p>{" "}
+              </div>
             </div>
 
             {/* Mobile info */}
@@ -68,7 +74,7 @@ export default function ApplicationCard({
 
         {/* Info slide out */}
 
-{/* TODO: ALLOW FOR SCROLLING WITH WHEEL HERE */}
+        {/* TODO: ALLOW FOR SCROLLING WITH WHEEL HERE */}
         {isOpen && (
           <AnimatePresence>
             <motion.div
@@ -80,7 +86,6 @@ export default function ApplicationCard({
               className=" hidden sm:flex relative z-0 -ml-20 pl-20 p-5 h-[400px] max-w-2xl bg-[#000000]/80 text-white  rounded-xl"
               onMouseEnter={onMouseHover}
               onMouseLeave={onMouseLeave}
-
             >
               {content}
             </motion.div>
