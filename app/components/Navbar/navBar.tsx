@@ -4,6 +4,7 @@ import Image from "next/image";
 import NavItem from "./NavItem";
 import MobileNavItem from "./MobileNavItem";
 import { useState } from "react";
+import Banner from "../Banner";
 
 interface NavItemsProps {
   name: string;
@@ -72,6 +73,10 @@ const Navbar = () => {
       setCompMenu(!compMenu);
     }
   };
+
+  // Banner settings
+  const BANNER_TEXT = "Launch Night 13 August 2025"
+  const SHOW_BANNER = true
 
   // Old code for drop down menus
   // const handleItemClick = (item: MobileNavItemsProps) => {
@@ -267,6 +272,7 @@ const Navbar = () => {
             ))}
           </div>
         </div>
+        <Banner text={BANNER_TEXT} isVisible={SHOW_BANNER} />
       </nav>
     </header>
     </>
