@@ -144,24 +144,24 @@ export default function TeamPage() {
 
         {/* Dynamic Team Section */}
         <section className="">
-          <div className="flex flex-col lg:flex-row justify-center items-center lg:space-x-8 px-8">
+          <div className="flex flex-col lg:flex-row justify-center items-stretch lg:space-x-8 px-8">
             {/* Image */}
             <div className="w-full lg:w-1/2 md:w-1/2">
               <div className={`transition-opacity duration-300 ${fadeClass}`}>
                 <Image
                   src={currentTeam.image} // Dynamically load the image from JSON
                   alt={currentTeam.name}
-                  width={600}
-                  height={350}
-                  className="rounded-lg"
+                  width={800}
+                  height={650}
+                  className="mx-auto rounded-lg object-cover xl:w-[500px] xl:h-[300px]"
                 />
               </div>
             </div>
 
             {/* Description */}
-            <div className="mt-2 mx-2 lg:mt-0 lg:w-1/2 md:w-1/2 md:items-center">
+            <div className="mt-2 mx-2 lg:mt-0 lg:w-1/2 md:w-1/2 flex items-center">
               <div className={`transition-opacity duration-300 ${fadeClass}`}>
-                <h2 className="font-extralight">{currentTeam.description}</h2>
+                <p className="font-extralight text-center lg:text-justify">{currentTeam.description}</p>
               </div>
             </div>
           </div>
