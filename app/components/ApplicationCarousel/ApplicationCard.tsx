@@ -4,15 +4,21 @@ import Button from "../Buttons";
 import Image from "next/image";
 import { AnimatePresence, motion } from "motion/react";
 
+type ApplicationContent = {
+  description: string;
+  responsibilities: string[];
+  keySkills: string[];
+};
+
 export type ApplicationCardInfo = {
   subteam: string;
   role?: string;
   img: string;
   formLink: string;
-  content: React.ReactNode;
+  content: ApplicationContent;
 };
 type ApplicationCardProps = ApplicationCardInfo & {
-  content: React.ReactNode;
+  content: React.ReactNode; //TODO: Change format into an json object, render in here, or hVE OPTION FOR JSON OBJET
   onMouseHover: () => void;
   onMouseLeave: () => void;
 };
@@ -28,8 +34,25 @@ export default function ApplicationCard({
 }: ApplicationCardProps) {
   const [isOpen, setIsOpen] = useState(false);
 
-  
-  // TODO: FIX HANDLING ON CHROME, 
+  const contentDisplay = (
+    <div className="flex flex-col text-left overflow-y-auto">
+      {content.description} <br />
+      <b>Responsibilities:</b>
+      <ul className="pl-4">
+        {content.responsibilities.map((responsibility) => (
+          <li>{responsibility}</li>
+        ))}
+      </ul>
+      <b>Key Skills:</b>
+      <ul className="pl-4">
+        {content.keySkills.map((skill) => (
+          <li>{skill}</li>
+        ))}
+      </ul>
+    </div>
+  );
+
+  // TODO: FIX HANDLING ON CHROME,
 
   return (
     <div className="m-10 flex-shrink-0  flex flex-col items-center justify-center p-5  gap-5  ">
@@ -66,7 +89,7 @@ export default function ApplicationCard({
                 animate={{ opacity: 1 }}
                 className=" flex sm:hidden p-5 absolute inset-0 bg-gradient-to-b from-[#000000]/80 to-[#000000]/90 text-white "
               >
-                {content}
+                {contentDisplay}
               </motion.div>
             )}
           </div>
@@ -87,7 +110,7 @@ export default function ApplicationCard({
               onMouseEnter={onMouseHover}
               onMouseLeave={onMouseLeave}
             >
-              {content}
+              {contentDisplay}
             </motion.div>
           </AnimatePresence>
         )}
