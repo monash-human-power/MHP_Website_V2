@@ -18,9 +18,9 @@ export type ApplicationCardInfo = {
   content: ApplicationContent;
 };
 type ApplicationCardProps = ApplicationCardInfo & {
-  content: React.ReactNode; //TODO: Change format into an json object, render in here, or hVE OPTION FOR JSON OBJET
   onMouseHover: () => void;
   onMouseLeave: () => void;
+  key:number;
 };
 
 export default function ApplicationCard({
@@ -31,11 +31,12 @@ export default function ApplicationCard({
   content,
   onMouseHover,
   onMouseLeave,
+  key
 }: ApplicationCardProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const contentDisplay = (
-    <div className="flex flex-col text-left overflow-y-auto">
+    <div className="flex flex-col text-left overflow-y-auto" key={key}>
       {content.description} <br />
       <b>Responsibilities:</b>
       <ul className="pl-4">

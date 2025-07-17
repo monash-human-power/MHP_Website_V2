@@ -40,7 +40,7 @@ export default function Page() {
             if (section) observer.unobserve(section);
         });
         };
-    }, []);
+    }, [sectionRefs.current]);
 
     return (
     <>

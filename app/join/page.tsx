@@ -239,7 +239,7 @@ export default function Join() {
             <br />
 
             <p>
-              Apply for one of MHP's subteams below. <br />
+              Apply for one of MHP&apos;s subteams below. <br />
               If you have any further questions or queries, feel free to direct
               them to monashhpt@gmail.com
             </p>

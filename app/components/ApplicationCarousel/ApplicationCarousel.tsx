@@ -122,7 +122,7 @@ export default function ApplicationCarousel({applicationInfo}:ApplicationCarouse
           cursor: isDragging ? "grabbing" : "grab",
         }}
       >
-        {applicationInfo.map((team, idx) => (
+        {applicationInfo.map((application, idx) => (
           <motion.div
             key={idx}
             className="flex-shrink-0 "
@@ -134,7 +134,7 @@ export default function ApplicationCarousel({applicationInfo}:ApplicationCarouse
             }}
           >
             <ApplicationCard
-              {...team}
+              {...application}
               onMouseHover={() => setIsCardHovered(true)}
               onMouseLeave={() => setIsCardHovered(false)}
               key={idx}
