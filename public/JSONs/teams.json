@@ -98,6 +98,12 @@
           "image": "/images/teams_page/Electrical/arnav_singh_sethi.jpg"
         },
         {
+          "name": "Arosh Heenkenda",
+          "role": "Team Member",
+          "department": "Software Engineering and Computer Science",
+          "image": "/images/teams_page/UpperManage/arosh_heenkenda.jpg"
+        },
+        {
           "name": "Daniel He",
           "role": "Team Member",
           "department": "",
@@ -108,6 +114,12 @@
           "role": "Team Member",
           "department": "",
           "image": "/images/teams_page/Electrical/iris_nguyen.jpg"
+        },
+        {
+          "name": "James Robbs",
+          "role": "Team Member",
+          "department": "Engineering and Science",
+          "image": "/images/teams_page/Electrical/james_robbs.jpg"
         },
         {
           "name": "Jayden Le",
@@ -127,18 +139,17 @@
           "department": "",
           "image": "/images/teams_page/Electrical/joseph_lim.jpg"
         },
-
         {
-          "name": "Ngoc Thao Vy Nguyen",
-          "role": "Team Member",
-          "department": "Engineering",
-          "image": "/images/teams_page/Electrical/ngoc_thao_vy_nguyen.jpg"
-        },
-        {
-          "name": "Nguyen Khang Huynh",
+          "name": "Marcus Chow",
           "role": "Team Member",
           "department": "",
-          "image": "/images/teams_page/Ops/nguyen_khang_huynh.jpg"
+          "image": "/images/teams_page/Electrical/marcus_chow.jpg"
+        },
+        {
+          "name": "Nivantha Abeysekera",
+          "role": "Team Member",
+          "department": "Electrical Engineering",
+          "image": "/images/teams_page/Electrical/nivantha_abeysekara.jpg"
         },
         {
           "name": "Prince Jeremy Mendel-Idowu",
@@ -151,24 +162,6 @@
           "role": "Team Member",
           "department": "",
           "image": "/images/teams_page/Electrical/yixu_wang.jpg"
-        },
-        {
-          "name": "Prince (Jeremy) Mendel-Idowu",
-          "role": "Team Member",
-          "department": "",
-          "image": "/images/teams_page/Electrical/prince_mendel-idowu.jpg"
-        },
-        {
-          "name": "Arosh Heenkenda",
-          "role": "Team Member",
-          "department": "Software Engineering and Computer Science",
-          "image": "/images/teams_page/UpperManage/arosh_heenkenda.jpg"
-        },
-        {
-          "name": "Nivantha Abeysekera",
-          "role": "Team Member",
-          "department": "Electrical Engineering",
-          "image": "/images/teams_page/Electrical/nivantha_abeysekara.jpg"
         }
       ]
     },
@@ -266,7 +259,12 @@
           "department": "Mechanical Engineering",
           "image": "/images/teams_page/Materials/duc_thuan_le.jpg"
         },
-
+        {
+          "name": "James Cookson",
+          "role": "Team Member",
+          "department": "Electrical Engineering and Biomedical Science",
+          "image": "/images/teams_page/UpperManage/james_cookson.jpg"
+        },
         {
           "name": "Louis Hansford",
           "role": "Team Member",
@@ -296,12 +294,6 @@
           "role": "Team Member",
           "department": "Mechatronics Engineering",
           "image": "/images/teams_page/Materials/shriabhay_shriharsha.jpg"
-        },
-        {
-          "name": "James Cookson",
-          "role": "Team Member",
-          "department": "Electrical Engineering and Biomedical Science",
-          "image": "/images/teams_page/UpperManage/james_cookson.jpg"
         }
       ]
     },
@@ -310,6 +302,12 @@
       "description": "The Operations team manages external relationships, including sponsor partnerships, while overseeing MHP’s marketing and event coordination. They lead initiatives like the \"Build a HPV\" school outreach program, aimed at promoting STEM education and sustainable transport. Alongside these efforts, the Operations team also provides essential support for the technical teams during bike production and is heavily involved in MHP's graphic design and branding, ensuring a cohesive and professional visual identity across all platforms.",
       "image": "/images/teams_page/operations_team.png",
       "Team_Leads": [
+        {
+          "name": "Amy Tjea",
+          "role": "Website Lead",
+          "department": "Software Engineering and Computer Science",
+          "image": "/images/teams_page/Ops/amy_tjea.jpg"
+        },
         {
           "name": "Ritika Gopinath",
           "role": "Marketing Lead",
@@ -337,12 +335,6 @@
           "image": "/images/teams_page/Ops/alvin_fung.jpg"
         },
         {
-          "name": "Amy Tjea",
-          "role": "Website Lead",
-          "department": "Software Engineering and Computer Science",
-          "image": "/images/teams_page/Ops/amy_tjea.jpg"
-        },
-        {
           "name": "Choong (Connor) Ming Xuan",
           "role": "Team Member",
           "department": "",
@@ -359,12 +351,6 @@
           "role": "Team Member",
           "department": "",
           "image": "/images/teams_page/Ops/hoor_e_jannat_urboshi.jpg"
-        },
-        {
-          "name": "James Robbs",
-          "role": "Team Member",
-          "department": "Engineering and Science",
-          "image": "/images/teams_page/Ops/james_robbs.jpg"
         },
         {
           "name": "Keith Andre Abraham",
@@ -475,12 +461,6 @@
       "image": "/images/teams_page/chris-clarisse-spray-paint.jpg",
       "Team_Leads": [
         {
-          "name": "Kit Kirby",
-          "role": "AHPSC Project Manager",
-          "department": "Materials Engineering",
-          "image": "/images/teams_page/RiderDev/kit_kirby.jpg"
-        },
-        {
           "name": "Arnav Acharekar",
           "role": "Finance Manager",
           "department": "Electrical Engineering",
@@ -493,22 +473,16 @@
           "image": "/images/teams_page/Aero/james_di_nicolantonio.jpg"
         },
         {
-          "name": "Ngoc Thao Vy Nguyen",
-          "role": "HR Manager",
-          "department": "Engineering",
-          "image": "/images/teams_page/Electrical/ngoc_thao_vy_nguyen.jpg"
+          "name": "Kit Kirby",
+          "role": "AHPSC Project Manager",
+          "department": "Materials Engineering",
+          "image": "/images/teams_page/RiderDev/kit_kirby.jpg"
         },
         {
           "name": "Prince Jeremy Mendel-Idowu",
           "role": "Safety Manager",
           "department": "",
           "image": "/images/teams_page/Electrical/prince_mendel-idowu.jpg"
-        },
-        {
-          "name": "Kit Kirby",
-          "role": "Team Member",
-          "department": "AHPSC Project Manager",
-          "image": "/images/teams_page/RiderDev/kit_kirby.jpg"
         }
       ]
     }
