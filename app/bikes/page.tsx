@@ -1,6 +1,6 @@
 "use client"
 
-import React, {use, useState, useEffect, useRef} from 'react'
+import React, { useState, useEffect, useRef} from 'react'
 
 import PageSection from "../components/PageSection";
 import BikeSection from '../components/BikeSection';
@@ -40,7 +40,7 @@ export default function Page() {
             if (section) observer.unobserve(section);
         });
         };
-    }, []);
+    }, [sectionRefs.current]);
 
     return (
     <>

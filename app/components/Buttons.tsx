@@ -6,19 +6,20 @@ interface buttonProps {
   text: string;
   hrefString: string;
   target: "" | "_blank"
+  className?: string;
 }
 
-function Button({ theme, text, hrefString = "", target}: buttonProps) {
+function Button({ theme="dark", text, hrefString = "", target,className=""}: buttonProps) {
   const colourWay = {
 
-    light: "px-5 py-2 rounded-full border-2 bg-black text-white border-white hover:bg-green hover:text-black hover:border-black",
-    dark: "px-5 py-2 rounded-full border-2 bg-green text-black border-black hover:bg-black hover:text-white hover:border-white",
+    light: "px-5 py-2 rounded-full border-2 bg-black text-white border-white hover:bg-green hover:text-black hover:border-black font-Sansation",
+    dark: "px-5 py-2 rounded-full border-2 bg-green text-black border-black hover:bg-black hover:text-white hover:border-white font-Sansation",
   };
 
   return (
     <>
     <Link href={hrefString} target={target}>
-      <button className={colourWay[theme]}>{text}</button>
+      <button className={colourWay[theme] + className}>{text}</button>
     </Link>
     </>
   );
