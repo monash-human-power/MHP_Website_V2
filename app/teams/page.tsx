@@ -202,7 +202,7 @@ export default function TeamPage() {
                     alt={lead.name}
                     width={200}
                     height={200}
-                    className="mx-auto rounded-md"
+                    className="mx-auto rounded-md object-cover w-[220px] h-[150px]"
                   />
                   <h4 className="text-xl font-bold mt-4 text-green">
                     {lead.name}
@@ -226,7 +226,7 @@ export default function TeamPage() {
                     alt={member.name}
                     width={200}
                     height={200}
-                    className="mx-auto rounded-md"
+                    className="mx-auto rounded-md object-cover w-[220px] h-[150px]"
                   />
                   <h4 className="text-lg font-bold mt-4 text-green">
                     {member.name}
