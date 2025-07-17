@@ -84,6 +84,24 @@ const teamApplications: ApplicationCardInfo[] = [
         "Passion for competitive high-speed racing.",
       ],
     },
+  },  {
+    subteam: "Materials",
+    img: "/images/join_page/join_materials.jpg",
+    formLink: "https://forms.gle/bMRAw2q4nYRTg1LH8",
+    content: {
+      description: "The Materials subteam prototypes and manufactures the fairing, focusing on optimising its design for aerodynamics and rider safety. They research and experiment with various composite manufacturing methods and composite materials to create the aerodynamic fairing.",
+      responsibilities: [
+        "Using finite element analysis (FEA) software to design and optimise composite components.",
+        "Manufacturing the fairing and supplementary composite components.",
+        "Critically analysing processes and testing samples to improve the team’s understanding of composites and optimise manufacturing methods",
+      ],
+      keySkills: [
+        "Experience with ANSYS Mechanical, ACP, and a solid understanding of CAD and FEA is preferred.",
+        "Basic understanding of composites.",
+        "High attention to detail and willingness to learn.",
+        "Strong sense of initiative, creativity and experience with personal hands on projects."
+      ],
+    },
   },
   {
     subteam: "Chassis and Drivetrain",
