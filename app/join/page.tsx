@@ -31,7 +31,7 @@ const teamApplications: ApplicationCardInfo[] = [
     subteam: "Electrical",
     role: "Hardware Team Member ",
     img: "/images/join_page/join_electrical.jpg",
-    formLink: "https://forms.gle/TjAdcGJ4XshRsRn49",
+    formLink: "https://forms.gle/JMxtZdHxPHNQSz5M9",
     content: {
       description:
         "The Electrical subteam oversees the bike’s electrical and software systems, including cameras and data acquisition tools essential for rider safety and performance. The setup features components such as Raspberry Pis, microcontrollers, sensors, and custom software for field data analysis.",
