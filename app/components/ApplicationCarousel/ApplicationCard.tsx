@@ -40,14 +40,14 @@ export default function ApplicationCard({
       {content.description} <br />
       <b>Responsibilities:</b>
       <ul className="pl-4">
-        {content.responsibilities.map((responsibility) => (
-          <li>{responsibility}</li>
+        {content.responsibilities.map((responsibility,key) => (
+          <li key={key}>{responsibility}</li>
         ))}
       </ul>
       <b>Key Skills:</b>
       <ul className="pl-4">
-        {content.keySkills.map((skill) => (
-          <li>{skill}</li>
+        {content.keySkills.map((skill,key) => (
+          <li key={key}>{skill}</li>
         ))}
       </ul>
     </div>
