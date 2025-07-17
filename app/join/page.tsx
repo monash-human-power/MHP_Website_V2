@@ -130,7 +130,7 @@ const teamApplications: ApplicationCardInfo[] = [
     formLink: "https://forms.gle/HHhRFBUFKCiRtEyH9",
     content: {
       description:
-        "The Operations subteam handles marketing, sponsorship, events, and outreach to promote MHP and engage the community. They run programs like “Build a HPV,” manage sponsor relations, and support STEM engagement,branding, and the team&apos;s website.",
+        "The Operations subteam handles marketing, sponsorship, events, and outreach to promote MHP and engage the community. They run programs like “Build a HPV,” manage sponsor relations, and support STEM engagement,branding, and the team's website.",
       responsibilities: [
         "Plan and deliver engaging events to strengthen relationships with sponsors and maintain strong partnerships.",
         "Organise social activities and initiatives to build a strong, connected team culture within MHP.",
@@ -150,7 +150,7 @@ const teamApplications: ApplicationCardInfo[] = [
     formLink: "https://forms.gle/HHhRFBUFKCiRtEyH9",
     content: {
       description:
-        "The Operations subteam handles marketing, sponsorship, events, and outreach to promote MHP and engage the community. They run programs like “Build a HPV,” manage sponsor relations, and support STEM engagement,branding, and the team&apos;s website.",
+        "The Operations subteam handles marketing, sponsorship, events, and outreach to promote MHP and engage the community. They run programs like “Build a HPV,” manage sponsor relations, and support STEM engagement,branding, and the team's website.",
       responsibilities: [
         "Plan and deliver engaging events to strengthen relationships with sponsors and maintain strong partnerships.",
         "Organise social activities and initiatives to build a strong, connected team culture within MHP.",
@@ -170,7 +170,7 @@ const teamApplications: ApplicationCardInfo[] = [
     formLink: "https://forms.gle/HHhRFBUFKCiRtEyH9",
     content: {
       description:
-        "The Operations subteam handles marketing, sponsorship, events, and outreach to promote MHP and engage the community. They run programs like “Build a HPV,” manage sponsor relations, and support STEM engagement,branding, and the team&apos;s website.",
+        "The Operations subteam handles marketing, sponsorship, events, and outreach to promote MHP and engage the community. They run programs like “Build a HPV,” manage sponsor relations, and support STEM engagement,branding, and the team's website.",
       responsibilities: [
         "Engage and build relationships with potential sponsors through professional communication and rapport-building.",
         "Understand sponsor needs and align MHP’s value proposition to their goals and interests.",
@@ -190,7 +190,7 @@ const teamApplications: ApplicationCardInfo[] = [
     formLink: "https://forms.gle/HHhRFBUFKCiRtEyH9",
     content: {
       description:
-        "The Operations subteam handles marketing, sponsorship, events, and outreach to promote MHP and engage the community. They run programs like “Build a HPV,” manage sponsor relations, and support STEM engagement,branding, and the team&apos;s website.",
+        "The Operations subteam handles marketing, sponsorship, events, and outreach to promote MHP and engage the community. They run programs like “Build a HPV,” manage sponsor relations, and support STEM engagement,branding, and the team's website.",
       responsibilities: [
         "Design, build, and maintain a visually appealing, user-friendly, and engaging website.",
         "Test, debug, and optimise website features to ensure smooth functionality across different devices.",
@@ -239,7 +239,7 @@ export default function Join() {
             <br />
 
             <p>
-              Apply for one of MHP&apos;s subteams below. <br />
+              Apply for one of MHP's subteams below. <br />
               If you have any further questions or queries, feel free to direct
               them to monashhpt@gmail.com
             </p>
