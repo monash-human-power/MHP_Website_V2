@@ -32,6 +32,10 @@
   p {
     @apply font-Sansation lg:text-base md:text-sm sm:text-xs;
   }
+
+  ul {
+    list-style-type: disc;
+  }
 }
 
 
@@ -60,3 +64,26 @@
     }
   }
   
+@layer utilities {
+  .scrollbar-dark {
+    scrollbar-width: thin;
+    scrollbar-color: #4b5563 #1f2937;
+  }
+  
+  .scrollbar-dark::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .scrollbar-dark::-webkit-scrollbar-track {
+    background-color: #353126;
+  }
+  
+  .scrollbar-dark::-webkit-scrollbar-thumb {
+    background-color: rgb(75, 63, 57);
+    border-radius: 0.5rem;
+  }
+  
+  .scrollbar-dark::-webkit-scrollbar-thumb:hover {
+    background-color: #605656;
+  }
+}

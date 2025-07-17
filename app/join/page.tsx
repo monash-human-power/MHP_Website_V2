@@ -1,16 +1,218 @@
 "use client";
+import { ApplicationCardInfo } from "../components/ApplicationCarousel/ApplicationCard";
+import ApplicationCarousel from "../components/ApplicationCarousel/ApplicationCarousel";
 import PageSection from "../components/PageSection";
 import Image from "next/image";
+
+// TODO: Perhaps convert into json for consistency
+const teamApplications: ApplicationCardInfo[] = [
+  {
+    subteam: "Electrical",
+    role: "Software Developer ",
+    img: "/images/join_page/join_electrical_software.jpg",
+    formLink: "https://forms.gle/TjAdcGJ4XshRsRn49",
+    content: {
+      description:
+        "The Electrical subteam oversees the bike’s electrical and software systems, including cameras and data acquisition tools essential for rider safety and performance. The setup features components such as Raspberry Pis, microcontrollers, sensors, and custom software for field data analysis.",
+      responsibilities: [
+        "Develop and maintain the team’s React-based web application.",
+        "Contribute to Python/C++ projects for physical modelling, data processing, and microcontroller programming.",
+        "Write clear documentation for codebases, APIs, and pull requests to support team collaboration.",
+      ],
+      keySkills: [
+        "Experience with maintaining and documenting code.",
+        "Experience with Javascript, Python, microcontrollers and Git",
+        "Knowledgeable on communication protocols (MQTT, TWAI)",
+        "Familiarity with TypeScript React",
+        "Non-curriculum projects are highly regarded. Let us know what you’ve done!",
+      ],
+    },
+  },  {
+    subteam: "Electrical",
+    role: "Hardware Team Member ",
+    img: "/images/join_page/join_electrical.jpg",
+    formLink: "https://forms.gle/JMxtZdHxPHNQSz5M9",
+    content: {
+      description:
+        "The Electrical subteam oversees the bike’s electrical and software systems, including cameras and data acquisition tools essential for rider safety and performance. The setup features components such as Raspberry Pis, microcontrollers, sensors, and custom software for field data analysis.",
+      responsibilities: [
+        "Design and manufacture PCBs, including schematics, simulations, and documentation.",
+        "Program Raspberry Pi and microcontrollers to interface with sensor systems.",
+        "Support testing and troubleshooting of electronic systems during on-track sessions.",
+      ],
+      keySkills: [
+        "Experience with practical projects using Arduino, Raspberry Pi or similar printed circuit boards (PCBs).",
+        "Knowledge in C or Python programming.",
+        "Interested in circuit/PCB design for microcontrollers and sensors.",
+      ],
+    },
+  },
+
+  {
+    subteam: "Aerodynamics",
+    role: "Team Member",
+    img: "/images/join_page/join_aerodynamics.jpg",
+    formLink: "https://forms.gle/Mz3PqnVuEYwZ2CM17",
+    content: {
+      description: "The Aerodynamics subteam at MHP designs and tests aerodynamic components like the external shell and wheel covers to reduce drag and increase bike speed. They use computational fluid dynamics (CFD) to learn and make aerodynamic design choices that optimise and enhance bike performance.",
+      responsibilities: [
+        "Design and test aerodynamic components using CAD tools like NX.",
+        "Conduct CFD simulations using ANSYS Fluent.",
+        "Contribute to manufacturing, data analysis, and upskilling fellow team members in aerodynamic principles and tools.",
+      ],
+      keySkills: [
+        "Strong understanding of aerodynamics, CFD simulations, and experience with ANSYS Fluent.",
+        " Proficiency in CAD software, especially NX and SolidWorks, with an interest in 3D printing for prototyping.",
+      ],
+    },
+  },
+  {
+    subteam: "Rider Development",
+    role: "Rider",
+    img: "/images/join_page/join_rider_dev.jpg",
+    formLink: "https://forms.gle/Xm8KgDh1M4Vb54PP9",
+    content: {
+      description: "The Rider Development subteam focuses on maximising rider performance. Comprised of riders and technical members, they arrange cycling and strength training, develop personal power plans, and coordinate training days at the Packer Park Velodrome.",
+      responsibilities: [
+        "Train consistently to develop the physical and mental strength required for high-speed intensive cycling.",
+        "Master the use of the onboard camera system to maintain control and awareness while riding.",
+        "Participate in testing sessions and race events, including international competitions like Battle Mountain, to push the limits of human-powered speed.",
+      ],
+      keySkills: [
+        "Strong physical and mental fitness, with a background or keen interest in cycling.",
+        "Possess strong cardiovascular endurance required to maintain high intensity cycling over extended periods.",
+        "Passion for competitive high-speed racing.",
+      ],
+    },
+  },  {
+    subteam: "Materials",
+    img: "/images/join_page/join_materials.jpg",
+    formLink: "https://forms.gle/bMRAw2q4nYRTg1LH8",
+    content: {
+      description: "The Materials subteam prototypes and manufactures the fairing, focusing on optimising its design for aerodynamics and rider safety. They research and experiment with various composite manufacturing methods and composite materials to create the aerodynamic fairing.",
+      responsibilities: [
+        "Using finite element analysis (FEA) software to design and optimise composite components.",
+        "Manufacturing the fairing and supplementary composite components.",
+        "Critically analysing processes and testing samples to improve the team’s understanding of composites and optimise manufacturing methods",
+      ],
+      keySkills: [
+        "Experience with ANSYS Mechanical, ACP, and a solid understanding of CAD and FEA is preferred.",
+        "Basic understanding of composites.",
+        "High attention to detail and willingness to learn.",
+        "Strong sense of initiative, creativity and experience with personal hands on projects."
+      ],
+    },
+  },
+  {
+    subteam: "Chassis and Drivetrain",
+    img: "/images/join_page/join_chassis.jpg",
+    formLink: "https://forms.gle/wJXyqcAnRGDGUYSv9",
+    content: {
+      description: "The Chassis & Drivetrain subteam designs and manufactures all mechanical components of the vehicle, using CAD and Finite Element Analysis (FEA) to model and verify their strength. They utilise Monash University facilities for manufacturing, employing techniques like welding and building.",
+      responsibilities: [
+        "Design and test the vehicle’s chassis, currently using a chromoly steel space-frame.",
+        "Develop and validate CAD models and structural components using FEA tools.",
+        "Contribute to future design improvements, including exploration of composite materials.",
+        "Optimise drivetrain performance using cycling knowledge and industry-standard components.",
+        "Advise on component selection and configuration to improve efficiency and reliability.",
+        "Collaborate with other engineers to ensure seamless integration within the vehicle system."
+      ],
+      keySkills: [
+        "Strong CAD and FEA skills, with an interest in vehicular frame design and prototyping to test solutions.",
+        "Comprehensive knowledge of bicycle drivetrains, with experience in working with and maintaining them.",
+      ],
+    },
+  },
+  {
+    subteam: "Operations",
+    role: "Events Officer",
+    img: "/images/join_page/join_operations.jpg",
+    formLink: "https://forms.gle/HHhRFBUFKCiRtEyH9",
+    content: {
+      description:
+        "The Operations subteam handles marketing, sponsorship, events, and outreach to promote MHP and engage the community. They run programs like “Build a HPV,” manage sponsor relations, and support STEM engagement,branding, and the team's website.",
+      responsibilities: [
+        "Plan and deliver engaging events to strengthen relationships with sponsors and maintain strong partnerships.",
+        "Organise social activities and initiatives to build a strong, connected team culture within MHP.",
+        "Lead outreach programs that promote STEM and MHP to schools and the public.",
+      ],
+      keySkills: [
+        "Strong organisational and time management skills to coordinate multiple events smoothly.",
+        "Excellent communication and interpersonal skills for engaging stakeholders and attendees.",
+        "Creativity and initiative to design engaging, impactful events that align with MHP’s mission.",
+      ],
+    },
+  },
+  {
+    subteam: "Operations",
+    role: "Marketing Officer / Graphic Designer ",
+    img: "/images/join_page/join_operations_marketing.jpg",
+    formLink: "https://forms.gle/HHhRFBUFKCiRtEyH9",
+    content: {
+      description:
+        "The Operations subteam handles marketing, sponsorship, events, and outreach to promote MHP and engage the community. They run programs like “Build a HPV,” manage sponsor relations, and support STEM engagement,branding, and the team's website.",
+      responsibilities: [
+        "Plan and deliver engaging events to strengthen relationships with sponsors and maintain strong partnerships.",
+        "Organise social activities and initiatives to build a strong, connected team culture within MHP.",
+        "Lead outreach programs that promote STEM and MHP to schools and the public.",
+      ],
+      keySkills: [
+        "Proficiency in content creation tools (photo/video editing, graphic design, social platforms).",
+        "Creating thinking and visual storytelling.",
+        "Strategic thinking and data driven decision making in social media and branding.",
+      ],
+    },
+  },
+  {
+    subteam: "Operations",
+    role: "Sponsorship Officer ",
+    img: "/images/join_page/join_operations_sponsor.jpg",
+    formLink: "https://forms.gle/HHhRFBUFKCiRtEyH9",
+    content: {
+      description:
+        "The Operations subteam handles marketing, sponsorship, events, and outreach to promote MHP and engage the community. They run programs like “Build a HPV,” manage sponsor relations, and support STEM engagement,branding, and the team's website.",
+      responsibilities: [
+        "Engage and build relationships with potential sponsors through professional communication and rapport-building.",
+        "Understand sponsor needs and align MHP’s value proposition to their goals and interests.",
+        "Secure and maintain sponsorships by presenting compelling proposals, handling objections, and ensuring consistent follow-up.",
+      ],
+      keySkills: [
+        "Confident communication and relationship-building with industry professionals.",
+        "Strategic thinking and persuasive storytelling to secure support and funding.",
+        "Resilience to manage rejection and foster long-term partnerships.",
+      ],
+    },
+  },
+  {
+    subteam: "Operations",
+    role: "Web Developer ",
+    img: "/images/join_page/join_operations_website.jpg",
+    formLink: "https://forms.gle/HHhRFBUFKCiRtEyH9",
+    content: {
+      description:
+        "The Operations subteam handles marketing, sponsorship, events, and outreach to promote MHP and engage the community. They run programs like “Build a HPV,” manage sponsor relations, and support STEM engagement,branding, and the team's website.",
+      responsibilities: [
+        "Design, build, and maintain a visually appealing, user-friendly, and engaging website.",
+        "Test, debug, and optimise website features to ensure smooth functionality across different devices.",
+        "Create UI designs and prototypes that align with MHP’s brand and user needs.",
+      ],
+      keySkills: [
+        "Proficient in React, Tailwind CSS, and version control systems like Git.",
+        "Strong grasp of UX/UI principles, with Figma experience being preferred but not required",
+        "Experience working with content management systems (CMS) is a plus.",
+      ],
+    },
+  }
+];
 
 export default function Join() {
   return (
     <>
-      <title>
-        Join | MHP
-      </title>
-      
+      <title>Join | MHP</title>
+
       {/* Cover Image */}
-      <section className="animate-fadeIn">
+      <PageSection colourWay="dark">
+        <h1 className="text-center text-5xl">Join Us</h1>
         <Image
           src="/images/join_page/join_main.jpg"
           width="5184"
@@ -19,14 +221,11 @@ export default function Join() {
           alt="Trike Group photo"
           layout="responsive"
         />
-      </section>
+      </PageSection>
 
       {/* Join Us section */}
       <PageSection colourWay="dark">
         <div className="text-center">
-          <h1 className="text-center text-5xl">
-            Join Us
-          </h1>
           <div
             className="text-xl"
             style={{
@@ -36,14 +235,11 @@ export default function Join() {
               margin: "0 auto",
             }}
           >
-            <p>Applications are closed.</p>
-            <br></br>
+            <p>Applications are open!</p>
+            <br />
+
             <p>
-              Fill out an expression of interest and sign up to our mailing
-              list!
-            </p>
-            <br></br>
-            <p>
+              Apply for one of MHP&apos;s subteams below. <br />
               If you have any further questions or queries, feel free to direct
               them to monashhpt@gmail.com
             </p>
@@ -56,706 +252,16 @@ export default function Join() {
             paddingBottom: "20px",
           }}
         >
-          {/* Expression of Interest button links to Google Form */}
+          {/* Expression of Interest button links to Google Form
           <a href="https://forms.gle/U3Nn54SyTsi1WJYj7" target="_blank">
             <button className=" font-Sansation font-semibold px-4 py-2 lg:px-16 lg:py-2 rounded-full border-2 bg-green text-black border-black hover:bg-black hover:text-white hover:border-white">
               EOI Form
             </button>
-          </a>
+          </a> */}
         </div>
       </PageSection>
 
-      {/* Rider Development section */}
-      <PageSection colourWay="dark">
-        <div
-          style={{
-            borderTop: "2px solid #5e5b5b", // Top border
-            width: "90%",
-            margin: "0 auto",
-            textAlign: "center",
-          }}
-        >
-          <div
-            style={{
-              paddingTop: "40px",
-              paddingLeft: "5%",
-            }}
-          >
-            <h2 className="text-left font-semibold text-3xl font-Sansation underline decoration-green decoration-4">
-              Rider Development
-            </h2>
-          </div>
-          <div
-            className="text-left font-Sansation text-xl grid lg:grid-cols-2 gap-20"
-            style={{
-              paddingTop: "40px",
-              paddingBottom: "60px",
-              paddingLeft: "5%",
-              paddingRight: "5%",
-            }}
-          >
-            <div>
-              <p>
-                The Rider Development subteam focuses on maximising rider
-                performance. Comprised of riders and technical members, they
-                arrange cycling and strength training, develop personal power
-                plans, and organise competency training for recumbent bikes.
-                They also coordinate testing days at the Holden and Ford Proving
-                Grounds.
-              </p>
-            </div>
-            <div
-              style={{
-                justifyContent: "center",
-                alignItems: "center",
-                display: "flex",
-                margin: "0 auto",
-                maxWidth: "40%",
-                objectFit: "contain",
-              }}
-            >
-              <Image
-                src="/images/join_page/join_rider_dev.jpg"
-                width="200"
-                height="100"
-                objectFit="cover"
-                alt="Join Rider Development"
-                layout="responsive"
-                style={{
-                  borderRadius: 30,
-                }}
-              />
-            </div>
-          </div>
-
-          <div
-            className="text-left text-xl grid lg:grid-cols-2 gap-20"
-            style={{
-              paddingLeft: "5%",
-              paddingRight: "5%",
-            }}
-          >
-            <div>
-              <h2 className="text-left text-2xl font-Sansation underline decoration-green decoration-4">
-                Responsible For
-              </h2>
-              <br></br>
-              <li className="font-Sansation">
-                Collaborate with riders to enhance performance through movement
-                analysis, customised training, and technique optimisation.
-              </li>
-              <br></br>
-              <li className="font-Sansation">
-                Plan and execute high-speed events and velodrome sessions,
-                including researching new event opportunities and managing
-                engagement.
-              </li>
-              <br></br>
-              <li className="font-Sansation">
-                Develop and implement racing strategies by analysing data, track
-                conditions, and conducting post-race evaluations for continuous
-                improvement.
-              </li>
-            </div>
-            <div>
-              <h2 className="text-left text-2xl font-Sansation underline decoration-green decoration-4">
-                Key Skills
-              </h2>
-              <br></br>
-              <li className="font-Sansation">
-                Strong physical and mental fitness, with a background or keen
-                interest in cycling, biomechanics, and training theory.
-              </li>
-              <br></br>
-              <li className="font-Sansation">
-                Proven experience in event organisation, problem-solving, and
-                adaptability during events, with excellent communication and
-                interpersonal skills.
-              </li>
-              <br></br>
-              <li className="font-Sansation">
-                Passion for competitive high-speed racing, with strong
-                analytical, problem-solving, and teamwork abilities.
-              </li>
-            </div>
-          </div>
-        </div>
-      </PageSection>
-
-      {/* Aerodynamics section */}
-      <PageSection colourWay="dark">
-        <div
-          style={{
-            borderTop: "2px solid #5e5b5b", // Top border
-            width: "90%",
-            margin: "0 auto",
-            textAlign: "center",
-          }}
-        >
-          <div
-            style={{
-              paddingTop: "40px",
-              paddingRight: "5%",
-            }}
-          >
-            <h2 className="text-left lg:text-right text-3xl font-Sansation underline decoration-green decoration-4">
-              Aerodynamics
-            </h2>
-          </div>
-          <div
-            className="text-left lg:text-right text-xl grid lg:grid-cols-2 gap-20"
-            style={{
-              paddingTop: "40px",
-              paddingBottom: "60px",
-              paddingLeft: "5%",
-              paddingRight: "5%",
-            }}
-          >
-            <div
-              style={{
-                justifyContent: "center",
-                alignItems: "center",
-                display: "flex",
-                margin: "0 auto",
-                maxWidth: "70%",
-                objectFit: "contain",
-              }}
-            >
-              <Image
-                src="/images/join_page/join_aerodynamics.jpg"
-                width="800"
-                height="300"
-                objectFit="cover"
-                alt="Join Aerodynamics"
-                layout="responsive"
-                style={{
-                  borderRadius: 30,
-                }}
-              />
-            </div>
-            <div>
-              <p className="font-Sansation">
-                The Aerodynamics subteam at MHP designs and tests aerodynamic
-                components like the external shell and wheel covers to reduce
-                drag and increase bike speed. They use computational fluid
-                dynamics (CFD) and experimental testing in the Monash Wind
-                Tunnel to make design choices that enhance bike performance.
-              </p>
-            </div>
-          </div>
-
-          <div
-            className="text-left text-xl grid lg:grid-cols-2 gap-20"
-            style={{
-              paddingLeft: "5%",
-              paddingRight: "5%",
-            }}
-          >
-            <div>
-              <h2 className="text-left text-2xl font-Sansation underline decoration-green decoration-4">
-                Responsible For
-              </h2>
-              <br></br>
-              <li className="font-Sansation">
-                Work with aerodynamics principles to enhance bike performance
-                through testing, design, and manufacturing.
-              </li>
-              <br></br>
-              <li className="font-Sansation">
-                Gain hands-on experience using the Monash Wind Tunnel, CFD, and
-                aerodynamic component testing.
-              </li>
-              <br></br>
-              <li className="font-Sansation">
-                Create, test, and troubleshoot CAD models in NX and ANSYS
-                Fluent, while upskilling other team members.
-              </li>
-            </div>
-            <div>
-              <h2 className="text-left text-2xl font-Sansation underline decoration-green decoration-4">
-                Key Skills
-              </h2>
-              <br></br>
-              <li className="font-Sansation">
-                Strong understanding of aerodynamics, CFD simulations, and
-                experience with ANSYS Fluent, Spaceclaim, or DesignModeler.
-              </li>
-              <br></br>
-              <li className="font-Sansation">
-                Proficiency in CAD software, especially NX and SolidWorks, with
-                an interest in 3D printing for prototyping.
-              </li>
-              <br></br>
-              <li className="font-Sansation">
-                Ability to self-assess CFD results and refine models for
-                accurate simulations.
-              </li>
-            </div>
-          </div>
-        </div>
-      </PageSection>
-
-      {/* Chassis and Drivetrain section */}
-      <PageSection colourWay="dark">
-        <div
-          style={{
-            borderTop: "2px solid #5e5b5b", // Top border
-            width: "90%",
-            margin: "0 auto",
-            textAlign: "center",
-          }}
-        >
-          <div
-            style={{
-              paddingTop: "40px",
-              paddingLeft: "5%",
-            }}
-          >
-            <h2 className="text-left text-3xl font-Sansation underline decoration-green decoration-4">
-              Chassis and Drivetrain
-            </h2>
-          </div>
-          <div
-            className="text-left text-xl grid lg:grid-cols-2 gap-20"
-            style={{
-              paddingTop: "40px",
-              paddingBottom: "60px",
-              paddingLeft: "5%",
-              paddingRight: "5%",
-            }}
-          >
-            <div>
-              <p className="font-Sansation">
-                The Chassis & Drivetrain subteam designs and manufactures all
-                mechanical components, including the chassis and moving parts.
-                They model components using CAD software and verify their
-                strength through FEA testing or hand calculations. The team uses
-                Monash University resources for manufacturing, employing
-                techniques like welding, grinding, drilling, and turning.
-              </p>
-            </div>
-            <div
-              style={{
-                justifyContent: "center",
-                alignItems: "center",
-                display: "flex",
-                margin: "0 auto",
-                maxWidth: "70%",
-                objectFit: "contain",
-              }}
-            >
-              <Image
-                src="/images/join_page/join_chassis_drivetrain.jpg"
-                width="800"
-                height="300"
-                objectFit="cover"
-                alt="Join Chassis and Drivetrain"
-                layout="responsive"
-                style={{
-                  borderRadius: 30,
-                }}
-              />
-            </div>
-          </div>
-
-          <div
-            className="text-left text-xl grid lg:grid-cols-2 gap-20"
-            style={{
-              paddingLeft: "5%",
-              paddingRight: "5%",
-            }}
-          >
-            <div>
-              <h2 className="text-left text-2xl font-Sansation underline decoration-green decoration-4">
-                Responsible For
-              </h2>
-              <br></br>
-              <li className="font-Sansation">
-                Design and test the vehicle chassis, focusing on space-frame
-                structures with potential future use of composite materials.
-              </li>
-              <br></br>
-              <li className="font-Sansation">
-                Develop strong CAD skills and deep understanding of chassis
-                engineering principles.
-              </li>
-              <br></br>
-              <li className="font-Sansation">
-                Optimise and integrate drivetrain components, leveraging cycling
-                knowledge and collaborating with component engineers.
-              </li>
-            </div>
-            <div>
-              <h2 className="text-left text-2xl font-Sansation underline decoration-green decoration-4">
-                Key Skills
-              </h2>
-              <br></br>
-              <li className="font-Sansation">
-                Strong CAD and FEA skills, with an interest in vehicular frame
-                design and prototyping to test solutions.
-              </li>
-              <br></br>
-              <li className="font-Sansation">
-                Solid understanding of materials mechanics and structural
-                mechanics.
-              </li>
-              <br></br>
-              <li className="font-Sansation">
-                Comprehensive knowledge of bicycle drivetrains, with experience
-                in working with and maintaining them.
-              </li>
-            </div>
-          </div>
-        </div>
-      </PageSection>
-
-      {/* Operations section */}
-      <PageSection colourWay="dark">
-        <div
-          style={{
-            borderTop: "2px solid #5e5b5b", // Top border
-            width: "90%",
-            margin: "0 auto",
-            textAlign: "center",
-          }}
-        >
-          <div
-            style={{
-              paddingTop: "40px",
-              paddingRight: "5%",
-            }}
-          >
-            <h2 className="text-left lg:text-right text-3xl font-Sansation underline decoration-green decoration-4">
-              Operations
-            </h2>
-          </div>
-          <div
-            className="text-left lg:text-right text-xl grid lg:grid-cols-2 gap-20"
-            style={{
-              paddingTop: "40px",
-              paddingBottom: "60px",
-              paddingLeft: "5%",
-              paddingRight: "5%",
-            }}
-          >
-            <div
-              style={{
-                justifyContent: "center",
-                alignItems: "center",
-                display: "flex",
-                margin: "0 auto",
-                maxWidth: "70%",
-                objectFit: "contain",
-              }}
-            >
-              <Image
-                src="/images/join_page/join_operations.jpg"
-                width="800"
-                height="300"
-                objectFit="cover"
-                alt="Join Operations"
-                layout="responsive"
-                style={{
-                  borderRadius: 30,
-                }}
-              />
-            </div>
-            <div>
-              <p className="font-Sansation">
-                The Operations subteam engages external stakeholders,
-                coordinates with sponsors, and markets MHP activities. They
-                organise events like the &quot;Build a HPV&quot; school outreach
-                program, promote STEM pathways, and support the technical
-                team&apos;s bike manufacturing. They are also involved in
-                graphic design and branding for MHP.
-              </p>
-            </div>
-          </div>
-
-          <div
-            className="text-left text-xl grid lg:grid-cols-2 gap-20"
-            style={{
-              paddingLeft: "5%",
-              paddingRight: "5%",
-            }}
-          >
-            <div>
-              <h2 className="text-left text-2xl font-Sansation underline decoration-green decoration-4">
-                Responsible For
-              </h2>
-              <br></br>
-              <li className="font-Sansation">
-                Identify and manage sponsorships by researching potential
-                sponsors, maintaining relationships, and negotiating agreenents.
-              </li>
-              <br></br>
-              <li className="font-Sansation">
-                Produce and plan media content, including photoshoots and
-                videos, to effectively communicate the brand message and align
-                with company values.
-              </li>
-              <br></br>
-              <li className="font-Sansation">
-                Create, manage, and optimise engaging content across platforms
-                and social media, including editing footage and developing
-                design concepts to enhance brand presence.
-              </li>
-            </div>
-            <div>
-              <h2 className="text-left text-2xl font-Sansation underline decoration-green decoration-4">
-                Key Skills
-              </h2>
-              <br></br>
-              <li className="font-Sansation">
-                Experience in sponsorship management is a plus, though not
-                necessary.
-              </li>
-              <br></br>
-              <li className="font-Sansation">
-                Proficiency in multimedia software (Adobe Creative Suite,
-                CapCut) and social media posting, with past experience in
-                photography/videography.
-              </li>
-              <br></br>
-              <li className="font-Sansation">
-                Strong communication skills, ability to work collaboratively
-                with marketing teams, and a proactive, eager-to-learn attitude.
-              </li>
-            </div>
-          </div>
-        </div>
-      </PageSection>
-
-      {/* Electrical section */}
-      <PageSection colourWay="dark">
-        <div
-          style={{
-            borderTop: "2px solid #5e5b5b", // Top border
-            width: "90%",
-            margin: "0 auto",
-            textAlign: "center",
-          }}
-        >
-          <div
-            style={{
-              paddingTop: "40px",
-              paddingLeft: "5%",
-            }}
-          >
-            <h2 className="text-left text-3xl font-Sansation underline decoration-green decoration-4">
-              Electrical
-            </h2>
-          </div>
-          <div
-            className="text-left text-xl grid lg:grid-cols-2 gap-20"
-            style={{
-              paddingTop: "40px",
-              paddingBottom: "60px",
-              paddingLeft: "5%",
-              paddingRight: "5%",
-            }}
-          >
-            <div>
-              <p className="font-Sansation">
-                The Electrical subteam manages the bike&apos;s electrical and
-                software systems, including the camera and data acquisition
-                systems that enhance rider safety and performance. With no
-                windows on the fairing, the rider relies on these systems to
-                monitor surroundings. The setup includes Raspberry Pis,
-                microcontrollers, and sensors, along with custom software for
-                recording and analysing performance data from field tests.
-              </p>
-            </div>
-            <div
-              style={{
-                justifyContent: "center",
-                alignItems: "center",
-                display: "flex",
-                margin: "0 auto",
-                maxWidth: "70%",
-                objectFit: "contain",
-              }}
-            >
-              <Image
-                src="/images/join_page/join_electrical.jpg"
-                width="800"
-                height="300"
-                objectFit="cover"
-                alt="Join Electrical"
-                layout="responsive"
-                style={{
-                  borderRadius: 30,
-                }}
-              />
-            </div>
-          </div>
-
-          <div
-            className="text-left text-xl grid lg:grid-cols-2 gap-20"
-            style={{
-              paddingLeft: "5%",
-              paddingRight: "5%",
-            }}
-          >
-            <div>
-              <h2 className="text-left text-2xl font-Sansation underline decoration-green decoration-4">
-                Responsible For
-              </h2>
-              <br></br>
-              <li className="font-Sansation">
-                Design, simulate, and document circuitry, including PCB
-                manufacturing and programming microcontrollers like Raspberry Pi
-                for sensor control.
-              </li>
-              <br></br>
-              <li className="font-Sansation">
-                Develop and maintain a React-powered web app and various Python
-                projects, including physical modeling and data processing.
-              </li>
-              <br></br>
-              <li className="font-Sansation">
-                Troubleshoot systems during testing and ensure thorough
-                documentation of code, APIs, and pull requests.
-              </li>
-            </div>
-            <div>
-              <h2 className="text-left text-2xl font-Sansation underline decoration-green decoration-4">
-                Key Skills
-              </h2>
-              <br></br>
-              <li className="font-Sansation">
-                Experience with microcontrollers (Arduino, Raspberry Pi) and
-                programming in C or Python, with an interest in circuit/PCB
-                design and 3D printing.
-              </li>
-              <br></br>
-              <li className="font-Sansation">
-                Proficiency in JavaScript, Python, Git, and familiarity with
-                TypeScript React.
-              </li>
-              <br></br>
-              <li className="font-Sansation">
-                Strong communication skills, eagerness to learn, and industry or
-                project experience outside of the curriculum.
-              </li>
-            </div>
-          </div>
-        </div>
-      </PageSection>
-
-      {/* Materials section */}
-      <PageSection colourWay="dark">
-        <div
-          style={{
-            borderTop: "2px solid #5e5b5b", // Top border
-            borderBottom: "2px solid #5e5b5b", // Bottom border
-            width: "90%",
-            margin: "0 auto",
-            textAlign: "center",
-            paddingBottom: "100px",
-          }}
-        >
-          <div
-            style={{
-              paddingTop: "40px",
-              paddingRight: "5%",
-            }}
-          >
-            <h2 className="text-left lg:text-right text-3xl font-Sansation underline decoration-green decoration-4">
-              Materials
-            </h2>
-          </div>
-          <div
-            className="text-left lg:text-right text-xl grid lg:grid-cols-2 gap-20"
-            style={{
-              paddingTop: "40px",
-              paddingBottom: "60px",
-              paddingLeft: "5%",
-              paddingRight: "5%",
-            }}
-          >
-            <div
-              style={{
-                justifyContent: "center",
-                alignItems: "center",
-                display: "flex",
-                margin: "0 auto",
-                maxWidth: "70%",
-                objectFit: "contain",
-              }}
-            >
-              <Image
-                src="/images/join_page/join_materials.jpg"
-                width="800"
-                height="300"
-                objectFit="cover"
-                alt="Join Materials"
-                layout="responsive"
-                style={{
-                  borderRadius: 30,
-                }}
-              />
-            </div>
-            <div>
-              <p className="font-Sansation">
-                The Materials subteam prototypes and manufactures the fairing,
-                focusing on optimising its design for aerodynamics and rider
-                safety. They research methods and materials, currently using a
-                resin infusion technique with epoxy resin and carbon fiber. They
-                also use power tools, surface finishing, and composite creation
-                to produce the fairing.
-              </p>
-            </div>
-          </div>
-
-          <div
-            className="text-left text-xl grid lg:grid-cols-2 gap-20"
-            style={{
-              paddingLeft: "5%",
-              paddingRight: "5%",
-            }}
-          >
-            <div>
-              <h2 className="text-left text-2xl font-Sansation underline decoration-green decoration-4">
-                Responsible For
-              </h2>
-              <br></br>
-              <li className="font-Sansation">
-                Use finite element analysis (FEA) software to design and
-                optimise composite components.
-              </li>
-              <br></br>
-              <li className="font-Sansation">
-                Manufacture the fairing and supplementary composite components,
-                primarily working with carbon fiber.
-              </li>
-              <br></br>
-              <li className="font-Sansation">
-                Spend time in the workshop creating and testing various
-                composite parts.
-              </li>
-            </div>
-            <div>
-              <h2 className="text-left text-2xl font-Sansation underline decoration-green decoration-4">
-                Key Skills
-              </h2>
-              <br></br>
-              <li className="font-Sansation">
-                Experience with ANSYS Mechanical, ACP, and a solid understanding
-                of CAD and FEA is preferred.
-              </li>
-              <br></br>
-              <li className="font-Sansation">
-                Strong knowledge of dynamics principles and attention to detail.
-              </li>
-              <br></br>
-              <li className="font-Sansation">
-                Willingness to learn and interest in developing hands-on skills.
-              </li>
-            </div>
-          </div>
-        </div>
-      </PageSection>
+      <ApplicationCarousel applicationInfo={teamApplications} />
     </>
   );
 }
