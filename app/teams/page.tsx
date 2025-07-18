@@ -4,6 +4,14 @@ import Image from "next/image";
 import PageSection from "../components/PageSection";
 import teamData from "../../public/JSONs/teams.json"; // Importing the JSON file
 
+
+type teamMember={
+  name: string;
+  role: string;
+  department: string;
+  image: string;
+}
+
 export default function TeamPage() {
   const [currentTeamIndex, setCurrentTeamIndex] = useState(0);
   const [fadeClass, setFadeClass] = useState("animate-fadeIn");
@@ -56,27 +64,41 @@ export default function TeamPage() {
     return ""; // For rows with 3 members, default layout applies
   };
 
+
+
+  const getLeadLayoutClasses = (teamLeads:teamMember[], teamName:string) => {
+    const isSpecialTeam = teamName === "Management Team" || teamName === "Auxiliary";
+    
+    if (teamLeads.length === 2 || isSpecialTeam) {
+      return "grid grid-cols-1 md:grid-cols-2 gap-8";
+    }
+    
+    if (teamLeads.length === 1) {
+      return "flex justify-center";
+    }
+    
+    return "flex flex-wrap justify-center gap-6";
+  };
+
   return (
     <>
-      <title>
-        Teams | MHP
-      </title>
+      <title>Teams | MHP</title>
       <PageSection colourWay="dark">
         <section className="relative text-center ">
           <div className="relative z-10">
             <h1 className="text-center text-5xl">Meet our Team</h1>
-      {/* Battle Mountain Group Image */}
-       <div className="w-dvh h-96 items-center overflow-hidden mx-auto">
-          <Image
-            src="/images/home_page/battle_mountain_group.jpg"
-            width="800"
-            height="300"
-            objectFit="cover"
-            alt="Battle Mountain Group"
-            layout="responsive"
-            className="top-1/2  transform -translate-y-1/3"
-          />
-        </div>
+            {/* Battle Mountain Group Image */}
+            <div className="w-dvh h-96 items-center overflow-hidden mx-auto">
+              <Image
+                src="/images/home_page/battle_mountain_group.jpg"
+                width="800"
+                height="300"
+                objectFit="cover"
+                alt="Battle Mountain Group"
+                layout="responsive"
+                className="top-1/2  transform -translate-y-1/3"
+              />
+            </div>
 
             <h2 className="mt-2 mx-20">
               We, at Monash Human Power are a diverse team of Monash University
@@ -122,24 +144,24 @@ export default function TeamPage() {
 
         {/* Dynamic Team Section */}
         <section className="">
-          <div className="flex flex-col lg:flex-row justify-center items-center lg:space-x-8 px-8">
+          <div className="flex flex-col lg:flex-row justify-center items-stretch lg:space-x-8 px-8">
             {/* Image */}
             <div className="w-full lg:w-1/2 md:w-1/2">
               <div className={`transition-opacity duration-300 ${fadeClass}`}>
                 <Image
                   src={currentTeam.image} // Dynamically load the image from JSON
                   alt={currentTeam.name}
-                  width={600}
-                  height={350}
-                  className="rounded-lg"
+                  width={800}
+                  height={650}
+                  className="mx-auto rounded-lg object-cover xl:w-[500px] xl:h-[300px]"
                 />
               </div>
             </div>
 
             {/* Description */}
-            <div className="mt-2 mx-2 lg:mt-0 lg:w-1/2 md:w-1/2 md:items-center">
+            <div className="mt-2 mx-2 lg:mt-0 lg:w-1/2 md:w-1/2 flex items-center">
               <div className={`transition-opacity duration-300 ${fadeClass}`}>
-                <h2 className="font-extralight">{currentTeam.description}</h2>
+                <p className="font-extralight text-center lg:text-justify">{currentTeam.description}</p>
               </div>
             </div>
           </div>
@@ -158,57 +180,61 @@ export default function TeamPage() {
       {/* Team Leads and Members Section */}
       <PageSection colourWay="dark">
         <section
-          className={`${fadeClass} bg-[url('/images/teams_page/teams_background.png')]  bg-top bg-no-repeat`}
+          className={`${fadeClass} relative bg-[url('/images/teams_page/teams_background.png')] bg-contain bg-center   bg-no-repeat`}
         >
-          <h2 className="text-center text-4xl font-bold mb-2">Team Members</h2>
-          <div className={`${currentTeam.Team_Leads.length == 1?"flex flex-row align-baseline justify-center":"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2"} gap-8 px-8 mb-12`}>
-            {currentTeam.Team_Leads?.map((lead, index) => (
-              <div
-                key={index}
-                className={`bg-gray-900 p-4 rounded-lg text-center ${
-                  currentTeam.Team_Leads.length === 3 && index === 2
-                    ? "lg:col-start-1 lg:col-end-3"
-                    : ""
-                }`}
-              >
-                <Image
-                  src={lead.image} // Load team lead's image
-                  alt={lead.name}
-                  width={200}
-                  height={200}
-                  className="mx-auto"
-                />
-                <h4 className="text-xl font-bold mt-4 text-green">
-                  {lead.name}
-                </h4>
-                <p>{lead.role}</p>
-              </div>
-            ))}
-          </div>
-
-          {/* Team Members Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-8">
-            {currentTeam.members?.map((member, index) => (
-              <div
-                key={index}
-                className={`bg-gray-900 p-4 rounded-lg text-center ${getLastRowClasses(
-                  currentTeam.members,
-                  index
-                )}`}
-              >
-                <Image
-                  src={member.image} // Load team member's image
-                  alt={member.name}
-                  width={150}
-                  height={150}
-                  className="mx-auto"
-                />
-                <h4 className="text-lg font-bold mt-4 text-green">
-                  {member.name}
-                </h4>
-                <p>{member.role}</p>
-              </div>
-            ))}
+          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+          <div className="relative z-10">
+            <h2 className="text-center text-4xl font-bold mb-2">
+              Team Members
+            </h2>
+            <div className={`${getLeadLayoutClasses(currentTeam.Team_Leads, currentTeam.name)} px-8 mb-12`}>
+              {currentTeam.Team_Leads?.map((lead, index) => (
+                <div
+                  key={index}
+                  className={`bg-gray-900 p-4 rounded-lg text-center ${
+                    currentTeam.Team_Leads.length === 3 && index === 2
+                      ? "lg:col-start-1 lg:col-end-3"
+                      : currentTeam.name === "Management Team" ? "lg:col-start-1 lg:col-end-3" : ""
+                  }`}
+                >
+                  <Image
+                    src={lead.image} // Load team lead's image
+                    alt={lead.name}
+                    width={200}
+                    height={200}
+                    className="mx-auto rounded-md object-cover w-[220px] h-[150px]"
+                  />
+                  <h4 className="text-xl font-bold mt-4 text-green">
+                    {lead.name}
+                  </h4>
+                  <p>{lead.role}</p>
+                </div>
+              ))}
+            </div>
+            {/* Team Members Section */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 px-8">
+              {currentTeam.members?.map((member, index) => (
+                <div
+                  key={index}
+                  className={`bg-gray-900  rounded-lg text-center ${getLastRowClasses(
+                    currentTeam.members,
+                    index
+                  )}`}
+                >
+                  <Image
+                    src={member.image} // Load team member's image
+                    alt={member.name}
+                    width={200}
+                    height={200}
+                    className="mx-auto rounded-md object-cover w-[220px] h-[150px]"
+                  />
+                  <h4 className="text-lg font-bold mt-4 text-green">
+                    {member.name}
+                  </h4>
+                  <p>{member.role}</p>
+                </div>
+              ))}
+            </div>{" "}
           </div>
         </section>
       </PageSection>
