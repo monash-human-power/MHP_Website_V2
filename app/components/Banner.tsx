@@ -1,5 +1,5 @@
 'use client'
-import { useState } from "react";
+import { useState, useEffect } from "react";
 interface bannerProps {
   text: string;
   isVisible: boolean;
@@ -7,13 +7,29 @@ interface bannerProps {
 
 function Banner({ text , isVisible } : bannerProps) {
   // Set visible
-  const [visible, setVisible] = useState(isVisible);
-  
+  const [visible, setVisible] = useState<boolean | null>(null); // null = not yet determined
+
+  useEffect(() => {
+    const stored = sessionStorage.getItem("bannerHidden"); // Use sessionStorage so when a tab is closed and reopened, the banner shows again
+    if (stored === "true") {
+      setVisible(false);
+    } else {
+      setVisible(isVisible);
+    }
+  }, [isVisible]);
+
+  // Handle close and persist state
+  const handleClose = () => {
+    sessionStorage.setItem("bannerHidden", "true");
+    setVisible(false);
+  };
+
+  // Don't render anything until visibility is determined
   if (!visible) {
     return null;
   }
 
-  
+
   return (
     <>
       <div className="w-full z-20 animate-fadeIn">
@@ -25,7 +41,7 @@ function Banner({ text , isVisible } : bannerProps) {
             {/* Cross button */}
             <button
               className="absolute right-4 text-black"
-              onClick={() => setVisible(false)}
+              onClick={handleClose}
               aria-label="Close banner"
             >
               <svg
