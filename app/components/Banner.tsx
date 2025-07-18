@@ -1,7 +1,7 @@
 'use client'
-import { useState, useEffect } from "react";
+import { useState, useEffect, ReactNode } from "react";
 interface bannerProps {
-  text: string;
+  text: ReactNode; // ReactNode type for more flexibility
   isVisible: boolean;
 }
 

@@ -75,7 +75,7 @@ const Navbar = () => {
   };
 
   // Banner settings
-  const BANNER_TEXT = "Launch Night 13 August 2025"
+  const BANNER_TEXT = <>We're recruiting! 👉 <a href="/join" className="underline hover:text-blue-600">Join us here</a></>
   const SHOW_BANNER = true
 
   // Old code for drop down menus
