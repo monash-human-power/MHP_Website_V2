@@ -89,7 +89,7 @@ const Navbar = () => {
 
   return (
     <>
-    <header className="sticky top-0 z-20">
+    <header className="sticky top-0 z-50">
       <nav className="relative w-full shadow-2xl bg-black text-white font-Aldrich xl:text-xl lg:text-l z-1">
         {/* Mobile Navbar */}
         <div className=" lg:hidden py-5 flex justify-between items-center">
