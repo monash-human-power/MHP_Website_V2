@@ -18,10 +18,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  
-  // Banner text
-  const BANNER_TEXT = "Showcase 01 Jan 2025"
-
 
   return (
     <html lang="en">
