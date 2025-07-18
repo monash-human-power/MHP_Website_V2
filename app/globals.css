@@ -86,4 +86,19 @@
   .scrollbar-dark::-webkit-scrollbar-thumb:hover {
     background-color: #605656;
   }
+
+  /* Banner animation */
+  @keyframes move-stripes {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100px 0;
+    }
+  }
+
+  .animate-stripes {
+    animation: move-stripes 4s linear infinite;
+    background-size: 20px 20px;
+  }
 }
