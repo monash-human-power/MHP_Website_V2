@@ -43,7 +43,6 @@ const mobileNavigation: MobileNavItemsProps[] = [
   { name: "Bikes", href: "/bikes" },
   { name: "Competitions", href: "/competitions" },
   { name: "Teams", href: "/teams" },
-  { name: "News", href: "/news" },
   { name: "Outreach", href: "/outreach" },
   { name: "Join", href: "/join" },
   { name: "Contact Us", href: "/contact" },
@@ -55,7 +54,6 @@ const desktopNavigation: NavItemsProps[] = [
   { name: "Teams", href: "/teams", srcString: "" },
   { name: "Home", href: "/", srcString: "/images/logo.png" },
   { name: "Outreach", href: "/outreach", srcString: "" },
-  { name: "News", href: "/news", srcString: "" },
   { name: "Join", href: "/join", srcString: "" },
 ];
 

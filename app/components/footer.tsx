@@ -76,44 +76,6 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          {/* Subscribe section */}
-          {/* <div className="flex flex-col justify-center items-center">
-            <br></br>
-            <p className="text-xl mb-2">Subscribe To Us</p>
-            <p className="text-sm mb-2 text-center">
-              Keep up to date with MHP and other related news with our
-              newsletter.
-            </p>
-            <button className="px-5 py-2 bg-white text-black rounded-md border-2 border-black hover:bg-green hover:text-black hover:border-black">
-              Subscribe
-            </button>
-          </div> */}
-          {/* Quick links */}
-          {/* <div>
-            <div className="flex flex-wrap justify-center items-center">
-              <p className="text-xl mb-2">Quick Links</p>
-            </div>
-
-            <div className="flex flex-wrap justify-center text-center">
-              <ul className="mb-3">
-                <li>
-                  <Link href="/">Home</Link>
-                </li>
-                <li>
-                  <Link href="/teams">Team</Link>
-                </li>
-                <li>
-                  <Link href="/bikes">Bikes</Link>
-                </li>
-                <li>
-                  <Link href="/join">Join Us</Link>
-                </li>
-                <li>
-                  <Link href="/competitions">Competitions</Link>
-                </li>
-              </ul>
-            </div>
-          </div> */}
         </div>
         <div className="flex flex-wrap justify-center text-center pt-10">
           <p className="text-xs">
