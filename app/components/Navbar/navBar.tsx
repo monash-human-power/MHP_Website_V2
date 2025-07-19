@@ -75,7 +75,7 @@ const Navbar = () => {
   };
 
   // Banner settings
-  const BANNER_TEXT = <>We're recruiting! 👉 <a href="/join" className="underline hover:text-blue-600">Join us here</a></>
+  const BANNER_TEXT = <>We&apos;re recruiting! 👉 <a href="/join" className="underline hover:text-blue-600">Join us here</a></>
   const SHOW_BANNER = true
 
   // Old code for drop down menus
