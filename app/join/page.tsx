@@ -86,6 +86,7 @@ const teamApplications: ApplicationCardInfo[] = [
     },
   },  {
     subteam: "Materials",
+    role: "Team Member",
     img: "/images/join_page/join_materials.jpg",
     formLink: "https://forms.gle/bMRAw2q4nYRTg1LH8",
     content: {
@@ -105,6 +106,7 @@ const teamApplications: ApplicationCardInfo[] = [
   },
   {
     subteam: "Chassis and Drivetrain",
+    role: "Team Member",
     img: "/images/join_page/join_chassis.jpg",
     formLink: "https://forms.gle/wJXyqcAnRGDGUYSv9",
     content: {
