@@ -35,7 +35,7 @@ function Banner({ text , isVisible } : bannerProps) {
       <div className="w-full z-20 animate-fadeIn">
         <nav className="relative w-full shadow-4xl bg-[#ACF601]">
           <div className="min-h-[2rem] py-2 flex items-center justify-between relative bg-[repeating-linear-gradient(-45deg,_rgba(0,0,0,0.10)_0px,_rgba(0,0,0,0.10)_5px,_transparent_5px,_transparent_15px)] animate-stripes">
-            <p className="px-10 text-center text-black font-Aldrich font-bold uppercase w-full text-sm sm:text-md md:text-lg 2xl:text-2xl z-1">
+            <p className="px-10 text-center text-black font-Aldrich font-bold w-full text-sm sm:text-md md:text-lg 2xl:text-2xl z-1">
               {text}
             </p>
             {/* Cross button */}
