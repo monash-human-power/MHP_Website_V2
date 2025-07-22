@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar/navBar";
 import Footer from "./components/footer";
 import { GoogleAnalytics } from '@next/third-parties/google';
+import Banner from "./components/Banner";
 
 
 export const metadata: Metadata = {
@@ -15,6 +16,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <head>

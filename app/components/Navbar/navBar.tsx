@@ -4,6 +4,7 @@ import Image from "next/image";
 import NavItem from "./NavItem";
 import MobileNavItem from "./MobileNavItem";
 import { useState } from "react";
+import Banner from "../Banner";
 
 interface NavItemsProps {
   name: string;
@@ -71,6 +72,10 @@ const Navbar = () => {
     }
   };
 
+  // Banner settings
+  const BANNER_TEXT = <>We&apos;re Recruiting! 👉 <a href="/join" className="underline hover:text-blue-600">Join Us Here</a> 👈 - Apply by August 6th!</>
+  const SHOW_BANNER = true
+
   // Old code for drop down menus
   // const handleItemClick = (item: MobileNavItemsProps) => {
   //   if (item.name === "Teams") {
@@ -82,7 +87,7 @@ const Navbar = () => {
 
   return (
     <>
-    <header className="sticky top-0 z-20">
+    <header className="sticky top-0 z-50">
       <nav className="relative w-full shadow-2xl bg-black text-white font-Aldrich xl:text-xl lg:text-l z-1">
         {/* Mobile Navbar */}
         <div className=" lg:hidden py-5 flex justify-between items-center">
@@ -265,6 +270,7 @@ const Navbar = () => {
             ))}
           </div>
         </div>
+        <Banner text={BANNER_TEXT} isVisible={SHOW_BANNER} />
       </nav>
     </header>
     </>
