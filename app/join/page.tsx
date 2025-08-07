@@ -206,7 +206,7 @@ const teamApplications: ApplicationCardInfo[] = [
   }
 ];
 
-const IS_RECRUITING = false;
+const IS_RECRUITING = true;
 
 export default function Join() {
   return (
@@ -242,7 +242,7 @@ export default function Join() {
               Apply for one of MHP&apos;s subteams below. <br />
               If you have any further questions or queries, feel free to direct
               them to monashhpt@gmail.com
-            </p></>) : (<><p>Recruitment is closed</p><br /><p>
+            </p></>) : (<><p>Recruitment is closed.</p><br /><p>
               If you have any further questions or queries, feel free to direct
               them to monashhpt@gmail.com
             </p></>)}
