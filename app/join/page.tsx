@@ -257,8 +257,14 @@ export default function Join() {
         <div
           className={`${IS_RECRUITING ? "-pt-10" : "pt-10"} pb-20`}>
 
-          {IS_RECRUITING &&
+          {IS_RECRUITING ? 
           <ApplicationCarousel applicationInfo={teamApplications} />
+            : 
+            <a href="https://forms.gle/U3Nn54SyTsi1WJYj7" target="_blank">
+              <button className=" font-Sansation font-semibold px-4 py-2 lg:px-16 lg:py-2 rounded-full border-2 bg-green text-black border-black hover:bg-black hover:text-white hover:border-white">
+                EOI Form
+              </button>
+            </a>
             }
 
         </div>
