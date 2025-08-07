@@ -74,7 +74,7 @@ const Navbar = () => {
 
   // Banner settings
   const BANNER_TEXT = <>We&apos;re Recruiting! 👉 <a href="/join" className="underline hover:text-blue-600">Join Us Here</a> 👈 - Apply by August 6th!</>
-  const SHOW_BANNER = true
+  const SHOW_BANNER = false
 
   // Old code for drop down menus
   // const handleItemClick = (item: MobileNavItemsProps) => {
