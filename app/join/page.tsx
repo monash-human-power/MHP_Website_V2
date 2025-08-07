@@ -4,7 +4,6 @@ import ApplicationCarousel from "../components/ApplicationCarousel/ApplicationCa
 import PageSection from "../components/PageSection";
 import Image from "next/image";
 
-// TODO: Perhaps convert into json for consistency
 const teamApplications: ApplicationCardInfo[] = [
   {
     subteam: "Electrical",
@@ -27,7 +26,7 @@ const teamApplications: ApplicationCardInfo[] = [
         "Non-curriculum projects are highly regarded. Let us know what you’ve done!",
       ],
     },
-  },  {
+  }, {
     subteam: "Electrical",
     role: "Hardware Team Member ",
     img: "/images/join_page/join_electrical.jpg",
@@ -84,7 +83,7 @@ const teamApplications: ApplicationCardInfo[] = [
         "Passion for competitive high-speed racing.",
       ],
     },
-  },  {
+  }, {
     subteam: "Materials",
     role: "Team Member",
     img: "/images/join_page/join_materials.jpg",
@@ -207,6 +206,8 @@ const teamApplications: ApplicationCardInfo[] = [
   }
 ];
 
+const IS_RECRUITING = false;
+
 export default function Join() {
   return (
     <>
@@ -237,33 +238,38 @@ export default function Join() {
               margin: "0 auto",
             }}
           >
-            <p>Applications are open!</p>
-            <br />
-
-            <p>
+            {IS_RECRUITING ? (<><p>Applications are open!</p><br /><p>
               Apply for one of MHP&apos;s subteams below. <br />
               If you have any further questions or queries, feel free to direct
               them to monashhpt@gmail.com
-            </p>
+            </p></>) : (<><p>Recruitment is closed</p><br /><p>
+              If you have any further questions or queries, feel free to direct
+              them to monashhpt@gmail.com
+            </p></>)}
+
+
+
+
           </div>
+
+
         </div>
         <div
-          className="text-center text-xl lg:text-3xl"
-          style={{
-            paddingTop: "40px",
-            paddingBottom: "20px",
-          }}
-        >
-          {/* Expression of Interest button links to Google Form
-          <a href="https://forms.gle/U3Nn54SyTsi1WJYj7" target="_blank">
-            <button className=" font-Sansation font-semibold px-4 py-2 lg:px-16 lg:py-2 rounded-full border-2 bg-green text-black border-black hover:bg-black hover:text-white hover:border-white">
-              EOI Form
-            </button>
-          </a> */}
+          className={`${IS_RECRUITING ? "-pt-10" : "pt-10"} pb-20`}>
+
+          {IS_RECRUITING ? 
+          <ApplicationCarousel applicationInfo={teamApplications} />
+            : 
+            <a href="https://forms.gle/U3Nn54SyTsi1WJYj7" target="_blank">
+              <button className=" font-Sansation font-semibold px-4 py-2 lg:px-16 lg:py-2 rounded-full border-2 bg-green text-black border-black hover:bg-black hover:text-white hover:border-white">
+                EOI Form
+              </button>
+            </a>
+            }
+
         </div>
       </PageSection>
 
-      <ApplicationCarousel applicationInfo={teamApplications} />
     </>
   );
 }
