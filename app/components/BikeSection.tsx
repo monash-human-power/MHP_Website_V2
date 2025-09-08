@@ -55,6 +55,7 @@ const BikeSection = ({bike} : BikeSectionProps) => {
                         objectFit="cover"
                         />
                 </div>
+                {/* Navigates "Overview" and "Gallery" for each Bike on the page */}
                 <SubNavBar 
                         sections={sections}
                         activeSection={activeSection}

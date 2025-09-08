@@ -10,6 +10,7 @@ import bikeData from "../../public/JSONs/bikes.json";  // Importing the JSON fil
 
 export default function Page() {
     const sections = Object.keys(bikeData)
+
     // track the active section
     const [activeSection, setActiveSection] = useState(sections[0]);
 
@@ -21,6 +22,8 @@ export default function Page() {
         (entries) => {
             entries.forEach((entry) => {
             if (entry.isIntersecting) {
+                console.log("intersecting")
+                console.log(entry)
                 const sectionId = entry.target.id;
                 setActiveSection(sectionId); // Update active section based on scrolling
             }
@@ -72,6 +75,6 @@ export default function Page() {
                 </div>
             ))}
         </div>
-        </>
+    </>
     );
 }
