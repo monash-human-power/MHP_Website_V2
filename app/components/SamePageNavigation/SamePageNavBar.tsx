@@ -15,14 +15,14 @@ const SamePageNavBar = ({ sections , activeSection, setActiveSection} : SamePage
             <div className="hidden lg:block font-Aldrich">
             <div className="flex justify-center items-center h-full w-full space-x-10 pl-4 pt-2 pb-2">
             {sections.map((section, key) => (
-            <Link key ={key} href={'#'+section} 
-                className={"hover:text-green"+`${activeSection===section 
-                        ? "font-Aldrich text-green" 
-                        : "font-Aldrich hover:text-green"}`} 
-                onClick={() => setActiveSection(section)}>
-                    {section}
-            </Link>
-        ))}
+                <Link key ={key} href={'#'+section} 
+                    className={"hover:text-green"+`${activeSection===section 
+                            ? "font-Aldrich text-green" 
+                            : "font-Aldrich hover:text-green"}`} 
+                    onClick={() => setActiveSection(section)}>
+                        {section}
+                </Link>
+            ))}
             </div>
             </div>
         </nav>
