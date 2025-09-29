@@ -45,7 +45,7 @@ export default function Page() {
 
     return (
     <>
-      <title>
+        <title>
             Bikes | MHP
         </title>
         <div className="scroll-smooth">
@@ -64,8 +64,13 @@ export default function Page() {
                     </div>
                 </section>  
             </PageSection>
-            <SamePageNavBar sections={sections} activeSection={activeSection}
-                        setActiveSection={setActiveSection}></SamePageNavBar>
+
+            <SamePageNavBar
+                sections={sections}
+                activeSection={activeSection}
+                setActiveSection={setActiveSection}>
+            </SamePageNavBar>
+
             {/* For each vehicle, add a BikeSection component */}
             {Object.keys(bikeData).map(bikeName => (
                 <div key={bikeName} id={bikeName}>
