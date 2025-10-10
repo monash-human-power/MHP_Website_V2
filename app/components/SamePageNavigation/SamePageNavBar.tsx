@@ -16,11 +16,6 @@ interface SamePageNavBarProps {
  */
 const SamePageNavBar = ({ sections , activeSection, setActiveSection} : SamePageNavBarProps) => {
     return (
-        <>
-        <div className="fixed top-0 left-0 w-full h-2 bg-red-500 z-[9999] opacity-100">
-            <ScrollProgressBar />
-        </div>
-
         <nav className="sticky top-28 w-full bg-black text-white font-Aldrich xl:text-xl lg:text-l z-50">
             <div className="hidden lg:block font-Aldrich">
             <div className="flex justify-center items-center h-full w-full space-x-10 pl-4 pt-2 pb-2">
@@ -36,7 +31,6 @@ const SamePageNavBar = ({ sections , activeSection, setActiveSection} : SamePage
             </div>
             </div>
         </nav>
-        </>
     )
 }
 
