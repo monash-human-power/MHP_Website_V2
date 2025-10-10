@@ -10,8 +10,8 @@ interface SamePageNavBarProps {
 
 /**
  * @documentation
- * Contains the ScrollProgressBar (purely visual UI) 
- * And the main body (sections to scroll through)
+ * Pretty much a banner that sticks to the main website nav bar
+ * Allows navigation to different sections of the same page
  */
 const SamePageNavBar = ({ sections , activeSection, setActiveSection} : SamePageNavBarProps) => {
     return (
