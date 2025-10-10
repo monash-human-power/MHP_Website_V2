@@ -1,10 +1,9 @@
 "use client"
 
 import Link from "next/link";
-import ScrollProgressBar from "../ScrollProgressBar";
 
 interface SamePageNavBarProps {
-    sections: string[]; // list of the sections to scroll to
+    sections: string[]; // list of the sections to scroll through
     activeSection: string; // Currently active section
     setActiveSection: (section: string) => void; // Function to set active section
 }
