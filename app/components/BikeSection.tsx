@@ -75,7 +75,10 @@ const BikeSection = ({bike} : BikeSectionProps) => {
                 </SubNavBar>
 
                 {/* Insert BikeContent component here */}
-                <BikeContent activeTab={activeSection} bikeData={bikeData} bike={bike}>
+                <BikeContent
+                    activeTab={activeSection}
+                    bikeData={bikeData}
+                    bike={bike}>
                 </BikeContent>
             </PageSection>
         </>
