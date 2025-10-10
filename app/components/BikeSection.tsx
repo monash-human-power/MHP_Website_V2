@@ -23,11 +23,18 @@ interface Bike {
 
 type BikeData = Record<string, Bike>; // map of bike name to bike data
 
+/**
+ * @documentation
+ * The Bike page is made up of these sections 
+ * Each section is for each bike
+ * Typically contains: bike name, image, small nav bar, and information
+ */
 const BikeSection = ({bike} : BikeSectionProps) => {
     const bikeData: BikeData = bikeDataJson;
     let sections = ["Overview"];
-    if (bikeData[bike].gallery.length > 0)
-    {        sections.push("Gallery")
+    
+    if (bikeData[bike].gallery.length > 0) {
+        sections.push("Gallery")
     } 
 
     // track the active section
@@ -36,17 +43,21 @@ const BikeSection = ({bike} : BikeSectionProps) => {
     return (
         <>
             <div className="py-8 bg-black" style={{
-            borderBottom: "2px solid #5e5b5b", // Top border
-            width: "95%",
-            margin: "0 auto",
-            textAlign: "center",}}></div>
+                borderBottom: "2px solid #5e5b5b", // Top border
+                width: "95%",
+                margin: "0 auto",
+                textAlign: "center",}}>
+            </div>
+
             <div className="py-4 bg-black"></div>
+
             <PageSection colourWay="dark">
                 <section className="relative text-center">
                     <div className="relative z-10">
                         <h1 className="text-5xl text-center font-bold">{bike.toUpperCase()}</h1>
                     </div>
                 </section>
+
                 <div className="relative w-full h-96 flex-shrink-0">
                     <Image
                         src={bikeData[bike].image}
@@ -55,12 +66,14 @@ const BikeSection = ({bike} : BikeSectionProps) => {
                         objectFit="cover"
                         />
                 </div>
+
                 {/* Navigates "Overview" and "Gallery" for each Bike on the page */}
                 <SubNavBar 
-                        sections={sections}
-                        activeSection={activeSection}
-                        setActiveSection={setActiveSection}>
+                    sections={sections}
+                    activeSection={activeSection}
+                    setActiveSection={setActiveSection}>
                 </SubNavBar>
+
                 {/* Insert BikeContent component here */}
                 <BikeContent activeTab={activeSection} bikeData={bikeData} bike={bike}>
                 </BikeContent>
