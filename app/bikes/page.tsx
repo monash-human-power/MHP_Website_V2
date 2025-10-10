@@ -8,13 +8,19 @@ import SamePageNavBar from '../components/SamePageNavigation/SamePageNavBar';
 
 import bikeData from "../../public/JSONs/bikes.json";  // Importing the JSON file
 
+/**
+ * @documentation
+ * The Bike page
+ * Made up of "sections" where each bike has a section
+ * Has a scroll progress feature that tracks which section is currently on the screen
+ */
 export default function Page() {
+    // Just stores the names of each bike in order (order might not be intentional)
     const sections: string[] = Object.keys(bikeData)
-
-    // track the active section
     const [activeSection, setActiveSection] = useState(sections[0]);
 
-    const sectionRefs = useRef<(HTMLElement | null)[]>([]); // To store refs to the sections
+    // This ref is an array that stores the DOM elements (1 for each section)
+    const sectionRefs = useRef<(HTMLElement | null)[]>([]); 
 
     // IntersectionObserver logic to track which section is in view
     useEffect(() => {
@@ -42,6 +48,13 @@ export default function Page() {
         });
         };
     }, [sectionRefs.current]);
+
+    // Populates the "sectionRefs" array; adds a DOM element associated for a section
+    const addSectionRef = 
+        (index: number) => 
+        (sectionElement: HTMLElement | null) => {
+            sectionRefs.current[index] = sectionElement
+    }
 
     return (
     <>
@@ -72,8 +85,12 @@ export default function Page() {
             </SamePageNavBar>
 
             {/* For each vehicle, add a BikeSection component */}
-            {Object.keys(bikeData).map(bikeName => (
-                <div key={bikeName} id={bikeName}>
+            {sections.map((bikeName, index) => (
+                <div 
+                    key={bikeName}
+                    id={bikeName}
+                    ref={addSectionRef(index)}
+                >
                     <BikeSection key={bikeName} bike={bikeName}></BikeSection>
                 </div>
             ))}
