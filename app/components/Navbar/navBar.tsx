@@ -87,8 +87,8 @@ const Navbar = () => {
 
   return (
     <>
-    <header className="sticky top-0 z-50">
-      <nav className="relative w-full shadow-2xl bg-black text-white font-Aldrich xl:text-xl lg:text-l z-1">
+    <header className="sticky h-28 top-0 z-50">
+      <nav className="relative h-full w-full shadow-2xl bg-black text-white font-Aldrich xl:text-xl lg:text-l z-1">
         {/* Mobile Navbar */}
         <div className=" lg:hidden py-5 flex justify-between items-center">
           {/* Image */}
@@ -144,8 +144,8 @@ const Navbar = () => {
         </div>
 
 
-        {/* Wide Screen Navbar */}
-        <div className="hidden lg:block font-Aldrich  mx-auto">
+        {/* Wide Screen Navbar (Desktop) */}
+        <div className="hidden lg:block font-Aldrich mx-auto">
           <div className="flex justify-between items-center h-full w-full">
             {/* Left Navigation Items */}
             <div className="flex-[2] flex justify-around">
@@ -172,32 +172,32 @@ const Navbar = () => {
               </Link>
             </div>
 
-            {/* Right Navigation Items */}
+            {/* Right Navigation Items (skip home) */}
             <div className="flex-[2] flex justify-around items-center">
               {desktopNavigation
-                .slice(3)
+                .slice(4)
                 .map(
                   (item, index) =>
-                    item.name !== "Home" && (
                       <NavItem
                         key={index}
                         text={item.name}
                         hrefString={item.href}
                         srcString={item.srcString}
                       />
-                    )
-                )}
-<div className="ml-4 mr-4">
-  <Link href="/contact">
-    <button className="px-5 py-2 rounded-md border-2 border-white hover:bg-green hover:text-black hover:border-black">
-      Contact Us
-    </button>
-  </Link>
-</div>
+                  )
+              }
 
+              <div className="ml-4 mr-4">
+                <Link href="/contact">
+                  <button className="px-5 py-2 rounded-md border-2 border-white hover:bg-green hover:text-black hover:border-black">
+                    Contact Us
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>{" "}
+
         {/* Mobile Menu */}
         <div
           className={`lg:hidden ${

@@ -8,43 +8,54 @@ import SamePageNavBar from '../components/SamePageNavigation/SamePageNavBar';
 
 import bikeData from "../../public/JSONs/bikes.json";  // Importing the JSON file
 
+/**
+ * @documentation
+ * The Bike page
+ * Made up of "sections" where each bike has a section
+ * Uses IntersectionObserver that tracks which section is currently on the screen
+ * IntersectionObserver works by attaching an observer to each section to track
+ */
 export default function Page() {
-    const sections = Object.keys(bikeData)
-    // track the active section
+    // Just stores the names of each bike in order (order might not be intentional)
+    const sections: string[] = Object.keys(bikeData)
     const [activeSection, setActiveSection] = useState(sections[0]);
 
-    const sectionRefs = useRef<(HTMLElement | null)[]>([]); // To store refs to the sections
+    // This ref is an array that stores the DOM elements (1 for each section)
+    const sectionRefs = useRef<(HTMLElement | null)[]>([]); 
 
-    // IntersectionObserver logic to track which section is in view
+    // Tracks which section is in view
     useEffect(() => {
-        const observer = new IntersectionObserver(
-        (entries) => {
+        // Each entry is an observable section that has changed since last frame
+        const handleIntersection = (entries: IntersectionObserverEntry[]) => {
             entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                const sectionId = entry.target.id;
-                setActiveSection(sectionId); // Update active section based on scrolling
-            }
-            });
-        },
-        { threshold: 0.6 } // Adjust this value to trigger earlier/later
-        );
+                if (entry.isIntersecting) {
+                    setActiveSection(entry.target.id);  // This is sectionId
+                }
+            })
+        }
 
-        // Attach observers to each section
+        // Determines a section to be the "activeSection" when it is 60% visible
+        const observer = new IntersectionObserver(handleIntersection, { threshold: 0.6 });
+
+        // Attach observers to each section for the observer
         sectionRefs.current.forEach((section) => {
-        if (section) observer.observe(section);
+            if (section) observer.observe(section);
         });
 
-        // Clean up observer on component unmount
-        return () => {
-        sectionRefs.current.forEach((section) => {
-            if (section) observer.unobserve(section);
-        });
-        };
-    }, [sectionRefs.current]);
+        // When component unmounts, stop observing everything
+        return () => observer.disconnect()
+    }, []);  // Empty array so effect runs once; the "sections" are not dynamic
+
+    // Populates an index of the "sectionRefs" array; adds a DOM element associated for a section
+    const addSectionRef = 
+        (index: number) => 
+        (sectionElement: HTMLElement | null): void => {
+            sectionRefs.current[index] = sectionElement
+    }
 
     return (
     <>
-      <title>
+        <title>
             Bikes | MHP
         </title>
         <div className="scroll-smooth">
@@ -63,15 +74,26 @@ export default function Page() {
                     </div>
                 </section>  
             </PageSection>
-            <SamePageNavBar sections={sections} activeSection={activeSection}
-                        setActiveSection={setActiveSection}></SamePageNavBar>
+
+            {/* Nav bar at the top to show all sections */}
+            <SamePageNavBar
+                sections={sections}
+                activeSection={activeSection}
+                setActiveSection={setActiveSection}>
+            </SamePageNavBar>
+
             {/* For each vehicle, add a BikeSection component */}
-            {Object.keys(bikeData).map(bikeName => (
-                <div key={bikeName} id={bikeName}>
+            {sections.map((bikeName, index) => (
+                <div 
+                    className="scroll-mt-20"
+                    key={bikeName}
+                    id={bikeName}
+                    ref={addSectionRef(index)}
+                >
                     <BikeSection key={bikeName} bike={bikeName}></BikeSection>
                 </div>
             ))}
         </div>
-        </>
+    </>
     );
 }

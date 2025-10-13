@@ -5,6 +5,9 @@ interface SubNavBarProps {
     setActiveSection: (section: string) => void; // Function to set active section
   }
 
+/**
+ * Currently used to navigate between "Overview" and "Gallery" for each Bike on the Bikes page
+ */
 const SubNavBar = ({sections, activeSection, setActiveSection} : SubNavBarProps) => {
     {/* Wide Screen Navbar */}
     return (
