@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 
 interface PageSectionProps {
-  colourWay: "light" | "dark"; //Options are dark and light
+  colourWay?: "light" | "dark"; //Options are dark and light
   children: React.ReactNode;
 }
 
@@ -11,7 +11,7 @@ const sectionThemes = {
   dark: "position-relative bg-black text-white p-6 w-full z-0",
 };
 
-export default function PageSection({ colourWay, children }: PageSectionProps) {
+export default function PageSection({ colourWay="dark", children }: PageSectionProps) {
   const sectionRef = useRef<HTMLDivElement | null>(null);
   const [isVisible, setIsVisible] = useState(false);
 

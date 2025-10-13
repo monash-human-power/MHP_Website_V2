@@ -214,7 +214,7 @@ export default function Join() {
       <title>Join | MHP</title>
 
       {/* Cover Image */}
-      <PageSection colourWay="dark">
+      <PageSection >
         <h1 className="text-center text-5xl">Join Us</h1>
         <Image
           src="/images/join_page/join_main.jpg"
