@@ -158,12 +158,6 @@
           "image": "/images/teams_page/Electrical/marcus_chow.jpg"
         },
         {
-          "name": "Nivantha Abeysekera",
-          "role": "Team Member",
-          "department": "Electrical Engineering",
-          "image": "/images/teams_page/Electrical/nivantha_abeysekara.jpg"
-        },
-        {
           "name": "Prince Jeremy Mendel-Idowu",
           "role": "Team Member",
           "department": "",
@@ -284,12 +278,6 @@
           "image": "/images/teams_page/Materials/louis_hansford.jpg"
         },
         {
-          "name": "Oliver Chen",
-          "role": "Team Member",
-          "department": "Mechanical Engineering and Commerce",
-          "image": "/images/teams_page/Materials/oliver_chen.jpg"
-        },
-        {
           "name": "Sasun Karunaratne",
           "role": "Team Member",
           "department": "",
@@ -346,12 +334,6 @@
           "department": "",
           "image": "/images/teams_page/Ops/choong_ming_xuan.jpg"
         },
-        {
-          "name": "Emma Lim",
-          "role": "Team Member",
-          "department": "Biomedical Engineering",
-          "image": "/images/teams_page/Ops/lim_xin_hui.jpg"
-        },
 
         {
           "name": "Keith Andre Abraham",
@@ -398,12 +380,6 @@
           "role": "Team Member",
           "department": "",
           "image": "/images/teams_page/Chassis/nicholas_johnson.jpg"
-        },
-        {
-          "name": "Ran Wei",
-          "role": "Team Member",
-          "department": "",
-          "image": "/images/teams_page/Chassis/ran_wei.jpg"
         },
         {
           "name": "Robert Glavan",
