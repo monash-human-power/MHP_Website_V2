@@ -85,6 +85,7 @@ export default function Page() {
             {/* For each vehicle, add a BikeSection component */}
             {sections.map((bikeName, index) => (
                 <div 
+                    className="scroll-mt-20"
                     key={bikeName}
                     id={bikeName}
                     ref={addSectionRef(index)}
