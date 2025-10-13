@@ -36,6 +36,10 @@
   ul {
     list-style-type: disc;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 
