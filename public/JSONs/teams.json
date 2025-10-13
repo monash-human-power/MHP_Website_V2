@@ -104,12 +104,6 @@
           "image": "/images/teams_page/Electrical/arnav_singh_sethi.jpg"
         },
         {
-          "name": "Arosh Heenkenda",
-          "role": "Team Member",
-          "department": "Software Engineering and Computer Science",
-          "image": "/images/teams_page/UpperManage/arosh_heenkenda.jpg"
-        },
-        {
           "name": "Daniel He",
           "role": "Team Member",
           "department": "",
@@ -334,7 +328,12 @@
           "department": "",
           "image": "/images/teams_page/Ops/choong_ming_xuan.jpg"
         },
-
+        {
+          "name": "Emma Ang",
+          "role": "Team Member",
+          "department": "",
+          "image": "/images/teams_page/Ops/emma_ang.jpg"
+        },
         {
           "name": "Keith Andre Abraham",
           "role": "Team Member",
