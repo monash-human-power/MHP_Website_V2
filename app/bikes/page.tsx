@@ -14,6 +14,7 @@ import bikeData from "../../public/JSONs/bikes.json";  // Importing the JSON fil
  * Made up of "sections" where each bike has a section
  * Uses IntersectionObserver that tracks which section is currently on the screen
  * IntersectionObserver works by attaching an observer to each section to track
+ * test commit
  */
 export default function Page() {
     // Just stores the names of each bike in order (order might not be intentional)
