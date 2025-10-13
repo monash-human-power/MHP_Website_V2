@@ -10,8 +10,9 @@ interface SamePageNavBarProps {
 
 /**
  * @documentation
- * Pretty much a banner that sticks to the main website nav bar
+ * Pretty much a banner that sticks to the main nav bar
  * Allows navigation to different sections of the same page
+ * Use top-28 to accommodate for the size (h-28) of the main nav bar
  */
 const SamePageNavBar = ({ sections , activeSection, setActiveSection} : SamePageNavBarProps) => {
     return (
