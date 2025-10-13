@@ -92,6 +92,12 @@
           "image": "/images/teams_page/Electrical/aarabi_kugathas.jpg"
         },
         {
+          "name": "Ahmed Zahid",
+          "role": "Team Member",
+          "department": "Software Engineering",
+          "image": "/images/teams_page/Ops/ahmed_zahid.jpg"
+        },
+        {
           "name": "Arnav Singh Sethi",
           "role": "Team Member",
           "department": "",
@@ -108,6 +114,12 @@
           "role": "Team Member",
           "department": "",
           "image": "/images/teams_page/Electrical/daniel_he.jpg"
+        },
+        {
+          "name": "Hoor E Jannat Urboshi",
+          "role": "Team Member",
+          "department": "",
+          "image": "/images/teams_page/Ops/hoor_e_jannat_urboshi.jpg"
         },
         {
           "name": "Iris Nguyen",
@@ -216,9 +228,15 @@
         },
         {
           "name": "Zachary Port",
-          "role": "Team Lead",
+          "role": "Team Member",
           "department": "Mechanical Engineering and Art",
           "image": "/images/teams_page/Aero/zachary_port.jpg"
+        },
+        {
+          "name": "Peter Kwok",
+          "role": "Team Member",
+          "department": "",
+          "image": "/images/teams_page/Aero/peter_kwok.jpg"
         }
       ]
     },
@@ -228,10 +246,10 @@
       "image": "/images/teams_page/materials_2.jpg",
       "Team_Leads": [
         {
-          "name": "Sasun Karunaratne",
+          "name": "Casey Diep",
           "role": "Team Lead",
-          "department": "",
-          "image": "/images/teams_page/Materials/sasun_karunaratne.jpg"
+          "department": "Engineering",
+          "image": "/images/teams_page/Materials/casey_diep.jpg"
         },
         {
           "name": "Krish Bajaj",
@@ -272,10 +290,10 @@
           "image": "/images/teams_page/Materials/oliver_chen.jpg"
         },
         {
-          "name": "Casey Diep",
+          "name": "Sasun Karunaratne",
           "role": "Team Member",
-          "department": "Engineering",
-          "image": "/images/teams_page/Materials/casey_diep.jpg"
+          "department": "",
+          "image": "/images/teams_page/Materials/sasun_karunaratne.jpg"
         }
       ]
     },
@@ -311,12 +329,6 @@
       ],
       "members": [
         {
-          "name": "Ahmed Zahid",
-          "role": "Team Member",
-          "department": "Software Engineering",
-          "image": "/images/teams_page/Ops/ahmed_zahid.jpg"
-        },
-        {
           "name": "Alvin Fung",
           "role": "Team Member",
           "department": "Software Engineering and Science",
@@ -340,48 +352,12 @@
           "department": "Biomedical Engineering",
           "image": "/images/teams_page/Ops/lim_xin_hui.jpg"
         },
-        {
-          "name": "Hoor E Jannat Urboshi",
-          "role": "Team Member",
-          "department": "",
-          "image": "/images/teams_page/Ops/hoor_e_jannat_urboshi.jpg"
-        },
+
         {
           "name": "Keith Andre Abraham",
           "role": "Team Member",
           "department": "",
           "image": "/images/teams_page/Ops/keith_andre_abraham.jpg"
-        },
-        {
-          "name": "Naailah Taqui Hasan",
-          "role": "Team Member",
-          "department": "Engineering",
-          "image": "/images/teams_page/Ops/naailah_taqui_hasan.jpg"
-        },
-        {
-          "name": "Nethara Athukorala",
-          "role": "Team Member",
-          "department": "Software Engineering",
-          "image": "/images/teams_page/Ops/nethara_athukorala.jpg"
-        },
-        {
-          "name": "Peter Kwok",
-          "role": "Team Member",
-          "department": "",
-          "image": "/images/teams_page/Ops/peter_kwok.jpg"
-        },
-        {
-          "name": "Sai Ashish Ramishetty",
-          "role": "Team Member",
-          "department": "Software Engineering",
-          "image": "/images/teams_page/Ops/sai_ramishetty.jpg"
-        },
-
-        {
-          "name": "Vicky Huang",
-          "role": "Team Member",
-          "department": "Software Engineering and Computer Science",
-          "image": "/images/teams_page/Ops/vicky_huang.jpg"
         }
       ]
     },
@@ -477,6 +453,12 @@
           "role": "Workshop Manager ",
           "department": "Materials Engineering",
           "image": "/images/teams_page/Materials/sasun_karunaratne.jpg"
+        },
+        {
+          "name": "Peter Ge",
+          "role": "HR Manager",
+          "department": "",
+          "image": "/images/teams_page/Materials/peter_ge.jpg"
         },
         {
           "name": "Prince Jeremy Mendel-Idowu",
