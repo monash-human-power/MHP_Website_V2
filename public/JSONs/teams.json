@@ -90,6 +90,11 @@
           "role": "Team Member",
           "department": "",
           "image": "/images/teams_page/Electrical/aarabi_kugathas.jpg"
+        },        {
+          "name": "Ali Elgendy",
+          "role": "Team Member",
+          "department": "",
+          "image": "/images/teams_page/Electrical/ali_elgendy.jpg"
         },
         {
           "name": "Ahmed Zahid",
@@ -102,12 +107,22 @@
           "role": "Team Member",
           "department": "",
           "image": "/images/teams_page/Electrical/arnav_singh_sethi.jpg"
+        },        {
+          "name": "Couen Ham",
+          "role": "Team Member",
+          "department": "",
+          "image": "/images/teams_page/Electrical/couen_ham.jpg"
         },
         {
           "name": "Daniel He",
           "role": "Team Member",
           "department": "",
           "image": "/images/teams_page/Electrical/daniel_he.jpg"
+        },        {
+          "name": "David Zeng",
+          "role": "Team Member",
+          "department": "",
+          "image": "/images/teams_page/Electrical/david_zeng.jpg"
         },
         {
           "name": "Hoor E Jannat Urboshi",
