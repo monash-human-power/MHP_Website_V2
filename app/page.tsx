@@ -68,12 +68,9 @@ export default function Page() {
                 Our Story
               </h2>
               <p>
-                {`We are a student-led engineering team 
-                  based at Monash University
-                  in Melbourne, Australia. 
-                  Since 2015 we have been designing,
-                  manufacturing, and racing fully-faired human-powered vehicles (HPVs)
-                  to push the limits of human speed.`}
+                {`We are a student-led engineering team based at Monash University in Melbourne, Australia.
+                  Since 2015 we have been designing, manufacturing, and racing fully-faired 
+                  human-powered vehicles (HPVs) to push the limits of engineering performance.`}
               </p>
               <Button
                 hrefString="https://www.youtube.com/watch?v=psuRwd4hgEA&t=3s"
@@ -92,20 +89,17 @@ export default function Page() {
             Our Mission
           </h2>
           <p className="my-2">
-            Our team&apos;s vision is to make the fastest HPV in Australia, and
-            eventually the world. We&apos;re hoping to break the HPV land-speed
-            record in Australia (currently 96.7km/h) having ridden at faster
-            speeds during the 2023 World Human Powered Speed Challenge, an
-            international competition in the U.S. which we plan to return to in
-            2025.
+            We strive to set the standard for advanced, expertly
+            engineered human-powered vehicles.
             <br />
             <br />
-            With support from Monash University and the Engineering faculty, we
-            strive to provide a space where Monash students can develop
-            valuable, real-world experience which they can carry on into their
-            careers. Alongside our technical goals, we also aim to promote STEM
-            to the wider community within the framework of HPVs through school
-            outreach programs.
+            Our team designs, manufactures, and races cutting-edge HPVs in
+            premier competitions. Through hands-on design, rigorous testing, and
+            high-stakes races, we provide students with real-world engineering
+            experience while empowering our riders to perform at elite levels.
+            We share our passion for engineering HPVs at our school outreach
+            programs and proudly promote STEM and sustainability to inspire the
+            next generation of engineers.
           </p>
           <Button
             hrefString="/bikes"
@@ -131,13 +125,16 @@ export default function Page() {
             </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
-              {values.map((value,idx) => (
-                <div key={idx} className="flex flex-col justify-start items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5 h-full">
+              {values.map((value, idx) => (
+                <div
+                  key={idx}
+                  className="flex flex-col justify-start items-center space-y-3 md:space-y-3 lg:space-y-0 sm:space-x-5 mb-5 h-full"
+                >
                   <h2 className="text-l font-semibold  text-wrap text-center p-3 sm:mb-0   md:text-xl">
-                  {value.name}
+                    {value.name}
                   </h2>
                   <p className="my-4 max-w-prose text-center">
-                  {value.description}
+                    {value.description}
                   </p>
                 </div>
               ))}
