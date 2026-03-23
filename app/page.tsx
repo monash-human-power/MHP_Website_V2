@@ -6,6 +6,7 @@ import sponsorData from "../public/JSONs/sponsors.json";
 import Button from "./components/Buttons";
 
 export default function Page() {
+  // The images that are shown on the home page carousel
   const images = [
     "/images/home_page/battle_mountain_group.jpg",
     "/images/home_page/trike_race.jpg",

@@ -43,7 +43,7 @@ const mobileNavigation: MobileNavItemsProps[] = [
   { name: "Home", href: "/" },
   { name: "Bikes", href: "/bikes" },
   { name: "Competitions", href: "/competitions" },
-  { name: "Teams", href: "/teams" },
+  { name: "Team", href: "/teams" },
   { name: "Outreach", href: "/outreach" },
   { name: "Join", href: "/join" },
   { name: "Contact Us", href: "/contact" },
@@ -52,7 +52,7 @@ const mobileNavigation: MobileNavItemsProps[] = [
 const desktopNavigation: NavItemsProps[] = [
   { name: "Bikes", href: "/bikes", srcString: "" },
   { name: "Competitions", href: "/competitions", srcString: "" },
-  { name: "Teams", href: "/teams", srcString: "" },
+  { name: "Team", href: "/teams", srcString: "" },
   { name: "Home", href: "/", srcString: "/images/logo.png" },
   { name: "Outreach", href: "/outreach", srcString: "" },
   { name: "Join", href: "/join", srcString: "" },
