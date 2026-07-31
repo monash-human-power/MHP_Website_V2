@@ -79,10 +79,10 @@ const Navbar = () => {
       <Link href="/join" className="underline hover:text-blue-600">
         Join Us Here
       </Link>
-      👈 - Apply by August 6th!
+      👈 - Apply by August 14th !
     </>
   );
-  const SHOW_BANNER = false
+  const SHOW_BANNER = true
 
   // Old code for drop down menus
   // const handleItemClick = (item: MobileNavItemsProps) => {

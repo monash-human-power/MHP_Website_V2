@@ -211,20 +211,20 @@ const teamApplications: ApplicationCardInfo[] = [
 // Note that form links are prone to change and should be updated for new recruitment processes
 const teamApplications2026: DisplayApplicationCardInfo[] = [
   {
-    subteam: "All Teams",
+    subteam: "Aero, Chassis, Electrical, and Business",
     role: "Team Member ",
     img: "/images/join_page/join_operations_marketing.jpg",
-    formLink: "https://docs.google.com/forms/d/e/1FAIpQLSdyXxqhT2Mgdkts7E2Rz5YLbm-vcjkkbAAKNvSkAs9YZ8wDcg/viewform?usp=header",
+    formLink: "https://docs.google.com/forms/d/e/1FAIpQLScZd06yLMaDiTqFi2t1cmTqELdbxaRdmTNcIKUEGLlCESYXow/viewform?usp=dialog",
   },
-  {
-    subteam: "Human Resources",
-    role: "HR member ",
-    img: "/images/join_page/join_operations_website.jpg",
-    formLink: "https://docs.google.com/forms/d/e/1FAIpQLSf1V4W9iJp8c5RGUY_SFkd45-iON_gwCuYPrTtMxQyI-rlf6g/viewform?usp=header",
-  }
+  // {
+  //   subteam: "Human Resources",
+  //   role: "HR member ",
+  //   img: "/images/join_page/join_operations_website.jpg",
+  //   formLink: "https://docs.google.com/forms/d/e/1FAIpQLSf1V4W9iJp8c5RGUY_SFkd45-iON_gwCuYPrTtMxQyI-rlf6g/viewform?usp=header",
+  // }
 ]
 
-const IS_RECRUITING = false;
+const IS_RECRUITING = true;
 
 export default function Join() {
   return (
@@ -255,11 +255,20 @@ export default function Join() {
               margin: "0 auto",
             }}
           >
-            {IS_RECRUITING ? (<><p>Applications are open!</p><br /><p>
-              Apply for one of MHP&apos;s subteams below. <br />
-              If you have any further questions or queries, feel free to direct
-              them to monashhpt@gmail.com
-            </p></>) : (<><p>Recruitment is closed.</p><br /><p>
+            {IS_RECRUITING ? 
+            (<>
+              <p>
+                Applications are open! Applications close 14th August.
+                Interviews will be conducted from 10th - 21st August.
+              </p>
+              <br />
+              <p>
+                Apply for one of MHP&apos;s subteams below. <br />
+                If you have any further questions or queries, feel free to direct
+                them to monashhpt@gmail.com
+              </p>
+            </>) : 
+            (<><p>Recruitment is closed.</p><br /><p>
               If you have any further questions or queries, feel free to direct
               them to monashhpt@gmail.com
             </p></>)}
